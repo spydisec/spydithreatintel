@@ -15,6 +15,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 
 The repository also includes a list of domains categorized for blocking:  
 The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltrail, Firebog, AdAway, and more). 
+
 **A unique feature of this list is that it does not include any duplicate entries, ensuring that all three categories—malicious, spam, and advers—are distinct.**
 
 - **🛑 Advers/Tracking Domains:**  
