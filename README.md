@@ -32,7 +32,7 @@ These domains can be integrated with **Pi-hole** or firewall configurations to b
 
 ## ⚠️ False Positives
 
-If you encounter any false positives or believe that an IP address or domain listed in this repository should not be blocked, please report it! Your feedback is valuable and helps improve the quality of data shared in this repository. You can report false positives by opening an issue, including details of your findings for prompt review.
+If you come across any false positives or believe an IP address or domain listed in this repository should not be blocked, please let us know! Your input is crucial and helps enhance the quality of data shared here. You can report false positives by opening an issue and providing detailed information for prompt review.
 
 ## 📝 Contributions
 
