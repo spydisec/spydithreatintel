@@ -1,4 +1,4 @@
-# spydithreatintel 🚨
+# Spydi's ThreatIntel 🚨
 
 Welcome to the **spydithreatintel** repository! 
 
