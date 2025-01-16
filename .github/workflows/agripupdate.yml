@@ -2,7 +2,7 @@ name: Aggregate Unique IPs
 
 on:
   schedule:
-    - cron: '0 0 * * *' # This will run daily at midnight
+    - cron: '0 1 * * *' # This will run daily at midnight
   workflow_dispatch: # Allows manual trigger from the GitHub UI
 
 jobs:
