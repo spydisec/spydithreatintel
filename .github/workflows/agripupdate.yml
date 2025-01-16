@@ -39,4 +39,4 @@ jobs:
           git commit -m "Update unique IPs - ${current_date}"
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MY_SECRET: ${{ secrets.MY_SECRET }}
