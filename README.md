@@ -11,7 +11,7 @@ In this repo, you will find:
 - 🔄 **Regular Updates**: Ongoing contributions as new data becomes available.
 - ⚙️ **Collaboration Opportunities**: Feel free to contribute with insights or data related to threats.
 
-## 🚨 Use of `agr_unique_ips.txt`
+## 🔥 Use of `agr_unique_ips.txt`
 
 The `agr_unique_ips.txt` file contains a list of IP addresses that have been identified as malicious. Community members can directly integrate this file into their firewall configurations to block these IPs and enhance network security. Please ensure to review the contents before implementing to suit your specific security needs.
 
