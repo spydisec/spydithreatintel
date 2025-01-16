@@ -8,21 +8,25 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 
 ### IP Addresses
 
-- **File:** `agr_unique_ips.txt`  
+- **File:** [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt) 
   The `agr_unique_ips.txt` file contains a list of IP addresses that have been identified as malicious. Community members can directly integrate this file into their firewall configurations to block these IPs and enhance network security. Please ensure to review the contents before implementing to suit your specific security needs.
 
 ### Domains
 
-The repository also includes a list of domains categorized for blocking:
+The repository also includes a list of domains categorized for blocking:  
+**The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltrail, Firebog, AdAway, and more). A unique feature of this list is that it does not include any duplicate entries, ensuring that all three categories—malicious, spam, and advers—are distinct.**
 
 - **🛑 Advers/Tracking Domains:**  
-  A collection of domains used for tracking and advertising purposes.
+  A collection of domains used for tracking and advertising purposes.  
+  - **File:** [advs/unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/advs/unique_advtracking_domains.txt)  
 
 - **⚠️ Malicious Domains:**  
-  Domains identified as associated with malicious activity.
+  Domains identified as associated with malicious activity.  
+  - **File:** [mal/unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/mal/unique_malicious_domains.txt)  
 
 - **❌ Spam Domains:**  
-  Domains recognized for sending spam and potentially harmful content.
+  Domains recognized for sending spam and potentially harmful content.  
+  - **File:** [spam/unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/spam/unique_spamscamabuse_domains.txt)  
 
 These domains can be integrated with **Pi-hole** or firewall configurations to block unwanted traffic, enhancing your network's security.
 
@@ -37,21 +41,4 @@ Your contributions are welcome! If you have relevant data or IOCs to share, plea
 ## 📫 Contact
 
 For inquiries or further collaboration, reach out via [spyditi@proton.me](mailto:spyditi@proton.me).  
-I have a public PGP key available for sending encrypted emails:
------BEGIN PGP PUBLIC KEY BLOCK-----
-
-xjMEZ4ifbBYJKwYBBAHaRw8BAQdA3TIpmme/vRVrR2lOAJt+7rBjzgfkcaUG
-TSMrHVS+GifNJXNweWRpdGlAcHJvdG9uLm1lIDxzcHlkaXRpQHByb3Rvbi5t
-ZT7CwBEEExYKAIMFgmeIn2wDCwkHCZBAGPdOpR0sQ0UUAAAAAAAcACBzYWx0
-QG5vdGF0aW9ucy5vcGVucGdwanMub3JnXcV8+Hk5rOteuN4880MQXGINqF4k
-IU6KCLl5L/jyEmwDFQoIBBYAAgECGQECmwMCHgEWIQSCxc2fNYqCMgk7WlhA
-GPdOpR0sQwAAkrABAMivNFedkiobICBI1MkHkcHIBA33oGfVU02Ov644V8Mz
-AQD24q7n7BTUTE0KnJe7YE3k3YwVvBWLV7GhdLO8IwEWA844BGeIn2wSCisG
-AQQBl1UBBQEBB0DFOAYEXvEHnYh7ygqB7OwboTGcKpE4u5IDry83+ALPdQMB
-CAfCvgQYFgoAcAWCZ4ifbAmQQBj3TqUdLENFFAAAAAAAHAAgc2FsdEBub3Rh
-dGlvbnMub3BlbnBncGpzLm9yZzUK6UEob0ITQGIegJ9t3yqselHmyDIDVovv
-VYjJSGvKApsMFiEEgsXNnzWKgjIJO1pYQBj3TqUdLEMAAIUeAQDUkepIptgg
-CASjk+bUbKhyDiWL+m4ozmcDD2RJE5tGsAEA3ReacBMSLRBGGjLe0fwe6dpK
-w4VGcApXV/zwq+oQzwo=
-=rMVp
------END PGP PUBLIC KEY BLOCK-----
+I have a public PGP key available for sending encrypted emails: https://pastebin.com/igL3mGVb
