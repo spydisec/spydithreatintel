@@ -1,27 +1,48 @@
-name: Update Existing OTX Pulse
+name: Aggregate Unique IPs
 
 on:
   schedule:
-    - cron: '0 2 * * *'  # Schedule to run at 2 AM UTC every day
+    - cron: '0 1 * * *' # This will run daily at midnight
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
 
 jobs:
-  update-pulse:
+  aggregate_ips:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Setup Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-
-      - name: Install Dependencies
+      - name: Aggregate IPs
         run: |
-          pip install OTXv2
+          # Create an empty file or truncate if exists
+          > agr_unique_ips.txt
+          # Loop through the output files and extract unique IPs
+          for file in output_*.txt; do
+            cat "$file" >> agr_unique_ips.txt
+          done
+          # Sort and remove duplicates, then store unique IPs
+          sort -u agr_unique_ips.txt -o agr_unique_ips.txt
+      - name: Commit and Push Changes
+        run: |
+          current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
+    
+          # Configure Git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
-      - name: Update Existing Pulse with Malicious IPs
+          # Fetch latest changes from the remote
+          git pull origin main
+          git fetch origin
+
+          # Merge changes if there are updates
+          git merge origin/main
+
+          # Stage the file and commit changes
+          git add agr_unique_ips.txt
+          git commit -m "Update unique IPs - ${current_date}" || echo "No changes to commit"
+
+          # Push changes
+          git push origin main
         env:
-          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
-        run: python update_otx_pulse.py
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
