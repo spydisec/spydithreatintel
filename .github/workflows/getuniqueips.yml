@@ -1,0 +1,58 @@
+name: Aggregate Unique IPs
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Runs daily at midnight
+  workflow_dispatch: # Allows manual trigger from the GitHub UI
+
+permissions:
+  contents: write  # Required to push changes
+
+jobs:
+  aggregate_ips:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Date Variables
+        id: date_vars
+        run: |
+          echo "CURRENT_YEAR=$(date +'%Y')" >> $GITHUB_ENV
+          echo "CURRENT_MONTH=$(date +'%m')" >> $GITHUB_ENV
+      - name: Aggregate IPs
+        run: |
+          # Construct the output directory based on the current year and month
+          OUTPUT_DIR="data/output/${{ env.CURRENT_YEAR }}/${{ env.CURRENT_MONTH }}/"
+          > data/agr_unique_ips.txt  # Create or truncate the output file
+          # Loop through the output files in the current month for the current year
+          for file in "${OUTPUT_DIR}"output_*.txt; do
+            if [[ -f "$file" ]]; then
+              cat "$file" >> agr_unique_ips.txt
+            fi
+          done
+          # Sort and remove duplicates
+          sort -u agr_unique_ips.txt -o agr_unique_ips.txt
+      - name: Commit and Push Changes
+        run: |
+          current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
+    
+          # Configure Git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+    
+          # Fetch latest changes from the remote
+          git fetch origin
+    
+          # Merge changes if there are updates
+          git merge origin/main
+    
+          # Stage the file and commit changes
+          git add agr_unique_ips.txt
+          git commit -m "Update unique IPs - ${current_date}" || echo "No changes to commit"
+    
+          # Push changes
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token for permissions
