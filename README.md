@@ -7,15 +7,15 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 - **Update Status Malicious IP List**
   - ![Status](https://github.com/spydisec/spydithreatintel/actions/workflows/getuniqueips.yml/badge.svg)
 
-## 🔒 Block / Filter List Usage 📜
+## 🔒 Block / Filter List Usage - Domain & IPs 👮
 
-### C2 IP Feed (extracted from Shodan)
+### 🛑 C2 IP Feed (extracted from Shodan)
 
 - **File:** [Master_C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/C2IPFeed/master_c2_iplist.txt)
 - A Shodan-powered threat feed identifying exposed C2 infrastructure (malware/botnet-linked). Integrates with firewalls/SIEMs (e.g., pfSense) to block malicious traffic.
 - Special thanks to various CTI researchers in open-source land. For More information please visit: [Montysecurity](https://github.com/montysecurity/C2-Tracker)
 
-### Tracked C2, Malware & Botnets
+### 📜 Tracked C2, Malware & Botnets
 <details>
 <summary>Click to expand the full list ▶️</summary>
 
@@ -83,10 +83,9 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 |                           | Spectre Stealer                 |              |
 </details>
 
-### IP Addresses
-
-- **File:** [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt)
-- Blocklist contains a list of IP addresses that have been identified as malicious from various OSINT Feed avialable on internet.
+### 📧 IP Feed (extracted from Honeypot)
+- **Description**: IP addresses extracted from a production email server actively targeted by bruteforce attacks, spam campaigns, reconnaissance, and other malicious activities.  
+- **File**: [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt)  
 
 ### Domains
 
@@ -99,11 +98,11 @@ The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltr
   A collection of domains used for tracking and advertising purposes.  
   - **File:** [advs/unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/advs/unique_advtracking_domains.txt)  
 
-- **⚠️ Malicious Domains:**  
+- **🎯 Malicious Domains:**  
   Domains identified as associated with malicious activity.  
   - **File:** [mal/unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/mal/unique_malicious_domains.txt)  
 
-- **❌ Spam Domains:**  
+- **🔫 Spam Domains:**  
   Domains recognized for sending spam and potentially harmful content.  
   - **File:** [spam/unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/spam/unique_spamscamabuse_domains.txt)  
 
