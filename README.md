@@ -87,7 +87,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 - **Description**: IP addresses extracted from a production email server actively targeted by bruteforce attacks, spam campaigns, reconnaissance, and other malicious activities.  
 - **File**: [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt)  
 
-### Domains
+### 🎭 Domains
 
 The repository also includes a list of domains categorized for blocking:  
 The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltrail, Firebog, AdAway, and more). 
