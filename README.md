@@ -86,7 +86,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 ### IP Addresses
 
 - **File:** [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt)
-- Blocklist contains a list of IP addresses that have been identified as malicious. Community members can directly integrate this file into their firewall configurations to block these IPs and enhance network security. Please ensure to review the contents before implementing to suit your specific security needs.
+- Blocklist contains a list of IP addresses that have been identified as malicious from various OSINT Feed avialable on internet.
 
 ### Domains
 
