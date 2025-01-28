@@ -1,19 +1,48 @@
 name: Daily Malicious IP List Update
 
 on:
+  schedule:
+    - cron: '0 4 * * *'  # Daily at 4:00 AM UTC
   push:
     paths:
       - 'honeypot/honeypot_iplist.txt'
       - 'C2IPFeed/master_c2_iplist.txt'
   workflow_dispatch:
-  schedule:
-    - cron: '0 4 * * *'  # Runs daily at 4:00 AM UTC
+
+env:
+  SOURCES: |
+    [
+      {
+        "url": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt",
+        "name": "maltrail_scanners"
+      }
+    ]
 
 permissions:
   contents: write
 
 jobs:
-  update-master-list:
+  process-external-sources:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        source: ${{ fromJson(env.SOURCES) }}
+    steps:
+    - name: Download and process ${{ matrix.source.name }}
+      run: |
+        # Download and clean external source
+        curl -sSfL "${{ matrix.source.url }}" -o raw_${{ matrix.source.name }}.txt
+        grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' raw_${{ matrix.source.name }}.txt > processed_${{ matrix.source.name }}.txt
+        rm raw_${{ matrix.source.name }}.txt
+
+    - name: Upload processed ${{ matrix.source.name }}
+      uses: actions/upload-artifact@v3
+      with:
+        name: processed-${{ matrix.source.name }}
+        path: processed_${{ matrix.source.name }}.txt
+
+  combine-lists:
+    needs: process-external-sources
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
@@ -21,12 +50,26 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Download all processed sources
+      uses: actions/download-artifact@v3
+      with:
+        path: processed-sources
+
     - name: Set current timestamp
       run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-    - name: Combine IP lists and remove duplicates
+    - name: Combine all IP sources
       run: |
-        cat honeypot/honeypot_iplist.txt C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
+        # Combine external sources
+        cat processed-sources/processed-*/*.txt > combined_external.txt
+        
+        # Add local lists
+        cat combined_external.txt \
+            honeypot/honeypot_iplist.txt \
+            C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_ip.txt
+        
+        # Cleanup
+        rm combined_external.txt
 
     - name: Commit and push changes
       run: |
