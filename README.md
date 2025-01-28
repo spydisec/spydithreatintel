@@ -4,8 +4,7 @@ Welcome to the **spydithreatintel** repository!
 
 This is a work-in-progress repository dedicated to sharing various Indicators of Compromise (IOCs) from production systems experiencing security incidents. 🔍💻
 
-- **Update Status Malicious IP List**
-  - ![Status](https://github.com/spydisec/spydithreatintel/actions/workflows/getuniqueips.yml/badge.svg)
+[![Honeypot Unique IPs](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml)
 
 ## 🔒 Block / Filter List Usage - Domains & IPs 👮
 
