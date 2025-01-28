@@ -78,8 +78,6 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
-  
           # Configure Git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"  
@@ -89,6 +87,6 @@ jobs:
           git merge origin/main
           # Stage the file and commit changes
           git add honeypot/honeypot_iplist.txt
-          git commit -m "Auto-update Malicious IP Feed - ${current_date}" || echo "No changes to commit"
+          git commit -m "Auto-update Malicious IP Feed - ${{ env.DATE }}" || echo "No changes to commit"
           # Push changes
           git push origin main
