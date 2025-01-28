@@ -7,7 +7,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 - **Update Status Malicious IP List**
   - ![Status](https://github.com/spydisec/spydithreatintel/actions/workflows/getuniqueips.yml/badge.svg)
 
-## 🔒 Block / Filter List Usage - Domain & IPs 👮
+## 🔒 Block / Filter List Usage - Domains & IPs 👮
 
 ### 🛑 C2 IP Feed (extracted from Shodan)
 
