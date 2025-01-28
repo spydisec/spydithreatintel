@@ -96,7 +96,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 |                           | Spectre Stealer                 |              |
 </details>
 
-### 📧 Honeypot IP Feed (extracted from Honeypot)
+### 📧 Honeypot IP Feed
 - **Description**: IP addresses extracted from a production email server actively targeted by bruteforce attacks, spam campaigns, reconnaissance, and other malicious activities.  
 - **File**: [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/honeypot/honeypot_iplist.txt)  
 
