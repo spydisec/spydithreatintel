@@ -9,15 +9,6 @@ on:
       - 'C2IPFeed/master_c2_iplist.txt'
   workflow_dispatch:
 
-env:
-  SOURCES: |
-    [
-      {
-        "url": "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt",
-        "name": "maltrail_scanners"
-      }
-    ]
-
 permissions:
   contents: write
 
@@ -26,7 +17,13 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source: ${{ fromJson(env.SOURCES) }}
+        source: [
+          {
+            url: "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt",
+            name: "maltrail_scanners"
+          }
+          # Add new sources here as comma-separated objects
+        ]
     steps:
     - name: Download and process ${{ matrix.source.name }}
       run: |
