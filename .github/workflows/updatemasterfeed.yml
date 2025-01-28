@@ -78,6 +78,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
+        
           # Configure Git
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"  
