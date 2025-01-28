@@ -9,7 +9,7 @@ on:
       - 'C2IPFeed/master_c2_iplist.txt'
   workflow_dispatch:
 
-vars:
+env:
   SOURCES: |
     [
       {
@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        source: ${{ fromJson(vars.SOURCES) }}
+        source: ${{ fromJson(env.SOURCES) }}
     steps:
     - name: Download and process ${{ matrix.source.name }}
       run: |
@@ -59,7 +59,6 @@ jobs:
 
     - name: Combine all IP sources
       run: |
-        # Combine external sources with local lists
         cat processed-sources/processed-*/*.txt \
             honeypot/honeypot_iplist.txt \
             C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
