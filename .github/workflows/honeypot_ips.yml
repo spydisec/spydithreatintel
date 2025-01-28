@@ -1,4 +1,4 @@
-name: Aggregate Unique IPs
+name: Honeypot Unique IPs
 
 on:
   schedule:
