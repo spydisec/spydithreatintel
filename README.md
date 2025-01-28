@@ -129,6 +129,11 @@ The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltr
 
 These domains can be integrated with **Pi-hole** or firewall configurations to block unwanted traffic, enhancing your network's security.
 
+### 📧 Permanent Lists
+- **Description**: Permanent lists is a collection of malicious domain names and IP addresses, where the data is appened and not removed. Thus, IOCs stays permantenly in the list unless removed (in case of false positive). **This lists not include any duplicate entries, and IOCs are distinct.**
+- **IP**: [permanent_IPList.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/permanent_IPList.txt)
+- **Domain Names**: [permanent_DomainList.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/permanent_DomainList.txt)  **Currently WIP**
+
 ## ⚠️ False Positives
 
 If you come across any false positives or believe an IP address or domain listed in this repository should not be blocked, please let us know! Your input is crucial and helps enhance the quality of data shared here. You can report false positives by opening an issue and providing detailed information for prompt review.
