@@ -37,6 +37,10 @@ jobs:
           {
             url: "https://lists.blocklist.de/lists/all.txt",
             name: "Blocklist_de_all"
+          },
+          {
+            url: "https://threatview.io/Downloads/IP-High-Confidence-Feed.txt",
+            name: "ThreatView_High_Confidence"
           }
           # Add new sources here as comma-separated objects
         ]
