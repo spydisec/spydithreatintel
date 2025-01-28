@@ -8,6 +8,21 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 
 ## 🔒 Block / Filter List Usage - Domains & IPs 👮
 
+### 🚒 Centralized Malicious IP Feed
+- **Description**: Aggregated from specialized threat categories (listed below), this deduplicated list provides a unified view of malicious IP addresses.
+- **File:** [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/master_malicious_iplist.txt)
+#### 📌 Source Breakdown
+<details>
+<summary>Click to expand the full list ▶️</summary>
+
+| Categories                | 
+|---------------------------|
+| C2 IP Feed                |
+| Honeypot Master list      |
+| More coming Soon!         |
+
+</details>
+
 ### 🛑 C2 IP Feed (extracted from Shodan)
 - **Description**: A Shodan-powered threat feed identifying exposed C2 infrastructure (malware/botnet-linked). Integrates with firewalls/SIEMs (e.g., pfSense) to block malicious traffic.
 - **File:** [Master_C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/C2IPFeed/master_c2_iplist.txt)
