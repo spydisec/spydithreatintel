@@ -21,20 +21,30 @@ jobs:
         run: |
           echo "CURRENT_YEAR=$(date +'%Y')" >> $GITHUB_ENV
           echo "CURRENT_MONTH=$(date +'%m')" >> $GITHUB_ENV
+
       - name: Aggregate IPs
         run: |
           # Construct the output directory based on the current year and month
           OUTPUT_DIR="data/output/${{ env.CURRENT_YEAR }}/${{ env.CURRENT_MONTH }}/"
-          > honeypot/honeypot_iplist.txt  # Create or truncate the output file
+          echo "Output directory: $OUTPUT_DIR"
+
+          # Create or truncate the output file
           FILE_PATH="honeypot/honeypot_iplist.txt"
+          > $FILE_PATH
+          echo "Output file: $FILE_PATH" 
+
           # Loop through the output files in the current month for the current year
-          for file in "${OUTPUT_DIR}"output_*.txt; do
+          for file in "${OUTPUT_DIR}output_*.txt"; do
             if [[ -f "$file" ]]; then
-              cat "$file" >> honeypot_iplist.txt
+              cat "$file" >> $FILE_PATH
+            else
+              echo "No files found matching pattern ${OUTPUT_DIR}output_*.txt"
             fi
           done
+
           # Sort and remove duplicates
           sort -u "$FILE_PATH" -o "$FILE_PATH"
+
       - name: Commit and Push Changes
         run: |
           current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
