@@ -23,19 +23,19 @@ jobs:
             name: "maltrail_scanners"
           },
           {
-            url: "https://www.botvrij.eu/data/ioclist.ip-dst.raw"
+            url: "https://www.botvrij.eu/data/ioclist.ip-dst.raw",
             name: "botvrij_eu"
           },
           {
-            url: "https://feodotracker.abuse.ch/downloads/ipblocklist.txt"
+            url: "https://feodotracker.abuse.ch/downloads/ipblocklist.txt",
             name: "feodotracker"
           },
           {
-            url: "https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt"
+            url: "https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt",
             name: "feodotracker_recommended"
           },
           {
-            url: "https://lists.blocklist.de/lists/all.txt"
+            url: "https://lists.blocklist.de/lists/all.txt",
             name: "Blocklist_de_all"
           }
           # Add new sources here as comma-separated objects
