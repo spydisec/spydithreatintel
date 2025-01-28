@@ -25,15 +25,16 @@ jobs:
         run: |
           # Construct the output directory based on the current year and month
           OUTPUT_DIR="data/output/${{ env.CURRENT_YEAR }}/${{ env.CURRENT_MONTH }}/"
-          > data/agr_unique_ips.txt  # Create or truncate the output file
+          > honeypot/honeypot_iplist.txt  # Create or truncate the output file
+          FILE_PATH="honeypot/honeypot_iplist.txt"
           # Loop through the output files in the current month for the current year
           for file in "${OUTPUT_DIR}"output_*.txt; do
             if [[ -f "$file" ]]; then
-              cat "$file" >> agr_unique_ips.txt
+              cat "$file" >> honeypot_iplist.txt
             fi
           done
           # Sort and remove duplicates
-          sort -u agr_unique_ips.txt -o agr_unique_ips.txt
+          sort -u "$FILE_PATH" -o "$FILE_PATH"
       - name: Commit and Push Changes
         run: |
           current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
@@ -49,7 +50,7 @@ jobs:
           git merge origin/main
     
           # Stage the file and commit changes
-          git add agr_unique_ips.txt
+          git add honeypot/honeypot_iplist.txt
           git commit -m "Update unique IPs - ${current_date}" || echo "No changes to commit"
     
           # Push changes
