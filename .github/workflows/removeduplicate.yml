@@ -1,0 +1,39 @@
+name: Remove Duplicate C2 IP List
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # Runs daily at 2 AM UTC
+  workflow_dispatch:     # Allows manual trigger
+
+permissions:
+  contents: write  # Required to push changes
+
+jobs:
+  deduplicate_ips:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Remove Deduplicate IPs
+        run: |
+          # Path to your IP list file
+          FILE_PATH="C2IPFeed/master_c2_iplist.txt"
+          
+          # Sort and deduplicate the file in-place
+          sort -u "$FILE_PATH" -o "$FILE_PATH"
+
+      - name: Commit and Push Changes
+        run: |
+          current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
+          
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          git add spydithreatintel/C2IPFeed/master_c2_iplist.txt
+          git commit -m "Automatic Updated IPs - ${current_date}" || echo "No changes to commit"
+          
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
