@@ -22,7 +22,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 | Sources                   | Source URL                                                                 |
 |---------------------------|----------------------------------------------------------------------------|
 | C2 IP Feed                | [Master_C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/C2IPFeed/master_c2_iplist.txt) |
-| Honeypot Master list      | [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/honeypot/honeypot_iplist.txt)     |
+| Honeypot Master list      | [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/honeypot/honeypot_iplist.txt)     |
 | maltrail_scanners         | [maltrail_ips.txt](https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt)         |
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
