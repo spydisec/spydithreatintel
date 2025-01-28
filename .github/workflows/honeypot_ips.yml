@@ -34,11 +34,11 @@ jobs:
           echo "Output file: $FILE_PATH" 
 
           # Loop through the output files in the current month for the current year
-          for file in "${OUTPUT_DIR}output_*.txt"; do
+          for file in "${OUTPUT_DIR}output_"*; do
             if [[ -f "$file" ]]; then
               cat "$file" >> $FILE_PATH
             else
-              echo "No files found matching pattern ${OUTPUT_DIR}output_*.txt"
+              echo "No files found matching pattern ${OUTPUT_DIR}output_*"
             fi
           done
 
@@ -66,4 +66,4 @@ jobs:
           # Push changes
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token for permissions
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
