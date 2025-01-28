@@ -21,6 +21,22 @@ jobs:
           {
             url: "https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt",
             name: "maltrail_scanners"
+          },
+          {
+            url: "https://www.botvrij.eu/data/ioclist.ip-dst.raw"
+            name: "botvrij_eu"
+          },
+          {
+            url: "https://feodotracker.abuse.ch/downloads/ipblocklist.txt"
+            name: "feodotracker"
+          },
+          {
+            url: "https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt"
+            name: "feodotracker_recommended"
+          },
+          {
+            url: "https://lists.blocklist.de/lists/all.txt"
+            name: "Blocklist_de_all"
           }
           # Add new sources here as comma-separated objects
         ]
@@ -60,15 +76,19 @@ jobs:
             honeypot/honeypot_iplist.txt \
             C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
 
-    - name: Commit and push changes
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
-        git add master_malicious_iplist.txt
-        
-        if git diff-index --quiet HEAD; then
-          echo "No changes to commit"
-        else
-          git commit -m "Auto-update Malicious IP Feed - ${{ env.DATE }}"
-          git push
-        fi
+      - name: Commit and Push Changes
+        run: |
+          current_date=$(TZ="Australia/Sydney" date "+%Y-%m-%d %H:%M:%S")
+  
+          # Configure Git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"  
+          # Fetch latest changes from the remote
+          git fetch origin
+          # Merge changes if there are updates
+          git merge origin/main
+          # Stage the file and commit changes
+          git add honeypot/honeypot_iplist.txt
+          git commit -m "Auto-update Malicious IP Feed - ${current_date}" || echo "No changes to commit"
+          # Push changes
+          git push origin main
