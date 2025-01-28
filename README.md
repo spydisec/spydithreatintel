@@ -84,7 +84,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 
 ### 📧 IP Feed (extracted from Honeypot)
 - **Description**: IP addresses extracted from a production email server actively targeted by bruteforce attacks, spam campaigns, reconnaissance, and other malicious activities.  
-- **File**: [agr_unique_ips.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/agr_unique_ips.txt)  
+- **File**: [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/honeypot/honeypot_iplist.txt)  
 
 ### 🎭 Domains
 
