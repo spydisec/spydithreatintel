@@ -34,6 +34,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 | IPsumLevel_7              | [IPsumLevel7](https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/7.txt)                                                        |
 | CINS_Score                | [CINS_Score](https://cinsscore.com/list/ci-badguys.txt)                                                        |
 | DigitalSide               | [DigitalSide](https://osint.digitalside.it/Threat-Intel/lists/latestips.txt)                                                        |
+| duggytuxy                 | [duggytuxy](https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt)                                                        |
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
