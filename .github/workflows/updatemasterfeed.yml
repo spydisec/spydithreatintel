@@ -52,7 +52,7 @@ jobs:
         rm raw_${{ matrix.source.name }}.txt
 
     - name: Upload processed ${{ matrix.source.name }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: processed-${{ matrix.source.name }}
         path: processed_${{ matrix.source.name }}.txt
@@ -62,7 +62,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -78,6 +78,7 @@ jobs:
       run: |
         cat processed-sources/processed-*/*.txt \
             honeypot/honeypot_iplist.txt \
+            C2IPFeed/osintc2feed.txt \
             C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
     
     - name: Append to Permanent IP List
