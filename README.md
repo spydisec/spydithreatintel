@@ -33,6 +33,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 | ThreatView_High_Confidence| [ThreatView_High_Confidence](https://threatview.io/Downloads/IP-High-Confidence-Feed.txt)                                                        |
 | IPsumLevel_7              | [IPsumLevel7](https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/7.txt)                                                        |
 | CINS_Score                | [CINS_Score](https://cinsscore.com/list/ci-badguys.txt)                                                        |
+| DigitalSide               | [DigitalSide](https://osint.digitalside.it/Threat-Intel/lists/latestips.txt)                                                        |
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
