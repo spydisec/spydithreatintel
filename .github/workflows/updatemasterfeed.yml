@@ -41,6 +41,10 @@ jobs:
           {
             url: "https://threatview.io/Downloads/IP-High-Confidence-Feed.txt",
             name: "ThreatView_High_Confidence"
+          },
+          {
+            url: "https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/7.txt",
+            name: "IPsumLevel_7"
           }
           # Add new sources here as comma-separated objects
         ]
