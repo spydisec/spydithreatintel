@@ -3,10 +3,6 @@ name: Daily C2 IP Feed Update
 on:
   schedule:
     - cron: '0 1 * * *'  # Daily at 4:00 AM UTC
-  push:
-    paths:
-      - 'honeypot/honeypot_iplist.txt'
-      - 'C2IPFeed/master_c2_iplist.txt'
   workflow_dispatch:
 
 permissions:
@@ -66,9 +62,14 @@ jobs:
     - name: Set current timestamp
       run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
+    - name: Debug directory structure
+      run: |
+          echo "Directory structure:"
+          find processed-sources -type f
+
     - name: Combine all IP sources
       run: |
-        cat processed-sources/processed-*/processed_*.txt > C2IPFeed/osintc2feed.txt
+        cat processed-sources/*/processed_*.txt > C2IPFeed/osintc2feed.txt
   
     - name: Remove Deduplicate IPs in Permanent List
       run: |    
