@@ -49,7 +49,12 @@ jobs:
           {
             url: "https://cinsscore.com/list/ci-badguys.txt",
             name: "CINS_Score"
+          },
+          {
+            url:"https://osint.digitalside.it/Threat-Intel/lists/latestips.txt",
+            name: "digitalside"
           }
+          
           # Add new sources here as comma-separated objects
         ]
     steps:
