@@ -51,8 +51,12 @@ jobs:
             name: "CINS_Score"
           },
           {
-            url:"https://osint.digitalside.it/Threat-Intel/lists/latestips.txt",
+            url: "https://osint.digitalside.it/Threat-Intel/lists/latestips.txt",
             name: "digitalside"
+          },
+          {
+            url: "https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt",
+            name: "duggytuxy"
           }
           
           # Add new sources here as comma-separated objects
