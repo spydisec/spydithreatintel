@@ -10,6 +10,8 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 
 [![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml)
 
+[![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
+
 ## 🔒 Block / Filter List Usage - Domains & IPs 👮
 
 ### 🚒 Centralized Malicious IP Feed
