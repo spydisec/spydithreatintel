@@ -47,7 +47,7 @@ jobs:
             name: "IPsumLevel_7"
           },
           {
-            url: "https://cinsscore.com/list/ci-badguys.txt"
+            url: "https://cinsscore.com/list/ci-badguys.txt",
             name: "CINS_Score"
           }
           # Add new sources here as comma-separated objects
