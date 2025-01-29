@@ -40,7 +40,7 @@ jobs:
         rm raw_${{ matrix.source.name }}.txt
 
     - name: Upload processed ${{ matrix.source.name }}
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: processed-${{ matrix.source.name }}
         path: processed_${{ matrix.source.name }}.txt
@@ -62,10 +62,11 @@ jobs:
     - name: Set current timestamp
       run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
-    - name: Debug directory structure
+    - name: Verify file paths
       run: |
-          echo "Directory structure:"
-          find processed-sources -type f
+        echo "Directory structure:"
+        find processed-sources -type f
+        echo "Files found: $(find processed-sources -name 'processed_*.txt' | wc -l)"
 
     - name: Combine all IP sources
       run: |
