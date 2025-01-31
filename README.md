@@ -1,4 +1,4 @@
-# Spydi's ThreatIntel 🚨
+# Spydi's ThreatIntel Feed 🚨
 
 Welcome to the **spydithreatintel** repository! 
 
