@@ -38,7 +38,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
-### 🛑 C2 IP Feed (extracted from Shodan)
+### 🛑 C2 IP Feed (extracted from Shodan, Censys.io, and various OSINT Feeds)
 - **Description**: A Shodan-powered threat feed identifying exposed C2 infrastructure (malware/botnet-linked). Integrates with firewalls/SIEMs (e.g., pfSense) to block malicious traffic.
 - **File:** [Master_C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/C2IPFeed/master_c2_iplist.txt)
 - **Special thanks to:** various CTI researchers in open-source land. For More information please visit: [Montysecurity](https://github.com/montysecurity/C2-Tracker)
