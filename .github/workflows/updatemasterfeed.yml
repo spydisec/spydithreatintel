@@ -61,6 +61,7 @@ jobs:
           
           # Add new sources here as comma-separated objects
         ]
+      fail-fast: false  # Continue even if some matrix jobs fail
     steps:
     - name: Download and process ${{ matrix.source.name }}
       run: |
