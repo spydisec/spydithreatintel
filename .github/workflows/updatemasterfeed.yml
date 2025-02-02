@@ -64,6 +64,7 @@ jobs:
       fail-fast: false  # Continue even if some matrix jobs fail
     steps:
     - name: Download and process ${{ matrix.source.name }}
+      continue-on-error: true  # Don't fail the matrix job for this step
       run: |
         curl -sSfL "${{ matrix.source.url }}" -o raw_${{ matrix.source.name }}.txt
         grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' raw_${{ matrix.source.name }}.txt > processed_${{ matrix.source.name }}.txt
