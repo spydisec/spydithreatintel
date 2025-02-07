@@ -57,6 +57,10 @@ jobs:
           {
             url: "https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt",
             name: "duggytuxy"
+          },
+          {
+            url: "https://security.etnetera.cz/feeds/etn_aggressive.txt",
+            name: "etnetera.cz"
           }
           
           # Add new sources here as comma-separated objects
