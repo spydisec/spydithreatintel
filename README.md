@@ -35,6 +35,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 | CINS_Score                | [CINS_Score](https://cinsscore.com/list/ci-badguys.txt)                                                        |
 | DigitalSide               | [DigitalSide](https://osint.digitalside.it/Threat-Intel/lists/latestips.txt)                                                        |
 | duggytuxy                 | [duggytuxy](https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt)                                                        |
+| etnetera.cz               | [etnetera.cz](https://security.etnetera.cz/feeds/etn_aggressive.txt)                                                        |
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
