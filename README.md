@@ -2,7 +2,7 @@
 
 Welcome to the **spydithreatintel** repository! 
 
-This is a work-in-progress repository dedicated to sharing various Indicators of Compromise (IOCs) from production systems experiencing security incidents. 🔍💻
+This is a work-in-progress repository dedicated to sharing various Indicators of Compromise (IOCs) from production systems experiencing security incidents and open source feeds. 🔍💻
 
 ## Feed Status Update
 
