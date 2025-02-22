@@ -53,8 +53,8 @@ Welcome to the **Spydi Threat Intelligence Repository** - Your curated source fo
 | Category                | Description                                  | Raw URL                                                                                     |
 |-------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------|
 | 🛑 Advers/Tracking      | Tracking/Advertising domains                 | [unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/ads/unique_advtracking_domains.txt) |
-| 🎯 Malicious            | Confirmed malicious domains                  | [unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/malicious/unique_malicious_domains.txt)     |
-| 🔫 Spam/Scam            | Active spam campaign domains                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/spam/unique_spamscamabuse_domains.txt) |
+| 🎯 Malicious            | Malicious domain                             | [unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/malicious/unique_malicious_domains.txt)     |
+| 🔫 Spam/Scam            | Spam domains                                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/spam/unique_spamscamabuse_domains.txt) |
 
 ---
 
