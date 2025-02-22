@@ -15,7 +15,6 @@ Welcome to the **Spydi Threat Intelligence Repository** - Your curated source fo
 [![C2 IP Feed](https://img.shields.io/badge/Daily_Update-C2_IPs-orange?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 [![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 
-
 ---
 
 ## 🔥 IP Threat Feeds
@@ -53,9 +52,9 @@ Welcome to the **Spydi Threat Intelligence Repository** - Your curated source fo
 
 | Category                | Description                                  | Raw URL                                                                                     |
 |-------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------|
-| 🛑 Advers/Tracking      | Tracking/Advertising domains                 | [unique_advtracking_domains.txt](https://raw.githubusercontent.com/.../unique_advtracking_domains.txt) |
-| 🎯 Malicious            | Confirmed malicious domains                  | [unique_malicious_domains.txt](https://raw.githubusercontent.com/.../unique_malicious_domains.txt)     |
-| 🔫 Spam/Scam            | Active spam campaign domains                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/.../unique_spamscamabuse_domains.txt) |
+| 🛑 Advers/Tracking      | Tracking/Advertising domains                 | [unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/ads/unique_advtracking_domains.txt) |
+| 🎯 Malicious            | Confirmed malicious domains                  | [unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/malicious/unique_malicious_domains.txt)     |
+| 🔫 Spam/Scam            | Active spam campaign domains                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/spam/unique_spamscamabuse_domains.txt) |
 
 ---
 
