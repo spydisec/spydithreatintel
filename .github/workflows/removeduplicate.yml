@@ -19,7 +19,7 @@ jobs:
       - name: Remove Deduplicate IPs
         run: |
           # Path to your IP list file
-          FILE_PATH="C2IPFeed/master_c2_iplist.txt"
+          FILE_PATH="iplist/C2IPs/master_c2_iplist.txt"
           
           # Sort and deduplicate the file in-place
           sort -u "$FILE_PATH" -o "$FILE_PATH"
@@ -31,7 +31,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          git add C2IPFeed/master_c2_iplist.txt
+          git add iplist/C2IPs/master_c2_iplist.txt
           git commit -m "Automatic Updated IPs - ${current_date}" || echo "No changes to commit"
           
           git push origin main
