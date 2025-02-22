@@ -29,7 +29,7 @@ jobs:
           echo "Output directory: $OUTPUT_DIR"
 
           # Create or truncate the output file
-          FILE_PATH="honeypot/honeypot_iplist.txt"
+          FILE_PATH="iplist/honeypot/honeypot_extracted_feed.txt"
           > $FILE_PATH
           echo "Output file: $FILE_PATH" 
 
@@ -60,7 +60,7 @@ jobs:
           git merge origin/main
     
           # Stage the file and commit changes
-          git add honeypot/honeypot_iplist.txt
+          git add iplist/honeypot/honeypot_extracted_feed.txt
           git commit -m "Update unique IPs - ${current_date}" || echo "No changes to commit"
     
           # Push changes
