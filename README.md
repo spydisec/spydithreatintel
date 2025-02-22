@@ -18,6 +18,7 @@ This is a work-in-progress repository dedicated to sharing various Indicators of
 - **Description**: Aggregated from specialized threat categories (listed below), this deduplicated list provides a unified view of malicious IP addresses.
 - **File:** [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/master_malicious_iplist.txt)
 #### 📌 Source Breakdown
+The active sources listed below contribute to the compilation of block lists but do not have a direct one-to-one correspondence. Each source has its own license; please consult the source files or repositories for details.
 <details>
 <summary>Click to expand the full list ▶️</summary>
 
