@@ -140,9 +140,46 @@ Welcome to the **Spydi Threat Intelligence Repository** - Your curated source fo
 
 ---
 
-## ⚠️ Reporting & Contributions
-- **False Positives**: [Open Issue](https://github.com/spydisec/spydithreatintel/issues)
-- **Contribution Guidelines**: PRs welcome for verified IOCs
-- **Contact**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
+## 🙌 Acknowledgements
+**Gratitude to our OSINT partners**  
+This project stands on the shoulders of these valuable resources:
+
+- [Abuse.ch](https://abuse.ch) - Feodo Tracker
+- [Botvrij.eu](https://botvrij.eu) - Threat Intelligence
+- [Blocklist.de](https://blocklist.de) - Attack Data
+- [CINS Army](https://cinsscore.com) - Threat Scoring
+- [DigitalSide](https://osint.digitalside.it) - Italian CERT
+- ...and 10+ other community maintainers
+
+**Special Thanks** to MontySecurity for their C2 Tracker framework.
+
+---
+
+## 🤝 Community Contributions  
+**Build a cleaner, more actionable feed**  
+We welcome contributions to enhance this resource for:  
+- **Individuals**: Simplify personal network security  
+- **SMBs**: Deploy cost-effective threat blocking  
+- **Enterprises**: Integrate scalable threat intelligence  
+
+**Key Focus Areas**:  
+🔹 **Deduplication**: Help eliminate redundant entries across feeds  
+🔹 **Reduce False Positive**: Help eliminate false positive IOCs from the feeds.  
+🔹 **Validation**: Flag false positives or outdated indicators  
+🔹 **Context**: Add threat actor/geo-tags for better filtering  
+🔹 **Automation**: Suggest workflow improvements for data curation  
+
+**How to Help**:  
+1. Submit verified IOCs via Pull Request  
+2. Report duplicate entries in [Issues](https://github.com/spydisec/spydithreatintel/issues)
+3. Report false positive in [Issues](https://github.com/spydisec/spydithreatintel/issues)  
+4. Share feedback on enterprise/SMB integration patterns  
+5. Improve documentation for non-technical users  
+
+All contributors are acknowledged in our [Credits](https://github.com/spydisec/spydithreatintel/wiki/Contributors).  
+
+---
+## ⚠️ Contact me
+- **E-Mail**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
 
 [![OSINT Powered](https://img.shields.io/badge/Intel-OSINT_Powered-yellow?style=for-the-badge)](#)
