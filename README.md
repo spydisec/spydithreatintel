@@ -1,6 +1,8 @@
 # Spydi's ThreatIntel Feed 🛡️
 
-Welcome to the **Spydi Threat Intelligence Repository** - Your curated source for actionable security indicators from real-world incidents and open-source feeds.
+Welcome to the **Spydi Threat Intelligence Repository** – A curated collection of security indicators derived from real-world incidents and open-source feeds.  
+
+This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enforces deduplication, and removes false positives to maintain **clean, actionable blocklists**. Designed for clarity and reliability, the feeds are optimized for use in personal networks, SMBs, and enterprise security systems.  
 
 ---
 
