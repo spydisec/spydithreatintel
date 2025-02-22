@@ -5,8 +5,8 @@ on:
     - cron: '0 4 * * *'  # Daily at 4:00 AM UTC
   push:
     paths:
-      - 'honeypot/honeypot_iplist.txt'
-      - 'C2IPFeed/master_c2_iplist.txt'
+      - 'iplist/honeypot/honeypot_extracted_feed.txt'
+      - 'iplist/C2IPs/master_c2_iplist.txt'
   workflow_dispatch:
 
 permissions:
@@ -100,9 +100,9 @@ jobs:
     - name: Combine all IP sources
       run: |
         cat processed-sources/processed-*/*.txt \
-            honeypot/honeypot_iplist.txt \
-            C2IPFeed/osintc2feed.txt \
-            C2IPFeed/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
+            iplist/honeypot/honeypot_extracted_feed.txt \
+            iplist/C2IPs/osintc2feed.txt \
+            iplist/C2IPs/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
     
     - name: Append to Permanent IP List
       run: |
