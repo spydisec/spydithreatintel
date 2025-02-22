@@ -70,18 +70,18 @@ jobs:
 
     - name: Combine all IP sources
       run: |
-        cat processed-sources/*/processed_*.txt > C2IPFeed/osintc2feed.txt
+        cat processed-sources/*/processed_*.txt > iplist/C2IPs/osintc2feed.txt
   
     - name: Remove Deduplicate IPs in Permanent List
       run: |    
           # Sort and deduplicate the file in-place
-          sort -u C2IPFeed/osintc2feed.txt -o C2IPFeed/osintc2feed.txt
+          sort -u iplist/C2IPs/osintc2feed.txt -o iplist/C2IPs/osintc2feed.txt
 
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add C2IPFeed/osintc2feed.txt
+        git add iplist/C2IPs/osintc2feed.txt
         
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
