@@ -1,26 +1,32 @@
-# Spydi's ThreatIntel Feed 🚨
+# Spydi's ThreatIntel Feed 🛡️
 
-Welcome to the **spydithreatintel** repository! 
+Welcome to the **Spydi Threat Intelligence Repository** - Your curated source for actionable security indicators from real-world incidents and open-source feeds.
 
-This is a work-in-progress repository dedicated to sharing various Indicators of Compromise (IOCs) from production systems experiencing security incidents and open source feeds. 🔍💻
+---
 
-## Feed Status Update
+## 📊 Feed Status Badges
 
+[![Honeypot Unique IPs](https://img.shields.io/badge/Dynamic%20Update-Honeypot_IPs-blue?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml)
 [![Honeypot Unique IPs](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml)
 
+[![Malicious IP List](https://img.shields.io/badge/Daily_Update-Malicious_IPs-red?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml)
 [![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml)
 
+[![C2 IP Feed](https://img.shields.io/badge/Daily_Update-C2_IPs-orange?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 [![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 
-## 🔒 Block / Filter List Usage - Domains & IPs 👮
 
-### 🚒 Centralized Malicious IP Feed
-- **Description**: Aggregated from specialized threat categories (listed below), this deduplicated list provides a unified view of malicious IP addresses.
-- **File:** [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/master_malicious_iplist.txt)
-#### 📌 Source Breakdown
-The active sources listed below contribute to the compilation of block lists but do not have a direct one-to-one correspondence. Each source has its own license; please consult the source files or repositories for details.
+---
+
+## 🔥 IP Threat Feeds
+
+### 📜 Malicious IP Master List
+**Aggregated high-confidence indicators** from multiple OSINT Feed, this deduplicated list provides a unified view of malicious IP addresses.
+- **File**: [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/master_malicious_iplist.txt)
+- **Sources**: 12+ curated feeds including C2 servers, honeypot data, and OSINT partners
+
 <details>
-<summary>Click to expand the full list ▶️</summary>
+<summary>📚 View Full Source List</summary>
 
 | Sources                   | Source URL                                                                 |
 |---------------------------|----------------------------------------------------------------------------|
@@ -40,14 +46,24 @@ The active sources listed below contribute to the compilation of block lists but
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
-### 🛑 C2 IP Feed (extracted from Shodan, Censys.io, and various OSINT Feeds)
-- **Description**: A Shodan-powered threat feed identifying exposed C2 infrastructure (malware/botnet-linked). Integrates with firewalls/SIEMs (e.g., pfSense) to block malicious traffic.
-- **File:** [Master_C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/C2IPFeed/master_c2_iplist.txt)
-- **Special thanks to:** various CTI researchers in open-source land. For More information please visit: [Montysecurity](https://github.com/montysecurity/C2-Tracker)
+---
 
-### 📜 Tracked C2, Malware & Botnets
+## 🌐 Domain Blocklists
+**Immediately actionable lists** for network protection:
+
+| Category                | Description                                  | Raw URL                                                                                     |
+|-------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------|
+| 🛑 Advers/Tracking      | Tracking/Advertising domains                 | [unique_advtracking_domains.txt](https://raw.githubusercontent.com/.../unique_advtracking_domains.txt) |
+| 🎯 Malicious            | Confirmed malicious domains                  | [unique_malicious_domains.txt](https://raw.githubusercontent.com/.../unique_malicious_domains.txt)     |
+| 🔫 Spam/Scam            | Active spam campaign domains                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/.../unique_spamscamabuse_domains.txt) |
+
+---
+
+## 🕵️ Tracked Threats
+**Actively monitored infrastructure** across 50+ threat actors:
+
 <details>
-<summary>Click to expand the full list ▶️</summary>
+<summary>🔍 Expand Threat Catalog</summary>
 
 | C2s                       | Malware                          | Botnets      |
 |---------------------------|----------------------------------|--------------|
@@ -113,45 +129,21 @@ The active sources listed below contribute to the compilation of block lists but
 |                           | Spectre Stealer                 |              |
 </details>
 
-### 📧 Honeypot IP Feed
-- **Description**: IP addresses extracted from a production email server actively targeted by bruteforce attacks, spam campaigns, reconnaissance, and other malicious activities.  
-- **File**: [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/honeypot/honeypot_iplist.txt)  
+---
 
-### 🎭 Domains
+## 📦 Permanent Blocklists
+**Persistent IOCs** with historical tracking:
 
-The repository also includes a list of domains categorized for blocking:  
-The lists below are generated from various OSINT feeds (Sefinek-Blocklist, Maltrail, Firebog, AdAway, and more). 
+| Type       | Description                          | Raw URL                                                                     |
+|------------|--------------------------------------|----------------------------------------------------------------------------|
+| 📡 IPs     | Permanent malicious IP addresses     | [permanent_IPList.txt](https://raw.githubusercontent.com/.../permanent_IPList.txt) |
+| 🌍 Domains | Long-term malicious domains (WIP)    | [permanent_DomainList.txt](https://raw.githubusercontent.com/.../permanent_DomainList.txt) |
 
-**A unique feature of this list is that it does not include any duplicate entries, ensuring that all three categories malicious, spam, and advers are distinct.**
+---
 
-- **🛑 Advers/Tracking Domains:**  
-  A collection of domains used for tracking and advertising purposes.  
-  - **File:** [advs/unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/advs/unique_advtracking_domains.txt)  
+## ⚠️ Reporting & Contributions
+- **False Positives**: [Open Issue](https://github.com/spydisec/spydithreatintel/issues)
+- **Contribution Guidelines**: PRs welcome for verified IOCs
+- **Contact**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
 
-- **🎯 Malicious Domains:**  
-  Domains identified as associated with malicious activity.  
-  - **File:** [mal/unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/mal/unique_malicious_domains.txt)  
-
-- **🔫 Spam Domains:**  
-  Domains recognized for sending spam and potentially harmful content.  
-  - **File:** [spam/unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/spam/unique_spamscamabuse_domains.txt)  
-
-These domains can be integrated with **Pi-hole** or firewall configurations to block unwanted traffic, enhancing your network's security.
-
-### 📧 Permanent Lists
-- **Description**: Permanent lists is a collection of malicious domain names and IP addresses, where the data is appened and not removed. Thus, IOCs stays permantenly in the list unless removed (in case of false positive). **This list does not include any duplicate entries, and the IOCs are distinct.**
-- **IP**: [permanent_IPList.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/permanent_IPList.txt)
-- **Domain Names**: [permanent_DomainList.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/permanent_DomainList.txt)  **Currently WIP**
-
-## ⚠️ False Positives
-
-If you come across any false positives or believe an IP address or domain listed in this repository should not be blocked, please let us know! Your input is crucial and helps enhance the quality of data shared here. You can report false positives by opening an issue and providing detailed information for prompt review.
-
-## 📝 Contributions
-
-Your contributions are welcome! If you have relevant data or IOCs to share, please feel free to submit a pull request or open an issue.
-
-## 📫 Contact
-
-For inquiries or further collaboration, reach out via [spyditi@proton.me](mailto:spyditi@proton.me).  
-I have a public PGP key available for sending encrypted emails: https://pastebin.com/igL3mGVb
+[![OSINT Powered](https://img.shields.io/badge/Intel-OSINT_Powered-yellow?style=for-the-badge)](#)
