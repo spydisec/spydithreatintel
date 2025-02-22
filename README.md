@@ -154,7 +154,7 @@ This project stands on the shoulders of these valuable resources:
 - ...and 10+ other community maintainers
 
 **Special Thanks** to MontySecurity for their C2 Tracker framework.
-
+The active sources listed contribute to the compilation of block lists but do not have a direct one-to-one correspondence. Each source has its own license; please consult the source files or repositories for details.
 ---
 
 ## 🤝 Community Contributions  
