@@ -1,5 +1,4 @@
 # Spydi's ThreatIntel Feed 🛡️
-
 Welcome to the **Spydi Threat Intelligence Repository** – A curated collection of security indicators derived from real-world incidents and open-source feeds.  
 
 This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enforces deduplication, and removes false positives to maintain **clean, actionable blocklists**. Designed for clarity and reliability, the feeds are optimized for use in personal networks, SMBs, and enterprise security systems.  
@@ -8,14 +7,7 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 
 ## 📊 Feed Status Badges
 
-[![Honeypot Unique IPs](https://img.shields.io/badge/Dynamic%20Update-Honeypot_IPs-blue?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml)
-[![Honeypot Unique IPs](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml)
-
-[![Malicious IP List](https://img.shields.io/badge/Daily_Update-Malicious_IPs-red?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml)
-[![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml)
-
-[![C2 IP Feed](https://img.shields.io/badge/Daily_Update-C2_IPs-orange?style=flat-square&logo=github)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
-[![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspydisec%2Fspydithreatintel&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/spydisec/spydithreatintel) [![Honeypot Unique IPs](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml) [![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml) [![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 
 ---
 
