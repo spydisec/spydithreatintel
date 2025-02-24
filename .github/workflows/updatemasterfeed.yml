@@ -61,6 +61,10 @@ jobs:
           {
             url: "https://security.etnetera.cz/feeds/etn_aggressive.txt",
             name: "etnetera.cz"
+          },
+          {
+            url: "https://rules.emergingthreats.net/blockrules/compromised-ips.txt",
+            name: "emergingthreats-compromised"
           }
           
           # Add new sources here as comma-separated objects
