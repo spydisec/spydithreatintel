@@ -93,7 +93,7 @@ jobs:
     - name: Remove Duplicate IPs in Final List
       run: |
           # Sort and deduplicate
-          #sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
+          sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
           head -n 10 iplist/honeypot/osinthoneypotfeed.txt
 
     - name: Commit and Push Changes
