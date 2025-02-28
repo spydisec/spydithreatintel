@@ -65,6 +65,10 @@ jobs:
           {
             url: "https://rules.emergingthreats.net/blockrules/compromised-ips.txt",
             name: "emergingthreats-compromised"
+          },
+          {
+            url: "https://blocklist.greensnow.co/greensnow.txt",
+            name: "greensnow.co"
           }
           
           # Add new sources here as comma-separated objects
