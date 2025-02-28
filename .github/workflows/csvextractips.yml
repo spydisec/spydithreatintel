@@ -101,9 +101,15 @@ jobs:
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add iplist/honeypot/osinthoneypotfeed.txt
-        if git diff --quiet; then
+        if git diff-index --quiet HEAD; then
           echo "⚡ No new changes to commit"
         else
           git commit -m "Auto-update Honeypot IP Feed - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
         fi
+#        if git diff --quiet; then
+#          echo "⚡ No new changes to commit"
+#        else
+#          git commit -m "Auto-update Honeypot IP Feed - $(date '+%Y-%m-%d %H:%M:%S')"
+#          git push
+#        fi
