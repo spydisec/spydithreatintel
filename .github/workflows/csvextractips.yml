@@ -1,4 +1,4 @@
-name: Extract and Aggregate IPs from CSV Files
+name: Extract IPs from CSV Files
 
 on:
   schedule:
