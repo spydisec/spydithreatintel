@@ -1,0 +1,86 @@
+name: Extract IPs from CSV Files
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs daily at midnight (Adjust as needed)
+  workflow_dispatch:  # Allows manual trigger
+
+jobs:
+  process-csv-sources:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        source: [
+          {
+            url: "https://raw.githubusercontent.com/tankmek/threatfeed/refs/heads/master/ip_threat_feed.csv",
+            name: "tankmek_threatfeed"
+          }
+          # Add more CSV sources here in the future
+        ]
+      fail-fast: false  # Continue execution even if some matrix jobs fail
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Download and process ${{ matrix.source.name }}
+      continue-on-error: true  # Ensures workflow continues even if a source fails
+      run: |
+        mkdir -p processed-csv
+        csv_file="processed-csv/raw_${{ matrix.source.name }}.csv"
+        
+        # Download CSV file
+        if curl -sSfL "${{ matrix.source.url }}" -o "$csv_file"; then
+          echo "Successfully downloaded ${{ matrix.source.name }}"
+        else
+          echo "Failed to download ${{ matrix.source.url }}" >&2
+          exit 1
+        fi
+
+        # Extract IP addresses from the first column (Skip Header)
+        awk -F, 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "processed-csv/processed_${{ matrix.source.name }}.txt"
+
+        # Clean up raw CSV
+        rm "$csv_file"
+
+    - name: Upload processed IPs ${{ matrix.source.name }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: processed-${{ matrix.source.name }}
+        path: processed-csv/processed_${{ matrix.source.name }}.txt
+
+  combine-lists:
+    needs: process-csv-sources
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Download all processed CSV sources
+      uses: actions/download-artifact@v4
+      with:
+        path: processed-ips
+
+    - name: Set current timestamp
+      run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+
+    - name: Combine and Deduplicate IP Sources
+      run: |
+        mkdir -p iplist
+        cat processed-ips/processed-*/*.txt | sort -u > iplist/honeypot/osinthoneypotfeed.txt
+
+    - name: Remove Duplicates in Permanent List
+      run: |    
+        sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git add iplist/honeypot/osinthoneypotfeed.txt
+        if git diff --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update Extracted IP Lists - ${{ env.DATE }}"
+          git push
+        fi
