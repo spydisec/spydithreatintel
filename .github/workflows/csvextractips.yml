@@ -72,12 +72,22 @@ jobs:
       with:
         path: processed-sources
         merge-multiple: true
+      
+    - name: Verify Downloaded Files
+      run: |
+        echo "Listing files in processed-sources directory:"
+        ls -R processed-sources
 
     - name: Combine All IP Sources
       run: |
         mkdir -p iplist/honeypot
-        # Merge all processed IP files into one
-        cat process-csv-sources/*/processed-*.txt > iplist/honeypot/osinthoneypotfeed.txt
+        # Check if files exist in processed-sources
+        if compgen -G "processed-sources/*.txt" > /dev/null; then
+            cat processed-sources/*.txt > iplist/honeypot/osinthoneypotfeed.txt
+            echo "Successfully combined files"
+        else
+            echo "No files found in processed-sources"
+        fi
 
     - name: Remove Duplicate IPs in Final List
       run: |
