@@ -77,7 +77,7 @@ jobs:
       run: |
         mkdir -p iplist/honeypot
         # Merge all processed IP files into one
-        cat processed-sources/*/processed_*.txt > iplist/honeypot/osinthoneypotfeed.txt
+        cat process-csv-sources/*/processed-*.txt > iplist/honeypot/osinthoneypotfeed.txt
 
     - name: Remove Duplicate IPs in Final List
       run: |
