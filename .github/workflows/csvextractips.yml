@@ -2,8 +2,12 @@ name: Extract IPs from CSV Files
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # Runs daily at midnight (Adjust as needed)
+    - cron: '0 4 * * *'  # Runs daily at 4 AM UTC
   workflow_dispatch:  # Allows manual trigger
+
+permissions:
+  contents: write  # Required for committing changes
+  actions: read    # Allows artifact access
 
 jobs:
   process-csv-sources:
@@ -17,33 +21,45 @@ jobs:
           }
           # Add more CSV sources here in the future
         ]
-      fail-fast: false  # Continue execution even if some matrix jobs fail
+      fail-fast: false # Continue execution even if some matrix jobs fail
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Download and process ${{ matrix.source.name }}
-      continue-on-error: true  # Ensures workflow continues even if a source fails
+    - name: Download & Process ${{ matrix.source.name }}
+      continue-on-error: true
       run: |
         mkdir -p processed-csv
         csv_file="processed-csv/raw_${{ matrix.source.name }}.csv"
-        
-        # Download CSV file
+        output_file="processed-csv/processed_${{ matrix.source.name }}.txt"
+
+        # Download CSV
+        echo "Downloading CSV: ${{ matrix.source.url }}"
         if curl -sSfL "${{ matrix.source.url }}" -o "$csv_file"; then
-          echo "Successfully downloaded ${{ matrix.source.name }}"
+          echo "✅ Successfully downloaded ${{ matrix.source.name }}!"
         else
-          echo "Failed to download ${{ matrix.source.url }}" >&2
+          echo "❌ Failed to download ${{ matrix.source.url }}" >&2
           exit 1
         fi
 
-        # Extract IP addresses from the first column (Skip Header)
-        awk -F, 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "processed-csv/processed_${{ matrix.source.name }}.txt"
+        echo "🔍 Checking CSV format (preview first 5 lines):"
+        head -n 5 "$csv_file"
 
-        # Clean up raw CSV
+        # Extract IP addresses (handles both comma and semicolon delimiters)
+        awk -F, 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "$output_file"
+
+        # If CSV uses semicolon (';') as delimiter
+        if [ ! -s "$output_file" ]; then
+          awk -F';' 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "$output_file"
+        fi
+
+        echo "Extracted IPs (first 10 lines):"
+        head -n 10 "$output_file"
+
         rm "$csv_file"
 
-    - name: Upload processed IPs ${{ matrix.source.name }}
+    - name: Upload Processed IPs for ${{ matrix.source.name }}
       uses: actions/upload-artifact@v4
       with:
         name: processed-${{ matrix.source.name }}
@@ -52,43 +68,44 @@ jobs:
   combine-lists:
     needs: process-csv-sources
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
+    - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Download all processed CSV sources
+    - name: Download All Processed CSV Sources
       uses: actions/download-artifact@v4
       with:
         path: processed-ips
-        merge-multiple: true  # Ensures all files are in 'processed-ips/'
+        merge-multiple: true # Ensures all TXT files are in a flat directory
 
     - name: Verify Downloaded Files
       run: |
-        echo "Listing files in processed-ips directory:"
+        echo "📂 Listing files in processed-ips directory:"
         ls -R processed-ips
 
     - name: Combine and Deduplicate IP Sources
       run: |
         mkdir -p iplist
-        # Ensure valid non-empty files are combined
-        find processed-ips -type f -name "*.txt" -exec cat {} + | sort -u > master_extracted_iplist.txt
+        # Find all text files and merge unique IPs
+        find processed-ips -type f -name "*.txt" -exec cat {} + | sort -u > iplist/honeypot/osinthoneypotfeed.txt
 
-    - name: Append to Permanent IP List
-      run: |
-        cat master_extracted_iplist.txt >> permanent_extracted_IPList.txt
+        echo "✅ Merging complete! First 10 lines of master file:"
+        head -n 10 iplist/honeypot/osinthoneypotfeed.txt
 
-    - name: Remove Duplicates in Permanent List
+    - name: Append to OSINT HoneyPot IP List
       run: |
-        sort -u permanent_extracted_IPList.txt -o permanent_extracted_IPList.txt
+        sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add master_extracted_iplist.txt permanent_extracted_IPList.txt
+        git add iplist/honeypot/osinthoneypotfeed.txt
+
         if git diff --quiet; then
-          echo "No changes to commit"
+          echo "⚡ No new changes to commit"
         else
-          git commit -m "Auto-update Extracted IP Lists - ${{ env.DATE }}"
+          git commit -m "Auto-update Extracted IP Lists - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
         fi
