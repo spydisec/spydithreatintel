@@ -53,31 +53,39 @@ jobs:
     needs: process-csv-sources
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
+    - name: Checkout repository
       uses: actions/checkout@v4
 
     - name: Download all processed CSV sources
       uses: actions/download-artifact@v4
       with:
         path: processed-ips
+        merge-multiple: true  # Ensures all files are in 'processed-ips/'
 
-    - name: Set current timestamp
-      run: echo "DATE=$(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
+    - name: Verify Downloaded Files
+      run: |
+        echo "Listing files in processed-ips directory:"
+        ls -R processed-ips
 
     - name: Combine and Deduplicate IP Sources
       run: |
         mkdir -p iplist
-        cat processed-ips/processed-*/*.txt | sort -u > iplist/honeypot/osinthoneypotfeed.txt
+        # Ensure valid non-empty files are combined
+        find processed-ips -type f -name "*.txt" -exec cat {} + | sort -u > master_extracted_iplist.txt
+
+    - name: Append to Permanent IP List
+      run: |
+        cat master_extracted_iplist.txt >> permanent_extracted_IPList.txt
 
     - name: Remove Duplicates in Permanent List
-      run: |    
-        sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
+      run: |
+        sort -u permanent_extracted_IPList.txt -o permanent_extracted_IPList.txt
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add iplist/honeypot/osinthoneypotfeed.txt
+        git add master_extracted_iplist.txt permanent_extracted_IPList.txt
         if git diff --quiet; then
           echo "No changes to commit"
         else
