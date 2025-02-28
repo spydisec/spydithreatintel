@@ -1,4 +1,4 @@
-name: Extract IPs from CSV Files
+name: Extract and Aggregate IPs from CSV Files
 
 on:
   schedule:
@@ -6,8 +6,8 @@ on:
   workflow_dispatch:  # Allows manual trigger
 
 permissions:
-  contents: write  # Required for committing changes
-  actions: read    # Allows artifact access
+  contents: write  # Required to commit changes
+  actions: read    # Needed for artifact operations
 
 jobs:
   process-csv-sources:
@@ -19,43 +19,37 @@ jobs:
             url: "https://raw.githubusercontent.com/tankmek/threatfeed/refs/heads/master/ip_threat_feed.csv",
             name: "tankmek_threatfeed"
           }
-          # Add more CSV sources here in the future
+          # Add more sources here if needed
         ]
-      fail-fast: false # Continue execution even if some matrix jobs fail
+      fail-fast: false
 
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Download & Process ${{ matrix.source.name }}
+    - name: Download and Extract IPs from ${{ matrix.source.name }}
       continue-on-error: true
       run: |
         mkdir -p processed-csv
         csv_file="processed-csv/raw_${{ matrix.source.name }}.csv"
         output_file="processed-csv/processed_${{ matrix.source.name }}.txt"
 
-        # Download CSV
+        # Download and verify CSV
         echo "Downloading CSV: ${{ matrix.source.url }}"
         if curl -sSfL "${{ matrix.source.url }}" -o "$csv_file"; then
-          echo "✅ Successfully downloaded ${{ matrix.source.name }}!"
+          echo "✅ Successfully downloaded ${{ matrix.source.name }}"
         else
           echo "❌ Failed to download ${{ matrix.source.url }}" >&2
           exit 1
         fi
 
-        echo "🔍 Checking CSV format (preview first 5 lines):"
-        head -n 5 "$csv_file"
+        # Extract IPs, considering different delimiters
+        awk -F, 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' > "$output_file"
 
-        # Extract IP addresses (handles both comma and semicolon delimiters)
-        awk -F, 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "$output_file"
-
-        # If CSV uses semicolon (';') as delimiter
+        # Handle semicolon delimiter if output is empty
         if [ ! -s "$output_file" ]; then
-          awk -F';' 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' | sort -u > "$output_file"
+          awk -F';' 'NR>1 {print $1}' "$csv_file" | grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' > "$output_file"
         fi
-
-        echo "Extracted IPs (first 10 lines):"
-        head -n 10 "$output_file"
 
         rm "$csv_file"
 
@@ -73,35 +67,31 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
 
-    - name: Download All Processed CSV Sources
+    - name: Download All Processed Sources
       uses: actions/download-artifact@v4
       with:
-        path: processed-ips
-        merge-multiple: true # Ensures all TXT files are in a flat directory
+        path: processed-sources
+        merge-multiple: true
 
-    - name: Verify Downloaded Files
+    - name: Combine All IP Sources
       run: |
-        echo "📂 Listing files in processed-ips directory:"
-        ls -R processed-ips
+        mkdir -p iplist/honeypot
+        # Merge all processed IP files into one
+        cat processed-sources/*/processed_*.txt > iplist/honeypot/osinthoneypotfeed.txt
 
-    - name: Combine and Deduplicate IP Sources
+    - name: Remove Duplicate IPs in Final List
       run: |
-        mkdir -p iplist
-        # Find all text files and merge unique IPs
-        find processed-ips -type f -name "*.txt" -exec cat {} + | sort -u > iplist/honeypot/osinthoneypotfeed.txt
-
-        echo "✅ Merging complete! First 10 lines of master file:"
-        head -n 10 iplist/honeypot/osinthoneypotfeed.txt
+          # Sort and deduplicate
+          sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
 
     - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add iplist/honeypot/osinthoneypotfeed.txt
-
         if git diff --quiet; then
           echo "⚡ No new changes to commit"
         else
-          git commit -m "Auto-update Extracted IP Lists - $(date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "Auto-update Honeypot IP Feed - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
         fi
