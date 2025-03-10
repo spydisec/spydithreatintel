@@ -70,6 +70,18 @@ jobs:
           {
             url: "https://blocklist.greensnow.co/greensnow.txt",
             name: "greensnow.co"
+          },
+          {
+            url: "https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/8.txt",
+            name: "ipsum_level8"
+          },
+          {
+            url: "https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/5.txt",
+            name: "ipsum_level5"
+          },
+          {
+            url: "https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/6.txt",
+            name: "ipsum_level6"
           }
           
           # Add new sources here as comma-separated objects
