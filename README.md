@@ -1,18 +1,29 @@
+---
+
 # Spydi's ThreatIntel Feed 🛡️
 Welcome to the **Spydi Threat Intelligence Repository** – A curated collection of security indicators derived from real-world incidents and open-source feeds.  
 
 This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enforces deduplication, and removes false positives to maintain **clean, actionable blocklists**. Designed for clarity and reliability, the feeds are optimized for use in personal networks, SMBs, and enterprise security systems.  
 
+## Table of Contents
+- 📊[Feed Status Badges](#feed-status-badges)
+- 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/edit/main/README.md#-ip-threat-feeds)
+- 📜[Malicious IP Master List](#malicious-ip-master-list)
+- 🌐[Domain Blocklists](#domain-blocklists)
+- 🕵️[Tracked Threats](#tracked-threats)
+- 📦[Permanent Blocklists](#permanent-blocklists)
+- 🙌[Acknowledgements](#acknowledgements)
+- 🤝[Community Contributions](#community-contributions)
+- 📡[Contact me](#contact-me)
+
 ---
 
 ## 📊 Feed Status Badges
-
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fspydisec%2Fspydithreatintel&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/spydisec/spydithreatintel) [![Honeypot Unique IPs](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/honeypot_ips.yml) [![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml) [![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
 
 ---
 
 ## 🔥 IP Threat Feeds
-
 ### 📜 Malicious IP Master List
 **Aggregated high-confidence indicators** from multiple OSINT Feed, this deduplicated list provides a unified view of malicious IP addresses.
 - **File**: [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/master_malicious_iplist.txt)
@@ -177,7 +188,9 @@ We welcome contributions to enhance this resource for:
 All contributors are acknowledged in our [Credits](https://github.com/spydisec/spydithreatintel/wiki/Contributors).  
 
 ---
-## ⚠️ Contact me
+## 📡 Contact me
 - **E-Mail**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
 
 [![OSINT Powered](https://img.shields.io/badge/Intel-OSINT_Powered-yellow?style=for-the-badge)](#)
+
+---
