@@ -6,15 +6,13 @@ Welcome to the **Spydi Threat Intelligence Repository** – A curated collection
 This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enforces deduplication, and removes false positives to maintain **clean, actionable blocklists**. Designed for clarity and reliability, the feeds are optimized for use in personal networks, SMBs, and enterprise security systems.  
 
 ## Table of Contents
-- 📊[Feed Status Badges](#feed-status-badges)
-- 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/edit/main/README.md#-ip-threat-feeds)
-- 📜[Malicious IP Master List](#malicious-ip-master-list)
-- 🌐[Domain Blocklists](#domain-blocklists)
-- 🕵️[Tracked Threats](#tracked-threats)
-- 📦[Permanent Blocklists](#permanent-blocklists)
-- 🙌[Acknowledgements](#acknowledgements)
-- 🤝[Community Contributions](#community-contributions)
-- 📡[Contact me](#contact-me)
+- 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
+- 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
+- 🕵️[Tracked Threats](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#%EF%B8%8F-tracked-threats)
+- 📦[Permanent Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-permanent-blocklists)
+- 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-acknowledgements)
+- 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-community-contributions)
+- 📡[Contact me](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-contact-me)
 
 ---
 
