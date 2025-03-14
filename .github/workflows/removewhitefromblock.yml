@@ -20,7 +20,7 @@ jobs:
           python-version: "3.10"
       - name: Run Python script
         run: |
-          python scripts/update_blocklists.py
+          python script/update_blocklists.py
 
       - name: Commit and Push Changes
         run: |
