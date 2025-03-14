@@ -113,7 +113,7 @@ jobs:
 
                 # --- FIX STARTS HERE ---
         # Reset any accidental local changes (clean working directory)
-        git reset --hard HEAD
+        #git reset --hard HEAD
         
         # Pull latest changes with rebase
         git pull --rebase origin main
