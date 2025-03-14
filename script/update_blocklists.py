@@ -46,7 +46,7 @@ def main():
             if not any(is_subdomain(domain, wd) for wd in whitelisted_domains):
                 updated_blocklist.append(domain)
         # Write to new file
-        new_file_path = path.replace('unique_', 'updated_unique_')
+        new_file_path = path.replace('unique_', '')
         with open(new_file_path, 'w') as f:
             for domain in updated_blocklist:
                 f.write(domain + '\n')
