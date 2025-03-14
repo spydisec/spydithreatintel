@@ -1,0 +1,346 @@
+(\.|^)afterpay\.com$
+(\.|^)bitcoin\.org$
+(\.|^)cloudfront\.net$
+(\.|^)docker\.com$
+(\.|^)info\.auda\.org\.au$
+(\.|^)inspectrealestate\.com\.au$
+(\.|^)members\.agl\.com\.au$
+(\.|^)mempool\.space$
+(\.|^)nagios\.org$
+(\.|^)pineapple\.net\.au$
+(\.|^)stripe\.com$
+(\.|^)ticketmaster\.com$
+(\.|^)www\.airalo\.com$
+0.client-channel.google.com # In order for users on your network to access Google Drive and Google Docs editors this domain must be whitelisted - https://support.google.com/a/answer/2589954?hl=en  - qjz9zk
+1drv.com # It is actually a legitimate Microsoft owned domain and used as a short link for OneDrive documents. - qjz9zk
+2.android.pool.ntp.org # This domain is a part of The pool.ntp.org project which is a big virtual cluster of timeservers providing reliable time. This domain is used in Android devices - qjz9zk
+2ip.io
+accounts.binance.com
+activity.windows.com
+akamaihd.net # This domain is owned by Akamai Technologies which is a is a global content delivery network (CDN). - qjz9zk
+akamaitechnologies.com # This domain is owned by Akamai Technologies which is a is a global content delivery network (CDN). - qjz9zk
+akamaized.net # This domain is owned by Akamai Technologies which is a is a global content delivery network (CDN). - qjz9zk
+amazonaws.com # Amazon Web Services (AWS) is a subsidiary of Amazon providing on-demand cloud computing platforms and APIs. This domain is used to serve files and other static resources which are hosted on Amazon AWS - qjz9zk
+amp.theguardian.com
+android.clients.google.com # Google Play Store and few devices (especially Android One devices) depends on this domain for system updates. - qjz9zk
+api-tv.spotify.com
+api.hh.ru
+api.inspectrealestate.com.au
+api.ipify.org # It is used to get your public IP address programmatically. ipify is completely opensource. - qjz9zk
+api.rlje.net # Used to deliver contents on video straming apps on hulu etc. - qjz9zk
+app-api.ted.com # Used by ted.com streams. - qjz9zk
+app.adjust.com
+appleid.apple.com # Used to sign in t your Apple account. - qjz9zk
+apps.skype.com # Used to make group calls, group chats etc. on Skype. - qjz9zk
+appsbackup-pa.clients6.google.com # Used to backup device settings and app data. - qjz9zk
+appsbackup-pa.googleapis.com # Used to backup device settings and app data. - qjz9zk
+appspot-preview.l.google.com # Used to deliver system updates to Moto phones. - qjz9zk
+apresolve.spotify.com
+apt.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
+arc.msn.com
+aspnetcdn.com # Owned by Microsoft. Used to deliver files such as Windows updates and other services. - qjz9zk
+attestation.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+audible.sc.omtrdc.net
+audio-ak-spotify-com.akamaized.net
+auth.split.io
+ax.phobos.apple.com.edgesuite.net # Used by Apple Photos. - qjz9zk
+bastion.azure.com
+binance.com
+bitcointalk.org
+booth.pm
+brightcove.net # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+c.s-microsoft.com # Used to deliver fonts. - qjz9zk
+callback.api.qgraph.io
+cdn.cloudflare.net # Used to deliver static files over CloudFlare CDN. - qjz9zk
+cdn.cookielaw.org
+cdn.embedly.com # Embedly is used to embed videos, images and rich media from 300+ providers with just the URL. - qjz9zk
+cdn.optimizely.com # optimizely.com is a progressive delivery and experimentation software for other companies. Often used as a video delivery system. - qjz9zk
+cdn.polyfill.io
+cdn.vidible.tv # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+cdn2.optimizely.com # optimizely.com is a progressive delivery and experimentation software for other companies. Often used as a video delivery system. - qjz9zk
+cdn3.optimizely.com # optimizely.com is a progressive delivery and experimentation software for other companies. Often used as a video delivery system. - qjz9zk
+cdnjs.cloudflare.com # Used to deliver static files over CloudFlare CDN. - qjz9zk
+cdp.cashrewards.com.au
+cedexis.net
+cert.mgt.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+chomikuj.pl
+click.discord.com
+client-s.gateway.messenger.live.com
+client.wns.windows.com
+clientconfig.passport.net # Owned by Microsoft. Used in Windows Store. - qjz9zk
+clients1.google.com # Used in Google Maps and other Google services. - qjz9zk
+clients2.google.com # Used in Google Maps and other Google services. - qjz9zk
+clients3.google.com # Used in Google Maps and other Google services. - qjz9zk
+clients4.google.com # Used in Google Maps and other Google services. - qjz9zk
+clients5.google.com # Used in Google Maps and other Google services. - qjz9zk
+clients6.google.com # Used in Google Maps and other Google services. - qjz9zk
+connectivitycheck.android.com # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
+connectivitycheck.gstatic.com # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
+continuum.dds.microsoft.com # Used by YourPhone app by Microsoft on Windows 10 for mirroring Android notifications - qjz9zk
+cpms.spop10.ams.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+cpms.spop10.ams.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+cpms35.spop10.ams.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+cpms35.spop10.ams.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+cse.google.com # Google Custom Search. Often used as a search functionality inside a website. https://programmablesearchengine.google.com/about/ - qjz9zk
+cta-redirect.hubspot.com
+ctldl.windowsupdate.com # Owned by Microsoft. Used to deliver Windows updates. - qjz9zk
+cws.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
+d2c8v52ll5s99u.cloudfront.net # Domain owned by Amazon. Used to deliver media such as videos in entertainment and news sites. - qjz9zk
+d2gatte9o95jao.cloudfront.net # Domain owned by Amazon. Used to deliver media such as videos in entertainment and news sites. - qjz9zk
+dashboard.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+dashboard.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+dataplicity.com # Used to remotely control your Raspberry-Pi. - qjz9zk
+def-vef.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+delivery.vidible.tv # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+dev.virtualearth.net # Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com.  - qjz9zk
+deviantart.com
+device.auth.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+display.ugc.bazaarvoice.com # To display Ratings & Reviews or Questions & Answers in online stores. - qjz9zk
+display.ugc.bazaarvoice.com # To display Ratings &amp; Reviews or Questions &amp; Answers in online stores. - qjz9zk
+displaycatalog.mp.microsoft.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+dl.delivery.mp.microsoft.com # Used to deliver updates to Microsoft products. - qjz9zk
+dl.dropbox.com # Used to download files from Dropbox - qjz9zk
+dl.dropboxusercontent.com # Used to download files from Dropbox - qjz9zk
+dns.msftncsi.com # Owned by Microsoft. Used to check whether the internet connection is up or not in Windows systems.  - qjz9zk
+download.komputerswiat.pl
+download.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
+download.visualstudio.microsoft.com
+drift.com # Live chat platform for websites to chat with the website owner. Blocking this domain will block chat widget. - qjz9zk
+driftt.com # Live chat platform for websites to chat with the website owner. Blocking this domain will block chat widget. - qjz9zk
+dynupdate.no-ip.com # No-IP offers DNS services, email, network monitoring and SSL certificates - qjz9zk
+e.customeriomail.com
+ecn.dev.virtualearth.net # Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com. - qjz9zk
+edge.api.brightcove.com # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+eds.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+email-link.adtidy.org
+email.faceit.com
+email.m.teachable.com
+email.mail.zapier.com
+email.mg.outbyte.com
+eraser.heidi.ie
+events.gfe.nvidia.com
+extensions.sketchup.com
+fe3.delivery.dsp.mp.microsoft.com.nsatc.net
+fg.microsoft.map.fastly.net
+firestore.googleapis.com
+fonts.gstatic.com # Owned by Google. Used to deliver Google Fonts. - qjz9zk
+forum.pclab.pl
+forums.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
+fpt.live.com
+fpt.microsoft.com
+g.live.com # Used by Microsoft for their Outlook.com and OneDrive products. Backup bitlocker recovery key to Microsoft account. - qjz9zk
+g2a.com
+geo-prod.do.dsp.mp.microsoft.com # Enables connections to Windows Update. - qjz9zk
+geo3.ggpht.com # Owned by Google. Used to deliver static files over the internet. - qjz9zk
+gfwsl.geforce.com # Used for checking nVidia driver updates. - qjz9zk
+giphy.com # Gifs hosting platform. - qjz9zk
+github.com # GitHub provides hosting for software development and version control using Git. - qjz9zk
+github.io # Owned by GitHub. Used for GitHub pages. - qjz9zk
+go.fossa.com
+go.pardot.com
+googleadservices.com
+googleapis.com # An important domain used to provide APIs to various Google services. - qjz9zk
+gravatar.com # Owned by Automattic. Gravatar is a service for providing globally unique avatars - qjz9zk
+gstatic.com # Owned by Google. gstatic.com is a cookieless domain to deliver static content for Google. - qjz9zk
+gstaticadssl.l.google.com
+help.ui.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+hls.ted.com # Used by ted.com streams. - qjz9zk
+i.ibb.co
+i.s-microsoft.com
+i.ytimg.com # Owned by Google. Used to deliver thumbails in YouTube. - qjz9zk
+i1.ytimg.com # Owned by Google. Used to deliver thumbails in YouTube. - qjz9zk
+imagesak.secureserver.net # GoDaddy webmail buttons - qjz9zk
+img.vidible.tv # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+imgix.net # Image placeholders often used during web page loading. - qjz9zk
+imgs.xkcd.com # Used to deliver images on xkcd.com. - qjz9zk
+info.auda.org.au
+instantmessaging-pa.googleapis.com # An important domain used to provide APIs to various Google services. - qjz9zk
+intercom.io # Live chat platform for websites to chat with the website owner. Blocking this domain will block chat widget. - qjz9zk
+ipify.org
+ipqualityscore.com
+ipv6.msftncsi.com
+jquery.com # jQuery is a JavaScript library. Also used to deliver the files over CDN. - qjz9zk
+jsdelivr.net # jsDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration. - qjz9zk
+keystone.mwbsys.com # Owned by Malwarebytes. It is a licensing system used to verify the Malwarebytes software license. - qjz9zk
+komputerswiat.pl
+kucoin.com
+lastfm-img2.akamaized.net # Used by last.fm to deliver images. - qjz9zk
+launchpad.binance.com
+licensing.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+link.mail.beehiiv.com
+live.com # Owned by Microsoft. It is a personal information manager web app from Microsoft consisting of webmail, calendaring, contacts, and tasks services. - qjz9zk
+livepassdl.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
+login.live.com # Owned by Microsoft. The following endpoint is used to authenticate a device.  - qjz9zk
+login.microsoftonline.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+logs.juspay.in
+logz.io
+m.stripe.com
+mailgun.org
+mandrillapp.com
+manifest.googlevideo.com # Used for YouTube live streams. - qjz9zk
+merch-img.scdn.co
+meta-db-worker02.pop.ric.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+meta-db-worker02.pop.ric.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+meta.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+meta.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+meta.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+meta.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+microsoftonline.com # Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk
+msedge.api.cdp.microsoft.com
+msftncsi.com # Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk
+my.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+my.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+mywot.com
+nexusrules.officeapps.live.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+nf.lnk.to
+nine.plugins.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+nine.plugins.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+no-ip.com # No-IP offers DNS services, email, network monitoring and SSL certificates. - qjz9zk
+node.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+node.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+notify.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+npr-news.streaming.adswizz.com # Used for NPR morning news and podcasts. - qjz9zk
+ns1.dropbox.com # Dropbox nameserver. Used to download files from Dropbox - qjz9zk
+ns2.dropbox.com # Dropbox nameserver. Used to download files from Dropbox - qjz9zk
+ns2.parking.reg.ru
+o1.email.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+o1.email.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+o2.sg0.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+o2.sg0.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+ocsp.apple.com # iOS developers are able to distribute apps outside of the App Store using an Enterprise provisioning profile. Apple can revoke these kinds of apps by using this domain. - qjz9zk
+office.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+office.net # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+office365.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+officeclient.microsoft.com # Used by Microsoft Office apps. - qjz9zk
+om.cbsi.com # CBS All Access on straming platforms. - qjz9zk
+onedrive.live.com # Owned by Microsoft. Used to sign in to One Drive. - qjz9zk
+onelogin.wpcdn.pl
+open.spotify.com
+outbyte.com
+outlook.live.com # Owned by Microsoft. Used for Outlook email. - qjz9zk
+outlook.office365.com # Owned by Microsoft. Used for Outlook email.ent - qjz9zk
+p2p.binance.com
+parking.reg.ru
+pings.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
+pixalate.com
+placehold.it # Placehold.it, Image placeholders often used during web page loading. - qjz9zk
+placeholdit.imgix.net # Placehold.it, Image placeholders often used during web page loading. - qjz9zk
+players.brightcove.net # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+postimg.cc
+pricelist.skype.com # Used to make group calls, group chats etc. on Skype. - qjz9zk
+products.office.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+proxy.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+proxy.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+proxy.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+proxy.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+proxy02.pop.ord.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+proxy02.pop.ord.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+pubsub.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+pubsub.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+pubsub.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+pubsub.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+query.prod.cms.rt.microsoft.com
+raw.githubusercontent.com # Owned by GitHub. It is used to serve unprocessed versions of files stored in GitHub repositories.  - qjz9zk
+redirector.googlevideo.com # Used by YouTube to play embedded videos on third-party websites. - qjz9zk
+redirector.gvt1.com
+referrals.brave.com
+reminders-pa.googleapis.com
+res.cloudinary.com # Cloudinary provides a cloud-based image and video management services. It enables users to upload, store, manage, manipulate, and deliver images and video for websites and apps. - qjz9zk
+s.gateway.messenger.live.com # Owned by Microsoft. It is a personal information manager web app from Microsoft consisting of webmail, calendaring, contacts, and tasks services. - qjz9zk
+s.marketwatch.com # Images are loaded on marketwatch.com using this domain. - qjz9zk
+s.youtube.com # Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk
+s.ytimg.com # Owned by Google. Used to deliver thumbails in YouTube. - qjz9zk
+s0.wp.com
+s1.wp.com # Owned by WordPress. Used to feliver static files and media for websites which are hosted on wordpress.com platform. - qjz9zk
+s2.youtube.com # Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk
+s3.amazonaws.com # Used to deliver files that are stored in Amazon AWS S3 storage buckets. - qjz9zk
+s6704.chomikuj.pl
+s72.chomikuj.pl
+s8802.chomikuj.pl
+sa.symcb.com # Owned by Symantec. These are Symantec Certificate Revocation List servers and are used by a number of companies including Microsoft. - qjz9zk
+secure.avangate.com # Used to perform online payments. - qjz9zk
+secure.brightcove.com # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+secure.surveymonkey.com # Used by Survey Monkey to deliver surveys. - qjz9zk
+services.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
+settings-win.data.microsoft.com
+sirus.su
+skyhook.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
+sls.update.microsoft.com.akadns.net
+spclient.wg.spotify.com # Spotify on Web and desktop player does not work if this domain is blocked. - qjz9zk
+ssl.p.jwpcdn.com # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+staging.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+staging.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+status.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+status.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+stream.binance.com
+t.cfjump.com
+t.co # Owned by Twitter. Used as a URL shortner while sharing Twitter posts. - qjz9zk
+t.lever-analytics.com
+t.members.agl.com.au
+t0.ssl.ak.dynamic.tiles.virtualearth.net # Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com. - qjz9zk
+t0.ssl.ak.tiles.virtualearth.net # Owned by Microsoft. Used by Bing Maps to get information about various places. For example, this domain should be whitelisted in order to select a store location on costco.com. - qjz9zk
+tawk.to # Live chat platform for websites to chat with the website owner. Blocking this domain will block chat widget. - qjz9zk
+tedcdn.com # Used by ted.com streams. - qjz9zk
+theannoyingsite.com
+themoviedb.com # Metadata for movies - qjz9zk
+thetvdb.com # Metadata for TV series - qjz9zk
+tinyurl.com # Popular URL shortner - qjz9zk
+title.auth.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+title.mgt.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+tlu.dl.delivery.mp.microsoft.com
+track.commissionfactory.com.au
+tracking.epicgames.com
+traffic.libsyn.com # Used in Pocketcasts app to serve and download podcasts. - qjz9zk
+trk.mail.ru
+tvdb2.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+tvdb2.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+tvthemes.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
+tvthemes.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
+twimg.com # Owned by Twitter. Used to deliver media on Twitter. - qjz9zk
+ui.skype.com # Used to make group calls, group chats etc. on Skype. - qjz9zk
+urldefense.com
+us.umusic-online.com
+userlike-cdn-widgets.s3-eu-west-1.amazonaws.com
+v10.events.data.microsoft.com
+v10.vortex-win.data.microsoft.com
+v20.events.data.microsoft.com
+via.placeholder.com
+video-fa.scdn.co
+video-stats.l.google.com # Used to record YouTube watch history. Blocking this domain will pause your watch history on YouTube. - qjz9zk
+videos.vidible.tv # Video delivery systems, popular in entertainment and news sites. - qjz9zk
+vidtech.cbsinteractive.com # Used to deliver videos over the internet. - qjz9zk
+wcpstatic.microsoft.com
+webparanoid.com
+widget-cdn.rpxnow.com # Owned by Akamai Technologies. Used as a sign in method in various apps and sites. - qjz9zk
+widget.trustpilot.com
+win10.ipv6.microsoft.com # It gives full IPv6 connectivity for IPv6-capable hosts that are on the IPv4 Internet but have no native connection to an IPv6 network.  - qjz9zk
+wp.com # Owned by WordPress.com hosting. - qjz9zk
+ws.audioscrobbler.com # Owned by last.fm. Used to get track metadata using last.fm API. - qjz9zk
+www.binance.com
+www.dataplicity.com # Used to remotely control your Raspberry-Pi. - qjz9zk
+www.deviantart.com
+www.g2a.com
+www.googleadservices.com
+www.googleapis.com # An important domain used to provide APIs to various Google services.  - qjz9zk
+www.incentivenetworks2.com
+www.ipify.org
+www.ipqualityscore.com
+www.komputerswiat.pl
+www.msftconnecttest.com # Owned by Microsoft. Used by Windows systems to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
+www.msftncsi.com # Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk
+www.mywot.com
+www.no-ip.com # No-IP offers DNS services, email, network monitoring and SSL certificates. - qjz9zk
+www.ojrq.net
+www.reg.ru
+www.sirus.su
+www.xboxlive.com
+www.youtube-nocookie.com # Owned by Google. YouTube launched a new feature on the site recently that it called Privacy-Enhanced Mode. This domain is used to embed the videos on third-party sites with less trackers. - qjz9zk
+xbox.ipv6.microsoft.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+xboxexperiencesprod.experimentation.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+xflight.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+xkms.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+xsts.auth.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
+youtu.be # YouTube URL shortner. Used while sharing videos, playlists, channels etc. - qjz9zk
+youtube-nocookie.com # Owned by Google. YouTube launched a new feature on the site recently that it called Privacy-Enhanced Mode. This domain is used to embed the videos on third-party sites with less trackers. - qjz9zk
+yt3.ggpht.com # Owned by Google. Used to deliver static files over the internet. - qjz9zk
+zee.cws.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
