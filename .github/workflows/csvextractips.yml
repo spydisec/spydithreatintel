@@ -105,6 +105,7 @@ jobs:
     
         # Merge changes if there are updates
         git merge origin/main
+        git pull
         git add iplist/honeypot/osinthoneypotfeed.txt
         if git diff-index --quiet HEAD; then
           echo "⚡ No new changes to commit"
