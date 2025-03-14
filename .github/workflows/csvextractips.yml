@@ -26,6 +26,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Full clone to allow proper merging/rebasing
 
     - name: Download and Extract IPs from ${{ matrix.source.name }}
       continue-on-error: true
@@ -100,17 +102,15 @@ jobs:
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        # Fetch latest changes from the remote
-        git fetch origin
-    
-        # Merge changes if there are updates
-        git merge origin/main
-        git pull
+
+        # Pull latest changes with rebase to avoid conflicts
+        git pull --rebase origin main
+
         git add iplist/honeypot/osinthoneypotfeed.txt
         if git diff-index --quiet HEAD; then
           echo "⚡ No new changes to commit"
         else
           git commit -m "Auto-update Honeypot IP Feed - $(date '+%Y-%m-%d %H:%M:%S')"
-          git push
+          git push origin main
         fi
 
