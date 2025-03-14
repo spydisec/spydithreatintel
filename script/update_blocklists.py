@@ -1,4 +1,5 @@
 import os
+from tqdm import tqdm
 
 # Configuration
 WHITELIST_DIR = 'whitelist'
@@ -22,14 +23,9 @@ def should_remove(domain, whitelisted_domains):
     return False
 
 def filter_blocklist(blocklist_domains, whitelisted_domains, name):
-    """Filter blocklist domains, showing progress during processing."""
+    """Filter blocklist domains with a progress bar."""
     updated_blocklist = []
-    total = len(blocklist_domains)
-    # Ensure progress is shown at least once, or every ~10% for larger lists
-    interval = max(total // 10, 1)
-    for i, domain in enumerate(blocklist_domains):
-        if i % interval == 0:
-            print(f"Processed {i} out of {total} domains in {name} blocklist...")
+    for domain in tqdm(blocklist_domains, desc=f"Filtering {name} domains"):
         if not should_remove(domain, whitelisted_domains):
             updated_blocklist.append(domain)
     return updated_blocklist
@@ -38,7 +34,7 @@ def filter_blocklist(blocklist_domains, whitelisted_domains, name):
 def main():
     print("Starting blocklist update process...")
 
-    # Check for whitelist directory
+    # Load whitelisted domains
     if not os.path.exists(WHITELIST_DIR):
         print(f"Warning: Whitelist directory '{WHITELIST_DIR}' does not exist. Proceeding without whitelisting.")
         whitelisted_domains = set()
