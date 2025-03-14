@@ -98,13 +98,26 @@ jobs:
           sort -u iplist/honeypot/osinthoneypotfeed.txt -o iplist/honeypot/osinthoneypotfeed.txt
           head -n 10 iplist/honeypot/osinthoneypotfeed.txt
 
+    - name: Debug - List Files
+      run: |
+          echo "Current directory:"
+          pwd
+          ls -al
+          echo "iplist/honeypot contents:"
+          ls -al iplist/honeypot/
+
     - name: Commit and Push Changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
 
-        # Pull latest changes with rebase to avoid conflicts
+                # --- FIX STARTS HERE ---
+        # Reset any accidental local changes (clean working directory)
+        git reset --hard HEAD
+        
+        # Pull latest changes with rebase
         git pull --rebase origin main
+        # --- FIX ENDS HERE ---
 
         git add iplist/honeypot/osinthoneypotfeed.txt
         if git diff-index --quiet HEAD; then
