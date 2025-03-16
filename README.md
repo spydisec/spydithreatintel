@@ -52,17 +52,20 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 
 ---
 
-## 🌐 Domain Blocklists
-**Immediately actionable lists** for network protection:
-
-| Category                | Description                                  | Raw URL                                                                                     |
-|-------------------------|----------------------------------------------|--------------------------------------------------------------------------------------------|
-| 🛑 Advers/Tracking      | Tracking/Advertising domains                 | [unique_advtracking_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/ads/unique_advtracking_domains.txt) |
-| 🎯 Malicious            | Malicious domain                             | [unique_malicious_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/malicious/unique_malicious_domains.txt)     |
-| 🔫 Spam/Scam            | Spam domains                                 | [unique_spamscamabuse_domains.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/domainlist/spam/unique_spamscamabuse_domains.txt) |
-
+## 🌐 Domain Blocklists Download (Pi-Hole, AdGuard, uBlock Origin)
+#### 🔫 Spam/Scam :
+```
+https://spydisec.com/spamblocklist.txt
+```
+#### 🎯 Malicious :
+```
+https://spydisec.com/maliciousblocklist.txt
+```
+#### 🛑 Advers/Tracking :
+```
+https://spydisec.com/adsblocklist.txt
+```
 ---
-
 ## 🕵️ Tracked Threats
 **Actively monitored infrastructure** across 50+ threat actors:
 
