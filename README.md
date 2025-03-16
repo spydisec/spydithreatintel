@@ -23,8 +23,10 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 
 ## 🔥 IP Threat Feeds
 ### 📜 Malicious IP Master List
-**Aggregated high-confidence indicators** from multiple OSINT Feed, this deduplicated list provides a unified view of malicious IP addresses.
-- **File**: [master_malicious_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/master_malicious_iplist.txt)
+**High-confidence indicators** from multiple OSINT Feed, this deduplicated list provides a unified view of malicious IP addresses.
+```
+https://spydisec.com/maliciousips.txt
+```
 - **Sources**: 12+ curated feeds including C2 servers, honeypot data, Mass-scanners, and OSINT feeds.
 
 <details>
