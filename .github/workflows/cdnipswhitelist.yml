@@ -2,7 +2,7 @@ name: Update CDN IP Whitelists
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily updates at midnight UTC
+    - cron: '0 11 * * *'  # Daily updates at midnight UTC
   workflow_dispatch:  # Manual trigger option
 
 permissions:
