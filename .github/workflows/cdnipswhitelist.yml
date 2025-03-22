@@ -20,21 +20,23 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y jq
 
-      # Cloudflare (CDN/WAF)
-      - name: Get Cloudflare IPv4
-        run: curl -s https://www.cloudflare.com/ips-v4/ -o whitelist/cloudflare-v4.txt
-      - name: Get Cloudflare IPv6
-        run: curl -s https://www.cloudflare.com/ips-v6/ -o whitelist/cloudflare-v6.txt
-
-      # Fastly (CDN)
-      - name: Get Fastly IPs
+      - name: Create combined CDN IP file
         run: |
-          curl -s https://api.fastly.com/public-ip-list | \
-          jq -r '.addresses[], .ipv6_addresses[]' > whitelist/fastly.txt
+          mkdir -p whitelist
+          # Cloudflare CDN IPs
+          echo "#Cloudflare CDN IPs" > whitelist/cdnips.txt
+          curl -s https://www.cloudflare.com/ips-v4/ >> whitelist/cdnips.txt
+          curl -s https://www.cloudflare.com/ips-v6/ >> whitelist/cdnips.txt
+          echo "" >> whitelist/cdnips.txt
 
-      # Akamai (Edge/CDN) - Updated with correct URL
-      - name: Get Akamai IPs
-        run: curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt -o whitelist/akamai.txt
+          # Fastly CDN IPs
+          echo "#Fastly CDN IPs" >> whitelist/cdnips.txt
+          curl -s https://api.fastly.com/public-ip-list | jq -r '.addresses[], .ipv6_addresses[]' >> whitelist/cdnips.txt
+          echo "" >> whitelist/cdnips.txt
+
+          # Akamai CDN IPs
+          echo "#Akamai CDN IPs" >> whitelist/cdnips.txt
+          curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt >> whitelist/cdnips.txt
 
       # Commit changes with proper error handling
       - name: Commit updates
