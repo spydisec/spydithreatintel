@@ -2,7 +2,7 @@ name: Remove Duplicate C2 IP List
 
 on:
   schedule:
-    - cron: '0 3 * * *'  # Runs daily at 2 AM UTC
+    - cron: '15 15 * * *'  # Runs daily at 2 AM UTC
   workflow_dispatch:     # Allows manual trigger
 
 permissions:
