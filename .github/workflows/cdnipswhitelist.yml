@@ -27,7 +27,7 @@ jobs:
         curl -s https://api.fastly.com/public-ip-list | \
         jq -r '.addresses[], .ipv6_addresses[]' > whitelist/fastly.txt
 
-    # Akamai (Edge/CDN) - Updated with proper filtering
+    # Akamai (Edge/CDN) - Updated with correct URL
     - name: Get Akamai IPs
       run: |
         curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt | \
