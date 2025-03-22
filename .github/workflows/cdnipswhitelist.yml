@@ -40,6 +40,7 @@ jobs:
           echo "#Akamai CDN IPs" >> whitelist/cdnips.txt
           curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt >> whitelist/cdnips.txt
           echo "" >> whitelist/cdnips.txt
+          echo "" >> whitelist/cdnips.txt
 
           # Tailscale DERP IPs
           echo "#Tailscale DERP IPv4s" >> whitelist/cdnips.txt
