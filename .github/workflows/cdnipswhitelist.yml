@@ -27,20 +27,25 @@ jobs:
         curl -s https://api.fastly.com/public-ip-list | \
         jq -r '.addresses[], .ipv6_addresses[]' > whitelist/fastly.txt
 
-    # Akamai (Edge/CDN) - Updated URL and processing
+    # Akamai (Edge/CDN) - Updated with proper filtering
     - name: Get Akamai IPs
       run: |
         curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt | \
-        grep -v '^#' > whitelist/akamai.txt
+        grep -E '^([0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}$' > whitelist/akamai.txt
 
-    # Validation step (ensures CIDR format)
-    - name: Validate IP formats
+    # Validation step with proper error handling
+    - name: Validate CIDR formats
       run: |
         for file in whitelist/*.txt; do
           echo "Validating $file"
+          
           # Validate IPv4 CIDR format
-          grep -E '^([0-9]{1,3}\.){3}[0-9]{1,3}(/[0-9]{1,2})?$' "$file" || exit 1
-          # Validate IPv6 CIDR format if present
+          if ! grep -qE '^([0-9]{1,3}\.){3}[0-9]{1,3}(/[0-9]{1,2})?$' "$file"; then
+            echo "Error: No valid IPv4 CIDR found in $file"
+            exit 1
+          fi
+
+          # Validate IPv6 CIDR format (optional)
           grep -E '^[0-9a-fA-F:]+/[0-9]{1,3}$' "$file" || true
         done
 
