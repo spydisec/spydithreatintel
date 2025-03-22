@@ -2,7 +2,7 @@ name: Daily Malicious IP List Update
 
 on:
   schedule:
-    - cron: '0 5 * * *'  # Daily at 4:00 AM UTC
+    - cron: '0 14 * * *'  # Daily at 4:00 AM UTC
   push:
     paths:
       - 'iplist/honeypot/honeypot_extracted_feed.txt'
