@@ -26,6 +26,7 @@ jobs:
           # Cloudflare CDN IPs
           echo "#Cloudflare CDN IPs" > whitelist/cdnips.txt
           curl -s https://www.cloudflare.com/ips-v4/ >> whitelist/cdnips.txt
+          echo "" >> whitelist/cdnips.txt
           curl -s https://www.cloudflare.com/ips-v6/ >> whitelist/cdnips.txt
           echo "" >> whitelist/cdnips.txt
 
