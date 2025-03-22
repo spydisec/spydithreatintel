@@ -33,10 +33,7 @@ jobs:
 
     # Akamai (Edge/CDN) - Updated with correct URL
     - name: Get Akamai IPs
-      run: |
-        curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt | \
-        grep -E '^([0-9]{1,3}\.){3}[0-9]{1,3}/[0-9]{1,2}$' > whitelist/akamai.txt
-
+      run: curl -s https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt -o whitelist/akamai.txt
     # Validation step with proper error handling
     - name: Validate CIDR formats
       run: |
