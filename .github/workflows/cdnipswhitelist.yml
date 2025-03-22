@@ -31,6 +31,7 @@ jobs:
           echo "" >> whitelist/cdnips.txt
 
           # Fastly CDN IPs
+          echo "" >> whitelist/cdnips.txt
           echo "#Fastly CDN IPs" >> whitelist/cdnips.txt
           curl -s https://api.fastly.com/public-ip-list | jq -r '.addresses[], .ipv6_addresses[]' >> whitelist/cdnips.txt
           echo "" >> whitelist/cdnips.txt
@@ -45,7 +46,7 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
           git add whitelist/
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update CDN IP lists"
+          git diff --quiet && git diff --staged --quiet || git commit -m "Update CDN IP Whitelist"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
