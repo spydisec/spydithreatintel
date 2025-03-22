@@ -28,6 +28,17 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 ```
 https://spydisec.com/maliciousips.txt
 ```
+<details>
+<summary>Blocklist details</summary>
+
+| Whitelist Name          | Purpose                                                                 | File                      | Raw Link                                                                 |
+|-------------------------|-------------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
+| Master IP Blocklist     | This blocklist is not yet gone through filtering process. (Might contain FP) | `master_malicious_iplist.txt`  | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/master_malicious_iplist.txt) |
+| Main Blocklist          | Main blocklist, completed whitelisting process.                        | `filtered_malicious_iplist.txt`     | [`📥 Raw`](https://spydisec.com/maliciousips.txt)    |
+| Whitelisted IPs         | IPs which are removed the master IP blocklist as per filtering process.         | `removed_from_blocklist.txt`   | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/removed_from_blocklist.txt)  |
+
+</details>
+
 - **Sources**: 12+ curated feeds including C2 servers, honeypot data, Mass-scanners, and OSINT feeds.
 
 <details>
