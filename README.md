@@ -9,6 +9,7 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 - 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
 - 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
 - 🕵️[Tracked Threats](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#%EF%B8%8F-tracked-threats)
+- 📁[Whitelist Files]()
 - 📦[Permanent Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-permanent-blocklists)
 - 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-acknowledgements)
 - 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-community-contributions)
@@ -139,7 +140,27 @@ https://spydisec.com/adsblocklist.txt
 </details>
 
 ---
+## Whitelist Files 📁
+**A curated security filtering system that combines blocklisting with intelligent whitelisting for essential services.**
 
+| Whitelist Name          | Purpose                                                                 | File                      | Raw Link                                                                 |
+|-------------------------|-------------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
+| Personal Allowlist      | My personal Pihole allow list                                           | `mypiholewhitelisteddomains.txt`  | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/mypiholewhitelisteddomains.txt) |
+| OSINT Verified          | Domains derived from OSINT whitelist feeds                              | `osintwhitelisteddomains.txt`     | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/osintwhitelisteddomains.txt)    |
+| CDN Infrastructure      | Critical CDN IP ranges excluded from IP Blocklist                       | `cdnips.txt`   | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/cdnips.txt)  |
+
+<details>
+<summary>CDN Coverage Matrix 🛡️</summary>
+
+| Provider       | Type         | Coverage                             |
+|----------------|--------------|--------------------------------------|
+| Cloudflare     | CDN IPv4/IPv6    | Global CDN                |
+| Akamai         | CDN IPv4/IPv6   | Global CDN & Shield IPs              |
+| Fastly         | CDN IPv4/IPv6        | Global CDN                |
+| Tailscale      | DERP & Control Panel | Relay servers and control plane      |
+</details>
+
+---
 ## 📦 Permanent Blocklists
 **Persistent IOCs** with historical tracking:
 
