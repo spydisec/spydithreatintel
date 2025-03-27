@@ -34,6 +34,7 @@ jobs:
           git add domainlist/malicious/malicious_domains.txt
           git add domainlist/ads/advtracking_domains.txt
           git add domainlist/spam/spamscamabuse_domains.txt
+          git add permanent_DomainList.txt
           if git diff-index --quiet HEAD; then
             echo "⚡ No new changes to commit"
           else
