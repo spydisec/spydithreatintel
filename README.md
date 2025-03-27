@@ -174,10 +174,10 @@ https://spydisec.com/adsblocklist.txt
 ## 📦 Permanent Blocklists
 **Persistent IOCs** with historical tracking:
 
-| Type       | Description                          | Raw URL                                                                     |
+| Type       | Description                          | Direct Link                                                                |
 |------------|--------------------------------------|----------------------------------------------------------------------------|
-| 📡 IPs     | Permanent malicious IP addresses     | [permanent_IPList.txt](https://spydisec.com/permanentMaliciousIPList.txt) |
-| 🌍 Domains | Permanent malicious domains (WIP)    | [permanent_DomainList.txt](https://spydisec.com/permanentMaliciousDomainList.txt) |
+| 📡 IPs     | Permanent malicious IP addresses     | [`📥 Raw`](https://spydisec.com/permanentMaliciousIPList.txt) |
+| 🌍 Domains | Permanent malicious domains (WIP)    | [`📥 Raw`](https://spydisec.com/permanentMaliciousDomainList.txt) |
 
 ---
 
