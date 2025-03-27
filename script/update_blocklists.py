@@ -7,6 +7,7 @@ BLOCKLIST_DIRS = {
     'malicious': 'domainlist/malicious/unique_malicious_domains.txt',
     'ads': 'domainlist/ads/unique_advtracking_domains.txt',
     'spam': 'domainlist/spam/unique_spamscamabuse_domains.txt'
+    'permanentDomainList': 'permanent_DomainList.txt'
 }
 
 # Helper Functions
