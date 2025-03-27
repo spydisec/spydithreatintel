@@ -176,8 +176,8 @@ https://spydisec.com/adsblocklist.txt
 
 | Type       | Description                          | Raw URL                                                                     |
 |------------|--------------------------------------|----------------------------------------------------------------------------|
-| 📡 IPs     | Permanent malicious IP addresses     | [permanent_IPList.txt](spydisec.com/permanentMaliciousIPList.txt) |
-| 🌍 Domains | Long-term malicious domains (WIP)    | [permanent_DomainList.txt](https://raw.githubusercontent.com/.../permanent_DomainList.txt) |
+| 📡 IPs     | Permanent malicious IP addresses     | [permanent_IPList.txt](https://spydisec.com/permanentMaliciousIPList.txt) |
+| 🌍 Domains | Permanent malicious domains (WIP)    | [permanent_DomainList.txt](https://spydisec.com/permanentMaliciousDomainList.txt) |
 
 ---
 
