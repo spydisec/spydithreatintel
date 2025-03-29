@@ -1,9 +1,8 @@
----
+<div align="center">
+  <h1>Spydi's ThreatIntel Feed 🛡️</h1>
 
-# Spydi's ThreatIntel Feed 🛡️
-Welcome to the **Spydi Threat Intelligence Repository** – A curated collection of security indicators derived from real-world incidents and open-source feeds.  
-
-This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enforces deduplication, and removes false positives to maintain **clean, actionable blocklists**. Designed for clarity and reliability, the feeds are optimized for use in personal networks, SMBs, and enterprise security systems.  
+  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) [![Daily IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml) [![Daily C2 Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)  
+</div>
 
 ## Table of Contents
 - 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
@@ -16,72 +15,38 @@ This repository aggregates IOCs (IPs and domains) from multiple OSINT feeds, enf
 - 📡[Contact me](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-contact-me)
 
 ---
+## 📋 Blocklists  
+### 🔥 IP Blocklists  
+| Name                              | Description                                                                 | Raw URL                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Master IP Blocklist**           | Raw aggregated IPs from 12+ OSINT feeds (may contain FPs)                  | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/master_malicious_iplist.txt) |
+| **Filtered IP Blocklist (Low FP)**| Curated IPs with whitelisting applied for minimal false positives           | [📥 Raw](https://spydisec.com/maliciousips.txt)                         |
+| **C2 Server IPs**                 | Command-and-Control infrastructure from threat actors                       | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/iplist/C2IPs/osintc2feed.txt) |
 
-## 📊 Feed Status Badges
-![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel)
-[![Daily Malicious IP List Update](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/updatemasterfeed.yml) [![Daily C2 IP Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml)
+### 🌐 Domain Blocklists  
+| Name                              | Description                                                                 | Raw URL                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                           | [📥 Raw](https://spydisec.com/spamblocklist.txt)                        |
+| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                   | [📥 Raw](https://spydisec.com/maliciousblocklist.txt)                   |
+| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                            | [📥 Raw](https://spydisec.com/adsblocklist.txt)                         |
 
----
+### 📦 Permanent Blocklists  
+Persistent threats validated over 6+ months.  
+| Name                              | Description                                                                 | Raw URL                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Permanent Malicious IPs**       | High-confidence IPs with long-term malicious activity                      | [📥 Raw](https://spydisec.com/permanentMaliciousIPList.txt)             |
+| **Permanent Malicious Domains**   | Domains linked to persistent campaigns (e.g., ransomware, APTs)            | [📥 Raw](https://spydisec.com/permanentMaliciousDomainList.txt)         |
 
-## 🔥 IP Threat Feeds
-### 📜 Malicious IP Master List
-**High-confidence indicators** from multiple OSINT Feed, this deduplicated list provides a unified view of malicious IP addresses. Moreover, whitelisted IPs are removed from the this list reducing false positive.
-```
-https://spydisec.com/maliciousips.txt
-```
-#### Blocklist details
-
-| Whitelist Name          | Purpose                                                                 | File                      | Raw Link                                                                 |
-|-------------------------|-------------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
-| Master IP Blocklist     | This blocklist is not yet gone through filtering process. (Might contain FP) | `master_malicious_iplist.txt`  | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/master_malicious_iplist.txt) |
-| Main Blocklist          | Main blocklist, completed whitelisting process.                        | `filtered_malicious_iplist.txt`     | [`📥 Raw`](https://spydisec.com/maliciousips.txt)    |
-| Whitelisted IPs         | IPs which are removed from the master IP blocklist as per filtering process.         | `removed_from_blocklist.txt`   | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/removed_from_blocklist.txt)  |
-
-
-- **Sources**: 12+ curated feeds including C2 servers, honeypot data, Mass-scanners, and OSINT feeds.
-
-<details>
-<summary>📚 View Full Source List</summary>
-
-| Sources                   | Source URL                                                                 |
-|---------------------------|----------------------------------------------------------------------------|
-| C2 IP Feed                | [C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/iplist/C2IPs/osintc2feed.txt) |
-| Honeypot Master list      | [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/iplist/honeypot/honeypot_extracted_feed.txt)     |
-| maltrail_scanners         | [maltrail_ips.txt](https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt)         |
-| botvrij_eu                | [botvrij_eu](https://www.botvrij.eu/data/ioclist.ip-dst.raw)                                                        |
-| feodotracker              | [feodotracker](https://feodotracker.abuse.ch/downloads/ipblocklist.txt)                                                        |
-| feodotracker_recommended  | [feodotracker_recommended](https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt)                                                        |
-| Blocklist_de_all          | [Blocklist_de_all](https://lists.blocklist.de/lists/all.txt)                                                        |
-| ThreatView_High_Confidence| [ThreatView_High_Confidence](https://threatview.io/Downloads/IP-High-Confidence-Feed.txt)                                                        |
-| IPsumLevel_7              | [IPsumLevel7](https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/7.txt)                                                        |
-| CINS_Score                | [CINS_Score](https://cinsscore.com/list/ci-badguys.txt)                                                        |
-| DigitalSide               | [DigitalSide](https://osint.digitalside.it/Threat-Intel/lists/latestips.txt)                                                        |
-| duggytuxy                 | [duggytuxy](https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt)                                                        |
-| etnetera.cz               | [etnetera.cz](https://security.etnetera.cz/feeds/etn_aggressive.txt)                                                        |
-| emergingthreats-compromised| [ET_Comp](https://rules.emergingthreats.net/blockrules/compromised-ips.txt)                                                        |
-| greensnow.co              | [greensnow.co](https://blocklist.greensnow.co/greensnow.txt)                                                         |
-| More coming Soon!         | [Future Updates](#)                                                        |
-</details>
+### 📁 Whitelisting  
+**Reduce false positives using these curated lists:**  
+| Name                              | Purpose                                                                 | Raw URL                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Whitelisted IPs**               | Legitimate IPs removed from the master blocklist                         | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/removed_from_blocklist.txt) |
+| **CDN IP Ranges**                 | Critical infrastructure IPs (Cloudflare, Akamai, Fastly)                 | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/whitelist/cdnips.txt) |
 
 ---
-
-## 🌐 Domain Blocklists Download (Pi-Hole, AdGuard, uBlock Origin)
-#### 🔫 Spam/Scam :
-```
-https://spydisec.com/spamblocklist.txt
-```
-#### 🎯 Malicious :
-```
-https://spydisec.com/maliciousblocklist.txt
-```
-#### 🛑 Advers/Tracking :
-```
-https://spydisec.com/adsblocklist.txt
-```
----
-## 🕵️ Tracked Threats
-**Actively monitored infrastructure** across 50+ threat actors:
-
+## 🕵️ Tracked Threats & Source list
+1. Actively monitored infrastructure across 50+ threat actors:
 <details>
 <summary>🔍 Expand Threat Catalog</summary>
 
@@ -149,18 +114,35 @@ https://spydisec.com/adsblocklist.txt
 |                           | Spectre Stealer                 |              |
 </details>
 
----
-## 📁 Whitelist Files
-**A curated security filtering system that combines blocklisting with intelligent whitelisting for essential services.**
-
-| Whitelist Name          | Purpose                                                                 | File                      | Raw Link                                                                 |
-|-------------------------|-------------------------------------------------------------------------|---------------------------|--------------------------------------------------------------------------|
-| Personal Allowlist      | My personal Pihole allow list                                           | `mypiholewhitelisteddomains.txt`  | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/mypiholewhitelisteddomains.txt) |
-| OSINT Verified          | Domains derived from OSINT whitelist feeds                              | `osintwhitelisteddomains.txt`     | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/osintwhitelisteddomains.txt)    |
-| CDN Infrastructure      | Critical CDN IP ranges excluded from IP Blocklist                       | `cdnips.txt`   | [`📥 Raw`](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/cdnips.txt)  |
+2. **Sources**: 12+ curated feeds including C2 servers, honeypot data, Mass-scanners, and OSINT feeds.
 
 <details>
-<summary>CDN Coverage Matrix 🛡️</summary>
+<summary>📚 View Full Source List</summary>
+
+| Sources                   | Source URL                                                                 |
+|---------------------------|----------------------------------------------------------------------------|
+| C2 IP Feed                | [C2_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/iplist/C2IPs/osintc2feed.txt) |
+| Honeypot Master list      | [honeypot_iplist.txt](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/iplist/honeypot/honeypot_extracted_feed.txt)     |
+| maltrail_scanners         | [maltrail_ips.txt](https://raw.githubusercontent.com/stamparm/maltrail/master/trails/static/mass_scanner.txt)         |
+| botvrij_eu                | [botvrij_eu](https://www.botvrij.eu/data/ioclist.ip-dst.raw)                                                        |
+| feodotracker              | [feodotracker](https://feodotracker.abuse.ch/downloads/ipblocklist.txt)                                                        |
+| feodotracker_recommended  | [feodotracker_recommended](https://feodotracker.abuse.ch/downloads/ipblocklist_recommended.txt)                                                        |
+| Blocklist_de_all          | [Blocklist_de_all](https://lists.blocklist.de/lists/all.txt)                                                        |
+| ThreatView_High_Confidence| [ThreatView_High_Confidence](https://threatview.io/Downloads/IP-High-Confidence-Feed.txt)                                                        |
+| IPsumLevel_7              | [IPsumLevel7](https://raw.githubusercontent.com/stamparm/ipsum/refs/heads/master/levels/7.txt)                                                        |
+| CINS_Score                | [CINS_Score](https://cinsscore.com/list/ci-badguys.txt)                                                        |
+| DigitalSide               | [DigitalSide](https://osint.digitalside.it/Threat-Intel/lists/latestips.txt)                                                        |
+| duggytuxy                 | [duggytuxy](https://raw.githubusercontent.com/duggytuxy/malicious_ip_addresses/refs/heads/main/botnets_zombies_scanner_spam_ips.txt)                                                        |
+| etnetera.cz               | [etnetera.cz](https://security.etnetera.cz/feeds/etn_aggressive.txt)                                                        |
+| emergingthreats-compromised| [ET_Comp](https://rules.emergingthreats.net/blockrules/compromised-ips.txt)                                                        |
+| greensnow.co              | [greensnow.co](https://blocklist.greensnow.co/greensnow.txt)                                                         |
+| More coming Soon!         | [Future Updates](#)                                                        |
+</details>
+
+3. Whitelist CDN Coverage Matrix:
+
+<details>
+<summary> View CDN Whitelsit 🛡️</summary>
 
 | Provider       | Type         | Coverage                             |
 |----------------|--------------|--------------------------------------|
@@ -169,15 +151,6 @@ https://spydisec.com/adsblocklist.txt
 | Fastly         | CDN IPv4/IPv6        | Global CDN                |
 | Tailscale      | DERP & Control Panel | Relay servers and control plane      |
 </details>
-
----
-## 📦 Permanent Blocklists
-**Persistent IOCs** with historical tracking:
-
-| Type       | Description                          | Direct Link                                                                |
-|------------|--------------------------------------|----------------------------------------------------------------------------|
-| 📡 IPs     | Permanent Malicious IP Addresses List | [`📥 Raw`](https://spydisec.com/permanentMaliciousIPList.txt) |
-| 🌍 Domains | Permanent Malicious Domains List      | [`📥 Raw`](https://spydisec.com/permanentMaliciousDomainList.txt) |
 
 ---
 
