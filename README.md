@@ -34,8 +34,8 @@
 Persistent threats validated over 6+ months.  
 | Name                              | Description                                                                 | Blocklist URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Permanent Malicious IPs**       | High-confidence IPs with long-term malicious activity                      | [📥 Direct Link](https://spydisec.com/permanentMaliciousIPList.txt)             |
-| **Permanent Malicious Domains**   | Domains linked to persistent campaigns (e.g., ransomware, APTs)            | [📥 Direct Link](https://spydisec.com/permanentMaliciousDomainList.txt)         |
+| **Permanent Malicious IPs**       | High-confidence IPs with long-term malicious activity                      | [📥 Raw](https://spydisec.com/permanentMaliciousIPList.txt)             |
+| **Permanent Malicious Domains**   | Domains linked to persistent campaigns (e.g., ransomware, APTs)            | [📥 Raw](https://spydisec.com/permanentMaliciousDomainList.txt)         |
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
