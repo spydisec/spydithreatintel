@@ -5,14 +5,14 @@
 </div>
 
 ## Table of Contents
-- 🔥[IP Threat Feeds](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
-- 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-ip-threat-feeds)
-- 🕵️[Tracked Threats](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#%EF%B8%8F-tracked-threats)
-- 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelist-files)
-- 📦[Permanent Blocklists](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-permanent-blocklists)
-- 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-acknowledgements)
-- 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-community-contributions)
-- 📡[Contact me](https://github.com/spydisec/spydithreatintel/tree/main?tab=readme-ov-file#-contact-me)
+- 🔥[IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-ip-blocklists)
+- 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
+- 📦[Permanent Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-permanent-blocklists)
+- 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelisting)
+- 🕵️[Tracked Threats & Source list](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#%EF%B8%8F-tracked-threats--source-list)
+- 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-acknowledgements)
+- 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-community-contributions)
+- 📡[Contact me](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-contact-me)
 
 ---
 ## 📋 Blocklists  
