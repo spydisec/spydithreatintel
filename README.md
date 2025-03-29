@@ -19,12 +19,12 @@
 ### 🔥 IP Blocklists  
 | Blocklist Name       | File Name                       | Description                                                                 | False Positive Risk | Blocklist URL                                                     |
 |----------------------|---------------------------------|-----------------------------------------------------------------------------|----------------------|-------------------------------------------------------------------|
-| **Master IP Blocklist** | `master_malicious_iplist.txt` | Raw aggregated IPs from 12+ OSINT feeds (unfiltered)                       | **High**             | [📥 Direct Link](https://spydisec.com/master_malicious_iplist.txt)     |
-| **Main IP Blocklist**   | `filtered_malicious_iplist.txt` | Curated IPs with whitelisting applied for minimal false positives           | **Low**              | [📥 Direct Link](https://spydisec.com/maliciousips.txt)               |
-| **C2 Server IPs**       | `osintc2feed.txt`             | Command-and-Control infrastructure from tracked threat actors              | **Low**           | [📥 Direct Link](https://spydisec.com/osintc2feed.txt)                |
+| **Master IP Blocklist** | `master_malicious_iplist.txt` | Raw aggregated IPs from 12+ OSINT feeds (unfiltered)                       | **High**             | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
+| **Main IP Blocklist**   | `filtered_malicious_iplist.txt` | Curated IPs with whitelisting applied for minimal false positives           | **Low**              | [📥 Direct](https://spydisec.com/maliciousips.txt)               |
+| **C2 Server IPs Blocklist**       | `osintc2feed.txt`             | Command-and-Control infrastructure from tracked threat actors              | **Low**           | [📥 Direct](https://spydisec.com/osintc2feed.txt)                |
 
 ### 🌐 Domain Blocklists  
-| Name                              | Description                                                                 | Raw URL                                                                 |
+| Name                              | Description                                                                 | Blocklist URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **Spam/Scam Domains**             | Phishing, scam, and spam domains                                           | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                        |
 | **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                   | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                   |
@@ -32,10 +32,10 @@
 
 ### 📦 Permanent Blocklists  
 Persistent threats validated over 6+ months.  
-| Name                              | Description                                                                 | Raw URL                                                                 |
+| Name                              | Description                                                                 | Blocklist URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Permanent Malicious IPs**       | High-confidence IPs with long-term malicious activity                      | [📥 Raw](https://spydisec.com/permanentMaliciousIPList.txt)             |
-| **Permanent Malicious Domains**   | Domains linked to persistent campaigns (e.g., ransomware, APTs)            | [📥 Raw](https://spydisec.com/permanentMaliciousDomainList.txt)         |
+| **Permanent Malicious IPs**       | High-confidence IPs with long-term malicious activity                      | [📥 Direct Link](https://spydisec.com/permanentMaliciousIPList.txt)             |
+| **Permanent Malicious Domains**   | Domains linked to persistent campaigns (e.g., ransomware, APTs)            | [📥 Direct Link](https://spydisec.com/permanentMaliciousDomainList.txt)         |
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
