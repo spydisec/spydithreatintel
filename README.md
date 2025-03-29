@@ -15,20 +15,20 @@
 - 📡[Contact me](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-contact-me)
 
 ---
-## 📋 Blocklists  
+## 📋 Blocklists    
 ### 🔥 IP Blocklists  
-| Name                              | Description                                                                 | Raw URL                                                                 |
-|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Master IP Blocklist**           | Raw aggregated IPs from 12+ OSINT feeds (may contain FPs)                  | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/master_malicious_iplist.txt) |
-| **Filtered IP Blocklist (Low FP)**| Curated IPs with whitelisting applied for minimal false positives           | [📥 Raw](https://spydisec.com/maliciousips.txt)                         |
-| **C2 Server IPs**                 | Command-and-Control infrastructure from threat actors                       | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/iplist/C2IPs/osintc2feed.txt) |
+| Blocklist Name       | File Name                       | Description                                                                 | False Positive Risk | Blocklist URL                                                     |
+|----------------------|---------------------------------|-----------------------------------------------------------------------------|----------------------|-------------------------------------------------------------------|
+| **Master IP Blocklist** | `master_malicious_iplist.txt` | Raw aggregated IPs from 12+ OSINT feeds (unfiltered)                       | **High**             | [📥 Direct Link](https://spydisec.com/master_malicious_iplist.txt)     |
+| **Main IP Blocklist**   | `filtered_malicious_iplist.txt` | Curated IPs with whitelisting applied for minimal false positives           | **Low**              | [📥 Direct Link](https://spydisec.com/maliciousips.txt)               |
+| **C2 Server IPs**       | `osintc2feed.txt`             | Command-and-Control infrastructure from tracked threat actors              | **Low**           | [📥 Direct Link](https://spydisec.com/osintc2feed.txt)                |
 
 ### 🌐 Domain Blocklists  
 | Name                              | Description                                                                 | Raw URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                           | [📥 Raw](https://spydisec.com/spamblocklist.txt)                        |
-| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                   | [📥 Raw](https://spydisec.com/maliciousblocklist.txt)                   |
-| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                            | [📥 Raw](https://spydisec.com/adsblocklist.txt)                         |
+| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                           | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                        |
+| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                   | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                   |
+| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                            | [📥 Direct Link](https://spydisec.com/adsblocklist.txt)                         |
 
 ### 📦 Permanent Blocklists  
 Persistent threats validated over 6+ months.  
