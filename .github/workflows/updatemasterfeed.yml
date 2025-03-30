@@ -10,6 +10,7 @@ on:
       - 'iplist/honeypot/osinthoneypotfeed.txt'
       - 'iplist/permanent_DomainList.txt'
       - 'iplist/master_malicious_iplist.txt'
+      - 'iplist/threatfoxhighconfidenceips.txt'
   workflow_dispatch:
 
 permissions:
@@ -126,6 +127,7 @@ jobs:
             iplist/honeypot/honeypot_extracted_feed.txt \
             iplist/C2IPs/osintc2feed.txt \
             iplist/honeypot/osinthoneypotfeed.txt \
+            iplist/threatfoxhighconfidenceips.txt \
             iplist/C2IPs/master_c2_iplist.txt | sort -u > iplist/master_malicious_iplist.txt
     
     - name: Append to Permanent IP List
