@@ -8,6 +8,8 @@ on:
       - 'iplist/honeypot/honeypot_extracted_feed.txt'
       - 'iplist/C2IPs/master_c2_iplist.txt'
       - 'iplist/honeypot/osinthoneypotfeed.txt'
+      - 'iplist/permanent_DomainList.txt'
+      - 'iplist/master_malicious_iplist.txt'
   workflow_dispatch:
 
 permissions:
@@ -124,22 +126,22 @@ jobs:
             iplist/honeypot/honeypot_extracted_feed.txt \
             iplist/C2IPs/osintc2feed.txt \
             iplist/honeypot/osinthoneypotfeed.txt \
-            iplist/C2IPs/master_c2_iplist.txt | sort -u > master_malicious_iplist.txt
+            iplist/C2IPs/master_c2_iplist.txt | sort -u > iplist/master_malicious_iplist.txt
     
     - name: Append to Permanent IP List
       run: |
-        cat master_malicious_iplist.txt >> permanent_IPList.txt
+        cat iplist/master_malicious_iplist.txt >> iplist/permanent_IPList.txt
     
     - name: Remove Deduplicate IPs in Permanent List
       run: |    
           # Sort and deduplicate the file in-place
-          sort -u permanent_IPList.txt -o permanent_IPList.txt
+          sort -u iplist/permanent_IPList.txt -o iplist/permanent_IPList.txt
 
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git add master_malicious_iplist.txt permanent_IPList.txt
+        git add iplist/master_malicious_iplist.txt iplist/permanent_IPList.txt
         
         if git diff-index --quiet HEAD; then
           echo "No changes to commit"
