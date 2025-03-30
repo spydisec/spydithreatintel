@@ -1,6 +1,5 @@
 #Below IPs listed are added after manual analyses with proper references.
-#IPs listed below might presented under whitelisted IPS and thus required manual assessment. Threat actors might use CDN networks to host malicious files/code.
-
+#IPs listed below might presented under whitelisted IPs and thus required manual assessment. Threat actors might use CDN networks to host malicious files/code.
 
 #Reference: https://www.virustotal.com/gui/ip-address/188.114.96.13/detection
 188.114.96.13
@@ -11,7 +10,9 @@
 #Reference: https://hunting.abuse.ch/hunt/104.21.1.42/#threatfox
 104.21.1.42
 
-
 # ThreatFox: Cobalt Strike (Confidence: 75%, First Seen: 2025-03-06 12:49:39)
 172.67.128.130
+
+#Reference: https://www.virustotal.com/gui/ip-address/1.1.5.4/detection
+1.1.5.4
 
