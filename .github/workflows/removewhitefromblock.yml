@@ -1,8 +1,15 @@
 name: Remove Whitelisted Entries from Blocklists
+#on:
+#  schedule:
+#    - cron: '0 */6 * * *'  # Runs daily at 4 AM UTC
+#  workflow_dispatch:  # Allows manual trigger
 on:
-  schedule:
-    - cron: '0 */6 * * *'  # Runs daily at 4 AM UTC
-  workflow_dispatch:  # Allows manual trigger
+  push:
+    paths:
+      - 'domainlist/malicious/malicious_domains.txt'
+      - 'domainlist/ads/advtracking_domains.txt'
+      - 'domainlist/spam/spamscamabuse_domains.txt'
+
 
 permissions:
   contents: write  # Required to commit changes
