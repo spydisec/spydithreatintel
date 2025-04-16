@@ -3,14 +3,14 @@ name: Daily Malicious IP List Update
 on:
   schedule:
     - cron: '0 14 * * *'  # Daily at 4:00 AM UTC
-  push:
-    paths:
-      - 'iplist/honeypot/honeypot_extracted_feed.txt'
-      - 'iplist/C2IPs/master_c2_iplist.txt'
-      - 'iplist/honeypot/osinthoneypotfeed.txt'
-      - 'iplist/permanent_DomainList.txt'
-      - 'iplist/master_malicious_iplist.txt'
-      - 'iplist/threatfoxhighconfidenceips.txt'
+#  push:
+#    paths:
+#      - 'iplist/honeypot/honeypot_extracted_feed.txt'
+#      - 'iplist/C2IPs/master_c2_iplist.txt'
+#      - 'iplist/honeypot/osinthoneypotfeed.txt'
+#      - 'iplist/permanent_DomainList.txt'
+#      - 'iplist/master_malicious_iplist.txt'
+#      - 'iplist/threatfoxhighconfidenceips.txt'
   workflow_dispatch:
 
 permissions:
