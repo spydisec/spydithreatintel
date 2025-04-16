@@ -1,10 +1,14 @@
 name: Honeypot Unique IPs
 
+#on:
+#  schedule:
+#    - cron: '0 16 * * *' # Runs daily at midnight
+#  workflow_dispatch: # Allows manual trigger from the GitHub UI
 on:
-  schedule:
-    - cron: '0 16 * * *' # Runs daily at midnight
-  workflow_dispatch: # Allows manual trigger from the GitHub UI
-
+  push:
+    paths:
+      - 'iplist/honeypot/honeypot_extracted_feed.txt'
+      
 permissions:
   contents: write  # Required to push changes
 
