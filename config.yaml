@@ -1,0 +1,63 @@
+# Centralized Configuration File for Spydiblocklist ThreatIntel Repository
+#
+# This YAML file centralizes paths and settings for various scripts in the repository.
+# Modify these values as needed to reflect your deployment environment.
+
+base_dir: /home/spydisec/spydiblocklist
+iplist_dir: /home/spydisec/spydiblocklist/iplist
+whitelist_dir: /home/spydisec/spydiblocklist/whitelist
+script_dir: /home/spydisec/spydiblocklist/script
+
+filter:
+  # Path to the filtering Python script
+  python_script: /home/spydisec/spydiblocklist/script/filter_blocklist.py
+  # Reference Python script for manual analyses of removed IPs
+  ref_script: /home/spydisec/spydiblocklist/script/ref_analyses.py
+  # Whitelist file containing CDN IPs
+  whitelist_file: /home/spydisec/spydiblocklist/whitelist/cdnips.txt
+  # Master IP Blocklists
+  master_blocklist: /home/spydisec/spydiblocklist/iplist/master_malicious_iplist.txt
+  permanent_blocklist: /home/spydisec/spydiblocklist/iplist/permanent_IPList.txt
+  # Temporary files used during the filtering process
+  temp_master_output: /home/spydisec/spydiblocklist/iplist/temp_main_malicious_iplist.txt
+  temp_permanent_output: /home/spydisec/spydiblocklist/iplist/temp_filteredpermanentmaliciousiplist.txt
+  # Final filtered outputs
+  filtered_master_output: /home/spydisec/spydiblocklist/iplist/filtered_malicious_iplist.txt
+  filtered_permanent_output: /home/spydisec/spydiblocklist/iplist/filteredpermanentmaliciousiplist.txt
+  # Removed IPs files (IPs removed due to whitelisting)
+  removed_master: /home/spydisec/spydiblocklist/iplist/removedips/ips_removed_from_mainblocklist.txt
+  removed_permanent: /home/spydisec/spydiblocklist/iplist/removedips/ips_removed_from_permanentblocklist.txt
+  # File with referenced malicious IPs that should not be removed
+  referenced_malicious: /home/spydisec/spydiblocklist/iplist/referenced_malicious_ips.txt
+  # Log files for the filtering process
+  log_filter: /home/spydisec/spydiblocklist/script/filter_ip_blocklist.log
+  log_cron_master: /home/spydisec/spydiblocklist/script/filter_ip_blocklist_cron.log
+  log_cron_permanent: /home/spydisec/spydiblocklist/script/filter_perm_ip_blocklist_cron.log
+  log_removed_analysis: /home/spydisec/spydiblocklist/script/removed_ipsanalyses.log
+
+git:
+  # Git repository directory (typically same as base_dir)
+  repo_dir: /home/spydisec/spydiblocklist
+  # Git branch to synchronize with
+  branch: main
+  # Log files for Git operations
+  auto_push_log: /home/spydisec/spydiblocklist/git_auto_push.log
+  pull_log: /home/spydisec/spydiblocklist/git_pull_latest.log
+  # Maximum log file size in MB before rotation
+  auto_push_max_log_size_mb: 10
+
+# Downloader script configuration
+downloader:
+  script: /home/spydisec/spydiblocklist/downloader.py
+  log: /home/spydisec/spydiblocklist/downloader.log
+
+domain:
+  # Permanent domain list update configuration
+  input_file:  /home/spydisec/spydiblocklist/domainlist/malicious/unique_malicious_domains.txt
+  output_file: /home/spydisec/spydiblocklist/domainlist/perm_domainlist.txt
+
+  # Malicious domain list update configuration
+  malicious_input: /home/spydisec/spydiblocklist/domainlist/malicious/malicious_domains.txt
+  malicious_output: /home/spydisec/spydiblocklist/domainlist/malicious/unique_malicious_domains.txt
+
+# Additional configuration sections for other scripts can be added below as needed.
