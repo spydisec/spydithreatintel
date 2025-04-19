@@ -49,6 +49,9 @@ def load_config(config_path='config.yaml'):
 CONFIG = load_config()
 
 LOG_FILE = os.path.join(CONFIG['script_dir'], 'update_blocklists.log')
+import os
+os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
+import logging
 logging.basicConfig(filename=LOG_FILE,
                     format='%(asctime)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
