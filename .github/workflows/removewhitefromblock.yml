@@ -10,6 +10,7 @@ on:
       - 'domainlist/ads/advtracking_domains.txt'
       - 'domainlist/spam/spamscamabuse_domains.txt'
 
+  workflow_dispatch:  # Allows manual trigger
 
 permissions:
   contents: write  # Required to commit changes
