@@ -27,14 +27,14 @@ def load_config(config_path='config.yaml'):
             sys.exit(1)
 
     default_config = {
-        'base_dir': '/home/spydisec/spydiblocklist',
-        'script_dir': '/home/spydisec/spydiblocklist/script',
-        'whitelist_dir': '/home/spydisec/spydiblocklist/whitelist',
+        'base_dir': '.',
+        'script_dir': 'script',
+        'whitelist_dir': 'whitelist',
         'domainlists': {
-            'unique_malicious': '/home/spydisec/spydiblocklist/domainlist/malicious/unique_malicious_domains.txt',
-            'unique_ads': '/home/spydisec/spydiblocklist/domainlist/ads/unique_advtracking_domains.txt',
-            'unique_spam': '/home/spydisec/spydiblocklist/domainlist/spam/unique_spamscamabuse_domains.txt',
-            'permanent': '/home/spydisec/spydiblocklist/permanent_DomainList.txt'
+            'unique_malicious': 'domainlist/malicious/unique_malicious_domains.txt',
+            'unique_ads': 'domainlist/ads/unique_advtracking_domains.txt',
+            'unique_spam': 'domainlist/spam/unique_spamscamabuse_domains.txt',
+            'permanent': 'permanent_DomainList.txt'
         }
     }
 
