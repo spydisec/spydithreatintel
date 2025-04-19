@@ -61,3 +61,9 @@ domain:
   malicious_output: /home/spydisec/spydiblocklist/domainlist/malicious/unique_malicious_domains.txt
 
 # Additional configuration sections for other scripts can be added below as needed.
+
+logging:
+  level: INFO
+  format: '%(asctime)s - %(levelname)s - %(message)s'
+  logs_dir: /home/spydisec/spydiblocklist/script/twentyfivenewstructure/logs
+  filemode: "a"
