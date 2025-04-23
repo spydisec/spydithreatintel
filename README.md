@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Spydi's ThreatIntel Feed 🛡️</h1>
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/58a455ee-d4bb-4081-bca4-0944d3594556.svg) [![Daily C2 Feed Update](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml/badge.svg)](https://github.com/spydisec/spydithreatintel/actions/workflows/osintc2feed.yml) ![Daily Domain List Update](https://healthchecks.io/b/2/9ef2114a-9a4f-4f73-9361-36fa22fd9ea7.svg) ![Daily ThreatFox IP List Update](https://healthchecks.io/b/2/df0b45c9-03bb-416e-9cff-97952285a9b4.svg) ![Daily Maltrail IP List Update](https://healthchecks.io/b/2/21cee47c-1c6c-48aa-a92b-5197170e9610.svg)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/58a455ee-d4bb-4081-bca4-0944d3594556.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg) ![Daily Domain List Update](https://healthchecks.io/b/2/9ef2114a-9a4f-4f73-9361-36fa22fd9ea7.svg) ![Daily ThreatFox IP List Update](https://healthchecks.io/b/2/df0b45c9-03bb-416e-9cff-97952285a9b4.svg) ![Daily Maltrail IP List Update](https://healthchecks.io/b/2/21cee47c-1c6c-48aa-a92b-5197170e9610.svg)
 </div>
 
 ## Table of Contents
