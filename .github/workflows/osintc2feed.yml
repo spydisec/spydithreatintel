@@ -1,8 +1,8 @@
 name: Daily C2 IP Feed Update
 
 on:
-  schedule:
-    - cron: '30 14 * * *'  # Daily at 4:00 AM UTC
+#  schedule:
+#    - cron: '30 14 * * *'  # Daily at 4:00 AM UTC
   workflow_dispatch:
 
 permissions:
