@@ -41,7 +41,7 @@ Persistent threats validated over 6+ months.
 **Reduce false positives using these curated lists:**  
 | Name                              | Purpose                                                                 | Raw URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| **Whitelisted IPs**               | Legitimate IPs removed from the master blocklist                         | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/removed_from_blocklist.txt) |
+| **Whitelisted IPs Removed**       | Legitimate IPs removed from the master blocklist                         | [📥 Raw](https://github.com/spydisec/spydithreatintel/tree/main/iplist/removedips) |
 | **CDN IP Ranges**                 | Critical infrastructure IPs (Cloudflare, Akamai, Fastly)                 | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/whitelist/cdnips.txt) |
 
 ---
