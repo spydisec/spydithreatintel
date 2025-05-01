@@ -4,6 +4,25 @@
   ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/58a455ee-d4bb-4081-bca4-0944d3594556.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg) ![Daily Domain List Update](https://healthchecks.io/b/2/9ef2114a-9a4f-4f73-9361-36fa22fd9ea7.svg) ![Daily ThreatFox IP List Update](https://healthchecks.io/b/2/df0b45c9-03bb-416e-9cff-97952285a9b4.svg) ![Daily Maltrail IP List Update](https://healthchecks.io/b/2/21cee47c-1c6c-48aa-a92b-5197170e9610.svg)
 </div>
 
+## 🚀 About This Project
+
+Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that aggregates, curates, and maintains high-quality blocklists for malicious IPs and domains. The system combines data from multiple OSINT sources, honeypot networks, and threat intelligence feeds to provide actionable security data.
+
+### Key Features:
+- **Automated Updates**: Daily refresh of IP and domain blocklists
+- **Multi-Source Intelligence**: Aggregates data from 12+ trusted OSINT feeds
+- **Smart Filtering**: Implements whitelisting to minimize false positives
+- **Threat Coverage**: Tracks 50+ threat actors and their infrastructure
+- **CDN-Aware**: Special handling for CDN networks to prevent service disruption
+- **Reference Analysis**: Cross-references removed IPs with OSINT feeds for validation
+
+### Use Cases:
+- Network security monitoring
+- Firewall rule generation
+- Threat intelligence integration
+- Security research and analysis
+- Malware infrastructure tracking
+
 ## Table of Contents
 - 🔥[IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-ip-blocklists)
 - 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
