@@ -33,6 +33,8 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 - 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-community-contributions)
 - 📡[Contact me](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-contact-me)
 
+**Each OSINT feed incorporated in this blocklist is governed by its own terms, conditions, and licensing agreements. By utilizing this compilation, you acknowledge these individual terms and agree to comply with them. Users are responsible for reviewing the original source repositories or documentation for specific licensing details and restrictions.**
+
 ---
 ## 📋 Blocklists    
 ### 🔥 IP Blocklists  
@@ -186,7 +188,7 @@ This project stands on the shoulders of these valuable resources:
 
 **Special Thanks** to MontySecurity for their C2 Tracker framework.
 
-The active sources listed contribute to the compilation of block lists but do not have a direct one-to-one correspondence. Each source has its own license; please consult the source files or repositories for details.
+
 
 ---
 
