@@ -1,10 +1,10 @@
 # Title: Spydi's IP Blocklist
 # Description: Curated IP blocklist generated from multiple OSINT feeds
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 17 May 2025 21:45 UTC
-# Version: 2025.0517.2145.11
+# Last modified: 17 May 2025 23:45 UTC
+# Version: 2025.0517.2345.11
 # Syntax: IPv4/IPv6 addresses (one per line)
-# Number of entries: 21259
+# Number of entries: 21260
 #
 1.2.1.4
 1.4.145.129
@@ -7212,6 +7212,7 @@
 62.60.226.140
 62.60.226.173
 62.60.226.176
+62.60.226.191
 62.60.226.232
 62.60.229.89
 62.60.232.52
