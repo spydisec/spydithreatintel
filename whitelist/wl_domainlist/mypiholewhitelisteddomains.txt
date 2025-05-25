@@ -2,6 +2,7 @@
 (\.|^)bitcoin\.org$
 (\.|^)cloudfront\.net$
 (\.|^)docker\.com$
+(\.|^)eu\.newrelic\.com$
 (\.|^)info\.auda\.org\.au$
 (\.|^)inspectrealestate\.com\.au$
 (\.|^)members\.agl\.com\.au$
@@ -24,6 +25,7 @@ amazonaws.com # Amazon Web Services (AWS) is a subsidiary of Amazon providing on
 amp.theguardian.com
 android.clients.google.com # Google Play Store and few devices (especially Android One devices) depends on this domain for system updates. - qjz9zk
 api-tv.spotify.com
+api.eu.newrelic.com
 api.hh.ru
 api.inspectrealestate.com.au
 api.ipify.org # It is used to get your public IP address programmatically. ipify is completely opensource. - qjz9zk
@@ -53,6 +55,7 @@ c.s-microsoft.com # Used to deliver fonts. - qjz9zk
 callback.api.qgraph.io
 cdn.cloudflare.net # Used to deliver static files over CloudFlare CDN. - qjz9zk
 cdn.cookielaw.org
+cdn.discordapp.com
 cdn.embedly.com # Embedly is used to embed videos, images and rich media from 300+ providers with just the URL. - qjz9zk
 cdn.optimizely.com # optimizely.com is a progressive delivery and experimentation software for other companies. Often used as a video delivery system. - qjz9zk
 cdn.polyfill.io
@@ -77,9 +80,7 @@ clients6.google.com # Used in Google Maps and other Google services. - qjz9zk
 connectivitycheck.android.com # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
 connectivitycheck.gstatic.com # Owned by Google. Used by mobiles devices to check internet connectivity. Also known as Network Connectivity Status Indicator-NCSI. - qjz9zk
 continuum.dds.microsoft.com # Used by YourPhone app by Microsoft on Windows 10 for mirroring Android notifications - qjz9zk
-cpms.spop10.ams.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 cpms.spop10.ams.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-cpms35.spop10.ams.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 cpms35.spop10.ams.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 cse.google.com # Google Custom Search. Often used as a search functionality inside a website. https://programmablesearchengine.google.com/about/ - qjz9zk
 cta-redirect.hubspot.com
@@ -87,7 +88,6 @@ ctldl.windowsupdate.com # Owned by Microsoft. Used to deliver Windows updates. -
 cws.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
 d2c8v52ll5s99u.cloudfront.net # Domain owned by Amazon. Used to deliver media such as videos in entertainment and news sites. - qjz9zk
 d2gatte9o95jao.cloudfront.net # Domain owned by Amazon. Used to deliver media such as videos in entertainment and news sites. - qjz9zk
-dashboard.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 dashboard.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 dataplicity.com # Used to remotely control your Raspberry-Pi. - qjz9zk
 def-vef.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
@@ -96,7 +96,6 @@ dev.virtualearth.net # Owned by Microsoft. Used by Bing Maps to get information 
 deviantart.com
 device.auth.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
 display.ugc.bazaarvoice.com # To display Ratings & Reviews or Questions & Answers in online stores. - qjz9zk
-display.ugc.bazaarvoice.com # To display Ratings &amp; Reviews or Questions &amp; Answers in online stores. - qjz9zk
 displaycatalog.mp.microsoft.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
 dl.delivery.mp.microsoft.com # Used to deliver updates to Microsoft products. - qjz9zk
 dl.dropbox.com # Used to download files from Dropbox - qjz9zk
@@ -179,33 +178,25 @@ mailgun.org
 mandrillapp.com
 manifest.googlevideo.com # Used for YouTube live streams. - qjz9zk
 merch-img.scdn.co
-meta-db-worker02.pop.ric.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 meta-db-worker02.pop.ric.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-meta.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 meta.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-meta.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 meta.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 microsoftonline.com # Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk
 msedge.api.cdp.microsoft.com
 msftncsi.com # Owned by Microsoft. This domain is checked by the operating systems when connecting via wifi, and if they do not get the response they expect, they may try to open a wifi login page or similar as they believe they are located behind a captive portal. - qjz9zk
-my.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 my.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 mywot.com
 nexusrules.officeapps.live.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
 nf.lnk.to
-nine.plugins.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 nine.plugins.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 no-ip.com # No-IP offers DNS services, email, network monitoring and SSL certificates. - qjz9zk
-node.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 node.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 notify.xboxlive.com # Owned by Microsoft. Used for Xbox updates, game downloads, acheivements unlocking etc. - qjz9zk
 npr-news.streaming.adswizz.com # Used for NPR morning news and podcasts. - qjz9zk
 ns1.dropbox.com # Dropbox nameserver. Used to download files from Dropbox - qjz9zk
 ns2.dropbox.com # Dropbox nameserver. Used to download files from Dropbox - qjz9zk
 ns2.parking.reg.ru
-o1.email.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 o1.email.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-o2.sg0.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 o2.sg0.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 ocsp.apple.com # iOS developers are able to distribute apps outside of the App Store using an Enterprise provisioning profile. Apple can revoke these kinds of apps by using this domain. - qjz9zk
 office.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
@@ -213,6 +204,7 @@ office.net # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
 office365.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
 officeclient.microsoft.com # Used by Microsoft Office apps. - qjz9zk
 om.cbsi.com # CBS All Access on straming platforms. - qjz9zk
+one.eu.newrelic.com
 onedrive.live.com # Owned by Microsoft. Used to sign in to One Drive. - qjz9zk
 onelogin.wpcdn.pl
 open.spotify.com
@@ -229,15 +221,10 @@ players.brightcove.net # Video delivery systems, popular in entertainment and ne
 postimg.cc
 pricelist.skype.com # Used to make group calls, group chats etc. on Skype. - qjz9zk
 products.office.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
-proxy.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 proxy.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-proxy.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 proxy.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-proxy02.pop.ord.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 proxy02.pop.ord.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-pubsub.plex.bz # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 pubsub.plex.bz # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-pubsub.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 pubsub.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 query.prod.cms.rt.microsoft.com
 raw.githubusercontent.com # Owned by GitHub. It is used to serve unprocessed versions of files stored in GitHub repositories.  - qjz9zk
@@ -263,14 +250,13 @@ secure.brightcove.com # Video delivery systems, popular in entertainment and new
 secure.surveymonkey.com # Used by Survey Monkey to deliver surveys. - qjz9zk
 services.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
 settings-win.data.microsoft.com
+signup-processor.service.newrelic.com
 sirus.su
 skyhook.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
 sls.update.microsoft.com.akadns.net
 spclient.wg.spotify.com # Spotify on Web and desktop player does not work if this domain is blocked. - qjz9zk
 ssl.p.jwpcdn.com # Video delivery systems, popular in entertainment and news sites. - qjz9zk
-staging.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 staging.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-status.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 status.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 stream.binance.com
 t.cfjump.com
@@ -292,9 +278,7 @@ track.commissionfactory.com.au
 tracking.epicgames.com
 traffic.libsyn.com # Used in Pocketcasts app to serve and download podcasts. - qjz9zk
 trk.mail.ru
-tvdb2.plex.tv # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 tvdb2.plex.tv # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
-tvthemes.plexapp.com # Plex is a client&ndash;server media player system plus an ancillary software suite. - qjz9zk
 tvthemes.plexapp.com # Plex is a client–server media player system plus an ancillary software suite. - qjz9zk
 twimg.com # Owned by Twitter. Used to deliver media on Twitter. - qjz9zk
 ui.skype.com # Used to make group calls, group chats etc. on Skype. - qjz9zk
