@@ -102,6 +102,7 @@ dl.delivery.mp.microsoft.com # Used to deliver updates to Microsoft products. - 
 dl.dropbox.com # Used to download files from Dropbox - qjz9zk
 dl.dropboxusercontent.com # Used to download files from Dropbox - qjz9zk
 dns.msftncsi.com # Owned by Microsoft. Used to check whether the internet connection is up or not in Windows systems.  - qjz9zk
+docs.newrelic.com
 download.komputerswiat.pl
 download.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
 download.visualstudio.microsoft.com
@@ -172,6 +173,7 @@ live.com # Owned by Microsoft. It is a personal information manager web app from
 livepassdl.conviva.com # Conviva offers online video optimization and online video analytics. But it is neccessary to whitelist in order to watch many online contents which uses Conviva. - qjz9zk
 login.live.com # Owned by Microsoft. The following endpoint is used to authenticate a device.  - qjz9zk
 login.microsoftonline.com # Owned by Microsoft. Used by Microsoft Office apps. - qjz9zk
+login.newrelic.com
 logs.juspay.in
 logz.io
 m.stripe.com
