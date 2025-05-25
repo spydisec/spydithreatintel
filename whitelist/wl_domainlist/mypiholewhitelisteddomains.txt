@@ -8,6 +8,7 @@
 (\.|^)members\.agl\.com\.au$
 (\.|^)mempool\.space$
 (\.|^)nagios\.org$
+(\.|^)one\.newrelic\.com$
 (\.|^)pineapple\.net\.au$
 (\.|^)stripe\.com$
 (\.|^)ticketmaster\.com$
@@ -251,6 +252,7 @@ secure.surveymonkey.com # Used by Survey Monkey to deliver surveys. - qjz9zk
 services.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
 settings-win.data.microsoft.com
 signup-processor.service.newrelic.com
+signup.service.newrelic.com
 sirus.su
 skyhook.sonarr.tv # Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available. - qjz9zk
 sls.update.microsoft.com.akadns.net
