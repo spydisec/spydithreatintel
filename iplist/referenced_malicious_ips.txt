@@ -136,4 +136,67 @@
 70.34.253.247
 91.149.253.198
 70.34.254.245
-91.149.253.20
+91.149.253.20# ThreatFox: Quasar RAT (Confidence: 100%, First Seen: 2025-05-20 10:25:49)
+104.18.45.79
+
+# ThreatFox: Unknown RAT (Confidence: 50%, First Seen: 2025-05-23 10:42:29)
+104.21.112.1
+
+# ThreatFox: Cobalt Strike (Confidence: 75%, First Seen: 2025-02-27 12:48:51)
+104.21.37.130
+
+# ThreatFox: Unknown RAT (Confidence: 50%, First Seen: 2025-05-23 10:21:37)
+104.21.80.1
+
+# ThreatFox: Cobalt Strike (Confidence: 75%, First Seen: 2025-04-15 18:53:47)
+104.21.83.121
+
+# ThreatFox: Unknown RAT (Confidence: 50%, First Seen: 2025-05-24 07:58:54)
+104.21.96.1
+
+# ThreatFox: Mirai (Confidence: 100%, First Seen: 2025-03-21 17:17:56)
+172.65.108.145
+
+# ThreatFox: Mirai (Confidence: 100%, First Seen: 2025-03-21 17:17:54)
+172.65.111.47
+
+# ThreatFox: Mirai (Confidence: 100%, First Seen: 2025-03-21 17:17:55)
+172.65.145.72
+
+# ThreatFox: Mirai (Confidence: 100%, First Seen: 2025-02-25 15:11:59)
+172.65.147.108
+
+# ThreatFox: Mirai (Confidence: 100%, First Seen: 2025-05-06 15:42:40)
+172.65.150.137
+
+# ThreatFox: Remcos (Confidence: 100%, First Seen: 2025-05-02 00:01:44)
+# Reference: https://search.censys.io/hosts/172.65.183.142
+172.65.183.142
+
+# ThreatFox: Ghost RAT (Confidence: 100%, First Seen: 2024-11-29 15:20:09)
+172.65.190.172
+
+# ThreatFox: Quasar RAT (Confidence: 100%, First Seen: 2025-03-18 13:16:47)
+172.65.249.80
+
+# ThreatFox: Empire Downloader (Confidence: 75%, First Seen: 2024-12-02 19:50:18)
+172.65.251.28
+
+# ThreatFox: Hook (Confidence: 75%, First Seen: 2025-02-14 18:42:45)
+172.67.136.97
+
+# ThreatFox: Hook (Confidence: 75%, First Seen: 2025-02-14 18:42:37)
+172.67.139.68
+
+# ThreatFox: Hook (Confidence: 75%, First Seen: 2025-02-14 18:42:42)
+172.67.157.36
+
+# ThreatFox: Hook (Confidence: 75%, First Seen: 2025-02-14 18:42:48)
+172.67.202.225
+
+# ThreatFox: Cobalt Strike (Confidence: 75%, First Seen: 2025-02-27 12:49:19)
+172.67.208.60
+
+# ThreatFox: Hook (Confidence: 75%, First Seen: 2025-02-14 18:42:46)
+172.67.217.87
+
