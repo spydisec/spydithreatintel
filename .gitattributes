@@ -1,2 +1,0 @@
-domainlist/perm_domainlist.txt filter=lfs diff=lfs merge=lfs -text
-iplist/permanent_IPList.txt filter=lfs diff=lfs merge=lfs -text
