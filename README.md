@@ -37,20 +37,20 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 ---
 ## 📋 Blocklists    
 ### 🔥 IP Blocklists  
-| Blocklist Name                | File Name                             | Description                                                                 | False Positive Risk | Blocklist URL                                                     |
-|-------------------------------|---------------------------------------|-----------------------------------------------------------------------------|---------------------|-------------------------------------------------------------------|
-| **Master IP Blocklist**       | `master_malicious_iplist.txt`         | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
-| **Main IP Blocklist**         | `filtered_malicious_iplist.txt`       | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Direct](https://spydisec.com/maliciousips.txt)                |
-| **Permanent Malicious IPs**   | `filteredpermanentmaliciousiplist.txt`| Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**        | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
-| **C2 Server IPs Blocklist**   | `osintc2feed.txt`                     | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Direct](https://spydisec.com/osintc2feed.txt)                 |
+| Blocklist Name                | Description                                                                 | False Positive Risk | Blocklist URL                                                     |
+|-------------------------------|-----------------------------------------------------------------------------|---------------------|-------------------------------------------------------------------|
+| **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
+| **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Direct](https://spydisec.com/maliciousips.txt)                |
+| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
+| **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Direct](https://spydisec.com/osintc2feed.txt)                 |
 
 ### 🌐 Domain Blocklists  
-| Name                              | File Name                      | Description                                                                 | Blocklist URL                                                                 |
-|-----------------------------------|--------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Spam/Scam Domains**             | `spamscamabuse_domains.txt`    | Phishing, scam, and spam domains                                            | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                      |
-| **Malware Domains**               | `malicious_domains.txt`        | Active malware distribution, C2, and exploit kit domains                    | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                 |
-| **Ads & Tracking Domains**        | `advtracking_domains.txt`      | Aggressive ads, trackers, and analytics domains                             | [📥 Direct Link](https://spydisec.com/adsblocklist.txt)                       |
-| **Permanent Malicious Domains**   | `perm_domainlist.txt`          | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Direct](https://spydisec.com/permanentMaliciousDomainList.txt)            |
+| Name                              | Description                                                                 | Blocklist URL                                                                 |
+|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                            | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                      |
+| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                    | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                 |
+| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                             | [📥 Direct Link](https://spydisec.com/adsblocklist.txt)                       |
+| **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Direct](https://spydisec.com/permanentMaliciousDomainList.txt)            |
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
