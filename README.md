@@ -26,7 +26,6 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 ## Table of Contents
 - 🔥[IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-ip-blocklists)
 - 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
-- 📦[Permanent Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-permanent-blocklists)
 - 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelisting)
 - 🕵️[Tracked Threats & Source list](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#%EF%B8%8F-tracked-threats--source-list)
 - 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-acknowledgements)
@@ -42,7 +41,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 |-------------------------------|---------------------------------------|-----------------------------------------------------------------------------|---------------------|-------------------------------------------------------------------|
 | **Master IP Blocklist**       | `master_malicious_iplist.txt`         | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
 | **Main IP Blocklist**         | `filtered_malicious_iplist.txt`       | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Direct](https://spydisec.com/maliciousips.txt)                |
-| **Permanent Malicious IPs**   | `filteredpermanentmaliciousiplist.txt`| High-confidence IPs with long-term malicious activity (append-only, filtered) | **Low**        | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
+| **Permanent Malicious IPs**   | `filteredpermanentmaliciousiplist.txt`| Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Very Low**        | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
 | **C2 Server IPs Blocklist**   | `osintc2feed.txt`                     | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Direct](https://spydisec.com/osintc2feed.txt)                 |
 
 ### 🌐 Domain Blocklists  
@@ -51,7 +50,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | **Spam/Scam Domains**             | `spamscamabuse_domains.txt`    | Phishing, scam, and spam domains                                            | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                      |
 | **Malware Domains**               | `malicious_domains.txt`        | Active malware distribution, C2, and exploit kit domains                    | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                 |
 | **Ads & Tracking Domains**        | `advtracking_domains.txt`      | Aggressive ads, trackers, and analytics domains                             | [📥 Direct Link](https://spydisec.com/adsblocklist.txt)                       |
-| **Permanent Malicious Domains**   | `perm_domainlist.txt`          | Domains linked to persistent campaigns (e.g., ransomware, APTs)             | [📥 Direct](https://spydisec.com/permanentMaliciousDomainList.txt)            |
+| **Permanent Malicious Domains**   | `perm_domainlist.txt`          | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Direct](https://spydisec.com/permanentMaliciousDomainList.txt)            |
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
@@ -215,5 +214,3 @@ All contributors are acknowledged in our [Credits](https://github.com/spydisec/s
 - **E-Mail**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
 
 [![OSINT Powered](https://img.shields.io/badge/Intel-OSINT_Powered-yellow?style=for-the-badge)](#)
-
----
