@@ -41,7 +41,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 |-------------------------------|---------------------------------------|-----------------------------------------------------------------------------|---------------------|-------------------------------------------------------------------|
 | **Master IP Blocklist**       | `master_malicious_iplist.txt`         | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
 | **Main IP Blocklist**         | `filtered_malicious_iplist.txt`       | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Direct](https://spydisec.com/maliciousips.txt)                |
-| **Permanent Malicious IPs**   | `filteredpermanentmaliciousiplist.txt`| Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Very Low**        | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
+| **Permanent Malicious IPs**   | `filteredpermanentmaliciousiplist.txt`| Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**        | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
 | **C2 Server IPs Blocklist**   | `osintc2feed.txt`                     | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Direct](https://spydisec.com/osintc2feed.txt)                 |
 
 ### 🌐 Domain Blocklists  
@@ -151,6 +151,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | etnetera.cz               | [etnetera.cz](https://security.etnetera.cz/feeds/etn_aggressive.txt)                                                        |
 | emergingthreats-compromised| [ET_Comp](https://rules.emergingthreats.net/blockrules/compromised-ips.txt)                                                        |
 | greensnow.co              | [greensnow.co](https://blocklist.greensnow.co/greensnow.txt)                                                         |
+| Threatfox         | [Threatfox](https://threatfox.abuse.ch/export)     |
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
