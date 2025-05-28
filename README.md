@@ -39,10 +39,10 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 ### 🔥 IP Blocklists  
 | Blocklist Name                | Description                                                                 | False Positive Risk | Blocklist URL                                                     |
 |-------------------------------|-----------------------------------------------------------------------------|---------------------|-------------------------------------------------------------------|
-| **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Direct](https://spydisec.com/master_malicious_iplist.txt)     |
-| **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Direct](https://spydisec.com/maliciousips.txt)                |
-| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Direct](https://spydisec.com/permanentMaliciousIPList.txt)    |
-| **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Direct](https://spydisec.com/osintc2feed.txt)                 |
+| **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Link](https://spydisec.com/master_malicious_iplist.txt)     |
+| **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Link](https://spydisec.com/maliciousips.txt)                |
+| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Link](https://spydisec.com/permanentMaliciousIPList.txt)    |
+| **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Link](https://spydisec.com/osintc2feed.txt)                 |
 
 ### 🌐 Domain Blocklists  
 | Name                              | Description                                                                 | Blocklist URL                                                                 |
