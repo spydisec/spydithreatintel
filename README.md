@@ -47,10 +47,10 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 ### 🌐 Domain Blocklists  
 | Name                              | Description                                                                 | Blocklist URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                            | [📥 Direct Link](https://spydisec.com/spamblocklist.txt)                      |
-| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                    | [📥 Direct Link](https://spydisec.com/maliciousblocklist.txt)                 |
-| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                             | [📥 Direct Link](https://spydisec.com/adsblocklist.txt)                       |
-| **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Direct](https://spydisec.com/permanentMaliciousDomainList.txt)            |
+| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                            | [📥 Link](https://spydisec.com/spamblocklist.txt)                      |
+| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                    | [📥 Link](https://spydisec.com/maliciousblocklist.txt)                 |
+| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                             | [📥 Link](https://spydisec.com/adsblocklist.txt)                       |
+| **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Link](https://spydisec.com/permanentMaliciousDomainList.txt)            |
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
