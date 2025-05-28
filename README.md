@@ -181,9 +181,7 @@ This project stands on the shoulders of these valuable resources:
 - [DigitalSide](https://osint.digitalside.it) - Italian CERT
 - ...and 10+ other community maintainers
 
-**Special Thanks** to MontySecurity for their C2 Tracker framework.
-
-
+**Special Thanks** to [MontySecurity](https://github.com/montysecurity/C2-Tracker) for their C2 Tracker framework and [elliotwutingfeng](https://github.com/elliotwutingfeng/Inversion-DNSBL-Blocklists) for Inversion DNSBL Blocklists.
 
 ---
 
