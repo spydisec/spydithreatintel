@@ -1,5 +1,5 @@
 # CDN Whitelist - Auto-updated via script
-# Last updated: 2025-05-31 13:55:28 UTC
+# Last updated: 2025-06-01 13:55:12 UTC
 
 # --- Cloudflare IPv4 ---
 103.21.244.0/22
@@ -248,4 +248,5 @@
 35.156.244.91
 52.28.255.255
 52.207.202.187
+54.161.152.147
 
