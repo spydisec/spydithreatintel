@@ -57,7 +57,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | Name                              | Purpose                                                                 | Raw URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **Removed IPs**       | Legitimate IPs removed from the various IP blocklist                         | [📥 Raw](https://github.com/spydisec/spydithreatintel/tree/main/iplist/removedips) |
-| **CDN IP Ranges**                 | Critical infrastructure IPs (Cloudflare, Akamai, Fastly)                 | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/main/whitelist/cdnips.txt) |
+| **Whitelisted IP Ranges**                 | Critical infrastructure IPs (Cloudflare, Akamai, Fastly, and more)                 | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/cdnips.txt) |
 
 ---
 ## 🕵️ Tracked Threats & Source list
