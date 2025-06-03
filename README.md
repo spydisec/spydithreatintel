@@ -155,10 +155,10 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | More coming Soon!         | [Future Updates](#)                                                        |
 </details>
 
-3. Whitelist CDN Coverage Matrix:
+3. Whitelist Coverage Matrix:
 
 <details>
-<summary> View CDN Whitelsit 🛡️</summary>
+<summary> View Whitelist Sources 🛡️</summary>
 
 | Provider       | Type         | Coverage                             |
 |----------------|--------------|--------------------------------------|
@@ -166,6 +166,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | Akamai         | CDN IPv4/IPv6   | Global CDN & Shield IPs              |
 | Fastly         | CDN IPv4/IPv6        | Global CDN                |
 | Tailscale      | DERP & Control Panel | Relay servers and control plane      |
+| Uptime Robot         | IPv4      | UptimeRobot Monitoring                |
 </details>
 
 ---
