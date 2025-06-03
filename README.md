@@ -160,13 +160,13 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 <details>
 <summary> View Whitelist Sources 🛡️</summary>
 
-| Provider       | Type         | Coverage                             |
-|----------------|--------------|--------------------------------------|
-| Cloudflare     | CDN IPv4/IPv6    | Global CDN                |
-| Akamai         | CDN IPv4/IPv6   | Global CDN & Shield IPs              |
-| Fastly         | CDN IPv4/IPv6        | Global CDN                |
-| Tailscale      | DERP & Control Panel | Relay servers and control plane      |
-| Uptime Robot         | IPv4      | UptimeRobot Monitoring                |
+| Provider       | Type                   | Coverage                      | Source Link                                                                 |
+|----------------|------------------------|-------------------------------|-----------------------------------------------------------------------------|
+| Cloudflare     | CDN IPv4/IPv6          | Global CDN                    | [Cloudflare IPs](https://www.cloudflare.com/ips/)                           |
+| Akamai         | CDN IPv4/IPv6          | Global CDN & Shield IPs       | [Akamai IPs](https://techdocs.akamai.com/property-manager/pdfs/akamai_ipv4_CIDRs.txt)    |
+| Fastly         | CDN IPv4/IPv6          | Global CDN                    | [Fastly IPs](https://api.fastly.com/public-ip-list)                         |
+| Tailscale      | DERP & Control Panel   | Relay servers and control plane| [Tailscale DERP](https://login.tailscale.com/derpmap/default)                            |
+| Uptime Robot   | IPv4                   | UptimeRobot Monitoring        | [UptimeRobot IPs](https://uptimerobot.com/inc/files/ips/IPv4.txt)           |
 </details>
 
 ---
