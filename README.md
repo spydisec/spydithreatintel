@@ -60,7 +60,7 @@ https://spydisec.com/fullIPblocklist.txt
 *Append-only dataset containing all historical confidence-scored IPs ever collected*
 
 ```
-https://spydisec.com//permanentfullIPblocklist.txt
+https://spydisec.com/permanentfullIPblocklist.txt
 ```
 
 <details>
