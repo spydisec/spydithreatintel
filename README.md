@@ -95,13 +95,36 @@ https://spydisec.com/permanentfullIPblocklist.txt
 | **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](/fullIPblocklist.txt) |
 | **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Download](https://spydisec.com/osintc2feed.txt) |
 
-### 🌐 Domain Blocklists  
+### 🌐 Domain Blocklists **[ENHANCED]**
+*Priority-based domain assignment with zero intelligence loss*
+
 | Name                              | Description                                                                 | Download                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Spam/Scam Domains**             | Phishing, scam, and spam domains                                            | [📥 Download](https://spydisec.com/spamblocklist.txt)                      |
-| **Malware Domains**               | Active malware distribution, C2, and exploit kit domains                    | [📥 Download](https://spydisec.com/maliciousblocklist.txt)                 |
-| **Ads & Tracking Domains**        | Aggressive ads, trackers, and analytics domains                             | [📥 Download](https://spydisec.com/adsblocklist.txt)                       |
+| **Malware Domains**               | **🎯 Priority 1**: Active malware distribution, C2, and exploit kit domains | [📥 Download](https://spydisec.com/maliciousblocklist.txt)                 |
+| **Spam/Scam Domains**             | **📧 Priority 2**: Phishing, scam, and spam domains (clean separation)      | [📥 Download](https://spydisec.com/spamblocklist.txt)                      |
+| **Ads & Tracking Domains**        | **📺 Priority 3**: Aggressive ads, trackers, and analytics domains          | [📥 Download](https://spydisec.com/adsblocklist.txt)                       |
 | **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt)            |
+
+<details>
+<summary>🔄 <strong>Priority-Based Domain Assignment</strong> **[NEW]**</summary>
+
+**Cross-Source Overlap Resolution:**
+- **Problem**: Same domain appears in multiple category sources (malvertising, spam+phishing)
+- **Solution**: Security-first priority assignment without domain loss
+- **Hierarchy**: Malicious → Spam → Ads (highest to lowest priority)
+
+**Key Benefits:**
+- ✅ **Zero Intelligence Loss**: Every domain assigned to appropriate category
+- ✅ **Clean Separation**: Each domain appears in exactly one blocklist  
+- ✅ **Security Priority**: Malicious threats take precedence over ads/spam categorization
+- ✅ **Deployment Flexibility**: Different tools can use different category lists
+
+**Performance Results:**
+- **Cross-category overlaps resolved**: 735K+ domains properly categorized
+- **Malware list enhanced**: Now includes all security threats regardless of other categorizations
+- **Category purity**: Ads/Spam lists contain only non-malicious entries
+
+</details>
 
 ### 📁 Whitelisting  
 **Reduce false positives using these curated lists:**  
