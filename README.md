@@ -51,14 +51,12 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | **⚖️ Medium**    | **Medium Confidence Unlimited**   | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
 | **🔬 Low**       | **Low Confidence**                | [📥 Download](https://spydisec.com/low_confidence.txt) |
 
-#### 📊 Research Dataset
+### 📊 Research Dataset
 *Complete dataset containing all IPs from above confidence levels after whitelisting*
 
 ```
-https://spydisec.com//fullIPblocklist.txt
+https://spydisec.com/fullIPblocklist.txt
 ```
-
-#### 🗄️ Permanent Historical Dataset
 *Append-only dataset containing all historical confidence-scored IPs ever collected*
 
 ```
