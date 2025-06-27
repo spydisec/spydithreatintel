@@ -96,33 +96,40 @@ https://spydisec.com/permanentfullIPblocklist.txt
 | **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Download](https://spydisec.com/osintc2feed.txt) |
 
 ### 🌐 Domain Blocklists **[ENHANCED]**
-*Priority-based domain assignment with zero intelligence loss*
+*Independent category processing with complete source fidelity*
 
 | Name                              | Description                                                                 | Download                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Malware Domains**               | **🎯 Priority 1**: Active malware distribution, C2, and exploit kit domains | [📥 Download](https://spydisec.com/maliciousblocklist.txt)                 |
-| **Spam/Scam Domains**             | **📧 Priority 2**: Phishing, scam, and spam domains (clean separation)      | [📥 Download](https://spydisec.com/spamblocklist.txt)                      |
-| **Ads & Tracking Domains**        | **📺 Priority 3**: Aggressive ads, trackers, and analytics domains          | [📥 Download](https://spydisec.com/adsblocklist.txt)                       |
+| **Malware Domains**               | **🛡️ Security**: Active malware distribution, C2, and exploit kit domains   | [📥 Download](https://spydisec.com/maliciousblocklist.txt)                 |
+| **Spam/Scam Domains**             | **📧 Communication**: Phishing, scam, and spam domains                      | [📥 Download](https://spydisec.com/spamblocklist.txt)                      |
+| **Ads & Tracking Domains**        | **📺 Privacy**: Aggressive ads, trackers, and analytics domains             | [📥 Download](https://spydisec.com/adsblocklist.txt)                       |
 | **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt)            |
 
 <details>
-<summary>🔄 <strong>Priority-Based Domain Assignment</strong> **[NEW]**</summary>
+<summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
 
-**Cross-Source Overlap Resolution:**
-- **Problem**: Same domain appears in multiple category sources (malvertising, spam+phishing)
-- **Solution**: Security-first priority assignment without domain loss
-- **Hierarchy**: Malicious → Spam → Ads (highest to lowest priority)
+**Source-Faithful Processing:**
+- **Philosophy**: Preserve complete fidelity to original threat intelligence sources
+- **Approach**: Each category processed independently with individual deduplication and whitelisting
+- **Result**: Users can choose single or multiple lists based on deployment needs
 
 **Key Benefits:**
-- ✅ **Zero Intelligence Loss**: Every domain assigned to appropriate category
-- ✅ **Clean Separation**: Each domain appears in exactly one blocklist  
-- ✅ **Security Priority**: Malicious threats take precedence over ads/spam categorization
-- ✅ **Deployment Flexibility**: Different tools can use different category lists
+- ✅ **Complete Source Fidelity**: Each category reflects exactly what threat intel sources provide
+- ✅ **User Choice Flexibility**: Import single category or multiple lists into Pi-hole/AdGuard
+- ✅ **Zero Intelligence Loss**: No domains removed due to artificial categorization conflicts
+- ✅ **Overlap Transparency**: Cross-category statistics available for threat analysis
+- ✅ **DNS Filter Ready**: Multiple lists can be safely imported without conflicts
+
+**Deployment Options:**
+- **Single List**: Use one category for focused protection (e.g., only malware blocking)
+- **Multi-List**: Import all three for comprehensive coverage (recommended for Pi-hole/AdGuard)
+- **Custom Mix**: Choose any combination based on specific security requirements
 
 **Performance Results:**
-- **Cross-category overlaps resolved**: 735K+ domains properly categorized
-- **Malware list enhanced**: Now includes all security threats regardless of other categorizations
-- **Category purity**: Ads/Spam lists contain only non-malicious entries
+- **Malicious**: 3.24M domains (65MB) - Complete malicious source coverage
+- **Spam**: 1.47M domains (31MB) - Complete spam/scam source coverage  
+- **Ads**: 368K domains (8.1MB) - Complete advertising/tracking source coverage
+- **Overlap Preservation**: 707K domains preserved across multiple categories for user choice
 
 </details>
 
