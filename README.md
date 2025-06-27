@@ -17,14 +17,6 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 - **🔬 Research Support**: Complete datasets available for academic and enterprise analysis
 - **🚀 Enterprise-Ready**: Tiered outputs optimized for firewalls, SIEM systems, and monitoring platforms
 
-### Use Cases:
-- **🔥 Production Firewalls**: High-confidence limited lists for OPNsense/pfSense with minimal false positives
-- **🏢 Enterprise Security**: Unlimited high-confidence feeds for advanced threat protection  
-- **📊 SIEM Integration**: Medium-confidence feeds optimized for correlation rules and monitoring
-- **🔍 Threat Hunting**: Comprehensive datasets for security research and investigation
-- **🎓 Academic Research**: Complete historical datasets for threat landscape analysis
-- **🚨 Incident Response**: Real-time IOC feeds for rapid threat containment
-
 ## Table of Contents
 - 🎯[Confidence-Based IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-confidence-based-ip-blocklists-new) **[NEW]**
 - 🔥[Legacy IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-legacy-ip-blocklists) 
@@ -92,7 +84,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 |-------------------------------|-----------------------------------------------------------------------------|---------------------|--------------------------------------------------------------|
 | **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Download](https://spydisec.com/master_malicious_iplist.txt) |
 | **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Download](https://spydisec.com/maliciousips.txt) |
-| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](/fullIPblocklist.txt) |
+| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Download](https://spydisec.com/osintc2feed.txt) |
 
 ### 🌐 Domain Blocklists **[ENHANCED]**
