@@ -125,12 +125,6 @@ https://spydisec.com/permanentfullIPblocklist.txt
 - **Multi-List**: Import all three for comprehensive coverage (recommended for Pi-hole/AdGuard)
 - **Custom Mix**: Choose any combination based on specific security requirements
 
-**Performance Results:**
-- **Malicious**: 3.24M domains (65MB) - Complete malicious source coverage
-- **Spam**: 1.47M domains (31MB) - Complete spam/scam source coverage  
-- **Ads**: 368K domains (8.1MB) - Complete advertising/tracking source coverage
-- **Overlap Preservation**: 707K domains preserved across multiple categories for user choice
-
 </details>
 
 ### 📁 Whitelisting  
