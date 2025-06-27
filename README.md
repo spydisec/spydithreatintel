@@ -55,14 +55,14 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 *Complete dataset containing all IPs from above confidence levels after whitelisting*
 
 ```
-https://spydisec.com/research_full_blocklist.txt
+https://spydisec.com//fullIPblocklist.txt
 ```
 
 #### 🗄️ Permanent Historical Dataset
 *Append-only dataset containing all historical confidence-scored IPs ever collected*
 
 ```
-https://spydisec.com/permanent_confidence_blocklist.txt
+https://spydisec.com//permanentfullIPblocklist.txt
 ```
 
 <details>
@@ -94,7 +94,7 @@ https://spydisec.com/permanent_confidence_blocklist.txt
 |-------------------------------|-----------------------------------------------------------------------------|---------------------|--------------------------------------------------------------|
 | **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Download](https://spydisec.com/master_malicious_iplist.txt) |
 | **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Download](https://spydisec.com/maliciousips.txt) |
-| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](https://spydisec.com/permanentMaliciousIPList.txt) |
+| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](/fullIPblocklist.txt) |
 | **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Download](https://spydisec.com/osintc2feed.txt) |
 
 ### 🌐 Domain Blocklists  
