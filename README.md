@@ -37,10 +37,10 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 
 | Confidence Level | Blocklist Name                     | Download                                                     |
 |------------------|------------------------------------|------------------------------------------------------------- |
-| **🎯 High**      | **High Confidence Limited**       | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
-| **🎯 High**      | **High Confidence Unlimited**     | [📥 Download](https://spydisec.com/high_confidence_unlimited.txt) |
-| **⚖️ Medium**    | **Medium Confidence Limited**     | [📥 Download](https://spydisec.com/medium_confidence_limited.txt) |
-| **⚖️ Medium**    | **Medium Confidence Unlimited**   | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
+| **🎯 High**      | **High Confidence Lite**       | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
+| **🎯 High**      | **High Confidence Max**     | [📥 Download](https://spydisec.com/high_confidence_unlimited.txt) |
+| **⚖️ Medium**    | **Medium Confidence Lite**     | [📥 Download](https://spydisec.com/medium_confidence_limited.txt) |
+| **⚖️ Medium**    | **Medium Confidence Max**   | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
 | **🔬 Low**       | **Low Confidence**                | [📥 Download](https://spydisec.com/low_confidence.txt) |
 
 ### 📊 Research Dataset
