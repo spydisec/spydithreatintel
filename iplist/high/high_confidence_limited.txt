@@ -2,8 +2,8 @@
 # Description: Confidence-scored IP blocklist with multi-source validation
 # Confidence Level: high_limited
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 31 Jul 2025 01:13 UTC
-# Version: 2025.0731.0113.24
+# Last modified: 31 Jul 2025 02:13 UTC
+# Version: 2025.0731.0213.37
 # Syntax: IPv4/IPv6 addresses (one per line)
 # Number of entries: 5000
 # Scoring: Multi-source validation with weighted confidence
@@ -2466,7 +2466,9 @@
 104.152.52.72
 104.152.52.151
 104.152.52.154
+104.152.52.232
 104.155.27.128
+104.156.155.2
 104.156.155.8
 104.156.155.9
 104.156.155.10
@@ -3557,7 +3559,6 @@
 167.94.146.47
 167.94.146.48
 167.94.146.49
-167.94.146.50
 167.94.146.51
 167.94.146.52
 167.94.146.53
@@ -4710,7 +4711,6 @@
 206.168.34.78
 206.168.34.79
 206.168.34.80
-206.168.34.81
 206.168.34.82
 206.168.34.83
 206.168.34.84
