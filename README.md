@@ -8,7 +8,8 @@
 
 Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that aggregates, curates, and maintains high-quality blocklists for malicious IPs and domains. The system combines data from multiple OSINT sources, honeypot networks, and threat intelligence feeds to provide actionable security data.
 
-### Key Features:
+### Key Features
+
 - **🎯 Confidence-Based Tiers**: Production-ready IP blocklists optimized for different deployment scenarios
 - **🔍 Multi-Source Validation**: Advanced scoring system with cross-reference validation across 12+ OSINT feeds  
 - **🛡️ Smart Whitelisting**: CDN-aware filtering (Cloudflare, Akamai, Fastly) applied to all confidence tiers
@@ -18,8 +19,9 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 - **🚀 Enterprise-Ready**: Tiered outputs optimized for firewalls, SIEM systems, and monitoring platforms
 
 ## Table of Contents
+
 - 🎯[Confidence-Based IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-confidence-based-ip-blocklists-new) **[NEW]**
-- 🔥[Legacy IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-legacy-ip-blocklists) 
+- 🔥[Legacy IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-legacy-ip-blocklists)
 - 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
 - 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelisting)
 - 🕵️[Tracked Threats & Source list](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#%EF%B8%8F-tracked-threats--source-list)
@@ -30,9 +32,11 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 **Each OSINT feed incorporated in this blocklist is governed by its own terms, conditions, and licensing agreements. By utilizing this compilation, you acknowledge these individual terms and agree to comply with them. Users are responsible for reviewing the original source repositories or documentation for specific licensing details and restrictions.**
 
 ---
-## 📋 Blocklists    
 
-### 🔥 Confidence-Based IP Blocklists **[NEW]** 
+## 📋 Blocklists
+
+### 🔥 Confidence-Based IP Blocklists
+
 *Production-ready, tiered IP blocklists with multi-source validation and confidence scoring*
 
 | Confidence Level | Blocklist Name                     | Download                                                     |
@@ -44,11 +48,13 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | **🔬 Low**       | **Low Confidence**                | [📥 Download](https://spydisec.com/low_confidence.txt) |
 
 ### 📊 Research Dataset
+
 *Complete dataset containing all IPs from above confidence levels after whitelisting*
 
 ```
 https://spydisec.com/fullIPblocklist.txt
 ```
+
 *Append-only dataset containing all historical confidence-scored IPs ever collected*
 
 ```
@@ -59,6 +65,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 <summary>🔍 <strong>Confidence Scoring Methodology</strong></summary>
 
 **Multi-Source Validation System:**
+
 - **High Confidence**: IPs validated by 2+ authoritative sources with confidence score ≥8
 - **Medium Confidence**: IPs from 1+ authoritative source with confidence score ≥3  
 - **Low Confidence**: All other collected intelligence below medium threshold
@@ -67,6 +74,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 - **Whitelist Filtering**: CDN protection (Cloudflare, Akamai, Fastly) applied to all tiers
 
 **Quality Assurance:**
+
 - **False Positive Rate**: <0.1% for high confidence, <1% for medium confidence
 - **Source Attribution**: Full traceability of confidence decisions
 - **Automatic Updates**: Daily refresh with real-time threat intelligence
@@ -74,20 +82,10 @@ https://spydisec.com/permanentfullIPblocklist.txt
 
 </details>
 
-
 ---
 
-### 🔥 Legacy IP Blocklists  
-*Traditional blocklists maintained for backward compatibility*
+### 🌐 Domain Blocklists
 
-| Blocklist Name                | Description                                                                 | False Positive Risk | Download                                                     |
-|-------------------------------|-----------------------------------------------------------------------------|---------------------|--------------------------------------------------------------|
-| **Master IP Blocklist**       | Raw IPs from 12+ OSINT feeds (unfiltered)                                   | **High**            | [📥 Download](https://spydisec.com/master_malicious_iplist.txt) |
-| **Main IP Blocklist**         | Curated IPs with whitelisting applied for minimal false positives           | **Low**             | [📥 Download](https://spydisec.com/maliciousips.txt) |
-| **Permanent Malicious IPs**   | Append-only: all IPs ever seen in the Main IP Blocklist (unless whitelisted) | **Medium**          | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
-| **C2 Server IPs Blocklist**   | Command-and-Control infrastructure from tracked threat actors                | **Low**             | [📥 Download](https://spydisec.com/osintc2feed.txt) |
-
-### 🌐 Domain Blocklists **[ENHANCED]**
 *Independent category processing with complete source fidelity*
 
 | Name                              | Description                                                                 | Download                                                                 |
@@ -101,11 +99,13 @@ https://spydisec.com/permanentfullIPblocklist.txt
 <summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
 
 **Source-Faithful Processing:**
+
 - **Philosophy**: Preserve complete fidelity to original threat intelligence sources
 - **Approach**: Each category processed independently with individual deduplication and whitelisting
 - **Result**: Users can choose single or multiple lists based on deployment needs
 
 **Key Benefits:**
+
 - ✅ **Complete Source Fidelity**: Each category reflects exactly what threat intel sources provide
 - ✅ **User Choice Flexibility**: Import single category or multiple lists into Pi-hole/AdGuard
 - ✅ **Zero Intelligence Loss**: No domains removed due to artificial categorization conflicts
@@ -113,6 +113,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 - ✅ **DNS Filter Ready**: Multiple lists can be safely imported without conflicts
 
 **Deployment Options:**
+
 - **Single List**: Use one category for focused protection (e.g., only malware blocking)
 - **Multi-List**: Import all three for comprehensive coverage (recommended for Pi-hole/AdGuard)
 - **Custom Mix**: Choose any combination based on specific security requirements
@@ -120,15 +121,20 @@ https://spydisec.com/permanentfullIPblocklist.txt
 </details>
 
 ### 📁 Whitelisting  
+
 **Reduce false positives using these curated lists:**  
+
 | Name                              | Purpose                                                                 | Raw URL                                                                 |
 |-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | **Removed IPs**       | Legitimate IPs removed from the various IP blocklist                         | [📥 Raw](https://github.com/spydisec/spydithreatintel/tree/main/iplist/removedips) |
 | **Whitelisted IPs**                 | Critical infrastructure IPs (Cloudflare, Akamai, Fastly, and more)                 | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/cdnips.txt) |
 
 ---
+
 ## 🕵️ Tracked Threats & Source list
+
 1. Actively monitored infrastructure across 50+ threat actors:
+
 <details>
 <summary>🔍 Expand Threat Catalog</summary>
 
@@ -194,6 +200,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 |                           | Bumblebee Loader                |              |
 |                           | Viper RAT                       |              |
 |                           | Spectre Stealer                 |              |
+
 </details>
 
 2. **Sources**: 12+ curated feeds including C2 servers, honeypot data, Mass-scanners, and OSINT feeds.
@@ -220,6 +227,7 @@ https://spydisec.com/permanentfullIPblocklist.txt
 | greensnow.co              | [greensnow.co](https://blocklist.greensnow.co/greensnow.txt)                                                         |
 | Threatfox         | [Threatfox](https://threatfox.abuse.ch/export)     |
 | More coming Soon!         | [Future Updates](#)                                                        |
+
 </details>
 
 3. Whitelist Coverage Matrix:
@@ -234,11 +242,13 @@ https://spydisec.com/permanentfullIPblocklist.txt
 | Fastly         | CDN IPv4/IPv6          | Global CDN                    | [Fastly IPs](https://api.fastly.com/public-ip-list)                         |
 | Tailscale      | DERP & Control Panel   | Relay servers and control plane| [Tailscale DERP](https://login.tailscale.com/derpmap/default)                            |
 | Uptime Robot   | IPv4                   | UptimeRobot Monitoring        | [UptimeRobot IPs](https://uptimerobot.com/inc/files/ips/IPv4.txt)           |
+
 </details>
 
 ---
 
 ## 🙌 Acknowledgements
+
 **Gratitude to our OSINT partners**  
 This project stands on the shoulders of these valuable resources:
 
@@ -254,8 +264,10 @@ This project stands on the shoulders of these valuable resources:
 ---
 
 ## 🤝 Community Contributions  
+
 **Build a cleaner, more actionable feed**  
 We welcome contributions to enhance this resource for:  
+
 - **Individuals**: Simplify personal network security  
 - **SMBs**: Deploy cost-effective threat blocking  
 - **Enterprises**: Integrate scalable threat intelligence  
@@ -268,6 +280,7 @@ We welcome contributions to enhance this resource for:
 🔹 **Automation**: Suggest workflow improvements for data curation  
 
 **How to Help**:  
+
 1. Submit verified IOCs via Pull Request  
 2. Report duplicate entries in [Issues](https://github.com/spydisec/spydithreatintel/issues)
 3. Report false positive in [Issues](https://github.com/spydisec/spydithreatintel/issues)  
@@ -277,7 +290,9 @@ We welcome contributions to enhance this resource for:
 All contributors are acknowledged in our [Credits](https://github.com/spydisec/spydithreatintel/wiki/Contributors).  
 
 ---
+
 ## 📡 Contact me
+
 - **E-Mail**: [spyditi@proton.me](mailto:spyditi@proton.me) (PGP: [Key](https://pastebin.com/igL3mGVb))
 
 [![OSINT Powered](https://img.shields.io/badge/Intel-OSINT_Powered-yellow?style=for-the-badge)](#)
