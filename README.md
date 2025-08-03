@@ -20,7 +20,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 
 ## Table of Contents
 
-- 🎯[Confidence-Based IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-confidence-based-ip-blocklists-new) **[NEW]**
+- 🎯[Confidence-Based IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-confidence-based-ip-blocklists-new)
 - 🔥[Legacy IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-legacy-ip-blocklists)
 - 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
 - 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelisting)
