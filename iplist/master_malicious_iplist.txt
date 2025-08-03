@@ -1,10 +1,10 @@
 # Title: SpydiTI Raw Master Malicious IP List
 # Description: Unfiltered, aggregated list of malicious IPs from all sources.
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 03 Aug 2025 14:12 UTC
-# Version: 2025.0803.1412.48
+# Last modified: 03 Aug 2025 15:12 UTC
+# Version: 2025.0803.1512.41
 # Syntax: IPv4/IPv6 addresses (one per line)
-# Number of entries: 195
+# Number of entries: 196
 #
 1.1.5.4
 1.13.81.97
@@ -91,6 +91,7 @@
 83.168.78.31
 83.168.78.55
 84.54.51.12
+86.106.104.242
 89.64.70.69
 89.213.174.236
 90.156.4.204
