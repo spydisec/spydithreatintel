@@ -1,5 +1,5 @@
 # CDN Whitelist - Auto-updated via script
-# Last updated: 2025-08-10 13:56:10 UTC
+# Last updated: 2025-08-11 13:55:11 UTC
 
 # --- Cloudflare IPv4 ---
 103.21.244.0/22
@@ -28,7 +28,12 @@
 2c0f:f248::/32
 
 # --- Akamai IPv4 ---
-# (Failed to fetch or process this source - check logs above)
+2.16.0.0/13
+23.0.0.0/12
+23.32.0.0/11
+23.192.0.0/11
+95.100.0.0/15
+184.24.0.0/13
 
 # --- UptimeRobot IPv4 ---
 3.12.251.153
