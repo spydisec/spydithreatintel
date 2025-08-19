@@ -1,10 +1,10 @@
 # Title: Spydi's Phishing DNS Tracker
 # Description: A collection of phishing domains extracted from OSINT public feed
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 18 Aug 2025 23:11 UTC
-# Version: 2025.0818.2311.24
+# Last modified: 19 Aug 2025 00:11 UTC
+# Version: 2025.0819.0011.20
 # Syntax: Domains (including possible subdomains)
-# Number of entries: 25377
+# Number of entries: 25567
 #
 0000006738.vercel.app
 00003.godaddysites.com
@@ -1122,6 +1122,7 @@ ad-account-guard-center.pages.dev
 ad-account-management-9ejz.vercel.app
 ad-account-management-wv3s.vercel.app
 ad-account-safety-hub.pages.dev
+ad-account-supervision-center-5h2.pages.dev
 ad-account-track-center.pages.dev
 ad-hellcase.com
 ad-hites-management-as2.vercel.app
@@ -1170,6 +1171,7 @@ adiux06.github.io
 adliyekamusorgu.org
 admcomp.pro
 admin-action-logger.vercel.app
+admin-de-027.weebly.com
 admin-en-logon-5f48a6ed.azurewebsites.net
 admin-en-logon-ff095fdd.azurewebsites.net
 admin-en-logon-patagonia-9e3dd5b8.azurewebsites.net
@@ -1289,6 +1291,7 @@ ahsanullah-org.edp.qdg.mybluehost.me
 ahv3ctpms4e.timeforsurveys.com
 ahzvqxj.vercel.app
 ai-egao.github.io
+ai-uniswaps.web.app
 ai.mdcomp.com.au
 ai.swaransoft.com
 aibtechnology.com
@@ -1793,6 +1796,7 @@ app-67dbe811c1ac1810207df219.closte.com
 app-app-ndax.webflow.io
 app-atomiccwallet-secure.webflow.io
 app-atomicwallet.webflow.io
+app-blocckfii-cdn-sso.webflow.io
 app-cash-link.com
 app-coinbase-pro-cdn.weebly.com
 app-com-itrustcapital-sso--auth.webflow.io
@@ -1903,6 +1907,7 @@ appleclonebootstrap.netlify.app
 appleconbiniyam.netlify.app
 appledger-mode.serveirc.com
 appleecommunity24x7.pages.dev
+appleevan.netlify.app
 applefk.com.tr
 appleid-mypan.link
 appleid.apple.com-po.pl
@@ -2062,6 +2067,7 @@ ashishtiwar123.github.io
 ashok98669.github.io
 ashraf7002.github.io
 ashu8477.github.io
+ashutkda.pup.ddns-zk.cc
 ashutoshmore24.github.io
 ashwanik0777.github.io
 asialiveaction.com
@@ -2172,6 +2178,7 @@ att-102965-105475.weeblysite.com
 att-103512-adeyemi.square.site
 att-103793-105635.weeblysite.com
 att-104115.weeblysite.com
+att-104242-103273.weeblysite.com
 att-104751.weeblysite.com
 att-104769-109089.weeblysite.com
 att-105208-105018.weeblysite.com
@@ -2323,6 +2330,7 @@ auth---netcoins---ny---cdn.webflow.io
 auth---robinhood---nj--cdn.webflow.io
 auth---s-start---ttrezor.webflow.io
 auth---sso---app-cdn--kucion.webflow.io
+auth--app-cryptocom-sso-h--cdn.webflow.io
 auth--app-cryptocom-web-cdn.webflow.io
 auth--apps-crypto-sso-cdn-v.webflow.io
 auth--blockfi--en-cdn-sso.webflow.io
@@ -2444,10 +2452,12 @@ auth.sos.growvmark.com
 auth.sspl.com.au
 authapi.rest
 authe--bybit-b-login-sso.webflow.io
+authe-blockfilogin-secured.webflow.io
 authentic-feedback-374891.framer.app
 authentication.ms
 authfilesecure.onslougrading-paving.com
 authh-itrustcapital-sso.webflow.io
+authhomepage-btimart.webflow.io
 authhy010.top
 authledger---livwallet.webflow.io
 authmailsynclink.weebly.com
@@ -2475,6 +2485,7 @@ authsyncsprotocol.pages.dev
 authu-content-ledggr.webflow.io
 authu-ledgre-apps.webflow.io
 authvryfy.spoty.danielmarino.co.uk
+authz-blockfilogin-secure.webflow.io
 auto-takev1.vercel.app
 autoconfig.transport.glsnsw.com.au
 autodiscover.caq.com.au
@@ -2928,6 +2939,9 @@ begin-trzor-help.webflow.io
 behavior-local-manage-main820649317.vercel.app
 bei.pilot45.com
 beitang.pilot45.com
+beitmartloginq.webflow.io
+beitmatilogin.webflow.io
+beitmrtlogon.webflow.io
 bejewelled-scone-e3e16e.netlify.app
 belajark.github.io
 bell-reset.com
@@ -2938,6 +2952,7 @@ bellsouth-activation-service.webflow.io
 bellsouth-att-sign-in-4cec06.webflow.io
 bellsouth-att-sign-in-777ecc.webflow.io
 bellsouth-att-sign-in-c6f46c.webflow.io
+bellsouth-att-sign-in-e5f061.webflow.io
 beloginarg.hosted.phplist.com
 bemigame.online
 benadom111.wixsite.com
@@ -3126,6 +3141,7 @@ bigpondupdatenote.weebly.com
 bigsaleapple.com
 bigskyaviation.com
 bii.ialeahed.com
+biitmartlog0n--auth.webflow.io
 bikashkumarpalai.github.io
 bilet.froisim.com
 bill.balagagro.com
@@ -3159,11 +3175,32 @@ bisexternal.ciamlogin.com
 bishalnandi.github.io
 bismally.github.io
 bit.ly
+bitbmarrtloogiin.webflow.io
 bitfitone9.pages.dev
+bithndmrtilogin.webflow.io
 bitlancec.vercel.app
 bitly.cx
+bitmardtlogin.webflow.io
+bitmarrtsignim.webflow.io
+bitmarrtsignup.webflow.io
+bitmart-home-secure.webflow.io
+bitmart-login.net
+bitmartedlogin.webflow.io
+bitmarteleogine.webflow.io
+bitmartelogeine.webflow.io
+bitmartelogens.webflow.io
+bitmartloene.webflow.io
+bitmartlogenue.webflow.io
+bitmartlogiind.webflow.io
+bitmartlougenene.webflow.io
+bitmartnlogiin.webflow.io
+bitmastddlogin.webflow.io
+bitmmasetlogi.webflow.io
 bitnakomireu25.sbs
+bitrmartlogina.webflow.io
 bitter-sound-e384.pawavo5519.workers.dev
+bittmarttelogihn.webflow.io
+bittumartlogin.webflow.io
 bittvavo.com
 bitvavo-authenticatie.com
 bitvavo.com.nl.services.cbz.poe.temporary.site
@@ -3190,6 +3227,7 @@ blastpendragon-001-site1.mtempurl.com
 blaze207.github.io
 blckfi-login-us.godaddysites.com
 blckfi_uslogn.godaddysites.com
+blckfiloginz.webflow.io
 blcod708.cc
 bleaflix.vercel.app
 blgp0nd99-000.square.site
@@ -3228,9 +3266,14 @@ blockfe_logi2.godaddysites.com
 blockfi-apps-secure-en.webflow.io
 blockfi-login--secure.webflow.io
 blockfi-login-auth-sso.webflow.io
+blockfiauth.webflow.io
 blockfie-eng.github.io
 blockfifi_log_usa.godaddysites.com
 blockfiloggii.godaddysites.com
+blockfiloginauthz.webflow.io
+blockfilogix.webflow.io
+blockfindlogin.webflow.io
+blockfylogine.webflow.io
 blockhchaiinlogin-usa.godaddysites.com
 blockichain-login-in.godaddysites.com
 blockixclogin.godaddysites.com
@@ -3238,12 +3281,16 @@ blockkfii--logen---authh-sso.webflow.io
 blockkfilogin9.godaddysites.com
 blockplatform.net
 blockshieldtech.com
+blocukfielogins.webflow.io
 blog.discontcomputers.com
 blog.remotemployees.com
 blog_gemini_loginx.godaddysites.com
 blogx.dev.glsnsw.com.au
 blokchainlogin.webflow.io
+blokfi_lllogin.godaddysites.com
 blokfi_lodinnn.godaddysites.com
+blokfilog-inn.godaddysites.com
+blokifi-loginnn.godaddysites.com
 blokir-dbs.onrender.com
 bloomagentportal.com
 bloomykattupalli.github.io
@@ -3291,6 +3338,7 @@ bnails.business-minagne.com
 bncjg.qpon
 bnkoan-001-site1.rtempurl.com
 bnkrewrdzs-s.replit.app
+bnpp-demo.powerappsportals.com
 bnppre.netmarket.de
 bnrebgh.duckdns.org
 bnregs.duckdns.org
@@ -3754,6 +3802,7 @@ capitalone.oqiqu.com
 capitalvale.site
 capstonhomes.com.au
 caq.com.au
+cara.batalkan-trx.info
 caramel-elite-quality.glitch.me
 carariverpark-hungphu.com
 carbne-sq.ydns.eu
@@ -4875,6 +4924,7 @@ console-ndax--p-sso.webflow.io
 console-s-ndax--sso.webflow.io
 consoleawais12.github.io
 consolesecudigitalisation.firebaseapp.com
+consolidated.directsmailsolution.com
 constyejin.github.io
 consulting-apis.vercel.app
 consulting-user-git-main-projects-munt.vercel.app
@@ -4898,6 +4948,7 @@ content-apps-ledgres-webs.webflow.io
 content-auth-ladge.webflow.io
 content-auth-ledgr-log.webflow.io
 content-check.github.io
+content-creptokmlogene.webflow.io
 content-flaggeds-fw7f.vercel.app
 content-flags-1lyz.vercel.app
 content-issue-policy-now.firebaseapp.com
@@ -4974,6 +5025,7 @@ couinoseporlogau.godaddysites.com
 coumbadiaw.temp.swtest.ru
 counselor-ping.vercel.app
 counselor-sync-additional-titane.vercel.app
+countrylumber.directsmailsolution.com
 coupondeals50.com
 couponsme.xyz
 courageous-crepe-525254.netlify.app
@@ -5013,6 +5065,7 @@ craftswithcode.github.io
 crammeujeffoimmau.vercel.app
 cranesxa.vercel.app
 crcrkubos.d4n4css.web.id
+crcytionlogonnin.webflow.io
 crds.cppsupport.help
 cre.com.pk
 create-truth-faf1.theadmin-812.workers.dev
@@ -5037,6 +5090,8 @@ credit.paisaassist.com
 creinalossofri-4443.vercel.app
 crencia.net
 creprenazussi.vercel.app
+criptocurrnlogin.webflow.io
+criptologennft.webflow.io
 crisda7.github.io
 crisfooddigiverse.com
 crisis-gene-threaded-lafayette.trycloudflare.com
@@ -5056,19 +5111,26 @@ croivoiwossuri.vercel.app
 croma-internet-online.lat
 croshtov.resml-cly.web.id
 crosswalk-local-git-main-uid5371289.vercel.app
+crotpttoinlogd.webflow.io
 crowe-my.com
+crptocmlogin.webflow.io
 crryptiowalltiei.godaddysites.com
+crtptologincom----support.webflow.io
 crwthunderstandable.com
 cry-bybit-auth.webflow.io
 cry-bybit-login.webflow.io
 cryoneticc.vercel.app
+crypitoswecumlogin.webflow.io
 crypto-currency-landingpage-clone.vercel.app
 cryptoallstarsus.pages.dev
 cryptofixit.online
 cryptofixpro.live
+cryptologinhelp.webflow.io
 cryptosyncfix.live
 cryptotechsupport.online
 cryptowalletledgerlive.webflow.io
+crypttocomslogin.webflow.io
+crypttolugrrmd.webflow.io
 crystal-ferret-q6137p.mystrikingly.com
 crystal-hiss-7450.typedream.app
 cs-acsosajov.com
@@ -5248,6 +5310,7 @@ d6b5l57v7lxns.cloudfront.net
 d7cbae8b6c59.godaddysites.com
 daanaa-reesmi-indonesiaa.newdts.my.id
 daanaa-reesmi-indonesiaaa.newsgt.my.id
+daanaxx-in.spacex2.my.id
 dabanjion.blogspot.bg
 dabanjion.blogspot.ch
 dabanjion.blogspot.cl
@@ -5287,6 +5350,7 @@ dams.watsongoosebar.com
 damyant.com
 dan4a-indonesiaxx.csz.my.id
 dan4apayyiiatteerrrcssadx.vxdrtsd.my.id
+dan4x-indke.spacex2.my.id
 dana-bantuan-sewz.vercel.app
 dana-bantuan-subsidi.duckdns.org
 dana-claimhadiah-affilance.vld2x.my.id
@@ -5583,6 +5647,7 @@ desktop-cdn-ledgerlive.webflow.io
 desktop-coinbase.webflow.io
 desktop-ledger-io.webflow.io
 desktop-music.ru
+desktop.net-upt.com
 desktp-ledgr-auth.webflow.io
 despite-arm-supporters-asn.trycloudflare.com
 destinos.latamofertasydescuentos.com
@@ -6082,6 +6147,7 @@ drilling-byte.vercel.app
 drilling-call.vercel.app
 drimly.top
 drive-doc-partage.webflow.io
+drive-documents-partge.webflow.io
 drive.timc.workers.dev
 drivebrightx.vercel.app
 driveezmd.com-dkra.win
@@ -6117,6 +6183,7 @@ dsf9sd0fusd.blogspot.com
 dsf9sd0fusd.blogspot.tw
 dsj209.wixsite.com
 dsjeqk1.pages.dev
+dsllqzcqcnmail.dqxy.caq.com.au
 dstv.parsiandc.ir
 dswdw123.icu
 dswdw123.shop
@@ -6161,6 +6228,7 @@ e-console-3e85d1a0.azurewebsites.net
 e-console-54bce4c4.azurewebsites.net
 e-corp.es
 e-docusign.weebly.com
+e-partage-onedrive.webflow.io
 e-service.org
 e-smu.com.ar
 e-statecment.biz.id
@@ -6513,6 +6581,7 @@ eric-al-ptst.mizum.site
 eric-dvvstpstt.mizum.site
 eric-smst.mizum.site
 erolbaltaci.github.io
+errorboa3gfdtryusef9ocewfs3tf.weebly.com
 ertrurte.top
 ertysdfrtgy.weebly.com
 erwsssejjsbd.weebly.com
@@ -7145,6 +7214,7 @@ fsd89fsaojisfjdl.blogspot.com
 fseryy.pages.dev
 fstivall.japxsa.top
 fstvall-web.com
+fsxja.xcvc.my.id
 fsxtvl-wb.com
 fter-chectsocial3networking9.fwh.is
 ftjgeawssr.duckdns.org
@@ -7540,6 +7610,7 @@ getrobux-here.blogspot.tw
 getroiddevougrau-1341.vercel.app
 gets.special-offer1.com
 getskinmlbb.event-redeem.com
+getspotifyapk.com
 getspotifystatistics.vercel.app
 getting-coinbase-wallet.typedream.app
 getting-voucher.com
@@ -7631,6 +7702,7 @@ giobal.allegrovp.fit
 giristurkiyegovtr.vercel.app
 girl.indonesiya.com
 gironde.kachgalbisda.com
+git.net-upt.com
 github.pakatanbentengmaya.my
 giv-65.blogspot.com
 giveawayeventrewards.top
@@ -7645,6 +7717,7 @@ gkyf.tap0387rde.top
 gleaming-arithmetic-536216.netlify.app
 gleeful-babka-95a569.netlify.app
 gleeful-puppy-1a65e8.netlify.app
+glfdsrcauthenticate.weebly.com
 glittering-kashata-e13fb0.netlify.app
 glittery-chimera-16aab4.netlify.app
 glittery-plum-olive.glitch.me
@@ -7725,6 +7798,7 @@ govinboxau-clientsecure.com
 govinboxau-clientservices.com
 govinboxauservices-secure.com
 govt-toll.casa
+govuk.winterugpw.top
 gpamo.sbs
 gpfbbxl.cn
 gpqwlq.buzz
@@ -8060,6 +8134,7 @@ help-en-ledgerr.webflow.io
 help-en-trez0r.webflow.io
 help-en-trezcxorstart.webflow.io
 help-en-trzrsuiteapp.webflow.io
+help-exte-z--brimart.webflow.io
 help-extension-coinbase-chrome.typedream.app
 help-extension-en.typedream.app
 help-extension-us.typedream.app
@@ -8084,6 +8159,7 @@ help-live-lwegerr.webflow.io
 help-livedsledalet.webflow.io
 help-liveldallet-aauths.webflow.io
 help-lsuport.com.tr
+help-m--kucoin.webflow.io
 help-meta-backupuser-2w-id2862.vercel.app
 help-meta-direct-sp1-no99765-7x6y.vercel.app
 help-meta-enhancement-4f-id2414.vercel.app
@@ -8097,6 +8173,7 @@ help-ndax-usa.webflow.io
 help-netflix-signup.com
 help-page-ledgre-home.webflow.io
 help-s---trezzor--io.webflow.io
+help-s-trezeor.webflow.io
 help-s-trezzor-web.webflow.io
 help-secure-app-ledgr.webflow.io
 help-secure-coinbase-pro-login.typedream.app
@@ -8247,6 +8324,7 @@ hissing-london-acoustic.on-fleek.app
 histobellum.cl
 hitb.qtgzirrpy.es
 hitengala.github.io
+hitesh-rathi-3474.github.io
 hitesh262000.github.io
 hiteshrathi2003.github.io
 hitishc47.github.io
@@ -8286,6 +8364,7 @@ homd-j.s3.eu-north-1.amazonaws.com
 home---ledgere--auth.webflow.io
 home--blockfi--eng-auth.webflow.io
 home--eng--blockfi-cdn.webflow.io
+home--hub-sso--kucoin.webflow.io
 home--ledgerstart.webflow.io
 home--ndax--login.webflow.io
 home--ndax-io.webflow.io
@@ -8329,12 +8408,14 @@ homebroadatt.weebly.com
 homefile.vercel.app
 homeforsalenowbyrealestateagent.arcaseguroscolombia.com.co
 homepage--gemini-logen.webflow.io
+homepage-blockfis-authz.webflow.io
 homepage-itrustcapitallogi-aiyh.webflow.io
 homepage-web-help-itrustcapital.webflow.io
 hometax-3dc2a.firebaseapp.com
 hometax-3dc2a.web.app
 hometax-naver.firebaseapp.com
 hometax-naver.web.app
+hompagebitmrt.webflow.io
 hond-ne.paas.hosted-by-previder.com
 honeybharti.github.io
 honeyflix.netlify.app
@@ -8820,9 +8901,11 @@ indiapost.gov.bxzygy.top
 indiapost.gov.ceibigj.top
 indiapost.gov.eyssebd.top
 indiapost.gov.gjaipio.top
+indiapost.gov.guosp.top
 indiapost.gov.uiyash.xyz
 indiapost.gov.wzdygy.top
 indiapost.gov.ykoil.top
+indiapost.gov.zgmspt.top
 indiapost.guosp.top
 indiapost.inflab.top
 indiapost.isirina.top
@@ -8869,6 +8952,7 @@ iniciasesiouquick.iceiy.com
 initial-salmon-amctj23ysf.edgeone.app
 inkcx-web.zx-r.help
 inkcxz-link-ld-gowebx.wixegeks.mom
+inktera-traffser.vercel.app
 inkxx-link-go-ld.geeklight.biz
 inletcabinets.ca
 inlislite.ipdn.ac.id
@@ -9520,9 +9604,12 @@ jaydygs3.duckdns.org
 jazeerakudhinnxxx.likesyou.org
 jazrtoiu.duckdns.org
 jazzy-bonbon-9d074c.netlify.app
+jb.onbolapp.com
+jb.ottoolineses.com
 jbdafce.pilot45.com
 jbnyxjht.top
 jboy610.github.io
+jbyn.jbdalyum.com
 jcgj888.top
 jcujn.sbs
 jcumslut.com
@@ -9631,6 +9718,7 @@ jpmarketinglanding.com
 jpx.lbn.mybluehost.me
 jpzl.ydso.xyz
 jrbhtlwl.aero.tt
+jrhejsnwehrueieiw.weebly.com
 jsdfkhfskd.blogspot.com
 jsl-test.maquina.marketing
 jsloce.webwave.dev
@@ -9655,6 +9743,7 @@ julwill.github.io
 jum7590-o.weebly.com
 jumbotienda.com.mx
 jumppineapple.vercel.app
+jungara.com.au
 junliubu.com
 juno-100024.weeblysite.com
 juno-100539.weeblysite.com
@@ -10000,6 +10089,7 @@ kow45.com
 koyab0099.github.io
 kp.jetos.com
 kp8008.github.io
+kpdnsb.cn
 kqeucoinliuogine.webflow.io
 kqijanmz.duckdns.org
 kqizjznvb.duckdns.org
@@ -10206,6 +10296,7 @@ kucoinloggni.godaddysites.com
 kucoinlogin_us.godaddysites.com
 kucoinloginacountcreate.webflow.io
 kucoinloginjwc.webflow.io
+kucoinloginrtrc.webflow.io
 kucoinloginx.webflow.io
 kucoinlogoinn.webflow.io
 kucoinlogviin.webflow.io
@@ -10245,7 +10336,9 @@ kucuiaenlogin.webflow.io
 kucuin-in.godaddysites.com
 kucuinlogoon.webflow.io
 kucuisenlogin.webflow.io
+kucvoinloogine.webflow.io
 kuecoin-loge.godaddysites.com
+kuecoinlgiun.webflow.io
 kueiconalogin.webflow.io
 kuekoinlogioon.webflow.io
 kuesyba.duckdns.org
@@ -10347,6 +10440,7 @@ kyfemarketing.github.io
 kyleu.co.za
 kyriell-linut.fr
 kyt-dnild.duckdns.org
+kytoconlognn.webflow.io
 kzzzia.github.io
 l-liveledgr--login.webflow.io
 l.ead.me
@@ -10611,6 +10705,7 @@ ledgerr-desktop--liveapp.webflow.io
 ledgerr-nanoxious.webflow.io
 ledgerrecover.xyz
 ledgerrecover.xyz.happyacserviceandrepair.com
+ledgerregulatelive.com
 ledgerslivewalletwallets.webflow.io
 ledgeruserissuelive.com
 ledgeruserprotectlive.com
@@ -11349,6 +11444,7 @@ mail.gfb.nbp.temporary.site
 mail.google.oscarmar.com
 mail.haadiaahh-10juutaaaa.agsth.my.id
 mail.jimpike.com.au
+mail.jungara.com.au
 mail.jxj.caq.com.au
 mail.kiwan.00bos.my.id
 mail.kuy.vju.temporary.site
@@ -11435,6 +11531,7 @@ main-livefix.pages.dev
 main-microsoft.com
 main-wetramxer.pages.dev
 main.allegronova.net
+main.bhebay.com
 main.dplcihm6m15ka.amplifyapp.com
 maincetkkuponundianfstvl.vercel.app
 mainchainhub.xyz
@@ -11467,6 +11564,7 @@ mall-kkq.shop
 mall.bookingyourrooms.com
 mall.cdnking.shop
 mall.mercadolibreonline.top
+mall.unit808online.com
 mall.v-kf.cn
 mallbase.shop
 mallhx.lc-merchant888.top
@@ -12281,6 +12379,7 @@ mj.net.br
 mjihz.cfd
 mka.whafbtryitnow.com
 mkmhousing.co.uk
+mknblkp.cn
 mksavnders.wixstudio.com
 mksavnders.wixstudio.io
 mkxhgd.shop
@@ -12566,6 +12665,7 @@ mwcontractorss.com
 mwe-one.vercel.app
 mweskmasklgoiun.webflow.io
 mwizz.leadsbr.com.br
+mwnsawjehseyeue.weebly.com
 mwtb.hrcbods.es
 mx-esdhl.top
 mx.dqwbx.com
@@ -12675,6 +12775,7 @@ my-apps-ndax-io-cdn-s-auth.webflow.io
 my-atomic-walletextension.webflow.io
 my-auth-ee.firebaseapp.com
 my-auth-ee.web.app
+my-blockfi-auth-sso.webflow.io
 my-blokfi--sso-cdn.webflow.io
 my-business-104236.square.site
 my-business-106023-108969.square.site
@@ -12816,6 +12917,7 @@ mysevices5-3a524cc9cfcf.herokuapp.com
 mysite-105961.weeblysite.com
 myskyverifyaccount.weebly.com
 mysoporte.us
+mysql.net-upt.com
 mystery-box-sandy.vercel.app
 mystery-box2.vercel.app
 mysupportishop.app
@@ -12922,6 +13024,7 @@ nbyrtgr.duckdns.org
 ncconceito.com.br
 ncmrvksjgwnhtcfpdq.weebly.com
 nctzlo.pmzsovq.es
+ncym.globalonlineotto.com
 nda-x-logiapp.webflow.io
 ndagpidr.aero.tt
 ndagran.com
@@ -13046,6 +13149,7 @@ netflix-clone10.vercel.app
 netflix-customs.com
 netflix-frontend-gray.vercel.app
 netflix-gpt-jack.vercel.app
+netflix-india7e7d.rollout.site
 netflix-jet-eight.vercel.app
 netflix-lovat-sigma.vercel.app
 netflix-nine-alpha.vercel.app
@@ -13197,6 +13301,7 @@ news.gapmidstream.com
 newserviceport05.weebly.com
 newsite-uhhed.kinsta.page
 newsletter-workers.pages.dev
+newsletter.net-upt.com
 newsol-psi.vercel.app
 newtaker.framer.ai
 newupdatesasktel.weebly.com
@@ -13359,6 +13464,7 @@ noiselyx.vercel.app
 noiwuefjs.duckdns.org
 noman78610.github.io
 nominalo.zeabur.app
+nongree.ac.th
 nonstoring.com
 noorullah814.github.io
 nordea.kakakul.com
@@ -13416,6 +13522,7 @@ ns2.backback.pro
 ns2.caditup.com.au
 ns2.gsx2-myaccess-portal-online.com
 ns2.hpsafety.com.au
+ns2.net-upt.com
 ns2.onelec.com.au
 ns2.onetwotree.pro
 ns2.smartaromas.com
@@ -13496,6 +13603,7 @@ oauth---kucoins.webflow.io
 oauth---wallet--treazor.webflow.io
 oauth--lgdrr-support.webflow.io
 oauth-terzors--app.webflow.io
+obedient-kitten.static.domains
 obishake.github.io
 objectives-local-manage-id507296148.vercel.app
 observer-track-state.vercel.app
@@ -13620,6 +13728,7 @@ one-drive-microsoft.com
 one-new.events-page.com
 one.globalshopmall.xyz
 one.link
+onedriv.pages.dev
 onedrive-files.mos.ap-southeast-2.sufybkt.com
 onedrive-partage-de-fichiers.webflow.io
 onedrive.enochsolutions.com
@@ -13643,6 +13752,7 @@ online.tkvip-store.cc
 onlineaccessauthorization.weebly.com
 onlineadminshaw1mail.weebly.com
 onlineahne.cc
+onlinealbanking.sa.com
 onlinebanklogin.vercel.app
 onlinebdo.acess-token.workers.dev
 onlinebdo.care-ph.workers.dev
@@ -14050,6 +14160,16 @@ paribassnd.mine.nu
 paris-in-sub-version.com
 parisianwins.com
 parkerking001.github.io
+parks-pcnee.top
+parks-pcnew.top
+parks-pcnwb.top
+parks-pcnwc.top
+parks-pcnwe.top
+parks-pcnwp.top
+parks-pcnwr.top
+parks-pcnww.top
+parks-pcnwy.top
+parks-pcnwz.top
 parmarnik09.github.io
 partaswed0ee.net
 partaswed0lv.net
@@ -15250,6 +15370,7 @@ pub-8854385177f943c5a6d36382df0946d9.r2.dev
 pub-886654e4969e42e988d48d11222c8a57.r2.dev
 pub-88f7b785496b4f04a4a82a50da93d67f.r2.dev
 pub-892c2501da2d4112ad3e57b5bbf7c8e9.r2.dev
+pub-89c2f8b7ab5d4bf1bc25593ce7514acd.r2.dev
 pub-8a04ac0f553244c8a5b52eab5e25f789.r2.dev
 pub-8a50034aaa5440db9df0fd159167593f.r2.dev
 pub-8a610da83d4c47fa82b60eea8c53cf89.r2.dev
@@ -15921,6 +16042,7 @@ rahulsaini2k23.github.io
 rahulswain58708.github.io
 railkcon.shop
 rain-chemical-amber.glitch.me
+rainsgear.com
 raion-eau.com
 raizertechdev.github.io
 raj3621.github.io
@@ -16245,6 +16367,7 @@ report.cddental.com.au
 report.demo.eips.com.au
 report.dev.jimpike.com.au
 report.jimpike.com.au
+report.net-upt.com
 reported-push.vercel.app
 reporting.development.eips.com.au
 reporting.hotfix.jimpike.com.au
@@ -16827,6 +16950,7 @@ sagarkumarmathuri.github.io
 sagarnage123.github.io
 sage-rolypoly-ce490e.netlify.app
 sage-torte-a0e647.netlify.app
+sagi2.nightwingers.com
 sahalnp.github.io
 sahar12572.github.io
 sahilinsbot.vercel.app
@@ -17212,6 +17336,7 @@ secure-blockfi--ccdn.webflow.io
 secure-blockfi--cdn--cdn.webflow.io
 secure-blockfi--cdn-so.webflow.io
 secure-blockfi--sso--cdnn.webflow.io
+secure-blockfi-en-sso.webflow.io
 secure-blockfi-home-cdn.webflow.io
 secure-blockfi-sdso-cdn.webflow.io
 secure-blockfi-so-cds.webflow.io
@@ -17255,6 +17380,7 @@ secure-metakhelp-cdn.webflow.io
 secure-my---sso--login-moonpay.webflow.io
 secure-my-blockfi-sso-auth.webflow.io
 secure-my-blockfi-sso-support.webflow.io
+secure-my-blockfie-x--cdn-oauth.webflow.io
 secure-my-blokifi-sso-cdn.webflow.io
 secure-ndaxlogin-page.webflow.io
 secure-netlify-host-accounts-11.netlify.app
@@ -17268,6 +17394,7 @@ secure-sso--itrustcapitalauth.webflow.io
 secure-sso--login-moonpay.webflow.io
 secure-sso--s--itrustcapital--com--auth.webflow.io
 secure-sso--trezor-io-autth.webflow.io
+secure-sso-bitmart-com-login-en.webflow.io
 secure-sso-g-itrustcapital-com-auth.webflow.io
 secure-sso-i-itrustcapital--com---auth.webflow.io
 secure-sso-itrustcapital-d-com-auth.webflow.io
@@ -17311,6 +17438,7 @@ secureegtvc.weebly.com
 securefileonedrive2025docauth190363761739762.familiadelacruz.com
 securefolder.rogersmob.com
 securefolder.rogersorder.ca
+secureforegintransfer.com
 securelogin-att-1-01-9-33.weeblysite.com
 securelogin.sbs
 securenewmailboxversion.weebly.com
@@ -17399,6 +17527,7 @@ serv18.pages.dev
 servants-yaml.vercel.app
 server-iuj-shop.fourthwall.com
 server-sg.luckymarzuki07.workers.dev
+server.net-upt.com
 server.typedream.app
 server1.3lo.com.au
 server1.attollo.com.au
@@ -17725,6 +17854,7 @@ shopmalltiktok.com
 shopngoworld.com
 shopngoworld.org
 shopping-tk.shop
+shoppingdemo.com
 shopth-rakuten.artisp.com
 shopth.artisp.com
 shoptkff.cc
@@ -17763,6 +17893,7 @@ shubhamchakraborty12.github.io
 shubhamnangare.github.io
 shubhangi2606.github.io
 shubhoshishroy08.github.io
+shudy.globalbolonlinebol.com
 shuoboonline.com
 shushi--swap----cdn.webflow.io
 shushi-cdn--swap.webflow.io
@@ -18272,6 +18403,7 @@ ssblox.blogspot.com
 sschmitz59.wixsite.com
 ssconstructions.in
 sserverfit.com
+ssh.net-upt.com
 sshort-market.co
 ssl-login-moonpay.webflow.io
 ssl.eips.com.au
@@ -18307,6 +18439,8 @@ sso---ndax--io-auth.webflow.io
 sso---ndax--io-cdn---auths.webflow.io
 sso---ndax-io-auth-app.webflow.io
 sso---robinhood----com---cdn-h-autths.webflow.io
+sso--bietmart--b-auth.webflow.io
+sso--bitmart-site-auth.webflow.io
 sso--blockfi--console.webflow.io
 sso--cdn---coinbasepro-visit-auth.webflow.io
 sso--cdn-ndax-io-sso.webflow.io
@@ -18513,6 +18647,7 @@ sso-netcoinc-com-cdn-c-uatth.webflow.io
 sso-nndax-io-auth.webflow.io
 sso-page-auth--itrustcapital--auth.webflow.io
 sso-portal--ndax-com-auth.webflow.io
+sso-portal-blockfi-sso.webflow.io
 sso-robinhood---com--en--auth--us.webflow.io
 sso-robinhood-cdn-com.typedream.app
 sso-robinhood-com-autth.typedream.app
@@ -18753,6 +18888,7 @@ steamcomumunity.com
 steamcomun1ty.com
 steamcomunity-tradelink.github.io
 steamcomunity-workshop.com
+steamcomunity.sbs
 steamcomunmitty.com
 steamcomunn1ty.com
 steamcomunnitty.cc
@@ -19131,6 +19267,7 @@ supriyanellaiyappan.github.io
 suraj-patgar.github.io
 suraj112003.github.io
 suraj12-git.github.io
+suraj502.github.io
 surajatresh.github.io
 surajxcodes.github.io
 surf-pouncing-prosecution.glitch.me
@@ -19276,12 +19413,14 @@ taiquan.cc
 taira9611.github.io
 taisonmail.us
 taisonmail.vip
+takaecawg.xyz
 takaecawl.xyz
 takaecawm.xyz
 takaecawy.xyz
 takaecbwb.xyz
 takaecbwi.xyz
 takaecbws.xyz
+takaeccwe.xyz
 takaeccwk.xyz
 takaeccwy.xyz
 takaecdwr.xyz
@@ -19659,6 +19798,7 @@ tiigvtpnxv.duckdns.org
 tiiktok.cfd
 tik24.net
 tiks-toks.cc
+tiktikglobalv.shop
 tiktok-2bg8.lat
 tiktok-6hy9.buzz
 tiktok-7u.lat
@@ -19743,6 +19883,7 @@ tk.store-rw.top
 tk.store-ty.top
 tk.teavipsho.top
 tk04.ffdassadff.shop
+tk05.ssvipmall.org
 tk08.ffdassadff.shop
 tk1688shop.vip
 tk235.bond
@@ -20401,6 +20542,7 @@ ujjwalmishraazm.github.io
 ujsgs33.weebly.com
 ujtwk-icicolorado.qkipikpp.es
 ujxrg.vip
+uk-sbusid-gov.click
 uk-shop.shop
 uk.answers.quantarchive.com
 uk.ast2-gsx-portal-support-online.com
@@ -20633,6 +20775,7 @@ us_metamsika_en_us3.godaddysites.com
 usa-auth-lognitrustcapital-money.webflow.io
 usa-geminilogi.godaddysites.com
 usa-robinhhood.godaddysites.com
+usa_en_metamsika_logn.godaddysites.com
 usa_gamini-ushelp.godaddysites.com
 usaa-member-account-login-207520.gitlab.io
 usaconbass-a-prologi.godaddysites.com
@@ -20999,6 +21142,7 @@ violetbella111.wixsite.com
 vip-coinbase.com
 vip.0mmn.cn
 vip.eaiun.cn
+vip.qiudtzyum.com
 vip.ttrzv.com
 vip.uozjlsc.xyz
 vip.wznq.cc
@@ -21051,6 +21195,7 @@ viz-staging.cddental.com.au
 vjidxr.cn
 vjiihxvuda.duckdns.org
 vjtyo.com
+vk.qthm.xyz
 vkc9q-dw1.ghjigclbopy.es
 vkeaymheht.duckdns.org
 vkffbnkkkhmnbsrvruypmlbl.duckdns.org
@@ -21078,6 +21223,7 @@ vnet.attollo.com.au
 vnoterecording-101540.weeblysite.com
 vocalorangeau0707.godaddysites.com
 vodafone-lauf.de
+vodamailss.weebly.com
 voiceconnectsrvice.sacredlotusyoga.net
 voicemail.webaccess-alert.com
 voicemessageforyou.weeblysite.com
@@ -21344,6 +21490,7 @@ web--trezor-wallet--sso.webflow.io
 web-1inch.com
 web-authdappfix.pages.dev
 web-base-logi-com.typedream.app
+web-blockfi-login-official.webflow.io
 web-cdn----moonpay----login.webflow.io
 web-coinpro-learn.github.io
 web-dana-pay.biu1x.cfd
@@ -21463,6 +21610,7 @@ webmailupgradeservices.online
 webmailweb.de.yolasite.com
 webmial.posthttdpress.pro
 webmintzq.vercel.app
+webrbcroyalbank.com
 webroute-umber.vercel.app
 webs-app-ndax.webflow.io
 webs-logie--trezoor.webflow.io
@@ -22367,6 +22515,7 @@ www.brookhav.blogspot.tw
 www.browser-three-liart.vercel.app
 www.brushjb.sbs
 www.bsmlh.upd4te-kup0n.my.id
+www.btbtbbbtbbtbbbt.weebly.com
 www.btinterneett1.weebly.com
 www.btlnternetvvvebnnail.weebly.com
 www.btmaileringserviceteamlin2025.weebly.com
@@ -22401,6 +22550,7 @@ www.c551008.com
 www.cadastro.jimpike.com.au
 www.caixageral-aceder.com
 www.canadiantranslator.ca
+www.cara.batalkan-trx.info
 www.caramel-elite-quality.glitch.me
 www.cartecteam.net
 www.cartonline.top
@@ -22416,6 +22566,7 @@ www.cdrbonlinecourse.com
 www.cekkupon.7dk.web.id
 www.cepismobil.duckdns.org
 www.cfdfloorng.net
+www.cgd-ind.com
 www.cgyk765.sbs
 www.chainreclaim.top
 www.championshippersweeps.com
@@ -22504,6 +22655,7 @@ www.coriarte.com.br
 www.corpkonnex.com
 www.cos-restaurant-bucuresti.ro
 www.coxcpaservices.com
+www.cpcalendars.attollo.com.au
 www.cpp213hub.in
 www.cq1815.com
 www.crannoch.care
@@ -22511,6 +22663,7 @@ www.creceimpulsaydigitalizatunegocio-preaprobado.conlaf.com
 www.cricketbettingpro.com
 www.crispy-succotash-bice.vercel.app
 www.crm.3lo.com.au
+www.crm.net-upt.com
 www.crm.pyromax.com.au
 www.crypto-currency-landingpage-clone.vercel.app
 www.cryptsupport.com
@@ -22593,6 +22746,7 @@ www.deratizarebucuresti.ro
 www.derivaex.cc
 www.desafio.org
 www.descifrandosonhos.com
+www.desktop.net-upt.com
 www.detektivek.hu
 www.dev.hpsafety.com.au
 www.dev.metrics.cddental.com.au
@@ -22910,6 +23064,7 @@ www.gfw.vqa.temporary.site
 www.ggsconsorzio.com
 www.ghgu0a.duckdns.org
 www.giristurkiyegovtr.vercel.app
+www.git.net-upt.com
 www.gldhost.com
 www.globalfieldpremiums.com
 www.globalgalaxygems.in
@@ -23240,6 +23395,7 @@ www.jmendesefilhos.ao
 www.job-scheduler-status.vercel.app
 www.jobopportunitiesentryapplicationalllevelparticipationnigeriasta.amradhospital.org
 www.joe333-jl6i.vercel.app
+www.johnclearyplanning.com
 www.jordan-aramex-parcel.com
 www.jtynmer.duckdns.org
 www.jubanbunes.com
@@ -23642,6 +23798,7 @@ www.mycoinbase-account.help
 www.mydreamhall.com
 www.mydsb0605.sbs
 www.myhr-portal.site
+www.mysql.net-upt.com
 www.myupheldvallet.bravesites.com
 www.myuseraccounts.com
 www.mywebsite123.rf.gd
@@ -23684,6 +23841,7 @@ www.netflix-clone008e.rollout.site
 www.netflix-clone2025.vercel.app
 www.netflix-frontend-gray.vercel.app
 www.netflix-gpt-jack.vercel.app
+www.netflix-india7e7d.rollout.site
 www.netflix-jet-eight.vercel.app
 www.netflix-nine-alpha.vercel.app
 www.netflix-pagoseguro.com
@@ -23712,6 +23870,7 @@ www.newrbx21.blogspot.sk
 www.news.autodiscover.woori.com.au
 www.news.cistronixperu.com
 www.news.gapmidstream.com
+www.newsletter.net-upt.com
 www.newsol-psi.vercel.app
 www.nfbhgkhghjghg.weebly.com
 www.nft-giftbox4-delta.vercel.app
@@ -23755,6 +23914,7 @@ www.nhqthscb.net
 www.nibetu.icu
 www.nickblackton.shop
 www.nids-webmails-exma-navers-intelligent-sprinkle-linen.glitch.me
+www.nieuw.net-upt.com
 www.nilkimya.com
 www.ninin.navinplus.xyz
 www.nkjjvhjuin.weebly.com
@@ -23778,6 +23938,7 @@ www.notification-eight-sable.vercel.app
 www.notification-push-retry.vercel.app
 www.notificationsetting100002-git-master-sdfsds-projects-3209b793.vercel.app
 www.notificationsservices.com.cosmopharmaint.com
+www.now-apply-blue-badge.vercel.app
 www.now-submit-your-appeal-here.vercel.app
 www.nrpcprimerica.surge.sh
 www.ns.caq.com.au
@@ -23786,6 +23947,7 @@ www.ns1.caq.com.au
 www.ns1.gsx2-myaccess-portal-online.com
 www.ns2.caq.com.au
 www.ns2.gsx2-myaccess-portal-online.com
+www.ns2.net-upt.com
 www.nslkptv.cn
 www.ntflix-ui-clone.vercel.app
 www.numonerteo.duckdns.org
@@ -24133,6 +24295,7 @@ www.removercuotaonline.com
 www.renouvellement-abonnements.info
 www.report-development.cddental.com.au
 www.report.jimpike.com.au
+www.report.net-upt.com
 www.report.uat.jimpike.com.au
 www.reporting-staging.eips.com.au
 www.reporting.demo.qldvvmc.com.au
@@ -24302,6 +24465,26 @@ www.sasktelemailss.weebly.com
 www.saussicecarotte.cfd
 www.sbbkonto-swisspass.netsons.org
 www.sbira.mobi
+www.sbisecca.cfd
+www.sbiseccb.cfd
+www.sbiseccd.cfd
+www.sbiseccf.cfd
+www.sbiseccg.cfd
+www.sbisecch.cfd
+www.sbisecck.cfd
+www.sbiseccl.cfd
+www.sbiseccm.cfd
+www.sbiseccn.cfd
+www.sbiseccq.cfd
+www.sbiseccs.cfd
+www.sbiseccv.cfd
+www.sbiseccw.cfd
+www.sbiseccx.cfd
+www.sbiseccz.cfd
+www.sbisech.cfd
+www.sbiseci.cfd
+www.sbisecj.cfd
+www.sbisecp.cfd
 www.sbsmytkh.sbs
 www.scan-node-tree.vercel.app
 www.scanaudit.me
@@ -24349,6 +24532,7 @@ www.sepia-splendid-crush.glitch.me
 www.server.bruin.com.au
 www.server.caditup.com.au
 www.server.glsnsw.com.au
+www.server.net-upt.com
 www.server1.3lo.com.au
 www.server1.attollo.com.au
 www.server1.caq.com.au
@@ -24452,6 +24636,7 @@ www.srv.mdcomp.com.au
 www.srv926887.hstgr.cloud
 www.ssausroot.caq.com.au
 www.ssconstructions.in
+www.ssh.net-upt.com
 www.ssz.hfh.temporary.site
 www.stabla-whats.xyz
 www.stablc-ws.xyz
@@ -24583,6 +24768,7 @@ www.ticketshop-pl.com
 www.ticskwsythree.icu
 www.ticskwsytwo.icu
 www.tierarztpraxis-stadtgraben.at
+www.tiktikglobalv.shop
 www.tiktk.cc
 www.tiktok-business.jp
 www.tiktok687.com
@@ -24627,6 +24813,7 @@ www.trezzro-iostart.weebly.com
 www.trial-success.vercel.app
 www.tribalistikstores.tribalistikstore.com.br
 www.trigondigital.in
+www.trmaliye.org
 www.trmaliyeceza.org
 www.trpeiprzak.com
 www.trustmastercc.com
@@ -24841,6 +25028,7 @@ www.xxa-8lq4.vercel.app
 www.xxa-phi.vercel.app
 www.xxaa-eta.vercel.app
 www.xycnfl.com
+www.xzdsueshop.shop
 www.xzuflzxhfzxnb.blogspot.com
 www.xzuflzxhfzxnb.blogspot.tw
 www.y60ajjc.duckdns.org
@@ -24848,6 +25036,7 @@ www.yaheaaco.com
 www.ybtpo-202508041.vercel.app
 www.ycoz0yro2.00.woori.com.au
 www.yfdesvx.duckdns.org
+www.yfoomall.shop
 www.yibuda.net
 www.ynabioueconus-meriescs-experinces-t.vercel.app
 www.yonaguniur.com
@@ -25192,6 +25381,7 @@ young-amber-polka.glitch.me
 young-lying-sea.glitch.me
 young-voice-0ad1.dequaviousf44.workers.dev
 younitypipes.com
+your-blockfilogin-acount.webflow.io
 your-page-your-identity-dy-ce5z.vercel.app
 your-sso-coinbase-autth-m-auth.webflow.io
 your.ciiki.eu.org
