@@ -311,3 +311,7 @@
 # ThreatFox: Cobalt Strike (Confidence: 75%, First Seen: 2025-09-14 12:53:14)
 172.67.222.121
 
+# ThreatFox: Mozi (Confidence: 50%, First Seen: 2025-10-06 07:32:41)
+# Reference: https://www.shodan.io/host/162.159.58.105#2082
+162.159.58.105
+
