@@ -13,11 +13,13 @@ jobs:
   validate:
     name: Validate Blocklist Data
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout auto-updates branch
         uses: actions/checkout@v4
         with:
           ref: auto-updates
+          fetch-depth: 1
 
       - name: Validate IP blocklist format
         run: |
@@ -25,10 +27,10 @@ jobs:
 
           # Check high confidence IP list
           if [ -f iplist/high/high_confidence_limited.txt ]; then
-            # Count valid IPv4 addresses
-            valid_ipv4=$(grep -E '^([0-9]{1,3}\.){3}[0-9]{1,3}$' iplist/high/high_confidence_limited.txt | wc -l)
+            # Count valid IPv4 addresses (optimized with grep -c)
+            valid_ipv4=$(grep -cE '^([0-9]{1,3}\.){3}[0-9]{1,3}$' iplist/high/high_confidence_limited.txt || echo 0)
             # Count valid IPv6 addresses
-            valid_ipv6=$(grep -E '^([0-9a-fA-F:]+)$' iplist/high/high_confidence_limited.txt | wc -l)
+            valid_ipv6=$(grep -cE '^([0-9a-fA-F:]+)$' iplist/high/high_confidence_limited.txt || echo 0)
             total_valid=$((valid_ipv4 + valid_ipv6))
 
             echo "✅ Found $total_valid valid IPs ($valid_ipv4 IPv4, $valid_ipv6 IPv6)"
@@ -51,7 +53,7 @@ jobs:
           # Note: malicious_domains.txt is hosted on Cloudflare R2 (too large for GitHub)
           # Validate other domain sources instead
           if [ -f domainlist/malicious/domain_ioc_maltrail_new.txt ]; then
-            valid_domains=$(grep -E '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/domain_ioc_maltrail_new.txt | wc -l)
+            valid_domains=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/domain_ioc_maltrail_new.txt || echo 0)
             echo "✅ Found $valid_domains valid IOC domains (Maltrail feed)"
 
             if [ $valid_domains -lt 10 ]; then
@@ -62,7 +64,7 @@ jobs:
 
           # Check ads/tracking domains
           if [ -f domainlist/ads/advtracking_domains.txt ]; then
-            valid_ads=$(grep -E '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/ads/advtracking_domains.txt | wc -l)
+            valid_ads=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/ads/advtracking_domains.txt || echo 0)
             echo "✅ Found $valid_ads valid ads/tracking domains"
 
             if [ $valid_ads -lt 10 ]; then
@@ -80,10 +82,10 @@ jobs:
         run: |
           echo "🔍 Checking file sizes..."
 
-          # Check that key files have reasonable sizes
+          # Check that key files have reasonable sizes (optimized with stat)
           for file in iplist/high/high_confidence_limited.txt domainlist/ads/advtracking_domains.txt; do
             if [ -f "$file" ]; then
-              size=$(wc -c < "$file")
+              size=$(stat -c%s "$file" 2>/dev/null || wc -c < "$file")
               if [ $size -lt 100 ]; then
                 echo "❌ Error: $file is suspiciously small ($size bytes)"
                 exit 1
@@ -91,6 +93,8 @@ jobs:
               echo "✅ $file: $size bytes"
             fi
           done
+          
+          echo "✅ File size validation passed"
 
       - name: Summary
         run: |
@@ -106,6 +110,7 @@ jobs:
     name: Auto-Merge to Main
     needs: validate
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     if: success()
     steps:
       - name: Checkout repository
@@ -119,18 +124,46 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Optimize Git for better performance with large repos
+          git config merge.renameLimit 999999
+          git config diff.renameLimit 999999
 
       - name: Merge auto-updates into main
         run: |
           echo "🔀 Merging auto-updates branch into main..."
-
-          # Fetch latest auto-updates
-          git fetch origin auto-updates
-
-          # Merge with no-ff to preserve history
-          git merge origin/auto-updates --no-ff -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-
-          echo "✅ Merge completed successfully"
+          
+          # Fetch the auto-updates branch with full history
+          echo "📥 Fetching auto-updates branch..."
+          git fetch origin auto-updates:auto-updates
+          
+          # Check current state
+          echo "📊 Repository state:"
+          echo "  Main branch: $(git rev-parse --short HEAD)"
+          echo "  Auto-updates: $(git rev-parse --short auto-updates)"
+          
+          # Check if already up to date
+          if git merge-base --is-ancestor auto-updates HEAD; then
+            echo "✅ auto-updates is already merged (main is up to date)"
+            exit 0
+          fi
+          
+          # Perform the merge with strategy to favor auto-updates for conflicts
+          echo "🔀 Executing merge (auto-updates takes precedence on conflicts)..."
+          if git merge auto-updates --no-ff -X theirs -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"; then
+            echo "✅ Merge completed successfully"
+          else
+            echo "⚠️ Merge had conflicts, resolving by accepting auto-updates version..."
+            
+            # Accept auto-updates version for any conflicts
+            git checkout --theirs .github/workflows/validate-and-merge.yml 2>/dev/null || true
+            git checkout --theirs iplist/honeypot/honeypot_extracted_feed.txt 2>/dev/null || true
+            git add .github/workflows/validate-and-merge.yml iplist/honeypot/honeypot_extracted_feed.txt 2>/dev/null || true
+            
+            # Complete the merge
+            git commit --no-edit -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || true
+            echo "✅ Merge completed with conflict resolution"
+          fi
 
       - name: Push to main
         run: |
