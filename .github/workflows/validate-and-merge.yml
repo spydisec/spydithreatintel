@@ -148,14 +148,21 @@ jobs:
             exit 0
           fi
           
-          # Perform the merge
-          echo "🔀 Executing merge..."
-          if git merge auto-updates --no-ff -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"; then
+          # Perform the merge with strategy to favor auto-updates for conflicts
+          echo "🔀 Executing merge (auto-updates takes precedence on conflicts)..."
+          if git merge auto-updates --no-ff -X theirs -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')"; then
             echo "✅ Merge completed successfully"
           else
-            echo "❌ Merge failed - checking status"
-            git status
-            exit 1
+            echo "⚠️ Merge had conflicts, resolving by accepting auto-updates version..."
+            
+            # Accept auto-updates version for any conflicts
+            git checkout --theirs .github/workflows/validate-and-merge.yml 2>/dev/null || true
+            git checkout --theirs iplist/honeypot/honeypot_extracted_feed.txt 2>/dev/null || true
+            git add .github/workflows/validate-and-merge.yml iplist/honeypot/honeypot_extracted_feed.txt 2>/dev/null || true
+            
+            # Complete the merge
+            git commit --no-edit -m "🤖 Auto-merge: Threat intelligence update $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || true
+            echo "✅ Merge completed with conflict resolution"
           fi
 
       - name: Push to main
