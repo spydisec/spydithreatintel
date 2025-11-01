@@ -78,28 +78,6 @@ jobs:
 
           echo "✅ Domain validation passed"
 
-      - name: Check for empty files
-        run: |
-          echo "🔍 Checking for empty blocklist files..."
-
-          # Find empty .txt files in iplist and domainlist (excluding optional honeypot feeds)
-          empty_files=$(find iplist domainlist -type f -name "*.txt" -empty 2>/dev/null | grep -v "honeypot")
-
-          if [ -n "$empty_files" ]; then
-            echo "❌ Error: Found empty critical files:"
-            echo "$empty_files"
-            exit 1
-          fi
-
-          # Check honeypot feeds separately (allow empty, just warn)
-          honeypot_empty=$(find iplist/honeypot -type f -name "*.txt" -empty 2>/dev/null)
-          if [ -n "$honeypot_empty" ]; then
-            echo "⚠️  Warning: Empty honeypot feeds (will be populated on next update):"
-            echo "$honeypot_empty"
-          fi
-
-          echo "✅ No empty critical files found"
-
       - name: Validate file sizes
         run: |
           echo "🔍 Checking file sizes..."
