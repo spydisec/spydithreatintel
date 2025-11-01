@@ -1,0 +1,68 @@
+name: Auto-Merge Threat Intelligence Updates
+
+on:
+  push:
+    branches:
+      - auto-updates
+
+permissions:
+  contents: write
+
+jobs:
+  merge:
+    name: Auto-Merge to Main
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge auto-updates into main
+        run: |
+          echo "🔀 Merging threat intelligence updates from auto-updates to main..."
+          
+          # Fetch the auto-updates branch
+          git fetch origin auto-updates:auto-updates
+          
+          # Check if already up to date
+          if git merge-base --is-ancestor auto-updates HEAD; then
+            echo "✅ Already up to date"
+            exit 0
+          fi
+          
+          # Perform the merge (auto-updates takes precedence on conflicts)
+          if git merge auto-updates --no-ff -X theirs -m "🤖 Threat Intel Update: $(date -u '+%Y-%m-%d %H:%M:%S UTC')"; then
+            echo "✅ Merge completed successfully"
+          else
+            echo "⚠️ Resolving conflicts (accepting auto-updates version)..."
+            git checkout --theirs . 2>/dev/null || true
+            git add . 2>/dev/null || true
+            git commit --no-edit -m "🤖 Threat Intel Update: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || true
+            echo "✅ Merge completed with conflict resolution"
+          fi
+
+      - name: Push to main
+        run: |
+          echo "📤 Publishing threat intelligence updates..."
+          git push origin main
+          echo "✅ Updates published to main branch"
+
+      - name: Summary
+        run: |
+          echo "📊 Deployment Summary:"
+          echo "✅ Threat intelligence updates merged to main"
+          echo "✅ Updates available for download"
+          echo ""
+          echo "🎉 Workflow completed successfully!"
+          echo ""
+          echo "📍 Latest commit:"
+          git log -1 --oneline
