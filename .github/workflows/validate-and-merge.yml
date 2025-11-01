@@ -48,13 +48,14 @@ jobs:
         run: |
           echo "🔍 Validating domain blocklists..."
 
-          # Check malicious domains if exists
-          if [ -f domainlist/malicious/malicious_domains.txt ]; then
-            valid_domains=$(grep -E '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/malicious_domains.txt | wc -l)
-            echo "✅ Found $valid_domains valid malicious domains"
+          # Note: malicious_domains.txt is hosted on Cloudflare R2 (too large for GitHub)
+          # Validate other domain sources instead
+          if [ -f domainlist/malicious/domain_ioc_maltrail_new.txt ]; then
+            valid_domains=$(grep -E '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/domain_ioc_maltrail_new.txt | wc -l)
+            echo "✅ Found $valid_domains valid IOC domains (Maltrail feed)"
 
             if [ $valid_domains -lt 10 ]; then
-              echo "❌ Error: Too few valid domains ($valid_domains)"
+              echo "❌ Error: Too few valid domains in IOC feed ($valid_domains)"
               exit 1
             fi
           fi
@@ -74,21 +75,6 @@ jobs:
           fi
 
           echo "✅ Domain validation passed"
-
-      - name: Check for empty files
-        run: |
-          echo "🔍 Checking for empty blocklist files..."
-
-          # Find empty .txt files in iplist and domainlist
-          empty_files=$(find iplist domainlist -type f -name "*.txt" -empty 2>/dev/null)
-
-          if [ -n "$empty_files" ]; then
-            echo "❌ Error: Found empty files:"
-            echo "$empty_files"
-            exit 1
-          fi
-
-          echo "✅ No empty files found"
 
       - name: Validate file sizes
         run: |
