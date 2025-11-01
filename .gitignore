@@ -35,19 +35,20 @@
 !/iplist/low/low_confidence.txt
 !/iplist/high/high_confidence_limited.txt
 !/iplist/high/high_confidence_unlimited.txt
-!/iplist/full/research_full_blocklist.txt
-!/iplist/full/permanent_confidence_blocklist.txt
+# Exclude large R2 files from GitHub
+# !/iplist/full/research_full_blocklist.txt  # 4.9MB - R2 only
+# !/iplist/full/permanent_confidence_blocklist.txt  # 12MB - R2 only
 
 #Domain Lists
 #!/domainlist/malicious/domain_ioc_maltrail.txt
 !/domainlist/malicious/domain_ioc_maltrail_new.txt
 # Exclude large files - hosted on Cloudflare R2
-# !/domainlist/malicious/malicious_domains.txt  # 63MB - too large for GitHub
+# !/domainlist/malicious/malicious_domains.txt  # 63MB - R2 only
 !/domainlist/ads/advtracking_domains.txt
 !/domainlist/malicious/phishing_domains.txt
-# !/domainlist/spam/spamscamabuse_domains.txt  # 35MB - consider R2
+# !/domainlist/spam/spamscamabuse_domains.txt  # 35MB - R2 only
 !/domainlist/SOURCES.md
-# !/domainlist/perm_domainlist.txt  # 94MB - too large for GitHub, hosted on R2
+# !/domainlist/perm_domainlist.txt  # 94MB - R2 only (not tracked)
 #Whitelist
 !/whitelist/wl_iplist/cdnips.txt
 !/whitelist/wl_iplist/forcedwhitelistips.txt
