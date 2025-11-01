@@ -4,7 +4,7 @@
 # Allow folders under /data/ and all nested directories
 !/.github/
 !/.github/workflows
-!/.github/workflows/validate-and-merge.yml
+!/.github/workflows/auto-merge.yml
 !/whitelist/
 !whitelist/wl_iplist/
 !/whitelist/wl_domainlist/
