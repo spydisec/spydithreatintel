@@ -1,8 +1,8 @@
 # Title: ThreatFox IP Blocklist
 # Description: IPs extracted from ThreatFox (abuse.ch) feed, filtered by local whitelist.
 # Homepage: https://threatfox.abuse.ch/
-# Last modified: 01 Nov 2025 16:02 UTC
-# Version: 2025.1101.1602.21
+# Last modified: 01 Nov 2025 16:52 UTC
+# Version: 2025.1101.1652.31
 # Syntax: IPv4/IPv6 addresses (one per line)
 # Number of entries: 30711
 #
