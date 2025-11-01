@@ -28,14 +28,17 @@ jobs:
           # Check high confidence IP list
           if [ -f iplist/high/high_confidence_limited.txt ]; then
             # Count valid IPv4 addresses (optimized with grep -c)
-            valid_ipv4=$(grep -cE '^([0-9]{1,3}\.){3}[0-9]{1,3}$' iplist/high/high_confidence_limited.txt || echo 0)
+            valid_ipv4=$(grep -cE '^([0-9]{1,3}\.){3}[0-9]{1,3}$' iplist/high/high_confidence_limited.txt 2>/dev/null || echo "0")
             # Count valid IPv6 addresses
-            valid_ipv6=$(grep -cE '^([0-9a-fA-F:]+)$' iplist/high/high_confidence_limited.txt || echo 0)
+            valid_ipv6=$(grep -cE '^([0-9a-fA-F:]+)$' iplist/high/high_confidence_limited.txt 2>/dev/null || echo "0")
+            # Ensure variables are numeric before arithmetic
+            valid_ipv4=${valid_ipv4:-0}
+            valid_ipv6=${valid_ipv6:-0}
             total_valid=$((valid_ipv4 + valid_ipv6))
 
             echo "✅ Found $total_valid valid IPs ($valid_ipv4 IPv4, $valid_ipv6 IPv6)"
 
-            if [ $total_valid -lt 10 ]; then
+            if [ "$total_valid" -lt 10 ]; then
               echo "❌ Error: Too few valid IPs ($total_valid). Expected at least 10."
               exit 1
             fi
@@ -53,10 +56,11 @@ jobs:
           # Note: malicious_domains.txt is hosted on Cloudflare R2 (too large for GitHub)
           # Validate other domain sources instead
           if [ -f domainlist/malicious/domain_ioc_maltrail_new.txt ]; then
-            valid_domains=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/domain_ioc_maltrail_new.txt || echo 0)
+            valid_domains=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/malicious/domain_ioc_maltrail_new.txt 2>/dev/null || echo "0")
+            valid_domains=${valid_domains:-0}
             echo "✅ Found $valid_domains valid IOC domains (Maltrail feed)"
 
-            if [ $valid_domains -lt 10 ]; then
+            if [ "$valid_domains" -lt 10 ]; then
               echo "❌ Error: Too few valid domains in IOC feed ($valid_domains)"
               exit 1
             fi
@@ -64,10 +68,11 @@ jobs:
 
           # Check ads/tracking domains
           if [ -f domainlist/ads/advtracking_domains.txt ]; then
-            valid_ads=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/ads/advtracking_domains.txt || echo 0)
+            valid_ads=$(grep -cE '^[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?(\.[a-z0-9]([a-z0-9\-]{0,61}[a-z0-9])?)+$' domainlist/ads/advtracking_domains.txt 2>/dev/null || echo "0")
+            valid_ads=${valid_ads:-0}
             echo "✅ Found $valid_ads valid ads/tracking domains"
 
-            if [ $valid_ads -lt 10 ]; then
+            if [ "$valid_ads" -lt 10 ]; then
               echo "❌ Error: Too few valid ads domains ($valid_ads)"
               exit 1
             fi
@@ -86,7 +91,8 @@ jobs:
           for file in iplist/high/high_confidence_limited.txt domainlist/ads/advtracking_domains.txt; do
             if [ -f "$file" ]; then
               size=$(stat -c%s "$file" 2>/dev/null || wc -c < "$file")
-              if [ $size -lt 100 ]; then
+              size=${size:-0}
+              if [ "$size" -lt 100 ]; then
                 echo "❌ Error: $file is suspiciously small ($size bytes)"
                 exit 1
               fi
