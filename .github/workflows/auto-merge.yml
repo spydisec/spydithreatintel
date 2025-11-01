@@ -56,6 +56,12 @@ jobs:
           git push origin main
           echo "✅ Updates published to main branch"
 
+      - name: Sync auto-updates with main
+        run: |
+          echo "🔄 Syncing auto-updates branch with main..."
+          git push origin main:auto-updates
+          echo "✅ auto-updates branch synced with main"
+
       - name: Summary
         run: |
           echo "📊 Deployment Summary:"
