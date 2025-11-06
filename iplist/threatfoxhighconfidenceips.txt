@@ -1,10 +1,10 @@
 # Title: ThreatFox High-Confidence IP Blocklist
 # Description: High-confidence IPs (confidence >= 100) from ThreatFox (abuse.ch), filtered by local whitelist.
 # Homepage: https://threatfox.abuse.ch/
-# Last modified: 06 Nov 2025 19:40 UTC
-# Version: 2025.1106.1940.06
+# Last modified: 06 Nov 2025 23:40 UTC
+# Version: 2025.1106.2340.06
 # Syntax: IPv4/IPv6 addresses (one per line)
-# Number of entries: 22132
+# Number of entries: 22134
 #
 1.0.1.0
 1.116.110.49
@@ -3112,6 +3112,7 @@
 124.198.132.250
 124.198.132.28
 124.198.132.30
+124.198.132.80
 124.198.132.82
 124.198.132.84
 124.198.132.91
@@ -10567,6 +10568,7 @@
 194.113.106.236
 194.113.211.9
 194.113.37.21
+194.113.72.222
 194.113.74.248
 194.113.74.36
 194.113.75.56
