@@ -1,10 +1,10 @@
 # Title: Spydi's Phishing DNS Tracker
 # Description: A collection of phishing domains extracted from OSINT public feed
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 23 Nov 2025 11:11 UTC
-# Version: 2025.1123.1111.27
+# Last modified: 23 Nov 2025 12:11 UTC
+# Version: 2025.1123.1211.28
 # Syntax: Domains (including possible subdomains)
-# Number of entries: 57376
+# Number of entries: 57433
 #
 %e2%81%a2@casabliss.ro
 0-2345.com
@@ -2873,6 +2873,7 @@ airbnb-clone-frontend-8w55.onrender.com
 airbnb-clone-vue.vercel.app
 airbnb-clone-with-nextjs.vercel.app
 airbnb-clone-zeta-drab.vercel.app
+airbnb-cloneuv6y.rollout.site
 airbnb-com.vercel.app
 airbnb-demo-jade.vercel.app
 airbnb-dev.vercel.app
@@ -4449,6 +4450,7 @@ arafhossain161.github.io
 aragorn-1ye.pages.dev
 arakconsultancy.com
 aramdeliverconstant.com
+araujoautocenter.com
 araukam.site
 arav-bishnoi.github.io
 aravera.net
@@ -4760,6 +4762,7 @@ astradome.firmanolikra.com
 astral-core.pages.dev
 astral-studio.pages.dev
 astral-works.pages.dev
+astralix-haven.pages.dev
 astrion-vault.pages.dev
 astro-haven-3mz.pages.dev
 astrodex-support.netlify.app
@@ -4916,6 +4919,7 @@ att-currently-6-20-2025.weeblysite.com
 att-currently-6-21-2025.weeblysite.com
 att-currently-7-1-2025.weeblysite.com
 att-currently-7-9-2025.weeblysite.com
+att-currrently-3435.weeblysite.com
 att-customer-service-108065.weeblysite.com
 att-e573ce.webflow.io
 att-employees.netlify.app
@@ -5350,6 +5354,7 @@ auth-m-start-en--ledger-docs.webflow.io
 auth-m-start-treizor-help.webflow.io
 auth-m-startrezorr.webflow.io
 auth-mail.ru-message746421492198459922-cgi.sbs
+auth-maps-view.com
 auth-membershipbill.tandlaegerneistodendk.kinsta.cloud
 auth-metamask-en-cdn.square.site
 auth-mettamask-org-info.webflow.io
@@ -7946,6 +7951,7 @@ business-for-advertisers-data-compliance.pages.dev
 business-for-advertisers-data-eligibility.pages.dev
 business-for-advertisers-data-infringement.pages.dev
 business-for-advertisers-data-suspension.pages.dev
+business-for-advertisers-disablement-transparency.pages.dev
 business-for-advertisers-disclosur-violation.pages.dev
 business-for-advertisers-eligibility-copyright.pages.dev
 business-for-advertisers-evaluation-control.pages.dev
@@ -7964,9 +7970,11 @@ business-for-advertisers-moderation-data.pages.dev
 business-for-advertisers-policy-customer.pages.dev
 business-for-advertisers-policy-violence.pages.dev
 business-for-advertisers-privacy-control.pages.dev
+business-for-advertisers-privacy-impersonation.pages.dev
 business-for-advertisers-problem-standard.pages.dev
 business-for-advertisers-quality-service.pages.dev
 business-for-advertisers-restriction-claim.pages.dev
+business-for-advertisers-restriction-copyright.pages.dev
 business-for-advertisers-restriction-support.pages.dev
 business-for-advertisers-service-copyright.pages.dev
 business-for-advertisers-service-eligibility.pages.dev
@@ -7977,8 +7985,10 @@ business-for-advertisers-service-strike.pages.dev
 business-for-advertisers-service-takedown.pages.dev
 business-for-advertisers-standard-impersonation.pages.dev
 business-for-advertisers-suspension-messenger.pages.dev
+business-for-advertisers-takedown-copyright.pages.dev
 business-for-advertisers-takedown-impersonation.pages.dev
 business-for-advertisers-trademark-messenger.pages.dev
+business-for-advertisers-trademark-suspension.pages.dev
 business-for-advertisers-violence-data.pages.dev
 business-for-advertisers-violence-disclosur.pages.dev
 business-for-advertisers-violence-problem.pages.dev
@@ -7997,6 +8007,7 @@ business-for-brynverokjjk.pages.dev
 business-for-brynverokl.pages.dev
 business-for-business-innovation-support-labs.pages.dev
 business-for-business-minds.pages.dev
+business-for-business-transformation-labs.pages.dev
 business-for-business-transformation-support-labs.pages.dev
 business-for-clarityhub-station.pages.dev
 business-for-clarityworks-hub.pages.dev
@@ -8046,6 +8057,7 @@ business-for-digital-horizon-hub.pages.dev
 business-for-digital-innovation-center.pages.dev
 business-for-digitalcrest-labs.pages.dev
 business-for-digitalflow-labs.pages.dev
+business-for-digitalhub.pages.dev
 business-for-employee-success.pages.dev
 business-for-enterprise-growth-platform.pages.dev
 business-for-expansionhub.pages.dev
@@ -8090,6 +8102,7 @@ business-for-hynvero-9pg.pages.dev
 business-for-hynvero-dvj.pages.dev
 business-for-hynverodfgh.pages.dev
 business-for-hynveroyu-c4j.pages.dev
+business-for-independence.pages.dev
 business-for-innoflow.pages.dev
 business-for-innovation-business-labs.pages.dev
 business-for-innovation-gateway-hub.pages.dev
@@ -8120,6 +8133,7 @@ business-for-lighthouseprime-labs.pages.dev
 business-for-lighthousevision-hub.pages.dev
 business-for-lighthousevision-labs-2yk.pages.dev
 business-for-local.pages.dev
+business-for-logic.pages.dev
 business-for-lornixa.pages.dev
 business-for-lorvento-6zx.pages.dev
 business-for-lorvento-ewd.pages.dev
@@ -11834,9 +11848,11 @@ data-center-appeal-standard.pages.dev
 data-center-appeal-strike.pages.dev
 data-center-assessment-claim.pages.dev
 data-center-assessment-control.pages.dev
+data-center-assessment-harassment.pages.dev
 data-center-assessment-messenger.pages.dev
 data-center-assessment-restriction.pages.dev
 data-center-bullying-customer.pages.dev
+data-center-bullying-harassment.pages.dev
 data-center-bullying-impersonation.pages.dev
 data-center-bullying-messenger.pages.dev
 data-center-bullying-reporting.pages.dev
@@ -11859,6 +11875,7 @@ data-center-compliance-claim.pages.dev
 data-center-compliance-control.pages.dev
 data-center-compliance-harassment.pages.dev
 data-center-compliance-impersonation.pages.dev
+data-center-compliance-messaging.pages.dev
 data-center-compliance-restriction.pages.dev
 data-center-compliance-security.pages.dev
 data-center-compliance-standard.pages.dev
@@ -11917,6 +11934,7 @@ data-center-guideline-claim.pages.dev
 data-center-guideline-control.pages.dev
 data-center-guideline-copyright.pages.dev
 data-center-guideline-harassment.pages.dev
+data-center-guideline-restriction.pages.dev
 data-center-guideline-security.pages.dev
 data-center-guideline-strike.pages.dev
 data-center-guideline-violation.pages.dev
@@ -11977,6 +11995,7 @@ data-center-reporting-policy.pages.dev
 data-center-reporting-takedown.pages.dev
 data-center-reporting-transparency.pages.dev
 data-center-reporting-verification.pages.dev
+data-center-reporting-violence.pages.dev
 data-center-restriction-bullying.pages.dev
 data-center-restriction-claim.pages.dev
 data-center-restriction-policy.pages.dev
@@ -12028,6 +12047,7 @@ data-center-strike-quality.pages.dev
 data-center-strike-security.pages.dev
 data-center-strike-standard.pages.dev
 data-center-strike-support.pages.dev
+data-center-strike-takedown.pages.dev
 data-center-support-assessment.pages.dev
 data-center-support-compliance.pages.dev
 data-center-support-control.pages.dev
@@ -12046,12 +12066,15 @@ data-center-takedown-claim.pages.dev
 data-center-takedown-restriction.pages.dev
 data-center-takedown-service.pages.dev
 data-center-takedown-standard.pages.dev
+data-center-takedown-transparency.pages.dev
 data-center-trademark-assessment.pages.dev
 data-center-trademark-claim.pages.dev
 data-center-trademark-control.pages.dev
 data-center-trademark-copyright.pages.dev
 data-center-trademark-data.pages.dev
+data-center-trademark-guideline.pages.dev
 data-center-trademark-harassment.pages.dev
+data-center-trademark-impersonation.pages.dev
 data-center-trademark-moderation.pages.dev
 data-center-trademark-policy.pages.dev
 data-center-trademark-problem.pages.dev
@@ -12080,12 +12103,14 @@ data-center-verification-violence.pages.dev
 data-center-violation-compliance.pages.dev
 data-center-violation-customer.pages.dev
 data-center-violation-evaluation.pages.dev
+data-center-violation-guideline.pages.dev
 data-center-violation-impersonation.pages.dev
 data-center-violation-infringement.pages.dev
 data-center-violation-quality.pages.dev
 data-center-violation-standard.pages.dev
 data-center-violation-takedown.pages.dev
 data-center-violation-transparency.pages.dev
+data-center-violation-violence.pages.dev
 data-center-violence-appeal.pages.dev
 data-center-violence-assessment.pages.dev
 data-center-violence-guideline.pages.dev
@@ -12602,6 +12627,7 @@ dfvgbvgfre.blogspot.com
 dfvgbvgfre.blogspot.tw
 dfxzsdf.wixsite.com
 dg5gkzr.cn
+dg5lg9swi67wgqh.duckdns.org
 dgcsec.online
 dgcth.ethique-services.eu:8443
 dgfhh384hsu48673.weebly.com
@@ -14803,7 +14829,9 @@ facebook-clone-blush-alpha.vercel.app
 facebook-clone-ecru-one.vercel.app
 facebook-clone-five-phi.vercel.app
 facebook-clone-r0hiizalt-front-end2023.vercel.app
+facebook-colon-one.vercel.app
 facebook-feed5942.rollout.site
+facebook-feed7r6h.rollout.site
 facebook-feedback9hqg.rollout.site
 facebook-five-sage.vercel.app
 facebook-in-run.github.io
@@ -16380,6 +16408,7 @@ geamnilogni.godaddysites.com
 geamnnilogiinnn.godaddysites.com
 geargate.za.com
 gearlinkedc.vercel.app
+geatuawe.top
 gecminlogun.godaddysites.com
 gecogroupindia.com
 geeamini_loogin.godaddysites.com
@@ -22222,6 +22251,7 @@ kukkoinlognn.webflow.io
 kukoeienlogen.webflow.io
 kukoilgon.webflow.io
 kukoin-custommer-supporrt-numbber.webflow.io
+kukoin-login.gitbook.io
 kukoin-login.webflow.io
 kukoin-lognn.godaddysites.com
 kukoin-zlognn.godaddysites.com
@@ -22535,6 +22565,7 @@ lassvlo.click
 lastinvoice1.wpenginepowered.com
 latam-pi-topaz.vercel.app
 latam-usa-77ad75c2.azurewebsites.net
+latam.adobeexperience.com.br
 latam.ofertasonline.cc
 latamairlines-co.vercel.app
 latamairlinesdescuentos.top
@@ -24197,6 +24228,7 @@ lvgseguranca.com.br
 lvhjzcpcontacts.rnbt.id.au
 lvmofd.cpqww.xyz
 lvrh-wahtsapp.com
+lvsclinic.ir
 lwalwa.cc
 lwevh.cfd
 lwmaae.cn
@@ -24543,6 +24575,7 @@ magnumalsa0910201.weeblysite.com
 magodontologia.com.br
 magroupsa.net
 mahad-abbas31.github.io
+mahakbharti.github.io
 mahalaxmikouchika.github.io
 mahatabctg.github.io
 mahatovikash03.github.io
@@ -25647,11 +25680,13 @@ meta-casex.pages.dev
 meta-cast.pages.dev
 meta-catalyzer.pages.dev
 meta-cell-9gy.pages.dev
+meta-centra.pages.dev
 meta-cernivor.pages.dev
 meta-change.pages.dev
 meta-channel-1a4.pages.dev
 meta-channel-496.pages.dev
 meta-channel-6on.pages.dev
+meta-chant.pages.dev
 meta-chip.pages.dev
 meta-chrome.pages.dev
 meta-chronora.pages.dev
@@ -25662,6 +25697,7 @@ meta-clarion.pages.dev
 meta-clay.pages.dev
 meta-clearing.pages.dev
 meta-clearvia.pages.dev
+meta-climbx.pages.dev
 meta-clinic.pages.dev
 meta-cloak.pages.dev
 meta-clone.pages.dev
@@ -25672,6 +25708,7 @@ meta-clue.pages.dev
 meta-cluster-e7n.pages.dev
 meta-clusterx-2uw.pages.dev
 meta-clusterx.pages.dev
+meta-code-g7d.pages.dev
 meta-codec.pages.dev
 meta-codehub.pages.dev
 meta-codex.pages.dev
@@ -25692,6 +25729,7 @@ meta-comet-5qd.pages.dev
 meta-commons.pages.dev
 meta-commune-69y.pages.dev
 meta-compact-bf5.pages.dev
+meta-compass.pages.dev
 meta-complex-realm-business.pages.dev
 meta-compliance-center-id6827.vercel.app
 meta-compliance-center-id6842-sk32.vercel.app
@@ -25793,10 +25831,12 @@ meta-display.pages.dev
 meta-dock-2pv.pages.dev
 meta-dock-5w9.pages.dev
 meta-doctrine.pages.dev
+meta-domain-sss.pages.dev
 meta-domainx.pages.dev
 meta-dome.pages.dev
 meta-dominion.pages.dev
 meta-dorin-xylav.pages.dev
+meta-dragon.pages.dev
 meta-drakol-hyrren-vorsak.pages.dev
 meta-draxal-vornyx-sevrok.pages.dev
 meta-draxyl-morvak-sythel.pages.dev
@@ -25885,6 +25925,7 @@ meta-feed-4ol.pages.dev
 meta-feedback-e31.pages.dev
 meta-fenvor-sytron-havrel.pages.dev
 meta-fenzo.pages.dev
+meta-ferin.pages.dev
 meta-feros-nalon.pages.dev
 meta-fetcher.pages.dev
 meta-fiber.pages.dev
@@ -33369,6 +33410,7 @@ ptrstv-dpd.cfd
 ptrzc-dpd.cfd
 pts-vantagens.dynv6.net
 pts.moo.jp
+ptwhatsappinc2017.blogspot.com
 ptylu.vrncmwsk.es
 pub-000b0136b2bf42bb8d3dbe25915b5860.r2.dev
 pub-0034e494f21a4041a289a484d1340313.r2.dev
@@ -35068,6 +35110,7 @@ ranjan-37.github.io
 ranjanamaravi.github.io
 ranm.buzz
 raofuturefinance.com.au
+raphaeldubois103.wixsite.com
 rapid-band-796d.azlanputnal.workers.dev
 rapidaavalie.shop
 rapikhk.cn
@@ -36268,6 +36311,7 @@ rubicdapp.pages.dev
 rubin-hood-logi.godaddysites.com
 rubinal-sock.netlify.app
 rubinhodlogiin.godaddysites.com
+rubox4.netlify.app
 rubrique-compte-abonnement.info
 ruchitadesigncompany.com
 ruchitha170.github.io
@@ -39060,6 +39104,7 @@ sjdjsk.xyz
 sjhdoirrsjx.wixsite.com
 sjhshjjs.registid.com
 sjiqokax.xyz
+sjkhfdf.carrd.co
 sjkxxxhjh.wixsite.com
 sjmans.carrd.co
 sjs.6897vip.cc
@@ -39770,6 +39815,7 @@ ssl.healthcarepatientportal.com
 ssl.myonlinepictureshare.com
 ssl.tech-institute.org
 ssl.webaccess-email.mx
+ssloutpostfinnn.jdevcloud.com
 sslovab.emms.com
 sslug.cn
 sslwebx23c.sviluppo.host
@@ -41278,6 +41324,7 @@ sumutprov-evk.pages.dev
 sunauthenticate.azurewebsites.net
 suncoast-dev-git-scups-131-suncoast-credit-union.vercel.app
 suncoast.speedtest.us.org
+suncoust.click
 sundeepganta123.github.io
 sundryparallax.com
 sungyoenji.github.io
@@ -42854,6 +42901,7 @@ thepinkboutik.com
 thepraveen007.github.io
 theprogressivegroup.starbearingcentre.com
 theprom.mx
+theproperresponse.com
 theprotikraj.github.io
 theransone.pages.dev
 therealmyrn.github.io
@@ -46283,6 +46331,7 @@ vujoioi.cn
 vv23-0ut0280390923-vci-acc-develop23092903.vercel.app
 vvb.wawpp.icu
 vvd.bz
+vvdt.net
 vvebmail5ignin787.weebly.com
 vvhatoapp.com
 vviideoosssxxyyyy.weebly.com
@@ -49917,6 +49966,7 @@ www.c3t4k.dftr-kup0n.biz.id
 www.c551000.com
 www.c551008.com
 www.c551008.com:8989
+www.ca593836.tw1.ru
 www.cache-owa-autodiscover-refreshv2.vercel.app
 www.cadastro.jimpike.com.au
 www.caixa-suporte.com
@@ -50321,6 +50371,7 @@ www.cs.bruin.com.au
 www.cs23252.tw1.ru
 www.csrf-guard-handler.vercel.app
 www.ct-zt.cn
+www.ct346110.tw1.ru
 www.ctaspace.com
 www.ctivcion2025.webcindario.com
 www.ctylf.cn
@@ -51578,6 +51629,7 @@ www.imtokexn.im
 www.imtokken.im
 www.imtoknc.im
 www.imtoknn.icu
+www.imtorken.im
 www.imzoken.im
 www.incc-parfums.com
 www.indal-bygg.com
@@ -54613,6 +54665,7 @@ www.slicenero.freemyip.com
 www.slnaeys.mobi
 www.slnaeyt.mobi
 www.sloancanyonchurch.com
+www.sm.saipymes.soporte-virtual.es
 www.smart-move-plan.com
 www.smartwebtechnologies.in
 www.smmpush.com
@@ -56177,6 +56230,7 @@ www.ynabioueconus-meriescs-experinces-t.vercel.app
 www.yoke11.vip
 www.yonaguniur.com
 www.youraccount.vercel.app
+www.yourspotify.duckdns.org
 www.youyouboutique.com
 www.yqisb1v0.yyhuimall.cc
 www.yrs-wswhatsapp.cc
@@ -56440,6 +56494,7 @@ x59f.xyz
 x5s.1cb.mytemp.website
 x60crxjxzc.s3.ap-southeast-5.amazonaws.com
 x60t40l8ba.onrocket.site
+x68n.xyz
 x70511.cn
 x70j.xyz
 x78d.xyz
@@ -56869,6 +56924,7 @@ yhnfki.wixsite.com
 yhzl.ydso.xyz
 yhztzj.secondhandparts.co.za:2083
 yiansmart.cc
+yianwebin.cc
 yianwebon.cc
 yieaaf.cn
 yig.waape.icu
@@ -56964,6 +57020,7 @@ yourbanking.org
 yourcompany.webadmin-email.net
 yourcustomsbroker.com
 yoursignedocs.weebly.com
+yourspotify.duckdns.org
 yourvacancytoday.click
 yourwealthmatter.com
 yourwfe.com
