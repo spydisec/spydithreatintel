@@ -1,10 +1,10 @@
 # Title: Spydi's Phishing DNS Tracker
 # Description: A collection of phishing domains extracted from OSINT public feed
 # Homepage: https://github.com/spydisec/spydithreatintel/
-# Last modified: 25 Nov 2025 11:11 UTC
-# Version: 2025.1125.1111.27
+# Last modified: 25 Nov 2025 12:11 UTC
+# Version: 2025.1125.1211.28
 # Syntax: Domains (including possible subdomains)
-# Number of entries: 57898
+# Number of entries: 58105
 #
 %e2%81%a2@casabliss.ro
 0-2345.com
@@ -599,6 +599,7 @@
 32.sub-97-170-162.myvzw.com
 320467935040658768012465516081rgmiavhpjtbcizz.adelon.com.br
 3242-dashcloud.pages.dev
+3243243243243243243.pages.dev
 32652900175411plan.github.io
 327893276843.netlify.app
 32798329832498333.netlify.app
@@ -1937,6 +1938,22 @@ acaodavezzxzn.github.io
 acbbank.top
 acbdegf.pilot45.com
 acc-11cro.servehttp.com
+acc-compliance-audit-desk.pages.dev
+acc-compliance-check-section.pages.dev
+acc-health-adsing-4po1i-3msd-n1mxf.pages.dev
+acc-health-adsing-7bmzr-r45e-d5ggs.pages.dev
+acc-health-adsing-9pcif-lwdr-3vwmj.pages.dev
+acc-health-adsing-9u6wt-vmk2-zyzsi.pages.dev
+acc-health-adsing-hmewc-jn6o-cjpzt.pages.dev
+acc-health-adsing-iwi08-l0hg-9ncbe.pages.dev
+acc-health-adsing-kjnaw-nga4-1izxt.pages.dev
+acc-health-adsing-o3s65-qu0k-5qzzk.pages.dev
+acc-health-adsing-pwdbo-lwim-rsxkj.pages.dev
+acc-health-adsing-vcedt-cxnm-j5ian.pages.dev
+acc-health-adsing-wgt2l-b254-85hcq.pages.dev
+acc-health-adsing-x5zu2-zueu-gwubu.pages.dev
+acc-health-adsing-xv6ck-malq-5u6jz.pages.dev
+acc-health-adsing-yov84-fc3x-q8va8.pages.dev
 acc-health-audit-dashboard.pages.dev
 acc-health-check-console.pages.dev
 acc-health-evaluation-panel.pages.dev
@@ -2145,6 +2162,7 @@ accountservices.my
 accountsettingcenterrr.weebly.com
 accountsignup.info
 accountsupports.onlinebankingbdo.workers.dev
+accountsupportspace.xyz
 accountt.errorhandlingcenter.com
 accountverify-auth-setting.vercel.app
 accountverify-control-panel.vercel.app
@@ -4472,6 +4490,7 @@ aradhytripathi9991.github.io
 arafathrumman.github.io
 arafhossain161.github.io
 aragorn-1ye.pages.dev
+arakbr3.etbaba.com
 arakconsultancy.com
 aramdeliverconstant.com
 araujoautocenter.com
@@ -5232,12 +5251,14 @@ aurlf.sbs
 aurontech.us-sea-1.linodeobjects.com
 aurora-media.net
 aurora.protondns.net
+aurumindustries.com
 aurumtrans.com
 aus-en-meta-centers-acccountsr.pages.dev
 aus.exquisitegrretta.com
 ausi.fans
 ausikd1.me
 auspost-trackin.com
+auspost.myshewb.top
 auspost.orderconfirmation.life
 auspost.securev.cfd
 auspostac.world
@@ -6617,6 +6638,7 @@ bet391.cc
 bet397.cc
 bet5555.bet
 bet63fff.com
+bet63ii.com
 bet63sss.com
 bet63xxx.com
 bet73.co
@@ -7989,6 +8011,7 @@ business-adsviolation-id980812-to3j.vercel.app
 business-for-advancebridge-hub.pages.dev
 business-for-advertisers-assessment-dispute.pages.dev
 business-for-advertisers-bullying-data.pages.dev
+business-for-advertisers-bullying-eligibility.pages.dev
 business-for-advertisers-bullying-impersonation.pages.dev
 business-for-advertisers-claim-dispute.pages.dev
 business-for-advertisers-control-data.pages.dev
@@ -8009,12 +8032,14 @@ business-for-advertisers-evaluation-control.pages.dev
 business-for-advertisers-guideline-claim.pages.dev
 business-for-advertisers-guideline-data.pages.dev
 business-for-advertisers-guideline-disclosur.pages.dev
+business-for-advertisers-guideline-reporting.pages.dev
 business-for-advertisers-guideline-strike.pages.dev
 business-for-advertisers-guideline-violence.pages.dev
 business-for-advertisers-help-claim.pages.dev
 business-for-advertisers-help-reporting.pages.dev
 business-for-advertisers-help-service.pages.dev
 business-for-advertisers-impersonation-claim.pages.dev
+business-for-advertisers-impersonation-compliance.pages.dev
 business-for-advertisers-impersonation-help.pages.dev
 business-for-advertisers-impersonation-monetization.pages.dev
 business-for-advertisers-infringement-service.pages.dev
@@ -8044,9 +8069,11 @@ business-for-advertisers-suspension-messenger.pages.dev
 business-for-advertisers-takedown-copyright.pages.dev
 business-for-advertisers-takedown-help.pages.dev
 business-for-advertisers-takedown-impersonation.pages.dev
+business-for-advertisers-takedown-suspension.pages.dev
 business-for-advertisers-trademark-messenger.pages.dev
 business-for-advertisers-trademark-strike.pages.dev
 business-for-advertisers-trademark-suspension.pages.dev
+business-for-advertisers-violence-bullying.pages.dev
 business-for-advertisers-violence-data.pages.dev
 business-for-advertisers-violence-disclosur.pages.dev
 business-for-advertisers-violence-problem.pages.dev
@@ -8161,7 +8188,9 @@ business-for-hynvero-9pg.pages.dev
 business-for-hynvero-dvj.pages.dev
 business-for-hynverodfgh.pages.dev
 business-for-hynveroyu-c4j.pages.dev
+business-for-ideas.pages.dev
 business-for-independence.pages.dev
+business-for-industry.pages.dev
 business-for-innoflow.pages.dev
 business-for-innovation-business-labs.pages.dev
 business-for-innovation-gateway-hub.pages.dev
@@ -8247,6 +8276,7 @@ business-for-provento-c5w.pages.dev
 business-for-provento-das.pages.dev
 business-for-provento-dcd.pages.dev
 business-for-proventoui.pages.dev
+business-for-results.pages.dev
 business-for-risefield-hub.pages.dev
 business-for-roost-hub.pages.dev
 business-for-scalecrest-labs.pages.dev
@@ -8255,6 +8285,7 @@ business-for-scaleprime-labs.pages.dev
 business-for-scalevision-labs-6ti.pages.dev
 business-for-scalevision-labs.pages.dev
 business-for-skills.pages.dev
+business-for-solutions.pages.dev
 business-for-strategic-customer-engagement-hub.pages.dev
 business-for-strategicrise-labs.pages.dev
 business-for-strategy-fusion-studio.pages.dev
@@ -8516,6 +8547,7 @@ cae3a120d99f49be8cad1d70ea72bec5mn-my-sharepoint.hlmillersinc.com
 caedjbf.pilot45.com
 caefjbd.pilot45.com
 cael-crest.pages.dev
+cagateckinsaat.com
 cainbasdpradoxdi.godaddysites.com
 caiodev99.github.io
 caiordsilva.github.io
@@ -8575,6 +8607,7 @@ calico-great-report.glitch.me
 californiawelcomecenter.com
 calimddine.com
 calix-lehrerberater.de
+call-whatsapp.com
 callhelp.my.id
 callie-mccall.crabdance.com
 calm-frost-27db.dani66867543.workers.dev
@@ -9250,6 +9283,7 @@ celestinogenao.com
 cellinecotton.com
 cellixxac.vercel.app
 cells-link-nat-prompt.trycloudflare.com
+celron-fytra-biz-molvik-janrex.pages.dev
 celsiusdistribution.zayregadgets.com
 cemapla.duckdns.org
 cenabisepro7logi.godaddysites.com
@@ -9387,6 +9421,7 @@ cgrsistemas.com.br
 cgtl.hrcbods.es
 cguwbvmgdqmx.lectec.com.au
 ch-nouvelle-info.surge.sh
+ch-status-envois.com
 ch.yhsadnfndf.cfd
 ch08328-wordpress-o7yit.tw1.ru
 ch09665.tw1.ru
@@ -9595,6 +9630,7 @@ chrono-ridge.pages.dev
 chronopost.hardenctf.fr
 chrovhey.zfr-co.biz.id
 chrovhy.biz.id
+chsuissrv11.cloudaccess.host
 chteetryu4ewqtyuegqwvyeuwboe2iuiuoq.pages.dev
 chtwa.me
 chu-djvousfr.weebly.com
@@ -9786,6 +9822,7 @@ click.convertkit-mail2.com
 click.kit-mail1.com
 click.pr-universe.com
 click.shootproof.com
+click2prize.com
 clickheretofail.028426.com
 clicks.acmmail.com
 clicks.mescystem.net
@@ -9894,6 +9931,7 @@ cluster-local-manage-id30468927.vercel.app
 cluster-monitor-task.vercel.app
 cluster-phase-fabric.com
 clvshoppe.com.my
+clymo-javren-biz-renfo-saltra.pages.dev
 cm19051.tw1.ru
 cm19640-wordpress-oxypw.tw1.ru
 cm41795.tw1.ru
@@ -10340,6 +10378,7 @@ coinbaseportfolio.help
 coinbasepporloogi.godaddysites.com
 coinbasepr04.godaddysites.com
 coinbasepro-login-com.typedream.app
+coinbasepro-login-io.gitbook.io
 coinbasepro-loginz.gitbook.io
 coinbasepro-lognn1.godaddysites.com
 coinbaseprollogin13.godaddysites.com
@@ -11355,6 +11394,7 @@ cuddly-photos-035120.framer.app
 cudies.com
 cudoigre.rs
 cuentaconmigo.com.ar
+cuentarafa9-whatsapp-04c1e7689c18.herokuapp.com
 cuentas.cl-spotify.com
 cuibasalegon.godaddysites.com
 cuibaseeprologiusnv.godaddysites.com
@@ -12077,6 +12117,7 @@ data-center-reporting-verification.pages.dev
 data-center-reporting-violence.pages.dev
 data-center-restriction-bullying.pages.dev
 data-center-restriction-claim.pages.dev
+data-center-restriction-disablement.pages.dev
 data-center-restriction-evaluation.pages.dev
 data-center-restriction-policy.pages.dev
 data-center-restriction-reporting.pages.dev
@@ -13422,6 +13463,7 @@ dran-forge.pages.dev
 dran-meta-sprok-biz.pages.dev
 drat-meta.pages.dev
 drav-meta-kelm-biz.pages.dev
+dravik-sylen-krytok.pages.dev
 dravornw.vercel.app
 drawpada.vercel.app
 drbear07.wixstudio.com
@@ -14419,6 +14461,7 @@ eraykiyici.github.io
 erbfrrgg.pages.dev
 erc.tronscan.lc
 erd-wswhatsapp.cc
+erebus-hub.pages.dev
 erfgtr43.blogspot.com
 erfgtr43.blogspot.tw
 erg4r321.blogspot.com
@@ -15181,6 +15224,7 @@ fareosearch.com
 farhan-netflix-clone.vercel.app
 farhattyagi8-del.github.io
 farihanuha.github.io
+farlin-tevrox-biz-lynfra-holdex.pages.dev
 farmaciashuales.com
 farmliteq.vercel.app
 farmpancake.com
@@ -15195,6 +15239,7 @@ farzam5571.github.io
 fascinated-chip-work.glitch.me
 fascinating-clafoutis-f7e803.netlify.app
 fascinating-crostata-e9db0e.netlify.app
+fashioncarsds.2ix.ch
 fashionstidio.com
 fasliaf.click
 fast24news.in
@@ -15351,6 +15396,7 @@ feiraoacordos.online
 feiraodeofertas.ru.com
 feiraodeoutubro2025.github.io
 feiraodeoutubros2025.github.io
+feiraolimpabrasil-afk.github.io
 feiraolimpanome.cloud
 feiraolimpounovembro2025online.github.io
 feiraonovemberdodia2025.github.io
@@ -15365,6 +15411,7 @@ felden-core-3r3.pages.dev
 felipe3a.github.io
 felixvalidate.pages.dev
 felor-synak-darox.pages.dev
+felvik-dorner-biz-hyvox-sylren.pages.dev
 fencolter.top
 fendrix-node.pages.dev
 fengshan.pilot45.com
@@ -15979,6 +16026,7 @@ forologikespllirofories.web.app
 forologikespplirofories.web.app
 forrit-tb-csmr-prod-qa-01.azurewebsites.net
 forrodokomeketo.agenciainnova.com.br
+forte7.com.br
 fortinet.shardocs.com
 fortune-ink-dosa.glitch.me
 forubestmall.cc
@@ -15989,6 +16037,7 @@ fotoyvideopixel.com
 foubot.is-slick.com
 four-false-death.glitch.me
 fox28.masun.eu.org
+foxxter.shop
 fpfibiebcm.duckdns.org
 fph.7a8.mytemp.website
 fplwsndwah.duckdns.org
@@ -16229,6 +16278,7 @@ funnyyahoo.00server.com
 fup-meta-jib-biz.pages.dev
 fup-meta-jib-vint.pages.dev
 fup-meta-jib.pages.dev
+fup-metabeta-jib.pages.dev
 fuquanbao.com
 further-kucoin-cdn-auth.webflow.io
 furtive-rock.surge.sh
@@ -17440,6 +17490,7 @@ grand7th.com
 grandentrydoorsadmin.com
 grandhanhu.com
 grandmesaluxurycollection.com
+grandparentstobe.com
 grapefruit16897804.brizy.site
 graphics-medical-russell-updated.trycloudflare.com
 grate-moligan.cc
@@ -17454,6 +17505,7 @@ gravitas-local-manage-031572684-xi.vercel.app
 gray-antelope-706687.hostingersite.com
 gray-pond-0333b0f10.1.azurestaticapps.net
 graymzaer.weebly.com
+grayview.mypi.co
 grcio-b.bkaekkir.top
 great-restaurant-deals.com
 greaterfreedom.org
@@ -17596,6 +17648,7 @@ guest-confirmas442553.com
 guest-confirmas873.com
 guest-globalpend.com
 guest-housecheck.com
+guest-request546364543.com
 guest-verificat.com
 gufnjceij.xyz
 gugdeiraaihiid.vercel.app
@@ -17634,6 +17687,7 @@ guitrombini06.github.io
 gujcsryopm.danaget.biz.id
 gular-motley-buffet10-20jtkonfirmasiii.pages.dev
 gulbu.hemmo7ib38.workers.dev
+gulfmedicaltourism.com
 gumeminlogi.webflow.io
 gumeniadlogin.gitbook.io
 gumenilogia.gitbook.io
@@ -17883,6 +17937,7 @@ harmonious-nadas-b4j2r1128.pages.dev
 harmonious-patterns-037069.framer.app
 harmonixa.vercel.app
 harmony-tb.com
+haron-syrex-tavik.pages.dev
 harpermcneilupdates.s3.us-west-1.amazonaws.com
 harpreetsi02.github.io
 harrier.cuppakafka.info
@@ -18729,6 +18784,7 @@ hongmikeji.com.cn
 honor697.github.io
 honoured-1-byte.github.io
 hoo.be
+hook.datavence.sbs
 hookitoypalloyu.pages.dev
 hoommie.com
 hoopstara.vercel.app
@@ -19947,6 +20003,7 @@ instruction-seed.vercel.app
 instructions.webaccess-alerts.net
 instructor-gist.vercel.app
 instructor-sync-git-main-projects-munt.vercel.app
+insttargram.blogspot.com
 insurance-company-policyholder-claim-denial-case.pages.dev
 insurance.papacking.com
 insurtechs.company
@@ -20295,6 +20352,7 @@ iryn-lume.pages.dev
 iryn-net.pages.dev
 iryn-pulse.pages.dev
 iryn-sol.pages.dev
+iryn-vision-3yg.pages.dev
 is-drc.com
 is.gd
 isaacmodale.wixsite.com
@@ -20837,6 +20895,7 @@ jasanders33122.wixstudio.com
 jaschahal211.github.io
 jaseervp.github.io
 jasemina.pages.dev
+jaskkaransingh.github.io
 jasoncarcamo.github.io
 jasonfighter12278.github.io
 jasvindersingh01.github.io
@@ -21085,6 +21144,7 @@ jisna1995.github.io
 jisquz.com
 jissmon-joseph.github.io
 jisttrucking.com
+jitawin.ai.in
 jitendra-beep.github.io
 jitendra931.github.io
 jitendramaurya654321-jpg.github.io
@@ -21426,7 +21486,9 @@ kalifandro.kirmanoduplaxe.com
 kalifdro.manibatel-karochi.com
 kalosec.com
 kalpana-chavhan.github.io
+kalren-vyxor-midel.pages.dev
 kalrix-hub.pages.dev
+kalrix-syton-felak.pages.dev
 kalspmtyps.duckdns.org
 kamalhiiny.github.io
 kamalrafat.github.io
@@ -21567,6 +21629,7 @@ keishin.site
 keku14.github.io
 kelnin08.github.io
 keloten.offixom.com
+kelra-bryno-tavi.pages.dev
 kelrox-terin-drynols.pages.dev
 kelt.nauportal.com
 kemp-project.bihuy.com
@@ -21934,6 +21997,7 @@ kouwakai-kougeibijyutsu.jp
 kovanmuhmad.github.io
 kovidi24.sbs
 kovigeo.icu
+kovlin-venris-biz-meltrak-hylen.pages.dev
 kow45.com
 koyab0099.github.io
 kp.jetos.com
@@ -21979,6 +22043,7 @@ kra9cc.com
 kra_ka_in_lo_giin.godaddysites.com
 kraa20-at.com
 kraakiinlogin.webflow.io
+kracen_logn_u.godaddysites.com
 kraetim4.wixsite.com
 krafton-official.eventsredeems.com
 kraftuns.com
@@ -22082,6 +22147,7 @@ krux-meta-blop.pages.dev
 kryen-hub.pages.dev
 kryptonmedia.click
 kryzara-vault.pages.dev
+kryzon-valex-sylen.pages.dev
 krzo-bmmanager962662.vercel.app
 ks-fsdev.github.io
 kscskalsm.weeblysite.com
@@ -23362,6 +23428,7 @@ levidavid051.github.io
 lewisenginc.com
 lewunucazo-pehuvoduno.vercel.app
 lewztol.cn
+lexan-vyril-sornyx.pages.dev
 lexiconentertainment.com
 lexuslxr.github.io
 lfjxl0y.top
@@ -23527,6 +23594,7 @@ liora-studio.pages.dev
 lipi301.github.io
 liquidamagalu.site
 liquidez-cupo-aumento.vercel.app
+lira-sunek-mavo.pages.dev
 lisaguzellik.com
 lisandroescalada.github.io
 lismybinto.github.io
@@ -23622,6 +23690,7 @@ live-loggin-ledger-com-eng.pages.dev
 live-logon-leadger.webflow.io
 live-m-meta-mask-logi-en.godaddysites.com
 live-mingiftin10.vercel.app
+live-mingiftin11.vercel.app
 live-mingiftin12.vercel.app
 live-mingiftin13.vercel.app
 live-mingiftin14.vercel.app
@@ -24028,6 +24097,7 @@ login.cpcalendars.sspl.com.au
 login.dk-post-ppostnord.qpon
 login.enterprises
 login.ethanthegreat.com
+login.f-acebo0k.com
 login.facilities-communications.com
 login.fb.aimage.it
 login.fedrelbank.com
@@ -24423,6 +24493,8 @@ ly.cnuqkv6.sa.com
 lydiasthr.com
 lyg.thecorpot.com
 lymwgczx.cn
+lynos-core.pages.dev
+lynos-sys.pages.dev
 lyqpz.cn
 lyrona-haven.pages.dev
 lysor-denok-vyral.pages.dev
@@ -24517,6 +24589,7 @@ m.ecoinbarn.com
 m.eer-wswhatsapp.cc
 m.efx-wswhatsapp.cc
 m.erz-wswhatsapp.cc
+m.f-acebo0k.com
 m.fb16-11-en.299879.shop
 m.ffqj.cn
 m.fpwg.cn
@@ -24989,6 +25062,7 @@ maildttfl-att-home03293.weeblysite.com
 mailer.attollo.com.au
 mailer.jimpike.com.au
 mailer.sspl.com.au
+mailer5-kit.mdbgo.io
 mailer8-log.mdbgo.io
 mailerattlogin.weebly.com
 mailgate.attollo.com.au
@@ -25078,6 +25152,7 @@ makeapleaservice-gov.com
 maketuge.vercel.app
 makimolinaasteamwor6b447.myclickfunnels.com
 makinoofficial.com
+maknaslots.com
 makominingcorp.company
 makravi17.github.io
 makur123.github.io
@@ -25373,6 +25448,7 @@ mauyiipolbaij.vercel.app
 mav-meta-quax-biz.pages.dev
 mav-meta-quax-vint.pages.dev
 mav-meta-quax.pages.dev
+mav-metabeta-quax.pages.dev
 mavorupiladexonite.website
 max9960.com
 maxibrant.com
@@ -25702,6 +25778,7 @@ meta-algo.pages.dev
 meta-algoryn.pages.dev
 meta-allaxia.pages.dev
 meta-alliance-e3z.pages.dev
+meta-alpha-2im.pages.dev
 meta-altanova.pages.dev
 meta-altitude-ayl.pages.dev
 meta-alvex.pages.dev
@@ -25806,6 +25883,7 @@ meta-beam.pages.dev
 meta-belor.pages.dev
 meta-benchmarkx.pages.dev
 meta-bentley.pages.dev
+meta-beryl.pages.dev
 meta-bespoke.pages.dev
 meta-beyond-csj.pages.dev
 meta-bill.pages.dev
@@ -25856,6 +25934,7 @@ meta-browserkit.pages.dev
 meta-brylok-firven-tosyr.pages.dev
 meta-brysol-deron.pages.dev
 meta-bryvox.pages.dev
+meta-bubble.pages.dev
 meta-builder-4lg.pages.dev
 meta-bulwark.pages.dev
 meta-bureau.pages.dev
@@ -25877,6 +25956,7 @@ meta-cast.pages.dev
 meta-castle-c4d.pages.dev
 meta-catalyze.pages.dev
 meta-catalyzer.pages.dev
+meta-cavern.pages.dev
 meta-celestial-1mb.pages.dev
 meta-cell-9gy.pages.dev
 meta-centra.pages.dev
@@ -25890,6 +25970,7 @@ meta-chip.pages.dev
 meta-chrome.pages.dev
 meta-chronora.pages.dev
 meta-circle-o09.pages.dev
+meta-circlex.pages.dev
 meta-circuit.pages.dev
 meta-circuitx.pages.dev
 meta-clarion.pages.dev
@@ -25898,6 +25979,7 @@ meta-class.pages.dev
 meta-clay.pages.dev
 meta-clearing.pages.dev
 meta-clearvia.pages.dev
+meta-climb.pages.dev
 meta-climbx.pages.dev
 meta-clinic.pages.dev
 meta-cloak.pages.dev
@@ -25948,6 +26030,7 @@ meta-conflux-44g.pages.dev
 meta-conflux.pages.dev
 meta-confluxcore.pages.dev
 meta-conjure.pages.dev
+meta-connect-2zg.pages.dev
 meta-connect.pages.dev
 meta-connectx-du1.pages.dev
 meta-console.pages.dev
@@ -26006,9 +26089,12 @@ meta-data-10a.pages.dev
 meta-data-service-network-zone.pages.dev
 meta-datavault.pages.dev
 meta-datax.pages.dev
+meta-dawn-6br.pages.dev
 meta-dawnx.pages.dev
+meta-debug-att.pages.dev
 meta-debug.pages.dev
 meta-deck-1y2.pages.dev
+meta-deck-gb9.pages.dev
 meta-decode.pages.dev
 meta-decoder-d30.pages.dev
 meta-deepwell.pages.dev
@@ -26017,6 +26103,7 @@ meta-deflect.pages.dev
 meta-delta-83z.pages.dev
 meta-deltaflow.pages.dev
 meta-delvindor.pages.dev
+meta-deployment.pages.dev
 meta-depth-5qy.pages.dev
 meta-depth.pages.dev
 meta-deriva.pages.dev
@@ -26041,12 +26128,14 @@ meta-directx.pages.dev
 meta-discover-a1j.pages.dev
 meta-diskette.pages.dev
 meta-display.pages.dev
+meta-disruptive.pages.dev
 meta-dock-2pv.pages.dev
 meta-dock-5w9.pages.dev
 meta-doctrine.pages.dev
 meta-domain-sss.pages.dev
 meta-domain.pages.dev
 meta-domainx.pages.dev
+meta-dome-30y.pages.dev
 meta-dome.pages.dev
 meta-dominion.pages.dev
 meta-dorin-xylav.pages.dev
@@ -26164,6 +26253,7 @@ meta-filament-99d.pages.dev
 meta-file.pages.dev
 meta-film.pages.dev
 meta-filra.pages.dev
+meta-filter.pages.dev
 meta-finale.pages.dev
 meta-finance.pages.dev
 meta-firm-49m.pages.dev
@@ -26392,6 +26482,7 @@ meta-foundry-4ko.pages.dev
 meta-foundry.pages.dev
 meta-fralon.pages.dev
 meta-frame-7m4.pages.dev
+meta-frame-d6e.pages.dev
 meta-frame.pages.dev
 meta-framecore-ah3.pages.dev
 meta-framex-24f.pages.dev
@@ -26404,6 +26495,7 @@ meta-frontier-75h.pages.dev
 meta-frovin.pages.dev
 meta-fulcrum.pages.dev
 meta-function.pages.dev
+meta-functionality.pages.dev
 meta-fusion-5rb.pages.dev
 meta-fusionx.pages.dev
 meta-fylor-ccd.pages.dev
@@ -26429,10 +26521,12 @@ meta-gateway-c4t.pages.dev
 meta-gateway.pages.dev
 meta-gatewayx-9ez.pages.dev
 meta-gatewayx.pages.dev
+meta-gavex.pages.dev
 meta-gavon-tracking-cycle-7i7.pages.dev
 meta-gelvin.pages.dev
 meta-genesis-2b4.pages.dev
 meta-gerviton.pages.dev
+meta-glivo.pages.dev
 meta-global-login-network-panel.pages.dev
 meta-globalnet.pages.dev
 meta-glowra.pages.dev
@@ -26453,6 +26547,7 @@ meta-gridx-6x1.pages.dev
 meta-gridx.pages.dev
 meta-grona.pages.dev
 meta-gronvitar.pages.dev
+meta-group-doa.pages.dev
 meta-grovan-mirax-syqlen.pages.dev
 meta-growx.pages.dev
 meta-grysal-meton-vilrak.pages.dev
@@ -26470,6 +26565,7 @@ meta-harnil.pages.dev
 meta-harnor.pages.dev
 meta-hashing.pages.dev
 meta-haven-a8d.pages.dev
+meta-haven-evq.pages.dev
 meta-havenx.pages.dev
 meta-havik-seron-wyka.pages.dev
 meta-havrik-fenrak-sorvik.pages.dev
@@ -26491,6 +26587,7 @@ meta-holdings.pages.dev
 meta-hollowgate.pages.dev
 meta-holrix.pages.dev
 meta-horizon-236.pages.dev
+meta-horizon-cah.pages.dev
 meta-horizon-ei5.pages.dev
 meta-horizonx-f4i.pages.dev
 meta-horrin-kryvex-talrath.pages.dev
@@ -26501,6 +26598,7 @@ meta-hub.pages.dev
 meta-hurnor.pages.dev
 meta-hurnyx.pages.dev
 meta-hybrid-clg.pages.dev
+meta-hybrid.pages.dev
 meta-hypersona.pages.dev
 meta-hyrix.pages.dev
 meta-hyron-lisav.pages.dev
@@ -26518,11 +26616,14 @@ meta-idea.pages.dev
 meta-ignis-6o9.pages.dev
 meta-ilvax.pages.dev
 meta-ilvixonar.pages.dev
+meta-imaginex.pages.dev
+meta-impact.pages.dev
 meta-impactx.pages.dev
 meta-impulse-630.pages.dev
 meta-index-zar.pages.dev
 meta-indexx.pages.dev
 meta-infinity.pages.dev
+meta-influx.pages.dev
 meta-info-1tu.pages.dev
 meta-info-alert-console-hub.pages.dev
 meta-info-service-update-zone.pages.dev
@@ -26535,6 +26636,7 @@ meta-inspire-38t.pages.dev
 meta-instance-gon.pages.dev
 meta-institute.pages.dev
 meta-intella.pages.dev
+meta-interface-9dd.pages.dev
 meta-interfacemap.pages.dev
 meta-interflow.pages.dev
 meta-interval.pages.dev
@@ -26573,6 +26675,7 @@ meta-journo.pages.dev
 meta-julon.pages.dev
 meta-jump.pages.dev
 meta-junction-2py.pages.dev
+meta-junction.pages.dev
 meta-juren-kryso.pages.dev
 meta-jurnyx.pages.dev
 meta-jynros-halrek-venix.pages.dev
@@ -26589,6 +26692,7 @@ meta-kavon-girax.pages.dev
 meta-kavren.pages.dev
 meta-kavri-nylon-fexa.pages.dev
 meta-keel.pages.dev
+meta-keeper-7zr.pages.dev
 meta-keepguard.pages.dev
 meta-kelin-frawa-syro.pages.dev
 meta-kelvrax-sythor-morvex.pages.dev
@@ -26624,6 +26728,7 @@ meta-krylon-sarthok-bryvek.pages.dev
 meta-krylon.pages.dev
 meta-krylox-zerath-morvik.pages.dev
 meta-kyvon-mrela-dorin.pages.dev
+meta-lab-3y9.pages.dev
 meta-lab.pages.dev
 meta-labspace.pages.dev
 meta-ladyn.pages.dev
@@ -26653,7 +26758,9 @@ meta-lift-2se.pages.dev
 meta-liftoria.pages.dev
 meta-light-dlv.pages.dev
 meta-light-rj0.pages.dev
+meta-lightcore.pages.dev
 meta-lighthouse-dn2.pages.dev
+meta-lighthouse.pages.dev
 meta-lightwave.pages.dev
 meta-lightx.pages.dev
 meta-limex.pages.dev
@@ -26680,6 +26787,7 @@ meta-looming.pages.dev
 meta-loop-bolt-chain.pages.dev
 meta-loop-ces.pages.dev
 meta-loopx.pages.dev
+meta-lore.pages.dev
 meta-loren-sivra-tequil.pages.dev
 meta-lorin.pages.dev
 meta-lorinth-feedback-trail.pages.dev
@@ -26689,6 +26797,7 @@ meta-lovik-meran-syqen.pages.dev
 meta-lucendis.pages.dev
 meta-lucent-1dq.pages.dev
 meta-lucentcore.pages.dev
+meta-lucid.pages.dev
 meta-lucidity.pages.dev
 meta-lumen-ev1.pages.dev
 meta-lumenx-4mv.pages.dev
@@ -26722,7 +26831,9 @@ meta-map-3lg.pages.dev
 meta-mapcore.pages.dev
 meta-mapline.pages.dev
 meta-mapx-3ke.pages.dev
+meta-mapx-8t6.pages.dev
 meta-mark-bee.pages.dev
+meta-market.pages.dev
 meta-marnil.pages.dev
 meta-marvo.pages.dev
 meta-mask-log-in.godaddysites.com
@@ -26743,8 +26854,11 @@ meta-melon-hyrex.pages.dev
 meta-melrin-compliance-path.pages.dev
 meta-memoryx.pages.dev
 meta-menra.pages.dev
+meta-merge-7ey.pages.dev
+meta-mergeon.pages.dev
 meta-mergex-e0e.pages.dev
 meta-mergex.pages.dev
+meta-mesh-37n.pages.dev
 meta-meshflow.pages.dev
 meta-metaai.pages.dev
 meta-meteor.pages.dev
@@ -26755,6 +26869,7 @@ meta-mexal-varyn-tyro.pages.dev
 meta-mexor-jovin-rani.pages.dev
 meta-mint.pages.dev
 meta-mirage-b82.pages.dev
+meta-mirage.pages.dev
 meta-miron-vyzel.pages.dev
 meta-mirthic-storage-zurneval.pages.dev
 meta-mission-cf3.pages.dev
@@ -26787,6 +26902,7 @@ meta-myvra-styno-ralex.pages.dev
 meta-nanogrid.pages.dev
 meta-nanox.pages.dev
 meta-nation.pages.dev
+meta-naviga.pages.dev
 meta-navigator-6q0.pages.dev
 meta-navor-girin.pages.dev
 meta-navor-lyzen.pages.dev
@@ -26830,6 +26946,7 @@ meta-np98.vercel.app
 meta-nyrex-feral.pages.dev
 meta-object-1c3.pages.dev
 meta-object-1lo.pages.dev
+meta-object-2p0.pages.dev
 meta-object.pages.dev
 meta-observatory.pages.dev
 meta-odrix.pages.dev
@@ -27070,6 +27187,7 @@ meta-signal-bfm.pages.dev
 meta-signal.pages.dev
 meta-silvyn.pages.dev
 meta-sintrex-execution-record.pages.dev
+meta-siron.pages.dev
 meta-sirvon.pages.dev
 meta-skelmorate-outline.pages.dev
 meta-skyline-9zc.pages.dev
@@ -27356,6 +27474,7 @@ meta-support-recordid.pages.dev
 meta-support-recordkey.pages.dev
 meta-support-recordlist.pages.dev
 meta-support-records.pages.dev
+meta-support-reference.pages.dev
 meta-support-referenceid.pages.dev
 meta-support-refhub.pages.dev
 meta-support-regbook.pages.dev
@@ -27513,6 +27632,7 @@ meta-terrarium.pages.dev
 meta-tevar-zalon-feriq.pages.dev
 meta-thalmor-storage-bresvix.pages.dev
 meta-thavins.pages.dev
+meta-theoryx.pages.dev
 meta-thinkcore.pages.dev
 meta-thought.pages.dev
 meta-threadx-6y2.pages.dev
@@ -27598,6 +27718,7 @@ meta-venra.pages.dev
 meta-venro-loran-tyxiv.pages.dev
 meta-venrok-krayth-syrol.pages.dev
 meta-venturepathra.pages.dev
+meta-venturex.pages.dev
 meta-venturial.pages.dev
 meta-venturon.pages.dev
 meta-verify-here.github.io
@@ -27606,6 +27727,7 @@ meta-verify-policy-console-hub.pages.dev
 meta-verify-service-login-center.pages.dev
 meta-veriify-identityform.vercel.app
 meta-veriify-unlockpage.vercel.app
+meta-veron-9hy.pages.dev
 meta-verse-9i2.pages.dev
 meta-versea-57m.pages.dev
 meta-versilan.pages.dev
@@ -27643,6 +27765,7 @@ meta-visionx.pages.dev
 meta-vista-edd.pages.dev
 meta-vista.pages.dev
 meta-vistara.pages.dev
+meta-vixon-ay5.pages.dev
 meta-vixon.pages.dev
 meta-voice-eg7.pages.dev
 meta-void-10x.pages.dev
@@ -27739,6 +27862,7 @@ meta-zenithcore-bp6.pages.dev
 meta-zenithra.pages.dev
 meta-zenyra.pages.dev
 meta-zerin-hyrox.pages.dev
+meta-zerlo.pages.dev
 meta-zeron-94o.pages.dev
 meta-zervalon.pages.dev
 meta-zilon-grava-kelon.pages.dev
@@ -27752,12 +27876,15 @@ meta-zone-9y1.pages.dev
 meta-zone.pages.dev
 meta-zoneflow.pages.dev
 meta-zoom.pages.dev
+meta-zorin.pages.dev
 meta-zoruk.pages.dev
 meta-zorvin-feedback-chain-2hd.pages.dev
 meta-zorvin-feedback-chain-b8j.pages.dev
 meta-zorvin-feedback-chain.pages.dev
 meta-zovik.pages.dev
 meta-zyko.pages.dev
+meta-zylen.pages.dev
+meta-zylox.pages.dev
 meta-zynor.pages.dev
 meta-zynthon.pages.dev
 meta-zynverse.pages.dev
@@ -28513,6 +28640,7 @@ misbah550.github.io
 miscomprasonlineshopbancolombiasv.azurewebsites.net
 mise-a-jour-reference-numero-moblie.surge.sh
 miselibros.com
+misimmo.net
 misophoniainstitute.com
 misoporteonlinemx.app
 misraafebi.github.io
@@ -28679,6 +28807,7 @@ modal-systemic.com
 modanofaa.pages.dev
 model-trozor-web-help.webflow.io
 modelecasting.github.io
+modern-opportunities-366481.framer.app
 modernpacific-shared-project.us-southeast-1.linodeobjects.com
 modernreg.org
 modest-booking-726598.framer.app
@@ -29041,6 +29170,7 @@ mubarakajmal0-collab.github.io
 mubaralajmal.github.io
 mudassir2111.github.io
 mudit0004.github.io
+muglagurme.com
 muhammad-maaz-0907.github.io
 muhammadaazan.github.io
 muhammadahmedd703.github.io
@@ -30370,6 +30500,7 @@ next-bnb-nu.vercel.app
 next-instaclone.vercel.app
 next13-netflix-tau.vercel.app
 nextcoinapp.web.app
+nextexim.com
 nextflix-six.vercel.app
 nextflyx1.netlify.app
 nextjs14-netflix.vercel.app
@@ -30536,6 +30667,7 @@ nileshpatelbad.github.io
 nill2019.github.io
 nillionallocationsolve.pages.dev
 nimishtiwari6555.github.io
+nina-dobrev-photos.sosugary.com
 ninad-byte.github.io
 nine-fanatical-mortarboard.glitch.me
 ningueminvademais.com
@@ -31124,6 +31256,7 @@ oliver0147.github.io
 oliver752.github.io
 olivesc.com
 olivia-sub-connection.com
+oliviaiguazu.com.ar
 olkit.shop
 olliverfreitas.github.io
 ollusa.weebly.com
@@ -31131,6 +31264,7 @@ olterec.systeme.io
 oluwatobiloba-dev.github.io
 olvqnp.secondhandparts.co.za:2083
 oly.gkcinsaat.com
+oly.ishraak.com
 om2108.github.io
 om4qafig.sellfy.store
 om9r.github.io
@@ -31169,6 +31303,7 @@ oncto.ialeahed.com
 ond2r0ix86784.top
 ondemand-app-tour.vercel.app
 ondemand-delivery-express.nvb.ouq.mybluehost.me
+ondoislucky.com
 one-drive-b7b63c.webflow.io
 one-drive-microsoft.com
 one-drive-onboarding.vercel.app
@@ -31970,6 +32105,7 @@ pancakcswcp.finance
 pancake-clone.vercel.app
 pancake-eat-about.at
 pancake-frontend-lyart.vercel.app
+pancake-swap-finance.com
 pancake-swap.site
 pancake.svvap.finance
 pancake.swapsfianance.top
@@ -32221,6 +32357,7 @@ parthtiwari001.github.io
 participate-eng-ca.framer.website
 particular-article-902943.framer.app
 particular-tetragon-672788.framer.app
+particular-thanks-534378.framer.app
 particularesantander-qmrqsb.flywp.xyz
 particulier-f.pages.dev
 particulier-fr.pages.dev
@@ -32259,6 +32396,7 @@ patriciastunning.sellfy.store
 patricioadm-project-nextjs-netflix-clone.vercel.app
 patrick1904-s.github.io
 patrickmalherbe.wixsite.com
+patriotsnodes.com
 pau-pal.com
 pauiyncakeswap.com
 paukake.org-sys.asia
@@ -32501,6 +32639,7 @@ penkey-leeb.builderallwppro.com
 pennstatenotary.com
 penta.interomnia.company
 penuriva-kelomiro.pages.dev
+penvox-sarlo-biz-felven-jorlan.pages.dev
 people.az
 peopleconnectingagency.com
 peopleres-za.com
@@ -32728,11 +32867,22 @@ platform-ads-meta-highlight-gm-id20.vercel.app
 platform-adsmeta-facility-tn-id2662.vercel.app
 platform-chat-jade.vercel.app
 platform-content-policies-and-integrity.pages.dev
+platform-content-policies-and-responsibility.pages.dev
 platform-content-policy-5lot.vercel.app
 platform-facebook-user-solution-id2.vercel.app
 platform-facebook-user7-solution-id.vercel.app
+platform-guidelines-and-accountability.pages.dev
 platform-meta-utility-dcv-id24669.vercel.app
+platform-policies-and-accountability.pages.dev
+platform-policies-and-responsibility.pages.dev
+platform-policies-and-safety.pages.dev
+platform-policies-and-security.pages.dev
+platform-policy-and-accountability.pages.dev
+platform-rules-and-accountability.pages.dev
+platform-rules-and-responsibility.pages.dev
+platform-terms-and-accountability.pages.dev
 platform-terms-and-conditions-and-accountability.pages.dev
+platform-usage-policies-and-accountability.pages.dev
 platformcheckpro.sbs
 platformverifydata-inc2025-analytics.pages.dev
 platformverifydata-inc2025-audit.pages.dev
@@ -32793,6 +32943,7 @@ plon-meta-drex-biz.pages.dev
 plon-meta-korf-biz.pages.dev
 plon-meta-korf-frit.pages.dev
 plon-meta-korf.pages.dev
+plon-metabeta-korf.pages.dev
 plor-meta-grin-biz.pages.dev
 plormaerica.netlify.app
 plorvixu.vercel.app
@@ -33139,6 +33290,7 @@ portofolio.metamask.sorrentotransport.com
 portplus-trezor-logon.webflow.io
 portrichsavfunds.com.metrotcb.com
 pos.healthrxbd.com
+pos.miebp.com
 posbdbs-digitaltoken.webspace.rocks
 positive-function-201605.framer.app
 posmo99.github.io
@@ -34758,6 +34910,7 @@ pub-ec176323f8214a2990c72817bbcd3ef5.r2.dev
 pub-ec5ded36a0e64c7e9b54f2729e83f38d.r2.dev
 pub-ec63a9c8ee0d47ff9b5db7f1eedae74b.r2.dev
 pub-ec6927bca8f6423e8977cba73b934c0e.r2.dev
+pub-eca5e4a28ac049c3b2e45899475abdb4.r2.dev
 pub-ece6cc74b1074eb0beeca35897404010.r2.dev
 pub-ed3d7530d8d1426c9a266bc4eca0a971.r2.dev
 pub-ed63458a17e048da8587e5eb322d4fa7.r2.dev
@@ -35403,6 +35556,7 @@ rajveerrv.github.io
 rajvirsinh22.github.io
 rakeshd21.github.io
 rakiblima018-lab.github.io
+rako-juren-sela.pages.dev
 rakshit099-g.github.io
 rakshitdevra.github.io
 rakshiverse.github.io
@@ -35474,6 +35628,7 @@ ravigurjar9351.github.io
 ravijat339.github.io
 raviko.shop
 ravikr-web.github.io
+rawsonalom.github.io
 raydiumvalidatordao.pages.dev
 raydiunn.co.com
 raymondhlee.028426.com
@@ -35498,6 +35653,7 @@ rbfbjukik4.pages.dev
 rbfcu-star.azurewebsites.net
 rbiox55.blogspot.com
 rbkassistance.com
+rblox.web.id
 rblx.web.id
 rbnhis.bmwwhealth.com
 rbox10.netlify.app
@@ -36128,6 +36284,7 @@ rift-acute-detail.glitch.me
 rightbrainbizplan.com
 rightclick-105641verifyid754356.square.site
 riimaaa.github.io
+riko-hanex-jova.pages.dev
 rikonman456.github.io
 ril.oboslinkreport.click
 rim.mdbgo.io
@@ -36490,6 +36647,7 @@ rootsystemsbd.com
 ropagang.com
 roplixa.vercel.app
 ropxoeos.aero.tt
+roren-core.pages.dev
 rorg-liart.vercel.app
 rosa-bn1.pages.dev
 rosastorelli.com
@@ -36931,6 +37089,7 @@ sadmatanza.com
 saf764988.github.io
 safalrwaya.com
 safe-cloud-storage.com
+safe-connect.zapto.org
 safe-login-users.tripod.com
 safe-trezor-login-io.pages.dev
 safeautostop.gr
@@ -37021,6 +37180,7 @@ sajjad-007.github.io
 sajkqgwq.icu
 sake-siromani.github.io
 sakematafitness.ge
+sakerhridoy.github.io
 sakethyalamanchili.github.io
 sakibg01.github.io
 sakibkst.github.io
@@ -38450,6 +38610,7 @@ selenespension.com
 selfcarespidaruba.bar
 selfcarespidaruba.space
 selfish-octopus-cezdumak.sandboxcms.com
+selion-sol.pages.dev
 selion-works.pages.dev
 sellaforte.sviluppo.host
 seller.global-express.lol
@@ -38705,6 +38866,7 @@ servr-office365check.com
 servupsedcserc.wpenginepowered.com
 serwer2466145.home.pl
 seryl-vision.pages.dev
+seryl-works.pages.dev
 sese.th0707.sa.com
 sese.vaabhi4.sa.com
 sese.vintiqshop.sa.com
@@ -39168,6 +39330,7 @@ shubhamkumar75420.github.io
 shubhammowade.github.io
 shubhamnangare.github.io
 shubhamoo661.github.io
+shubhamprasad301.github.io
 shubhamrawat16.github.io
 shubhangi2606.github.io
 shubhoshishroy08.github.io
@@ -39288,6 +39451,7 @@ simoenape-mioma6.pages.dev
 simon-fidan.nl
 simonbegg.com
 simple-assistant-660974.framer.app
+simple-connect.serveirc.com
 simplesocialboost.com.ng
 simpleweb.vn
 simplified-tetragon-700167.framer.app
@@ -39338,6 +39502,7 @@ site-0u81wnqvl.godaddysites.com
 site-1755703055307.t3.storage.dev
 site-1755704705614.t3.storage.dev
 site-18akdtiqi.godaddysites.com
+site-1kiwluoq0.godaddysites.com
 site-1nvunz4ra.godaddysites.com
 site-29j5vwn0o.godaddysites.com
 site-311i844fl.godaddysites.com
@@ -39440,6 +39605,7 @@ site.tiktok-ads.cc
 site235744746.fo.team
 site9629197.92.webydo.com
 sitecerto.fr
+siteebr.github.io
 sitemap.tiviapp.top
 sitemaps.toekn.im
 sitenasuikeda.heteml.net
@@ -39784,6 +39950,9 @@ solen-labs.pages.dev
 solen-sol-eo6.pages.dev
 solen-sol.pages.dev
 solen-vision.pages.dev
+solenex-sol.pages.dev
+solenex-sys.pages.dev
+solenex-works.pages.dev
 solicitacaocomresgate.com
 solicitacaoecontratos.com
 solicitacredito.digital
@@ -39826,6 +39995,7 @@ sonaligusain.github.io
 sonam9650.github.io
 sonametals.com
 sonathsupport.github.io
+sondloqs.com
 sonerviac.vercel.app
 sonic-0101.github.io
 sonudesigner12.github.io
@@ -39878,6 +40048,7 @@ soportetech-ishop.com
 soportews24-7.github.io
 sord.helpdeskinld.com
 soroborparkandresort.com
+sorption-technologies.murmurs.com.de
 sos-nickel-eu.t.mydomain.zone
 soshandorangevocal.godaddysites.com
 sosimply-portala.powerappsportals.com
@@ -41606,6 +41777,7 @@ sufyanahmed09-wd.github.io
 sugarcoatedbinacle.vercel.app
 suhaibajaz05.github.io
 suhana-pendhari.github.io
+suhana1849.github.io
 suhani2004-developer.github.io
 suhasmali12.github.io
 suhuxiy.com
@@ -42062,6 +42234,7 @@ svqcrr.aptswiw.es
 sw-pass.gracetabernacle.net.nz
 swahilibox.co.ke
 swap-babybonkcoin.pages.dev
+swap-pancake.finance
 swap.swissdlt.ch
 swapnil-code-maker.github.io
 swapnilb-07.github.io
@@ -42275,6 +42448,7 @@ taisonmail.us
 taisonmail.vip
 taitei-andreea.ro
 taiyangchengwangshangkaihuqunaliya.verifytoken.com
+taju38915.github.io
 takaecawg.xyz
 takaecawl.xyz
 takaecawm.xyz
@@ -43482,6 +43656,7 @@ timna.vele.workers.dev
 timo.watanaber.com
 tinfrnnjwq.com
 tinglaomanagement.com
+tinu-ferel-hopi.pages.dev
 tiny-bombolone-5bcdff.netlify.app
 tiny-cactus-7e21ea.netlify.app
 tiny-pie-98a63b.netlify.app
@@ -43506,6 +43681,7 @@ tiquetelatam.top
 tiquetes.promocionesyofertaslatam.com
 tiquetesibaratos.click
 tiqv.ijygmhmnpm.cloud
+tira-funex-simo.pages.dev
 tirik.25lkm.my.id
 tirzriiostct.webflow.io
 tisa-mebli.com
@@ -45926,6 +46102,8 @@ validateonmainnet.web.app
 validating-outlook-mailbox-webmail.weebly.com
 validationsflix.com
 valimai.pages.dev
+valis-core-9uw.pages.dev
+valis-lume-d4s.pages.dev
 valis-lume.pages.dev
 valitcx.pages.dev
 valkjfvsta.duckdns.org
@@ -45942,6 +46120,7 @@ vandana1322.github.io
 vandb4447.wixsite.com
 vandersonguerrier.github.io
 vanityrouge.com
+vansh-coding.github.io
 vanshahlawat5126.github.io
 vanshcreates.github.io
 vanshika-official.github.io
@@ -45964,6 +46143,7 @@ varsha-kadam581.github.io
 varshagshenoy.github.io
 varsri24.github.io
 vartika2409.github.io
+varun7142.github.io
 varunzz.github.io
 vasanthkumar54.github.io
 vasia-vasia.github.io
@@ -46067,6 +46247,7 @@ venox-trylek-syvol.pages.dev
 ventajo.sbs
 ventaselcerrito.com
 venthra-haven.pages.dev
+ventra-lymos-biz-xavren-trokla.pages.dev
 venzeeofficial.id
 ver1fyauth.weeblysite.com
 verarbeitungsschritt.info
@@ -46173,6 +46354,8 @@ verifypaypalpasswortlive.com
 verifyreserve.com
 veriify-contact-bussines-2025.netlify.app
 verimork3.pages.dev
+verinex-vision.pages.dev
+verinex-works.pages.dev
 verisign.directsmailsolution.com
 verlficati0n-center-100023279074.page-suspension.net
 verlficatl0n-center-100023265912.page-suspension.net
@@ -46551,6 +46734,7 @@ vombntri.click
 vonovia.cfd
 voorraad.tkvip-store.icu
 voorwendsel.weebly.com
+vorak-delin-hyrex.pages.dev
 voren-drykal-syren.pages.dev
 voren-temple.pages.dev
 vorin-salex-drilo.pages.dev
@@ -46819,6 +47003,7 @@ w9ljwvi7bya6skaz.s3.us-west-1.amazonaws.com
 w9ptyl30wg5h95n.duckdns.org
 wa-b.warpamen.top
 wa-private-chat.vercel.app
+wa2f-jp.ubpages.com
 wa408.cn
 waaae.me
 waaddwaled.github.io
@@ -48750,6 +48935,16 @@ ws-ahapp.com
 ws-fengqian.com
 ws-zhc.com
 ws.2z41itas.click
+ws.7okf0tas.top
+ws.9l78ttas.top
+ws.dkekctas.top
+ws.h3k3qtas.top
+ws.lud5xtas.top
+ws.ndfsvtas.top
+ws.qey3rtas.top
+ws.teo53tas.top
+ws.u37pitas.top
+ws.vo2cdtas.top
 ws.whatsappa.hk
 wsaq2.bet365999555.com
 wscskskodp.shop
@@ -50276,6 +50471,7 @@ www.boste-ws.xyz
 www.bot-1-pearl.vercel.app
 www.bote.company
 www.botologixinvest.net
+www.bouyguestelecom-pro.fr
 www.box.attollo.com.au
 www.box.mdcomp.com.au
 www.box.sspl.com.au
@@ -51286,6 +51482,7 @@ www.ext.wallet-coinbasecom.addpotion.com
 www.eye.ehome521.com
 www.eyetik.com
 www.ez6v2.com
+www.f-acebo0k.com
 www.f101v.xyz
 www.f103q.xyz
 www.f103r.xyz
@@ -53732,6 +53929,7 @@ www.oklvld.pl.ua
 www.okycoin.net
 www.oldilaf.ind.br
 www.oleskcipareles.duckdns.org
+www.oligoswap.com
 www.olivedrab-starling-541240.hostingersite.com
 www.ollusa.weebly.com
 www.omega89-elf.cfd
@@ -54450,6 +54648,7 @@ www.roblox.com.vc
 www.roblox.tc
 www.robloxapp.pro
 www.robloxi.com.es
+www.robloxtutorial.com
 www.robox-flash.blogspot.ba
 www.robox-flash.blogspot.be
 www.robox-flash.blogspot.com.by
@@ -56962,7 +57161,10 @@ x79w.xyz
 x90m-casefb549633.vercel.app
 x96711n8.beget.tech
 xadv-connect.com
+xalron-trinek-vyvon.pages.dev
+xalver-tovin-drymal.pages.dev
 xalvik-dryson-meril.pages.dev
+xalvor-syken-meryl.pages.dev
 xama9696.github.io
 xambush.top
 xamzel.cyou
@@ -57067,6 +57269,7 @@ xinyi.pilot45.com
 xiongdiys.com
 xiron-core.pages.dev
 xixiangtang.pilot45.com
+xixpilot.world
 xj-instagram.vercel.app
 xjrsel.ywnhwmard.es
 xjsmzkz.midasbuy-page.top
@@ -57637,7 +57840,9 @@ zapframeg.vercel.app
 zapnet.ru.com
 zapyiyyikyafnos.vercel.app
 zarejestrujnumer.blue.pl
+zarla-telvox-biz-sorvin-jentra.pages.dev
 zarnigar.ru.com
+zaro-limet-hano.pages.dev
 zartalk.click
 zashop-more.cc
 zaslontactical.ru
@@ -57699,6 +57904,7 @@ zgermnilogin.webflow.io
 zgj.bsg.mybluehost.me
 zgnlyx.jvabknpnhgyv.es
 zgwsnjezbv.duckdns.org
+zh-app-web-whatsapp.com.cn
 zh-app-whatsapp.com.cn
 zh-imtoken.org.cn
 zh-imtoken.pro
@@ -57833,6 +58039,7 @@ zorqui.sbs
 zortreewallet.webflow.io
 zorunite-lupemira.pages.dev
 zorx-meta-blim-biz.pages.dev
+zoryn-palix-kelvo.pages.dev
 zoxjxitphd.duckdns.org
 zoxoq-imelect.qkipikpp.es
 zozo0329.github.io
