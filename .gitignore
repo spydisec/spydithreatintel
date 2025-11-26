@@ -8,8 +8,6 @@
 !/whitelist/
 !whitelist/wl_iplist/
 !/whitelist/wl_domainlist/
-!/data/
-!/data/**/
 !/iplist/
 !/iplist/full/
 !/iplist/high/
@@ -19,8 +17,6 @@
 !/iplist/**/
 !iplist/removedips/removed_ips.db
 !/domainlist/**/
-# Allow specific output files (e.g., output_*.txt files only)
-!/data/**/output_*.txt
 
 # Allow malicious, adversary, and spam-related files and directories
 !/iplist/ip_ioc_maltrail_feed_new.txt
