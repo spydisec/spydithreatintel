@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Spydi's ThreatIntel Feed 🛡️</h1>
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg) ![Daily ThreatFox IP List Update](https://healthchecks.io/b/2/04eda84c-5084-404d-872b-9fc308e5517e.svg)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
 </div>
 
 ## 🚀 About This Project
