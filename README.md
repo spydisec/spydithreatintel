@@ -33,10 +33,18 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 <details>
 <summary>🔍 <strong>Confidence Scoring Details</strong></summary>
 
-- **High**: 2+ sources, score ≥8 (ThreatFox high-conf, C2 trackers)
-- **Medium**: 1+ sources, score ≥3
-- **Low**: All other intelligence
-- **Whitelist**: CDN protection (Cloudflare, Akamai, Fastly)
+**Multi-Source Validation**: IPs are scored by how many independent threat intelligence sources report them.
+
+| Tier | Threshold | Description |
+|------|-----------|-------------|
+| 🎯 **High Limited** | 5+ sources | Strictest tier - confirmed malicious across 5+ feeds |
+| 🎯 **High Unlimited** | 3+ sources | High confidence - validated by 3+ independent sources |
+| ⚖️ **Medium** | 2+ sources | Medium confidence - corroborated by 2 sources |
+| 🔬 **Low** | 1 source | Single-source reports - use with caution |
+
+**Example**: An IP reported by ThreatFox, Feodo Tracker, IPsum, CINS Score, and Blocklist.de would have `source_count=5` → appears in **High Limited**.
+
+**Whitelist Protection**: CDN ranges (Cloudflare, Akamai, Fastly, Tailscale) are automatically excluded to prevent false positives.
 
 </details>
 
