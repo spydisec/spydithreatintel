@@ -30,13 +30,6 @@ jobs:
             exit 0
           fi
           
-          # Create temporary file
-          cp README.md README.md.tmp
-          
-          # Replace confidence table section
-          # Find the line with "<!-- Live Statistics Table (Auto-generated daily) -->" under IP section
-          # and replace until the next major heading
-          
           python3 << 'PYTHON_SCRIPT'
           import re
           
@@ -50,36 +43,31 @@ jobs:
           with open('.github/readme_domain_table.md', 'r') as f:
               domain_table = f.read().strip()
           
-          # Replace IP confidence table
-          # Pattern: from "<!-- Live Statistics Table (Auto-generated daily) -->" 
-          # to just before the next <details> or ### section
-          ip_pattern = r'(<!-- Live Statistics Table \(Auto-generated daily\) -->)(.*?)(?=\n\n<details>|\n\n###)'
-          
+          # Replace IP confidence table between markers
+          ip_pattern = r'(<!-- IP_STATS_START -->).*?(<!-- IP_STATS_END -->)'
           if re.search(ip_pattern, readme, re.DOTALL):
               readme = re.sub(
                   ip_pattern,
-                  r'\1\n' + confidence_table,
+                  r'\1\n' + confidence_table + '\n\2',
                   readme,
                   flags=re.DOTALL
               )
               print("✓ Updated IP confidence table")
           else:
-              print("⚠ Could not find IP confidence table marker")
+              print("⚠ Could not find <!-- IP_STATS_START --> markers")
           
-          # Replace domain table
-          # Similar pattern for domain section
-          domain_pattern = r'(### 🌐 Domain Blocklists\n\n\*Independent category processing.*?\*\n\n<!-- Live Statistics Table \(Auto-generated daily\) -->)(.*?)(?=\n\n<details>|\n\n###)'
-          
+          # Replace domain table between markers
+          domain_pattern = r'(<!-- DOMAIN_STATS_START -->).*?(<!-- DOMAIN_STATS_END -->)'
           if re.search(domain_pattern, readme, re.DOTALL):
               readme = re.sub(
                   domain_pattern,
-                  r'\1\n' + domain_table,
+                  r'\1\n' + domain_table + '\n\2',
                   readme,
                   flags=re.DOTALL
               )
               print("✓ Updated domain table")
           else:
-              print("⚠ Could not find domain table marker")
+              print("⚠ Could not find <!-- DOMAIN_STATS_START --> markers")
           
           # Write updated README
           with open('README.md', 'w') as f:

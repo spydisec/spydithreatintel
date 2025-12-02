@@ -10,30 +10,14 @@
   ![C2 Infrastructure](https://img.shields.io/badge/C2_Infrastructure-11.3K-orange?style=flat-square&logo=server&logoColor=white)
 </div>
 
-## 🚀 About This Project
+## 🚀 About
 
-Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that aggregates, curates, and maintains high-quality blocklists for malicious IPs and domains. The system combines data from multiple OSINT sources, honeypot networks, and threat intelligence feeds to provide actionable security data.
+Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting with <0.1% false positive rate.
 
-### Key Features
+## 📑 Quick Links
 
-- **🎯 Confidence-Based Tiers**: Production-ready IP blocklists optimized for different deployment scenarios
-- **🔍 Multi-Source Validation**: Advanced scoring system with cross-reference validation across 12+ OSINT feeds  
-- **🛡️ Smart Whitelisting**: CDN-aware filtering (Cloudflare, Akamai, Fastly) applied to all confidence tiers
-- **⚡ Automated Updates**: Daily refresh with real-time threat intelligence integration
-- **📊 Quality Metrics**: <0.1% false positive rate for high-confidence blocklists
-- **🔬 Research Support**: Complete datasets available for academic and enterprise analysis
-- **🚀 Enterprise-Ready**: Tiered outputs optimized for firewalls, SIEM systems, and monitoring platforms
-
-## Table of Contents
-
-- 🎯[Confidence-Based IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-confidence-based-ip-blocklists-new)
-- 🔥[Legacy IP Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-legacy-ip-blocklists)
-- 🌐[Domain Blocklists](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-domain-blocklists)
-- 📁[Whitelist Files](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-whitelisting)
-- 🕵️[Tracked Threats & Source list](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#%EF%B8%8F-tracked-threats--source-list)
-- 🙌[Acknowledgements](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-acknowledgements)
-- 🤝[Community Contributions](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-community-contributions)
-- 📡[Contact me](https://github.com/spydisec/spydithreatintel?tab=readme-ov-file#-contact-me)
+- [🔥 IP Blocklists](#-confidence-based-ip-blocklists) • [🌐 Domain Blocklists](#-domain-blocklists) • [📁 Whitelists](#-whitelisting)
+- [🕵️ Threat Sources](#%EF%B8%8F-tracked-threats--source-list) • [🙌 Credits](#-acknowledgements) • [📡 Contact](#-contact-me)
 
 **Each OSINT feed incorporated in this blocklist is governed by its own terms, conditions, and licensing agreements. By utilizing this compilation, you acknowledge these individual terms and agree to comply with them. Users are responsible for reviewing the original source repositories or documentation for specific licensing details and restrictions.**
 
@@ -45,7 +29,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 
 *Production-ready, tiered IP blocklists with multi-source validation and confidence scoring*
 
-<!-- Live Statistics Table (Auto-generated daily) -->
+<!-- IP_STATS_START -->
 | Confidence Level | Blocklist Name | IPs | Size | Target | Last Updated | Download |
 |------------------|----------------|-----|------|--------|--------------|----------|
 | **🎯 High** | High Confidence (Limited) | `5,015` | 70.1 KB | ~5K | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
@@ -55,6 +39,12 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | **🔬 Low** | Low Confidence | `156,266` | 2.1 MB | Variable | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | **📊 Research** | Research Full | `356,714` | 4.9 MB | ~300K | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | **🗄️ Archive** | Permanent Full (Append-Only) | `939,688` | 13.0 MB | Growing | 2025-12-02 16:15 UTC | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Methodology</strong></summary>
@@ -83,7 +73,7 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 
 *Independent category processing with complete source fidelity*
 
-<!-- Live Statistics Table (Auto-generated daily) -->
+<!-- DOMAIN_STATS_START -->
 | Category | Blocklist Name | Domains | Size | Last Updated | Download |
 |----------|----------------|---------|------|--------------|----------|
 | **🛡️ Security** | Malicious Domains | `3,293,274` | 62.4 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
@@ -91,6 +81,12 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 | **📺 Privacy** | Ads & Tracking | `390,839` | 8.5 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/adsblocklist.txt) |
 | **🛡️ Security** | Phishing Domains | `58,987` | 1.5 MB | 2025-12-02 16:11 UTC | Internal Only |
 | **🗄️ Archive** | Permanent Domains (Append-Only) | `5,014,338` | 97.8 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 
 <details>
 <summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
