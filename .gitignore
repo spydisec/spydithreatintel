@@ -5,10 +5,10 @@
 # All .txt blocklists are served from Cloudflare R2
 # Only stats.json, README, whitelists, and standard git files tracked
 
-# Allow essential directories
-!whitelist/*
-!whitelist/wl_iplist/
-!whitelist/wl_domainlist/
+# Allow essential directories (must un-ignore parent dirs first)
+!/whitelist/
+!/whitelist/wl_iplist/
+!/whitelist/wl_domainlist/
 
 # Allow standard repository files
 !README.md
