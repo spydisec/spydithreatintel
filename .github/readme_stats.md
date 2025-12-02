@@ -1,21 +1,11 @@
-## 📊 Live Statistics
+```
+📊 LIVE STATISTICS                                    Last Updated: 2025-12-02 06:12 UTC
+─────────────────────────────────────────────────────────────────────────────
 
-**Generated**: 2025-12-02 06:03:53 UTC
+   🔢 Total IPs               603.5K     │     🌐 Total Domains           11.1M
+   🎯 High Confidence           5.0K     │     🕵️ C2 Infrastructure       11.3K
+   ✅ Whitelisted               1.3K     │     🛡️ Sources            12+ OSINT
 
-### Overview
-
-| Metric | Count | Details |
-|--------|-------|---------|
-| **Total IP Addresses** | `603,516` | Across all blocklists |
-| **Total Domains** | `11,069,110` | Across all categories |
-| **C2 Infrastructure** | `11,294` | Active C&C servers |
-| **High Confidence IPs** | `5,015` | Production-ready tier |
-| **Removed/Whitelisted** | `1,253` | False positive prevention |
-| **CDN Protected** | `0` | Cloudflare, Akamai, Fastly |
-
-### Quality Metrics
-
-- **False Positive Rate**: <0.1% (High Confidence), <1% (Medium Confidence)
-- **Update Frequency**: Hourly (automated pipelines)
-- **Multi-Source Validation**: 12+ OSINT feeds
-- **CDN Whitelisting**: Automatic (Cloudflare, Akamai, Fastly, Tailscale)
+─────────────────────────────────────────────────────────────────────────────
+   Quality: <0.1% false positive rate  •  Updates: Hourly  •  CDN Protected
+```

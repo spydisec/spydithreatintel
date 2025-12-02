@@ -25,7 +25,7 @@ jobs:
           echo "📊 Updating README.md with live statistics..."
           
           # Check if generated files exist
-          if [ ! -f .github/readme_confidence_table.md ] || [ ! -f .github/readme_domain_table.md ]; then
+          if [ ! -f .github/readme_confidence_table.md ] || [ ! -f .github/readme_domain_table.md ] || [ ! -f .github/readme_stats.md ]; then
             echo "❌ Generated statistics files not found. Skipping update."
             exit 0
           fi
@@ -42,6 +42,22 @@ jobs:
           
           with open('.github/readme_domain_table.md', 'r') as f:
               domain_table = f.read().strip()
+          
+          with open('.github/readme_stats.md', 'r') as f:
+              stats_card = f.read().strip()
+          
+          # Replace stats card between markers
+          stats_pattern = r'(<!-- STATS_START -->).*?(<!-- STATS_END -->)'
+          if re.search(stats_pattern, readme, re.DOTALL):
+              readme = re.sub(
+                  stats_pattern,
+                  r'\1\n' + stats_card + '\n\2',
+                  readme,
+                  flags=re.DOTALL
+              )
+              print("✓ Updated stats card")
+          else:
+              print("⚠ Could not find <!-- STATS_START --> markers")
           
           # Replace IP confidence table between markers
           ip_pattern = r'(<!-- IP_STATS_START -->).*?(<!-- IP_STATS_END -->)'

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-02T06:03:51.656209Z",
+  "generated_at": "2025-12-02T06:12:16.261894Z",
   "ip_blocklists": {
     "filtered_malicious": {
       "name": "Filtered Malicious IPs",
@@ -57,35 +57,35 @@
       "category": "Security",
       "count": 3293274,
       "size": "62.4 MB",
-      "last_updated": "2025-12-02 16:11 UTC"
+      "last_updated": "2025-12-02 17:11 UTC"
     },
     "spam": {
       "name": "Spam/Scam Domains",
       "category": "Communication",
       "count": 1710058,
       "size": "33.7 MB",
-      "last_updated": "2025-12-02 16:11 UTC"
+      "last_updated": "2025-12-02 17:12 UTC"
     },
     "ads": {
       "name": "Ads & Tracking",
       "category": "Privacy",
       "count": 390839,
       "size": "8.5 MB",
-      "last_updated": "2025-12-02 16:11 UTC"
+      "last_updated": "2025-12-02 17:12 UTC"
     },
     "permanent": {
       "name": "Permanent Domains (Append-Only)",
       "category": "Archive",
       "count": 5014338,
       "size": "97.8 MB",
-      "last_updated": "2025-12-02 16:11 UTC"
+      "last_updated": "2025-12-02 17:11 UTC"
     },
     "phishing": {
       "name": "Phishing Domains",
       "category": "Security",
       "count": 58987,
       "size": "1.5 MB",
-      "last_updated": "2025-12-02 16:11 UTC"
+      "last_updated": "2025-12-02 17:12 UTC"
     },
     "maltrail_domains": {
       "name": "Maltrail Domain IOCs",

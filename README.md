@@ -1,35 +1,39 @@
 <div align="center">
   <h1>Spydi's ThreatIntel Feed 🛡️</h1>
 
-  ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
-  
-  <!-- Live Statistics (Auto-generated) -->
-  ![Total IPs](https://img.shields.io/badge/Total_IPs-603.5K-blue?style=flat-square&logo=shield&logoColor=white)
-  ![Total Domains](https://img.shields.io/badge/Total_Domains-11.1M-purple?style=flat-square&logo=globe&logoColor=white)
-  ![High Confidence](https://img.shields.io/badge/High_Confidence-5.0K-red?style=flat-square&logo=checkmark&logoColor=white)
-  ![C2 Infrastructure](https://img.shields.io/badge/C2_Infrastructure-11.3K-orange?style=flat-square&logo=server&logoColor=white)
+  ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
 </div>
+
+<!-- STATS_START -->
+```
+📊 LIVE STATISTICS                                    Last Updated: 2025-12-02 06:07 UTC
+─────────────────────────────────────────────────────────────────────────────
+
+   🔢 Total IPs               603.5K     │     🌐 Total Domains           11.1M
+   🎯 High Confidence           5.0K     │     🕵️ C2 Infrastructure       11.3K
+   ✅ Whitelisted               1.3K     │     🛡️ Sources            12+ OSINT
+
+─────────────────────────────────────────────────────────────────────────────
+   Quality: <0.1% false positive rate  •  Updates: Hourly  •  CDN Protected
+```
+<!-- STATS_END -->
 
 ## 🚀 About
 
-Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting with <0.1% false positive rate.
+Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting.
 
-## 📑 Quick Links
+**📑 Quick Links:** [IP Blocklists](#-ip-blocklists) • [Domain Blocklists](#-domain-blocklists) • [Sources](#%EF%B8%8F-tracked-threats--source-list) • [Credits](#-acknowledgements)
 
-- [🔥 IP Blocklists](#-confidence-based-ip-blocklists) • [🌐 Domain Blocklists](#-domain-blocklists) • [📁 Whitelists](#-whitelisting)
-- [🕵️ Threat Sources](#%EF%B8%8F-tracked-threats--source-list) • [🙌 Credits](#-acknowledgements) • [📡 Contact](#-contact-me)
-
-**Each OSINT feed incorporated in this blocklist is governed by its own terms, conditions, and licensing agreements. By utilizing this compilation, you acknowledge these individual terms and agree to comply with them. Users are responsible for reviewing the original source repositories or documentation for specific licensing details and restrictions.**
+> ⚠️ **License Notice**: Each OSINT feed is governed by its own terms. Users must review original source documentation for specific licensing details.
 
 ---
 
-## 📋 Blocklists
+## 🔥 IP Blocklists
 
-### 🔥 Confidence-Based IP Blocklists
-
-*Production-ready, tiered IP blocklists with multi-source validation and confidence scoring*
+*Confidence-based tiers with multi-source validation*
 
 <!-- IP_STATS_START -->
+<<<<<<< Updated upstream
 | Confidence Level | Blocklist Name | IPs | Size | Target | Last Updated | Download |
 |------------------|----------------|-----|------|--------|--------------|----------|
 | **🎯 High** | High Confidence (Limited) | `5,015` | 70.1 KB | ~5K | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
@@ -40,35 +44,37 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | **📊 Research** | Research Full | `356,714` | 4.9 MB | ~300K | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | **🗄️ Archive** | Permanent Full (Append-Only) | `939,688` | 13.0 MB | Growing | 2025-12-02 16:15 UTC | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
 
+=======
+| Tier | Blocklist | Download |
+|:----:|-----------|:--------:|
+| 🎯 **High** | High Confidence (Limited ~5K) | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
+| 🎯 **High** | High Confidence (Unlimited) | [📥 Download](https://spydisec.com/high_confidence_unlimited.txt) |
+| ⚖️ **Medium** | Medium Confidence (Limited ~25K) | [📥 Download](https://spydisec.com/medium_confidence_limited.txt) |
+| ⚖️ **Medium** | Medium Confidence (Unlimited) | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
+| 🔬 **Low** | Low Confidence (All Others) | [📥 Download](https://spydisec.com/low_confidence.txt) |
+| 📊 **Research** | Full Research Blocklist | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
+| 🗄️ **Archive** | Permanent (Append-Only) | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
+<!-- IP_STATS_END -->
+>>>>>>> Stashed changes
 
 <details>
-<summary>🔍 <strong>Confidence Scoring Methodology</strong></summary>
+<summary>🔍 <strong>Confidence Scoring Details</strong></summary>
 
-**Multi-Source Validation System:**
-
-- **High Confidence**: IPs validated by 2+ authoritative sources with confidence score ≥8
-- **Medium Confidence**: IPs from 1+ authoritative source with confidence score ≥3  
-- **Low Confidence**: All other collected intelligence below medium threshold
-- **Weight Scoring**: Premium sources (ThreatFox high-confidence, C2 trackers) receive higher weights
-- **Cross-Reference Bonus**: Additional points for multi-source validation
-- **Whitelist Filtering**: CDN protection (Cloudflare, Akamai, Fastly) applied to all tiers
-
-**Quality Assurance:**
-
-- **False Positive Rate**: <0.1% for high confidence, <1% for medium confidence
-- **Source Attribution**: Full traceability of confidence decisions
-- **Automatic Updates**: Daily refresh with real-time threat intelligence
-- **Database Tracking**: Comprehensive logging of removed/whitelisted IPs
+- **High**: 2+ sources, score ≥8 (ThreatFox high-conf, C2 trackers)
+- **Medium**: 1+ sources, score ≥3
+- **Low**: All other intelligence
+- **Whitelist**: CDN protection (Cloudflare, Akamai, Fastly)
 
 </details>
 
 ---
 
-### 🌐 Domain Blocklists
+## 🌐 Domain Blocklists
 
-*Independent category processing with complete source fidelity*
+*Independent category processing - import any/all into Pi-hole/AdGuard*
 
 <!-- DOMAIN_STATS_START -->
+<<<<<<< Updated upstream
 | Category | Blocklist Name | Domains | Size | Last Updated | Download |
 |----------|----------------|---------|------|--------------|----------|
 | **🛡️ Security** | Malicious Domains | `3,293,274` | 62.4 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
@@ -77,31 +83,17 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | **🛡️ Security** | Phishing Domains | `58,987` | 1.5 MB | 2025-12-02 16:11 UTC | Internal Only |
 | **🗄️ Archive** | Permanent Domains (Append-Only) | `5,014,338` | 97.8 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
 
+=======
+| Category | Blocklist | Download |
+|:--------:|-----------|:--------:|
+| 🛡️ **Security** | Malicious Domains | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
+| 📧 **Spam** | Spam/Scam/Abuse Domains | [📥 Download](https://spydisec.com/spamblocklist.txt) |
+| 📺 **Privacy** | Ads & Tracking Domains | [📥 Download](https://spydisec.com/adsblocklist.txt) |
+| 🗄️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
+<!-- DOMAIN_STATS_END -->
+>>>>>>> Stashed changes
 
-<details>
-<summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
-
-**Source-Faithful Processing:**
-
-- **Philosophy**: Preserve complete fidelity to original threat intelligence sources
-- **Approach**: Each category processed independently with individual deduplication and whitelisting
-- **Result**: Users can choose single or multiple lists based on deployment needs
-
-**Key Benefits:**
-
-- ✅ **Complete Source Fidelity**: Each category reflects exactly what threat intel sources provide
-- ✅ **User Choice Flexibility**: Import single category or multiple lists into Pi-hole/AdGuard
-- ✅ **Zero Intelligence Loss**: No domains removed due to artificial categorization conflicts
-- ✅ **Overlap Transparency**: Cross-category statistics available for threat analysis
-- ✅ **DNS Filter Ready**: Multiple lists can be safely imported without conflicts
-
-**Deployment Options:**
-
-- **Single List**: Use one category for focused protection (e.g., only malware blocking)
-- **Multi-List**: Import all three for comprehensive coverage (recommended for Pi-hole/AdGuard)
-- **Custom Mix**: Choose any combination based on specific security requirements
-
-</details>
+---
 
 ### 📁 Whitelisting  
 
