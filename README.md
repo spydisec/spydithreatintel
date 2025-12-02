@@ -27,7 +27,6 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 | 🔬 **Low** | Low Confidence (All Others) | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | 📊 **Research** | Full Research Blocklist | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | 🗄️ **Archive** | Permanent (Append-Only) | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
-
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Details</strong></summary>
@@ -51,8 +50,6 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 | 📧 **Spam** | Spam/Scam/Abuse Domains | [📥 Download](https://spydisec.com/spamblocklist.txt) |
 | 📺 **Privacy** | Ads & Tracking Domains | [📥 Download](https://spydisec.com/adsblocklist.txt) |
 | 🗄️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
-
-
 ---
 
 ### 📁 Whitelisting
@@ -225,7 +222,4 @@ We welcome contributions to enhance this resource for:
 ---
 
 ## 📡 Contact me
-
 📧 Email: spydisec@proton.me
-🐦 Twitter/X: [@spydisec](https://twitter.com/spydisec)
-💼 LinkedIn: [spydisec](https://linkedin.com/in/spydisec)
