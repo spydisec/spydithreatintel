@@ -15,7 +15,7 @@
 
 ─────────────────────────────────────────────────────────────────────────────
 ```
-<!-- STATS_END -->
+
 
 ## 🚀 About
 
@@ -41,7 +41,7 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | 🔬 **Low** | Low Confidence (All Others) | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | 📊 **Research** | Full Research Blocklist | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | 🗄️ **Archive** | Permanent (Append-Only) | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
-<!-- IP_STATS_END -->
+
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Details</strong></summary>
@@ -66,7 +66,7 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | 📧 **Spam** | Spam/Scam/Abuse Domains | [📥 Download](https://spydisec.com/spamblocklist.txt) |
 | 📺 **Privacy** | Ads & Tracking Domains | [📥 Download](https://spydisec.com/adsblocklist.txt) |
 | 🗄️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
-<!-- DOMAIN_STATS_END -->
+
 
 
 ---
