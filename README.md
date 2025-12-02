@@ -39,7 +39,7 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | **🔬 Low** | Low Confidence | `156,266` | 2.1 MB | Variable | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | **📊 Research** | Research Full | `356,714` | 4.9 MB | ~300K | 2025-12-02 16:14 UTC | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | **🗄️ Archive** | Permanent Full (Append-Only) | `939,688` | 13.0 MB | Growing | 2025-12-02 16:15 UTC | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
-<!-- IP_STATS_END -->
+
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Methodology</strong></summary>
@@ -76,7 +76,7 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | **📺 Privacy** | Ads & Tracking | `390,839` | 8.5 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/adsblocklist.txt) |
 | **🛡️ Security** | Phishing Domains | `58,987` | 1.5 MB | 2025-12-02 16:11 UTC | Internal Only |
 | **🗄️ Archive** | Permanent Domains (Append-Only) | `5,014,338` | 97.8 MB | 2025-12-02 16:11 UTC | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
-<!-- DOMAIN_STATS_END -->
+
 
 <details>
 <summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
