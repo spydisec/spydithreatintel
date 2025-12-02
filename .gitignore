@@ -1,49 +1,36 @@
 # Global ignore rule: Ignore everything
 *
-#.github/
-# Allow folders under /data/ and all nested directories
+
+# === R2 MIGRATION: Large blocklist files now excluded ===
+# All .txt blocklists are served from Cloudflare R2
+# Only stats.json, README components, and whitelists tracked in git
+
+# Allow essential directories
 !/.github/
-!/.github/workflows
-!/.github/workflows/auto-merge.yml
+!/.github/readme_*.md
 !/whitelist/
 !whitelist/wl_iplist/
 !/whitelist/wl_domainlist/
-!/iplist/
-!/iplist/full/
-!/iplist/high/
-!/iplist/medium/
-!/iplist/low/
-!/domainlist/
-!/iplist/**/
-!iplist/removedips/removed_ips.db
-!/domainlist/**/
 
-# Allow malicious, adversary, and spam-related files and directories
-!/iplist/ip_ioc_maltrail_feed_new.txt
-!/iplist/C2IPs/master_c2_iplist.txt
-!/iplist/referenced_malicious_ips.txt
-!/iplist/filtered_maliciousNew _iplist.txt
-!/iplist/threatfoxallips.txt
-!/iplist/threatfoxhighconfidenceips.txt
-!iplist/medium/medium_confidence_limited.txt
-!iplist/medium/medium_confidence_unlimited.txt
-!/iplist/low/low_confidence.txt
-!/iplist/high/high_confidence_limited.txt
-!/iplist/high/high_confidence_unlimited.txt
-
-#Domain Lists
-#!/domainlist/malicious/domain_ioc_maltrail.txt
-!/domainlist/malicious/domain_ioc_maltrail_new.txt
-!/domainlist/ads/advtracking_domains.txt
-!/domainlist/malicious/phishing_domains.txt
-!/domainlist/spam/spamscamabuse_domains.txt
-!/domainlist/SOURCES.md
-
-#Whitelist
-!/whitelist/wl_iplist/cdnips.txt
-!/whitelist/wl_iplist/forcedwhitelistips.txt
-!/whitelist/wl_domainlist/osintwhitelisteddomains.txt
-!/whitelist/wl_domainlist/mypiholewhitelisteddomains.txt
+# Allow ONLY README and statistics
 !README.md
+!stats.json
 !.gitattributes
+
+# === EXCLUDED: Scripts (Private) ===
+# All scripts are private and not tracked in git
+#script/
+
+# === EXCLUDED: Data directories ===
+# Only whitelists allowed, all blocklists in R2
+#iplist/
+#domainlist/
+#C2IPFeed/
+#dockerproject/
+
+# Allow whitelist files ONLY (small, config-like)
+!whitelist/wl_iplist/cdnips.txt
+!whitelist/wl_iplist/forcedwhitelistips.txt
+!whitelist/wl_domainlist/osintwhitelisteddomains.txt
+!whitelist/wl_domainlist/mypiholewhitelisteddomains.txt
 

@@ -2,6 +2,12 @@
   <h1>Spydi's ThreatIntel Feed 🛡️</h1>
 
   ![GitHub repo size](https://img.shields.io/github/repo-size/spydisec/spydithreatintel) ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
+  
+  <!-- Live Statistics (Auto-generated) -->
+  ![Total IPs](https://img.shields.io/badge/Total_IPs-603.5K-blue?style=flat-square&logo=shield&logoColor=white)
+  ![Total Domains](https://img.shields.io/badge/Total_Domains-11.1M-purple?style=flat-square&logo=globe&logoColor=white)
+  ![High Confidence](https://img.shields.io/badge/High_Confidence-5.0K-red?style=flat-square&logo=checkmark&logoColor=white)
+  ![C2 Infrastructure](https://img.shields.io/badge/C2_Infrastructure-11.3K-orange?style=flat-square&logo=server&logoColor=white)
 </div>
 
 ## 🚀 About This Project
@@ -39,27 +45,16 @@ Spydi's ThreatIntel Feed is a comprehensive threat intelligence platform that ag
 
 *Production-ready, tiered IP blocklists with multi-source validation and confidence scoring*
 
-| Confidence Level | Blocklist Name                     | Download                                                     |
-|------------------|------------------------------------|------------------------------------------------------------- |
-| **🎯 High**      | **High Confidence Lite**       | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
-| **🎯 High**      | **High Confidence Max**     | [📥 Download](https://spydisec.com/high_confidence_unlimited.txt) |
-| **⚖️ Medium**    | **Medium Confidence Lite**     | [📥 Download](https://spydisec.com/medium_confidence_limited.txt) |
-| **⚖️ Medium**    | **Medium Confidence Max**   | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
-| **🔬 Low**       | **Low Confidence**                | [📥 Download](https://spydisec.com/low_confidence.txt) |
-
-### 📊 Research Dataset
-
-*Complete dataset containing all IPs from above confidence levels after whitelisting*
-
-```
-https://spydisec.com/fullIPblocklist.txt
-```
-
-*Append-only dataset containing all historical confidence-scored IPs ever collected*
-
-```
-https://spydisec.com/permanentfullIPblocklist.txt
-```
+<!-- Live Statistics Table (Auto-generated daily) -->
+| Confidence Level | Blocklist Name | IPs | Size | Target | Last Updated | Download |
+|------------------|----------------|-----|------|--------|--------------|----------|
+| **🎯 High** | High Confidence (Limited) | `5,015` | 70.1 KB | ~5K | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
+| **🎯 High** | High Confidence (Unlimited) | `19,632` | 273.1 KB | Variable | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/high_confidence_unlimited.txt) |
+| **⚖️ Medium** | Medium Confidence (Limited) | `25,014` | 344.0 KB | ~25K | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/medium_confidence_limited.txt) |
+| **⚖️ Medium** | Medium Confidence (Unlimited) | `180,948` | 2.5 MB | Variable | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/medium_confidence_unlimited.txt) |
+| **🔬 Low** | Low Confidence | `156,264` | 2.1 MB | Variable | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/low_confidence.txt) |
+| **📊 Research** | Research Full | `356,815` | 4.9 MB | ~300K | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
+| **🗄️ Archive** | Permanent Full (Append-Only) | `939,397` | 13.0 MB | Growing | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Methodology</strong></summary>
@@ -88,12 +83,14 @@ https://spydisec.com/permanentfullIPblocklist.txt
 
 *Independent category processing with complete source fidelity*
 
-| Name                              | Description                                                                 | Download                                                                 |
-|-----------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| **Malware Domains**               | **🛡️ Security**: Active malware distribution, C2, and exploit kit domains   | [📥 Download](https://spydisec.com/maliciousblocklist.txt)                 |
-| **Spam/Scam Domains**             | **📧 Communication**: Phishing, scam, and spam domains                      | [📥 Download](https://spydisec.com/spamblocklist.txt)                      |
-| **Ads & Tracking Domains**        | **📺 Privacy**: Aggressive ads, trackers, and analytics domains             | [📥 Download](https://spydisec.com/adsblocklist.txt)                       |
-| **Permanent Malicious Domains**   | Append-only: all domains ever seen in the Malware Domains blocklist         | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt)            |
+<!-- Live Statistics Table (Auto-generated daily) -->
+| Category | Blocklist Name | Domains | Size | Last Updated | Download |
+|----------|----------------|---------|------|--------------|----------|
+| **🛡️ Security** | Malicious Domains | `3,293,062` | 62.4 MB | 2025-12-02 15:11 UTC | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
+| **📧 Communication** | Spam/Scam Domains | `1,710,058` | 33.7 MB | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/spamblocklist.txt) |
+| **📺 Privacy** | Ads & Tracking | `390,839` | 8.5 MB | 2025-12-02 15:20 UTC | [📥 Download](https://spydisec.com/adsblocklist.txt) |
+| **🛡️ Security** | Phishing Domains | `58,987` | 1.5 MB | 2025-12-02 15:20 UTC | Internal Only |
+| **🗄️ Archive** | Permanent Domains (Append-Only) | `5,014,128` | 97.7 MB | 2025-12-02 15:11 UTC | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
 
 <details>
 <summary>🔄 <strong>Independent Category Processing</strong> **[NEW]**</summary>
