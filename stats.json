@@ -1,19 +1,19 @@
 {
-  "generated_at": "2025-12-02T06:12:16.261894Z",
+  "generated_at": "2025-12-02T06:30:29.619063Z",
   "ip_blocklists": {
     "filtered_malicious": {
       "name": "Filtered Malicious IPs",
       "category": "Production",
       "count": 253804,
       "size": "3.5 MB",
-      "last_updated": "2025-12-02 16:13 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "master_malicious": {
       "name": "Master Malicious IPs",
       "category": "Production",
       "count": 211,
       "size": "3.1 KB",
-      "last_updated": "2025-12-02 16:13 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "c2_tracker": {
       "name": "C2 Infrastructure",
@@ -102,7 +102,7 @@
       "target": "~5K",
       "count": 5015,
       "size": "70.1 KB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "high_unlimited": {
       "name": "High Confidence (Unlimited)",
@@ -110,7 +110,7 @@
       "target": "Variable",
       "count": 19628,
       "size": "273.0 KB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "medium_limited": {
       "name": "Medium Confidence (Limited)",
@@ -118,7 +118,7 @@
       "target": "~25K",
       "count": 25014,
       "size": "344.0 KB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "medium_unlimited": {
       "name": "Medium Confidence (Unlimited)",
@@ -126,7 +126,7 @@
       "target": "Variable",
       "count": 180849,
       "size": "2.5 MB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "low": {
       "name": "Low Confidence",
@@ -134,7 +134,7 @@
       "target": "Variable",
       "count": 156266,
       "size": "2.1 MB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "research_full": {
       "name": "Research Full",
@@ -142,7 +142,7 @@
       "target": "~300K",
       "count": 356714,
       "size": "4.9 MB",
-      "last_updated": "2025-12-02 16:14 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     },
     "permanent_full": {
       "name": "Permanent Full (Append-Only)",
@@ -150,7 +150,7 @@
       "target": "Growing",
       "count": 939688,
       "size": "13.0 MB",
-      "last_updated": "2025-12-02 16:15 UTC"
+      "last_updated": "2025-12-02 17:27 UTC"
     }
   },
   "totals": {

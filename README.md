@@ -6,7 +6,7 @@
 
 <!-- STATS_START -->
 ```
-📊 LIVE STATISTICS                                    Last Updated: 2025-12-02 06:12 UTC
+📊 LIVE STATISTICS                                    Last Updated: 2025-12-02 06:30 UTC
 ─────────────────────────────────────────────────────────────────────────────
 
    🔢 Total IPs               603.5K     │     🌐 Total Domains           11.1M
@@ -14,9 +14,8 @@
    ✅ Whitelisted               1.3K     │     🛡️ Sources            12+ OSINT
 
 ─────────────────────────────────────────────────────────────────────────────
-   Quality: <0.1% false positive rate  •  Updates: Hourly  •  CDN Protected
 ```
-
+<!-- STATS_END -->
 
 ## 🚀 About
 
@@ -42,8 +41,7 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | 🔬 **Low** | Low Confidence (All Others) | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | 📊 **Research** | Full Research Blocklist | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | 🗄️ **Archive** | Permanent (Append-Only) | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
-
->>>>>>> Stashed changes
+<!-- IP_STATS_END -->
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Details</strong></summary>
@@ -68,8 +66,8 @@ Comprehensive threat intelligence blocklists aggregated from 12+ OSINT sources, 
 | 📧 **Spam** | Spam/Scam/Abuse Domains | [📥 Download](https://spydisec.com/spamblocklist.txt) |
 | 📺 **Privacy** | Ads & Tracking Domains | [📥 Download](https://spydisec.com/adsblocklist.txt) |
 | 🗄️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
+<!-- DOMAIN_STATS_END -->
 
->>>>>>> Stashed changes
 
 ---
 
