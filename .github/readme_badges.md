@@ -1,5 +1,0 @@
-![Total IPs](https://img.shields.io/badge/Total_IPs-603,516-blue?style=flat-square)
-![Total Domains](https://img.shields.io/badge/Total_Domains-11,069,110-green?style=flat-square)
-![High Confidence](https://img.shields.io/badge/High_Confidence-5,015-red?style=flat-square)
-![C2 Trackers](https://img.shields.io/badge/C2_Infrastructure-11,294-orange?style=flat-square)
-![Last Updated](https://img.shields.io/badge/Updated-2025--12--02-brightgreen?style=flat-square)

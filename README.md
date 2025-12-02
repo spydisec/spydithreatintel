@@ -4,14 +4,6 @@
   ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
 </div>
 
-<!-- STATS_START -->
-| Metric | Count | Metric | Count |
-|:------:|:-----:|:------:|:-----:|
-| **Total IPs** | `603.5K` | **Total Domains** | `11.1M` |
-| **High Confidence** | `5.0K` | **C2 Infrastructure** | `11.3K` |
-| **Whitelisted** | `1.3K` | **Last Updated** | 2025-12-02 06:34 UTC |
-
-
 ## 🚀 About
 
 Comprehensive threat intelligence blocklists aggregated from multiple OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting.
@@ -26,7 +18,6 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 
 *Confidence-based tiers with multi-source validation*
 
-<!-- IP_STATS_START -->
 | Tier | Blocklist | Download |
 |:----:|-----------|:--------:|
 | 🎯 **High** | High Confidence (Limited ~5K) | [📥 Download](https://spydisec.com/high_confidence_limited.txt) |
@@ -54,7 +45,6 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 
 *Independent category processing - import any/all into Pi-hole/AdGuard*
 
-<!-- DOMAIN_STATS_START -->
 | Category | Blocklist | Download |
 |:--------:|-----------|:--------:|
 | 🛡️ **Security** | Malicious Domains | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
