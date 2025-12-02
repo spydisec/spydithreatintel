@@ -6,9 +6,9 @@
 # Only stats.json, README, whitelists, and standard git files tracked
 
 # Allow essential directories
-!/whitelist/
+!whitelist/*
 !whitelist/wl_iplist/
-!/whitelist/wl_domainlist/
+!whitelist/wl_domainlist/
 
 # Allow standard repository files
 !README.md
