@@ -9,8 +9,8 @@
 |:------:|:-----:|:------:|:-----:|
 | **Total IPs** | `603.5K` | **Total Domains** | `11.1M` |
 | **High Confidence** | `5.0K` | **C2 Infrastructure** | `11.3K` |
-| **Whitelisted** | `1.3K` | **Last Updated** | 2025-12-02 06:35 UTC |
-<!-- STATS_END -->
+| **Whitelisted** | `1.3K` | **Last Updated** | 2025-12-02 06:34 UTC |
+
 
 ## 🚀 About
 
@@ -36,7 +36,7 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 | 🔬 **Low** | Low Confidence (All Others) | [📥 Download](https://spydisec.com/low_confidence.txt) |
 | 📊 **Research** | Full Research Blocklist | [📥 Download](https://spydisec.com/fullIPblocklist.txt) |
 | 🗄️ **Archive** | Permanent (Append-Only) | [📥 Download](https://spydisec.com/permanentfullIPblocklist.txt) |
-<!-- IP_STATS_END -->
+
 
 <details>
 <summary>🔍 <strong>Confidence Scoring Details</strong></summary>
@@ -60,8 +60,8 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 | 🛡️ **Security** | Malicious Domains | [📥 Download](https://spydisec.com/maliciousblocklist.txt) |
 | 📧 **Spam** | Spam/Scam/Abuse Domains | [📥 Download](https://spydisec.com/spamblocklist.txt) |
 | 📺 **Privacy** | Ads & Tracking Domains | [📥 Download](https://spydisec.com/adsblocklist.txt) |
-| ��️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
-<!-- DOMAIN_STATS_END -->
+| 🗄️ **Archive** | Permanent Domains (Append-Only) | [📥 Download](https://spydisec.com/permanentMaliciousDomainList.txt) |
+
 
 ---
 
