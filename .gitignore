@@ -3,21 +3,21 @@
 
 # === R2 MIGRATION: Large blocklist files now excluded ===
 # All .txt blocklists are served from Cloudflare R2
-# Only stats.json, README components, and whitelists tracked in git
+# Only stats.json, README, whitelists, and standard git files tracked
 
 # Allow essential directories
-!/.github/
-!/.github/readme_*.md
-!/.github/workflows/
-!/.github/workflows/*.yml
 !/whitelist/
 !whitelist/wl_iplist/
 !/whitelist/wl_domainlist/
 
-# Allow ONLY README and statistics
+# Allow standard repository files
 !README.md
-!stats.json
+!LICENSE
+!.gitignore
 !.gitattributes
+
+# Allow statistics for R2/Cloudflare Worker API
+!stats.json
 
 # === EXCLUDED: Scripts (Private) ===
 # All scripts are private and not tracked in git
