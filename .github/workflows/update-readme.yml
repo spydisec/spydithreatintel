@@ -1,0 +1,121 @@
+name: Auto-Update README with Live Statistics
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'stats.json'
+      - '.github/readme_*.md'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update README with generated statistics
+        run: |
+          echo "📊 Updating README.md with live statistics..."
+          
+          # Check if generated files exist
+          if [ ! -f .github/readme_confidence_table.md ] || [ ! -f .github/readme_domain_table.md ]; then
+            echo "❌ Generated statistics files not found. Skipping update."
+            exit 0
+          fi
+          
+          # Create temporary file
+          cp README.md README.md.tmp
+          
+          # Replace confidence table section
+          # Find the line with "<!-- Live Statistics Table (Auto-generated daily) -->" under IP section
+          # and replace until the next major heading
+          
+          python3 << 'PYTHON_SCRIPT'
+          import re
+          
+          # Read the files
+          with open('README.md', 'r') as f:
+              readme = f.read()
+          
+          with open('.github/readme_confidence_table.md', 'r') as f:
+              confidence_table = f.read().strip()
+          
+          with open('.github/readme_domain_table.md', 'r') as f:
+              domain_table = f.read().strip()
+          
+          # Replace IP confidence table
+          # Pattern: from "<!-- Live Statistics Table (Auto-generated daily) -->" 
+          # to just before the next <details> or ### section
+          ip_pattern = r'(<!-- Live Statistics Table \(Auto-generated daily\) -->)(.*?)(?=\n\n<details>|\n\n###)'
+          
+          if re.search(ip_pattern, readme, re.DOTALL):
+              readme = re.sub(
+                  ip_pattern,
+                  r'\1\n' + confidence_table,
+                  readme,
+                  flags=re.DOTALL
+              )
+              print("✓ Updated IP confidence table")
+          else:
+              print("⚠ Could not find IP confidence table marker")
+          
+          # Replace domain table
+          # Similar pattern for domain section
+          domain_pattern = r'(### 🌐 Domain Blocklists\n\n\*Independent category processing.*?\*\n\n<!-- Live Statistics Table \(Auto-generated daily\) -->)(.*?)(?=\n\n<details>|\n\n###)'
+          
+          if re.search(domain_pattern, readme, re.DOTALL):
+              readme = re.sub(
+                  domain_pattern,
+                  r'\1\n' + domain_table,
+                  readme,
+                  flags=re.DOTALL
+              )
+              print("✓ Updated domain table")
+          else:
+              print("⚠ Could not find domain table marker")
+          
+          # Write updated README
+          with open('README.md', 'w') as f:
+              f.write(readme)
+          
+          print("✓ README.md updated successfully")
+          PYTHON_SCRIPT
+          
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No changes to README.md"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✓ README.md has been updated"
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: Auto-update README with live statistics [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        run: |
+          echo "## 📊 README Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+            echo "✅ README.md updated with latest statistics" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ README.md already up-to-date" >> $GITHUB_STEP_SUMMARY
+          fi

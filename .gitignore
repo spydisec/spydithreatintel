@@ -8,6 +8,8 @@
 # Allow essential directories
 !/.github/
 !/.github/readme_*.md
+!/.github/workflows/
+!/.github/workflows/*.yml
 !/whitelist/
 !whitelist/wl_iplist/
 !/whitelist/wl_domainlist/
