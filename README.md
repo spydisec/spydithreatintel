@@ -4,6 +4,8 @@
   ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
 </div>
 
+> 📢 **Update**: Blocklists are now served from **Cloudflare R2** for faster global delivery and reduced latency. Use the download links below instead of raw GitHub URLs. Website & API coming soon!
+
 ## 🚀 About
 
 Comprehensive threat intelligence blocklists aggregated from multiple OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting.
