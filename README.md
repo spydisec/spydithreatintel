@@ -60,7 +60,7 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 
 | Name | Purpose | Raw URL |
 |------|---------|---------|
-| **Removed IPs** | Legitimate IPs removed from blocklists | [📥 Raw](https://github.com/spydisec/spydithreatintel/tree/main/iplist/removedips) |
+| **Removed IPs** | Legitimate IPs removed from blocklists | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/removed_ips.db) |
 | **Whitelisted IPs** | Critical infrastructure IPs (Cloudflare, Akamai, Fastly) | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/cdnips.txt) |
 
 ---

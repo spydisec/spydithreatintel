@@ -33,6 +33,7 @@
 # Allow whitelist files ONLY (small, config-like)
 !whitelist/wl_iplist/cdnips.txt
 !whitelist/wl_iplist/forcedwhitelistips.txt
+!whitelist/wl_iplist/removed_ips.db
 !whitelist/wl_domainlist/osintwhitelisteddomains.txt
 !whitelist/wl_domainlist/mypiholewhitelisteddomains.txt
 
