@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-02T08:14:30.025105Z",
+  "generated_at": "2025-12-02T09:05:10.308914Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -45,10 +45,10 @@
     "c2_tracker": {
       "name": "C2 Infrastructure",
       "category": "Specialized",
-      "count": 11294,
-      "size": "155.5 KB",
-      "size_bytes": 159276,
-      "last_updated": "2025-12-02 16:27 UTC",
+      "count": 11296,
+      "size": "155.6 KB",
+      "size_bytes": 159301,
+      "last_updated": "2025-12-02 19:27 UTC",
       "file_path": "master_c2_iplist.txt",
       "download_url": "https://spydisec.com/master_c2_iplist.txt",
       "format": "text/plain",
@@ -87,7 +87,7 @@
       "count": 131149,
       "size": "1.8 MB",
       "size_bytes": 1879440,
-      "last_updated": "2025-12-02 16:25 UTC",
+      "last_updated": "2025-12-02 19:25 UTC",
       "file_path": "osinthoneypotfeed.txt",
       "download_url": "https://spydisec.com/osinthoneypotfeed.txt",
       "format": "text/plain",
@@ -283,10 +283,10 @@
       "name": "Permanent Full (Append-Only)",
       "tier": "Archive",
       "target": "Growing",
-      "count": 939897,
+      "count": 940051,
       "size": "13.0 MB",
-      "size_bytes": 13634464,
-      "last_updated": "2025-12-02 18:15 UTC",
+      "size_bytes": 13636713,
+      "last_updated": "2025-12-02 19:14 UTC",
       "download_url": "https://spydisec.com/permanentfullIPblocklist.txt",
       "format": "text/plain",
       "confidence_score": "Archive",
@@ -295,15 +295,15 @@
     }
   },
   "totals": {
-    "total_ips": 603356,
+    "total_ips": 603358,
     "total_domains": 11031527,
-    "total_c2_ips": 11294,
+    "total_c2_ips": 11296,
     "removed_ips": 1253,
     "whitelisted_cdns": 0,
     "high_confidence_ips": 24617,
     "medium_confidence_ips": 205860,
     "low_confidence_ips": 156000,
     "total_files": 20,
-    "total_size_bytes": 256931615
+    "total_size_bytes": 256933889
   }
 }
