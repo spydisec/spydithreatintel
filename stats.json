@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-05T07:45:06.645737Z",
+  "generated_at": "2025-12-05T07:58:09.378807Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -61,7 +61,7 @@
       "count": 32246,
       "size": "446.2 KB",
       "size_bytes": 456912,
-      "last_updated": "2025-12-05 18:40 UTC",
+      "last_updated": "2025-12-05 18:56 UTC",
       "file_path": "threatfoxallips.txt",
       "download_url": "https://spydisec.com/threatfoxallips.txt",
       "format": "text/plain",
@@ -74,7 +74,7 @@
       "count": 22920,
       "size": "317.3 KB",
       "size_bytes": 324948,
-      "last_updated": "2025-12-05 18:40 UTC",
+      "last_updated": "2025-12-05 18:56 UTC",
       "file_path": "threatfoxhighconfidenceips.txt",
       "download_url": "https://spydisec.com/threatfoxhighconfidenceips.txt",
       "format": "text/plain",
@@ -97,12 +97,12 @@
     "maltrail_iocs": {
       "name": "Maltrail IOCs",
       "category": "External",
-      "count": 151818,
+      "count": 153356,
       "size": "2.1 MB",
-      "size_bytes": 2155794,
-      "last_updated": "2025-12-02 15:20 UTC",
-      "file_path": "ip_ioc_maltrail_feed_new.txt",
-      "download_url": "https://spydisec.com/ip_ioc_maltrail_feed_new.txt",
+      "size_bytes": 2177471,
+      "last_updated": "2025-12-05 18:57 UTC",
+      "file_path": "ip_ioc_maltrail.txt",
+      "download_url": "https://spydisec.com/ip_ioc_maltrail.txt",
       "format": "text/plain",
       "line_format": "one_ip_per_line",
       "content_type": "application/octet-stream"
@@ -182,11 +182,11 @@
     "maltrail_domains": {
       "name": "Maltrail Domain IOCs",
       "category": "External",
-      "count": 601614,
+      "count": 604103,
       "size": "10.9 MB",
-      "size_bytes": 11396025,
-      "last_updated": "2025-12-02 15:20 UTC",
-      "download_url": "https://spydisec.com/domain_ioc_maltrail_new.txt",
+      "size_bytes": 11447357,
+      "last_updated": "2025-12-05 18:57 UTC",
+      "download_url": "https://spydisec.com/domain_ioc_maltrail.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
       "pihole_compatible": true,
@@ -295,8 +295,8 @@
     }
   },
   "totals": {
-    "total_ips": 617926,
-    "total_domains": 11076527,
+    "total_ips": 619464,
+    "total_domains": 11079016,
     "total_c2_ips": 11312,
     "removed_ips": 1256,
     "whitelisted_cdns": 0,
@@ -304,6 +304,6 @@
     "medium_confidence_ips": 50268,
     "low_confidence_ips": 126663,
     "total_files": 20,
-    "total_size_bytes": 252363403
+    "total_size_bytes": 252436412
   }
 }
