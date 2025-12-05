@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-05T07:33:56.566607Z",
+  "generated_at": "2025-12-05T07:45:06.645737Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -58,10 +58,10 @@
     "threatfox_all": {
       "name": "ThreatFox All",
       "category": "External",
-      "count": 32233,
-      "size": "446.0 KB",
-      "size_bytes": 456728,
-      "last_updated": "2025-12-05 14:40 UTC",
+      "count": 32246,
+      "size": "446.2 KB",
+      "size_bytes": 456912,
+      "last_updated": "2025-12-05 18:40 UTC",
       "file_path": "threatfoxallips.txt",
       "download_url": "https://spydisec.com/threatfoxallips.txt",
       "format": "text/plain",
@@ -71,10 +71,10 @@
     "threatfox_high": {
       "name": "ThreatFox High Confidence",
       "category": "External",
-      "count": 22907,
-      "size": "317.2 KB",
-      "size_bytes": 324764,
-      "last_updated": "2025-12-05 14:40 UTC",
+      "count": 22920,
+      "size": "317.3 KB",
+      "size_bytes": 324948,
+      "last_updated": "2025-12-05 18:40 UTC",
       "file_path": "threatfoxhighconfidenceips.txt",
       "download_url": "https://spydisec.com/threatfoxhighconfidenceips.txt",
       "format": "text/plain",
@@ -295,7 +295,7 @@
     }
   },
   "totals": {
-    "total_ips": 617900,
+    "total_ips": 617926,
     "total_domains": 11076527,
     "total_c2_ips": 11312,
     "removed_ips": 1256,
@@ -304,6 +304,6 @@
     "medium_confidence_ips": 50268,
     "low_confidence_ips": 126663,
     "total_files": 20,
-    "total_size_bytes": 252363035
+    "total_size_bytes": 252363403
   }
 }
