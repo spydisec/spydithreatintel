@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-14T03:05:07.251883Z",
+  "generated_at": "2026-03-14T03:45:06.814407Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -58,10 +58,10 @@
     "threatfox_all": {
       "name": "ThreatFox All",
       "category": "External",
-      "count": 32706,
-      "size": "453.0 KB",
-      "size_bytes": 463887,
-      "last_updated": "2026-03-14 10:40 UTC",
+      "count": 32362,
+      "size": "448.3 KB",
+      "size_bytes": 459054,
+      "last_updated": "2026-03-14 14:40 UTC",
       "file_path": "threatfoxallips.txt",
       "download_url": "https://spydisec.com/threatfoxallips.txt",
       "format": "text/plain",
@@ -71,10 +71,10 @@
     "threatfox_high": {
       "name": "ThreatFox High Confidence",
       "category": "External",
-      "count": 23512,
-      "size": "325.5 KB",
-      "size_bytes": 333262,
-      "last_updated": "2026-03-14 10:40 UTC",
+      "count": 23221,
+      "size": "321.5 KB",
+      "size_bytes": 329188,
+      "last_updated": "2026-03-14 14:40 UTC",
       "file_path": "threatfoxhighconfidenceips.txt",
       "download_url": "https://spydisec.com/threatfoxhighconfidenceips.txt",
       "format": "text/plain",
@@ -97,10 +97,10 @@
     "maltrail_iocs": {
       "name": "Maltrail IOCs",
       "category": "External",
-      "count": 158116,
+      "count": 158117,
       "size": "2.1 MB",
-      "size_bytes": 2245656,
-      "last_updated": "2026-03-14 10:40 UTC",
+      "size_bytes": 2245671,
+      "last_updated": "2026-03-14 14:40 UTC",
       "file_path": "ip_ioc_maltrail.txt",
       "download_url": "https://spydisec.com/ip_ioc_maltrail.txt",
       "format": "text/plain",
@@ -182,10 +182,10 @@
     "maltrail_domains": {
       "name": "Maltrail Domain IOCs",
       "category": "External",
-      "count": 752826,
+      "count": 753282,
       "size": "13.9 MB",
-      "size_bytes": 14554845,
-      "last_updated": "2026-03-14 10:40 UTC",
+      "size_bytes": 14560626,
+      "last_updated": "2026-03-14 14:40 UTC",
       "download_url": "https://spydisec.com/domain_ioc_maltrail.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -295,8 +295,8 @@
     }
   },
   "totals": {
-    "total_ips": 634503,
-    "total_domains": 12251271,
+    "total_ips": 633869,
+    "total_domains": 12251727,
     "total_c2_ips": 14134,
     "removed_ips": 1768,
     "whitelisted_cdns": 0,
@@ -304,6 +304,6 @@
     "medium_confidence_ips": 50268,
     "low_confidence_ips": 126663,
     "total_files": 20,
-    "total_size_bytes": 273945843
+    "total_size_bytes": 273942732
   }
 }
