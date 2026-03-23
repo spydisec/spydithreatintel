@@ -46,7 +46,3 @@
 !/.github/workflows/
 !/.github/workflows/**
 
-# Allow documentation
-!/docs/
-!/docs/**
-
