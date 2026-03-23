@@ -1,0 +1,63 @@
+name: "Whitelist Request: IP Address"
+description: Request an IP address or CIDR range to be added to the community whitelist
+title: "[IP Whitelist] "
+labels: ["whitelist-request", "ip-whitelist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## IP Whitelist Request
+        Use this form to request adding an IP address or CIDR range to the community whitelist.
+        All requests are reviewed by a maintainer before being applied.
+
+  - type: input
+    id: ip_address
+    attributes:
+      label: IP Address or CIDR Range
+      description: "Enter a single IPv4/IPv6 address or CIDR range (e.g., 192.168.1.1 or 10.0.0.0/24)"
+      placeholder: "203.0.113.50"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason for Whitelisting
+      description: Why should this IP be whitelisted?
+      options:
+        - DNS Resolver
+        - CDN / Content Delivery Network
+        - Hosting / Cloud Provider
+        - VPN / Proxy Service
+        - Monitoring / Health Check Service
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Provide details on why this IP is a false positive or should be whitelisted
+      placeholder: "This IP belongs to Cloudflare's DNS resolver service and is incorrectly flagged as malicious..."
+    validations:
+      required: true
+
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Evidence URL (optional)
+      description: "Link to documentation, WHOIS record, or other evidence supporting this request"
+      placeholder: "https://www.cloudflare.com/ips/"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have verified this IP is not associated with malicious activity
+          required: true
+        - label: I understand this request will be reviewed before approval
+          required: true

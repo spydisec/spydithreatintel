@@ -34,6 +34,19 @@
 !whitelist/wl_iplist/cdnips.txt
 !whitelist/wl_iplist/forcedwhitelistips.txt
 !whitelist/wl_iplist/removed_ips.db
+!whitelist/wl_iplist/community_whitelist_ips.txt
 !whitelist/wl_domainlist/osintwhitelisteddomains.txt
 !whitelist/wl_domainlist/mypiholewhitelisteddomains.txt
+!whitelist/wl_domainlist/community_whitelist_domains.txt
+
+# Allow GitHub Actions and Issue templates
+!/.github/
+!/.github/ISSUE_TEMPLATE/
+!/.github/ISSUE_TEMPLATE/**
+!/.github/workflows/
+!/.github/workflows/**
+
+# Allow documentation
+!/docs/
+!/docs/**
 

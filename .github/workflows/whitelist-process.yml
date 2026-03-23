@@ -1,0 +1,124 @@
+name: Process Approved Whitelist Request
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  process:
+    if: >-
+      github.event.label.name == 'approved' &&
+      contains(github.event.issue.labels.*.name, 'whitelist-request')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Process whitelist entry
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const { execSync } = require('child_process');
+
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const labels = issue.labels.map(l => l.name);
+            const isIP = labels.includes('ip-whitelist');
+            const isDomain = labels.includes('domain-whitelist');
+            const issueNumber = issue.number;
+            const issueUser = issue.user.login;
+
+            let entry = '';
+
+            // Parse entry from issue form
+            if (isIP) {
+              const match = body.match(/### IP Address or CIDR Range\s*\n\s*\n\s*(.+)/);
+              entry = match ? match[1].trim() : '';
+            } else if (isDomain) {
+              const match = body.match(/### Domain\s*\n\s*\n\s*(.+)/);
+              entry = match ? match[1].trim() : '';
+            }
+
+            if (!entry) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: ':x: **Processing failed**: Could not parse the entry from the issue body.'
+              });
+              return;
+            }
+
+            // Clean domain entries
+            if (isDomain) {
+              entry = entry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/.*$/, '').toLowerCase();
+            }
+
+            // Parse reason from issue form
+            let reason = 'Community whitelist request';
+            const reasonMatch = body.match(/### Reason for Whitelisting\s*\n\s*\n\s*(.+)/);
+            if (reasonMatch) {
+              reason = reasonMatch[1].trim();
+            }
+
+            // Determine target file
+            const targetFile = isIP
+              ? 'whitelist/wl_iplist/community_whitelist_ips.txt'
+              : 'whitelist/wl_domainlist/community_whitelist_domains.txt';
+            const fullPath = path.join(process.env.GITHUB_WORKSPACE, targetFile);
+
+            // Check for duplicates before appending
+            const existingContent = fs.readFileSync(fullPath, 'utf-8');
+            const existingLines = existingContent.split('\n').map(l => l.split('#')[0].trim().toLowerCase());
+            if (existingLines.includes(entry.toLowerCase())) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: `:warning: **Already whitelisted**: \`${entry}\` is already present in \`${targetFile}\`. Closing issue.`
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                state: 'closed',
+                state_reason: 'not_planned'
+              });
+              return;
+            }
+
+            // Append entry to the community whitelist file
+            const newLine = `${entry} # Issue #${issueNumber}: ${reason} (by @${issueUser})\n`;
+            fs.appendFileSync(fullPath, newLine);
+
+            // Configure git and commit
+            const type = isIP ? 'IP' : 'Domain';
+            execSync('git config user.name "github-actions[bot]"');
+            execSync('git config user.email "41898282+github-actions[bot]@users.noreply.github.com"');
+            execSync(`git add "${targetFile}"`);
+            execSync(`git commit -m "Whitelist: Add ${type} ${entry} (Issue #${issueNumber})"`);
+            execSync('git push origin main');
+
+            // Close issue with confirmation
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: `:white_check_mark: **Whitelist updated!**\n\n**Entry:** \`${entry}\`\n**Type:** ${type} Whitelist\n**File:** \`${targetFile}\`\n**Commit:** Pushed to \`main\`\n\nThis entry will take effect on the next pipeline run. Thank you for your contribution!`
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              state: 'closed',
+              state_reason: 'completed'
+            });

@@ -1,0 +1,63 @@
+name: "Whitelist Request: Domain"
+description: Request a domain to be added to the community whitelist
+title: "[Domain Whitelist] "
+labels: ["whitelist-request", "domain-whitelist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Domain Whitelist Request
+        Use this form to request adding a domain to the community whitelist.
+        Whitelisting a domain also covers all subdomains (e.g., whitelisting `example.com` also covers `sub.example.com`).
+        All requests are reviewed by a maintainer before being applied.
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: "Enter the domain to whitelist (e.g., example.com). Do not include protocol or path."
+      placeholder: "example.com"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: Reason for Whitelisting
+      description: Why should this domain be whitelisted?
+      options:
+        - False Positive (legitimate site incorrectly blocked)
+        - Legitimate Service / SaaS Provider
+        - CDN / Content Delivery
+        - Authentication / SSO Provider
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Provide details on why this domain is a false positive or should be whitelisted
+      placeholder: "This domain is the official website of a legitimate SaaS company and is incorrectly classified as malicious..."
+    validations:
+      required: true
+
+  - type: input
+    id: evidence_url
+    attributes:
+      label: Evidence URL (optional)
+      description: "Link to the domain's official page, VirusTotal scan, or other evidence"
+      placeholder: "https://www.virustotal.com/gui/domain/example.com"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have verified this domain is not associated with malicious activity
+          required: true
+        - label: I understand this request will be reviewed before approval
+          required: true

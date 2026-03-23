@@ -1,0 +1,151 @@
+name: Validate Whitelist Request
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  validate:
+    if: contains(github.event.issue.labels.*.name, 'whitelist-request')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate whitelist request
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || '';
+            const labels = issue.labels.map(l => l.name);
+            const isIP = labels.includes('ip-whitelist');
+            const isDomain = labels.includes('domain-whitelist');
+
+            let entry = '';
+            let errors = [];
+            let warnings = [];
+
+            // Parse the entry from the issue form body
+            if (isIP) {
+              // Extract IP from form field "IP Address or CIDR Range"
+              const match = body.match(/### IP Address or CIDR Range\s*\n\s*\n\s*(.+)/);
+              entry = match ? match[1].trim() : '';
+            } else if (isDomain) {
+              // Extract domain from form field "Domain"
+              const match = body.match(/### Domain\s*\n\s*\n\s*(.+)/);
+              entry = match ? match[1].trim() : '';
+            }
+
+            if (!entry) {
+              errors.push('Could not parse the entry from the issue body. Please ensure the form was filled out correctly.');
+            }
+
+            // Validate format
+            if (entry && isIP) {
+              // Use Python for IP validation (more reliable than JS)
+              const { execSync } = require('child_process');
+              try {
+                execSync(`python3 -c "import ipaddress; ipaddress.ip_network('${entry.replace(/'/g, '')}', strict=False)"`, { encoding: 'utf-8' });
+              } catch (e) {
+                errors.push(`Invalid IP address or CIDR format: \`${entry}\`. Expected IPv4/IPv6 address or CIDR notation (e.g., \`192.168.1.1\` or \`10.0.0.0/24\`).`);
+              }
+            }
+
+            if (entry && isDomain) {
+              // Basic domain format validation
+              const domainRegex = /^(?!:\/\/)([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+              const cleaned = entry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/.*$/, '');
+              if (!domainRegex.test(cleaned)) {
+                errors.push(`Invalid domain format: \`${entry}\`. Expected a plain domain like \`example.com\` (no protocol or path).`);
+              }
+              entry = cleaned;
+            }
+
+            // Check for duplicates across all whitelist files
+            if (entry && errors.length === 0) {
+              const fs = require('fs');
+              const path = require('path');
+
+              const checkFiles = isIP
+                ? [
+                    'whitelist/wl_iplist/cdnips.txt',
+                    'whitelist/wl_iplist/forcedwhitelistips.txt',
+                    'whitelist/wl_iplist/community_whitelist_ips.txt'
+                  ]
+                : [
+                    'whitelist/wl_domainlist/osintwhitelisteddomains.txt',
+                    'whitelist/wl_domainlist/mypiholewhitelisteddomains.txt',
+                    'whitelist/wl_domainlist/community_whitelist_domains.txt',
+                    'whitelist/wl_domainlist/publicwhitelisted.txt'
+                  ];
+
+              for (const file of checkFiles) {
+                const fullPath = path.join(process.env.GITHUB_WORKSPACE, file);
+                if (fs.existsSync(fullPath)) {
+                  const content = fs.readFileSync(fullPath, 'utf-8');
+                  const lines = content.split('\n').map(l => l.split('#')[0].trim().toLowerCase());
+                  if (lines.includes(entry.toLowerCase())) {
+                    warnings.push(`Entry \`${entry}\` already exists in \`${file}\`.`);
+                  }
+                }
+              }
+            }
+
+            // Build result comment
+            let commentBody = '';
+            const type = isIP ? 'IP' : 'Domain';
+
+            if (errors.length > 0) {
+              commentBody = `## :x: Validation Failed\n\n**Entry:** \`${entry || '(not found)'}\`\n**Type:** ${type} Whitelist\n\n### Errors\n${errors.map(e => `- ${e}`).join('\n')}\n\nPlease edit this issue to fix the errors above.`;
+
+              // Add invalid-format label
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['invalid-format']
+              });
+            } else {
+              let body = `## :white_check_mark: Validation Passed\n\n**Entry:** \`${entry}\`\n**Type:** ${type} Whitelist\n**Status:** Awaiting maintainer review`;
+
+              if (warnings.length > 0) {
+                body += `\n\n### :warning: Warnings\n${warnings.map(w => `- ${w}`).join('\n')}`;
+              }
+
+              body += `\n\n---\n*A maintainer will review this request. Once approved, the \`approved\` label will be added and the entry will be automatically processed.*`;
+              commentBody = body;
+
+              // Add validated label, remove invalid-format if present
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['validated']
+              });
+
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  name: 'invalid-format'
+                });
+              } catch (e) {
+                // Label didn't exist, ignore
+              }
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: commentBody
+            });
