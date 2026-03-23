@@ -70,6 +70,10 @@ Comprehensive threat intelligence blocklists aggregated from multiple OSINT sour
 |------|---------|---------|
 | **Removed IPs** | Legitimate IPs removed from blocklists | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/removed_ips.db) |
 | **Whitelisted IPs** | Critical infrastructure IPs (Cloudflare, Akamai, Fastly) | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/cdnips.txt) |
+| **Community IPs** | Community-submitted IP whitelist | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_iplist/community_whitelist_ips.txt) |
+| **Community Domains** | Community-submitted domain whitelist | [📥 Raw](https://raw.githubusercontent.com/spydisec/spydithreatintel/refs/heads/main/whitelist/wl_domainlist/community_whitelist_domains.txt) |
+
+> 💡 **Found a false positive?** Submit a [Whitelist IP Request](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-ip-request.yml) or [Whitelist Domain Request](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-domain-request.yml) — automated validation and processing via GitHub Actions.
 
 ---
 
@@ -229,11 +233,12 @@ We're particularly interested in contributions that help us:
 
 **Get involved in multiple ways:**
 
-1. **📝 Submit Verified IOCs** - Add new threat indicators via Pull Request with source attribution
-2. **🐛 Report Issues** - Flag duplicates, false positives, or outdated entries in [GitHub Issues](https://github.com/spydisec/spydithreatintel/issues)
-3. **💬 Share Feedback** - Help improve enterprise/SMB integration patterns and use cases
-4. **📚 Documentation** - Enhance guides for non-technical users and integration tutorials
-5. **🔧 Code Contributions** - Improve processing scripts, add new data sources, or enhance automation
+1. **�️ Request Whitelisting** - Submit a [Whitelist IP](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-ip-request.yml) or [Whitelist Domain](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-domain-request.yml) request to report false positives (automated validation & processing)
+2. **📝 Submit Verified IOCs** - Add new threat indicators via Pull Request with source attribution
+3. **🐛 Report Issues** - Flag duplicates, false positives, or outdated entries in [GitHub Issues](https://github.com/spydisec/spydithreatintel/issues)
+4. **💬 Share Feedback** - Help improve enterprise/SMB integration patterns and use cases
+5. **📚 Documentation** - Enhance guides for non-technical users and integration tutorials
+6. **🔧 Code Contributions** - Improve processing scripts, add new data sources, or enhance automation
 
 **Every contribution helps make cybersecurity more accessible and effective for everyone!** 🌐
 
