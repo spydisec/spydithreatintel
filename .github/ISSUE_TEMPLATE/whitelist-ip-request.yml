@@ -1,5 +1,5 @@
 name: "Whitelist Request: IP Address"
-description: Request an IP address or CIDR range to be added to the community whitelist
+description: Request a single IP address to be added to the community whitelist
 title: "[IP Whitelist] "
 labels: ["whitelist-request", "ip-whitelist"]
 body:
@@ -7,14 +7,17 @@ body:
     attributes:
       value: |
         ## IP Whitelist Request
-        Use this form to request adding an IP address or CIDR range to the community whitelist.
+        Use this form to request adding a **single IP address** to the community whitelist.
         All requests are reviewed by a maintainer before being applied.
+
+        > **Need to whitelist a network range or CIDR block?** (e.g., CDN, hosting provider)
+        > Use the [Network Range Request](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-network-range-request.yml) template instead — provide the provider's official IP list URL and a maintainer will review it.
 
   - type: input
     id: ip_address
     attributes:
-      label: IP Address or CIDR Range
-      description: "Enter a single IPv4/IPv6 address or CIDR range (e.g., 192.168.1.1 or 10.0.0.0/24)"
+      label: IP Address
+      description: "Enter a single IPv4 or IPv6 address (e.g., 1.1.1.1 or 2606:4700::1111). CIDR ranges are not accepted here."
       placeholder: "203.0.113.50"
     validations:
       required: true

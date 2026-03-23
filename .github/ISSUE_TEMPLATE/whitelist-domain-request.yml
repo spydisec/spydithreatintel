@@ -8,14 +8,16 @@ body:
       value: |
         ## Domain Whitelist Request
         Use this form to request adding a domain to the community whitelist.
-        Whitelisting a domain also covers all subdomains (e.g., whitelisting `example.com` also covers `sub.example.com`).
         All requests are reviewed by a maintainer before being applied.
+
+        **Accepted:** `example.com`, `cdn.example.com`, `api.service.io`
+        **Not accepted:** wildcards (`*.example.com`), bare TLDs (`.com`), shared hosting platforms (`github.io`, `herokuapp.com`)
 
   - type: input
     id: domain
     attributes:
       label: Domain
-      description: "Enter the domain to whitelist (e.g., example.com). Do not include protocol or path."
+      description: "Enter a specific domain or subdomain (e.g., example.com or api.example.com). No wildcards, bare TLDs, or protocols."
       placeholder: "example.com"
     validations:
       required: true

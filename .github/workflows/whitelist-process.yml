@@ -40,7 +40,7 @@ jobs:
 
             // Parse entry from issue form
             if (isIP) {
-              const match = body.match(/### IP Address or CIDR Range\s*\n\s*\n\s*(.+)/);
+              const match = body.match(/### IP Address\s*\n\s*\n\s*(.+)/);
               entry = match ? match[1].trim() : '';
             } else if (isDomain) {
               const match = body.match(/### Domain\s*\n\s*\n\s*(.+)/);

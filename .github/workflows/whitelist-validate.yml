@@ -28,6 +28,24 @@ jobs:
             const labels = issue.labels.map(l => l.name);
             const isIP = labels.includes('ip-whitelist');
             const isDomain = labels.includes('domain-whitelist');
+            const isNetworkRange = labels.includes('network-range');
+
+            // Network range requests skip automated validation — maintainer-only review
+            if (isNetworkRange) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `## :mag: Network Range Request Received\n\nThis request is for a **network range / bulk IP whitelist** and requires manual maintainer review.\n\nA maintainer will verify the source URL and decide whether to add this provider to the CDN whitelist pipeline.\n\n---\n*No automated processing — network ranges are reviewed manually for security.*`
+              });
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                labels: ['validated']
+              });
+              return;
+            }
 
             let entry = '';
             let errors = [];
@@ -35,11 +53,9 @@ jobs:
 
             // Parse the entry from the issue form body
             if (isIP) {
-              // Extract IP from form field "IP Address or CIDR Range"
-              const match = body.match(/### IP Address or CIDR Range\s*\n\s*\n\s*(.+)/);
+              const match = body.match(/### IP Address\s*\n\s*\n\s*(.+)/);
               entry = match ? match[1].trim() : '';
             } else if (isDomain) {
-              // Extract domain from form field "Domain"
               const match = body.match(/### Domain\s*\n\s*\n\s*(.+)/);
               entry = match ? match[1].trim() : '';
             }
@@ -48,28 +64,122 @@ jobs:
               errors.push('Could not parse the entry from the issue body. Please ensure the form was filled out correctly.');
             }
 
-            // Validate format
+            // ── IP VALIDATION ──
             if (entry && isIP) {
-              // Use Python for IP validation (more reliable than JS)
               const { execSync } = require('child_process');
-              try {
-                execSync(`python3 -c "import ipaddress; ipaddress.ip_network('${entry.replace(/'/g, '')}', strict=False)"`, { encoding: 'utf-8' });
-              } catch (e) {
-                errors.push(`Invalid IP address or CIDR format: \`${entry}\`. Expected IPv4/IPv6 address or CIDR notation (e.g., \`192.168.1.1\` or \`10.0.0.0/24\`).`);
+
+              // Reject CIDR notation — only single IPs allowed via this template
+              if (entry.includes('/')) {
+                errors.push(`CIDR ranges are not accepted in single IP requests: \`${entry}\`.\n\n  **Need to whitelist a network range?** Use the [Network Range Request](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-network-range-request.yml) template instead — provide the provider's official IP list URL.`);
+              } else {
+                // Validate as a single IP address using Python ipaddress module
+                try {
+                  const result = execSync(`python3 -c "
+            import ipaddress, json, sys
+            try:
+                addr = ipaddress.ip_address('${entry.replace(/'/g, '')}')
+                info = {
+                    'valid': True,
+                    'is_private': addr.is_private,
+                    'is_reserved': addr.is_reserved,
+                    'is_loopback': addr.is_loopback,
+                    'is_multicast': addr.is_multicast,
+                    'is_link_local': addr.is_link_local,
+                    'is_unspecified': addr.is_unspecified,
+                    'version': addr.version
+                }
+                print(json.dumps(info))
+            except ValueError as e:
+                print(json.dumps({'valid': False, 'error': str(e)}))
+            "`, { encoding: 'utf-8' });
+
+                  const info = JSON.parse(result.trim());
+
+                  if (!info.valid) {
+                    errors.push(`Invalid IP address: \`${entry}\`. Expected a valid IPv4 or IPv6 address (e.g., \`1.1.1.1\` or \`2606:4700::1111\`).`);
+                  } else {
+                    if (info.is_private) {
+                      errors.push(`Private IP address rejected: \`${entry}\`. Private/RFC1918 addresses (10.x, 172.16-31.x, 192.168.x) should not appear in public blocklists.`);
+                    }
+                    if (info.is_reserved || info.is_unspecified) {
+                      errors.push(`Reserved/unspecified IP rejected: \`${entry}\`. This address is not routable on the public internet.`);
+                    }
+                    if (info.is_loopback) {
+                      errors.push(`Loopback address rejected: \`${entry}\`. Localhost addresses cannot be whitelisted.`);
+                    }
+                    if (info.is_multicast) {
+                      errors.push(`Multicast address rejected: \`${entry}\`. Multicast ranges are not applicable to threat blocklists.`);
+                    }
+                    if (info.is_link_local) {
+                      errors.push(`Link-local address rejected: \`${entry}\`. Link-local addresses are not routable.`);
+                    }
+                  }
+                } catch (e) {
+                  errors.push(`Invalid IP address: \`${entry}\`. Could not parse as IPv4 or IPv6.`);
+                }
               }
             }
 
+            // ── DOMAIN VALIDATION ──
             if (entry && isDomain) {
-              // Basic domain format validation
-              const domainRegex = /^(?!:\/\/)([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
-              const cleaned = entry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/\/.*$/, '');
-              if (!domainRegex.test(cleaned)) {
-                errors.push(`Invalid domain format: \`${entry}\`. Expected a plain domain like \`example.com\` (no protocol or path).`);
+              // Strip protocol, www, port, path
+              let cleaned = entry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/:[0-9]+$/, '').replace(/\/.*$/, '').toLowerCase().trim();
+
+              // Reject wildcard patterns
+              if (cleaned.includes('*')) {
+                errors.push(`Wildcard domains are not accepted: \`${entry}\`. Submit a specific domain like \`example.com\` instead of \`*.example.com\`.`);
               }
-              entry = cleaned;
+
+              // Reject bare TLDs
+              else if (!cleaned.includes('.') || cleaned.startsWith('.')) {
+                errors.push(`Bare TLDs are not accepted: \`${entry}\`. Submit a full domain like \`example.com\`, not \`.com\`.`);
+              }
+
+              else {
+                // Basic format validation
+                const domainRegex = /^([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
+                if (!domainRegex.test(cleaned)) {
+                  errors.push(`Invalid domain format: \`${entry}\`. Expected a plain domain like \`example.com\` (no protocol, path, or special characters).`);
+                }
+
+                // Reject public suffixes / shared hosting platforms
+                const publicSuffixes = [
+                  'github.io', 'githubusercontent.com', 'github.com',
+                  'herokuapp.com', 'herokussl.com',
+                  'workers.dev', 'pages.dev',
+                  'netlify.app', 'netlify.com',
+                  'vercel.app',
+                  'azurewebsites.net', 'cloudapp.net', 'azure-api.net',
+                  'firebaseapp.com', 'web.app',
+                  'appspot.com',
+                  'blogspot.com', 'blogspot.co.uk',
+                  's3.amazonaws.com', 'cloudfront.net', 'elasticbeanstalk.com',
+                  'execute-api.amazonaws.com', 'amplifyapp.com',
+                  'pythonanywhere.com',
+                  'repl.co', 'replit.dev',
+                  'glitch.me',
+                  'ngrok.io', 'ngrok-free.app',
+                  'trycloudflare.com',
+                  'duckdns.org', 'no-ip.com', 'ddns.net', 'dynu.com',
+                  'co.uk', 'com.au', 'co.jp', 'co.in', 'com.br',
+                  'co.za', 'co.kr', 'co.nz', 'com.mx', 'com.ar'
+                ];
+
+                if (publicSuffixes.some(ps => cleaned === ps || cleaned.endsWith('.' + ps))) {
+                  // Check if the entry IS the public suffix itself (reject outright)
+                  if (publicSuffixes.includes(cleaned)) {
+                    errors.push(`Shared hosting / public suffix domain rejected: \`${cleaned}\`. Whitelisting this would cover all sites hosted on the platform, including attacker infrastructure. Submit the specific subdomain instead (e.g., \`mysite.github.io\` not \`github.io\`).`);
+                  } else {
+                    // It's a specific subdomain on a shared platform — warn but allow
+                    warnings.push(`\`${cleaned}\` is hosted on a shared platform. The maintainer will verify this specific subdomain is not used for malicious purposes.`);
+                  }
+                }
+              }
+
+              entry = cleaned || entry;
             }
 
-            // Check for duplicates across all whitelist files
+            // ── DUPLICATE CHECK ──
             if (entry && errors.length === 0) {
               const fs = require('fs');
               const path = require('path');
@@ -99,14 +209,13 @@ jobs:
               }
             }
 
-            // Build result comment
+            // ── BUILD RESULT COMMENT ──
             let commentBody = '';
             const type = isIP ? 'IP' : 'Domain';
 
             if (errors.length > 0) {
               commentBody = `## :x: Validation Failed\n\n**Entry:** \`${entry || '(not found)'}\`\n**Type:** ${type} Whitelist\n\n### Errors\n${errors.map(e => `- ${e}`).join('\n')}\n\nPlease edit this issue to fix the errors above.`;
 
-              // Add invalid-format label
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -123,7 +232,6 @@ jobs:
               body += `\n\n---\n*A maintainer will review this request. Once approved, the \`approved\` label will be added and the entry will be automatically processed.*`;
               commentBody = body;
 
-              // Add validated label, remove invalid-format if present
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,

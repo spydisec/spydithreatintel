@@ -1,0 +1,75 @@
+name: "Whitelist Request: Network Range / Bulk IPs"
+description: Request whitelisting of a network range (CIDR block) or bulk provider IPs via an official source URL
+title: "[Network Whitelist] "
+labels: ["whitelist-request", "network-range"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Network Range Whitelist Request
+        Use this form to request whitelisting an **entire network range or CIDR block** (e.g., CDN, cloud provider, hosting infrastructure).
+
+        This is **not** automated — a maintainer will review the source URL and decide whether to add the range to the CDN whitelist pipeline.
+
+        > **Need to whitelist a single IP?** Use the [IP Whitelist Request](https://github.com/spydisec/spydithreatintel/issues/new?template=whitelist-ip-request.yml) template instead.
+
+  - type: input
+    id: provider_name
+    attributes:
+      label: Provider / Organization Name
+      description: "Name of the CDN, cloud provider, or organization that owns the IP range"
+      placeholder: "Cloudflare"
+    validations:
+      required: true
+
+  - type: input
+    id: source_url
+    attributes:
+      label: Official IP List URL
+      description: "Direct link to the provider's official IP list page or API endpoint. Must be an authoritative source."
+      placeholder: "https://www.cloudflare.com/ips-v4/#"
+    validations:
+      required: true
+
+  - type: input
+    id: cidr_example
+    attributes:
+      label: Example CIDR Range (optional)
+      description: "Optionally provide an example CIDR range from this provider to help us verify"
+      placeholder: "104.16.0.0/13"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: provider_type
+    attributes:
+      label: Provider Type
+      description: What type of infrastructure does this provider operate?
+      options:
+        - CDN / Content Delivery Network
+        - Cloud / Hosting Provider
+        - DNS Resolver Service
+        - Monitoring / Uptime Service
+        - VPN / Proxy Service
+        - Other (explain below)
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: Justification
+      description: Why should this provider's IP ranges be whitelisted? How are they causing false positives?
+      placeholder: "This provider's CDN IPs are being flagged because they appear in honeypot logs, but they are legitimate reverse-proxy IPs serving millions of websites..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: The source URL above is an official/authoritative source maintained by the provider
+          required: true
+        - label: I understand network range requests require manual maintainer review and are not auto-processed
+          required: true
