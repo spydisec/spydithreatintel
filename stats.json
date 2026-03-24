@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-24T07:58:51.308501Z",
+  "generated_at": "2026-03-24T08:05:07.197448Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -19,7 +19,7 @@
     "filtered_malicious": {
       "name": "Filtered Malicious IPs",
       "category": "Production",
-      "count": 269555,
+      "count": 269547,
       "size": "3.7 MB",
       "size_bytes": 3832167,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -32,7 +32,7 @@
     "master_malicious": {
       "name": "Master Malicious IPs",
       "category": "Production",
-      "count": 211,
+      "count": 203,
       "size": "3.1 KB",
       "size_bytes": 3179,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -58,7 +58,7 @@
     "threatfox_all": {
       "name": "ThreatFox All",
       "category": "External",
-      "count": 32012,
+      "count": 32004,
       "size": "443.7 KB",
       "size_bytes": 454348,
       "last_updated": "2026-03-24 18:40 UTC",
@@ -71,7 +71,7 @@
     "threatfox_high": {
       "name": "ThreatFox High Confidence",
       "category": "External",
-      "count": 23087,
+      "count": 23079,
       "size": "319.8 KB",
       "size_bytes": 327449,
       "last_updated": "2026-03-24 18:40 UTC",
@@ -112,7 +112,7 @@
     "malicious": {
       "name": "Malicious Domains",
       "category": "Security",
-      "count": 3191959,
+      "count": 3191951,
       "size": "58.5 MB",
       "size_bytes": 61293323,
       "last_updated": "2026-03-24 18:55 UTC",
@@ -126,7 +126,7 @@
     "spam": {
       "name": "Spam/Scam Domains",
       "category": "Communication",
-      "count": 1715557,
+      "count": 1715549,
       "size": "33.7 MB",
       "size_bytes": 35344068,
       "last_updated": "2026-03-24 18:55 UTC",
@@ -140,7 +140,7 @@
     "ads": {
       "name": "Ads & Tracking",
       "category": "Privacy",
-      "count": 431835,
+      "count": 431827,
       "size": "9.3 MB",
       "size_bytes": 9773474,
       "last_updated": "2026-03-24 18:55 UTC",
@@ -154,7 +154,7 @@
     "permanent": {
       "name": "Permanent Domains (Append-Only)",
       "category": "Archive",
-      "count": 6249334,
+      "count": 6249326,
       "size": "120.8 MB",
       "size_bytes": 126715213,
       "last_updated": "2026-03-24 18:55 UTC",
@@ -168,7 +168,7 @@
     "phishing": {
       "name": "Phishing Domains",
       "category": "Security",
-      "count": 86479,
+      "count": 86471,
       "size": "2.2 MB",
       "size_bytes": 2301507,
       "last_updated": "2026-03-24 18:55 UTC",
@@ -199,7 +199,7 @@
       "name": "High Confidence (Limited)",
       "tier": "High",
       "target": "~5K",
-      "count": 1944,
+      "count": 1934,
       "size": "27.5 KB",
       "size_bytes": 28194,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -213,7 +213,7 @@
       "name": "High Confidence (Unlimited)",
       "tier": "High",
       "target": "Variable",
-      "count": 9615,
+      "count": 9605,
       "size": "134.5 KB",
       "size_bytes": 137722,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -227,7 +227,7 @@
       "name": "Medium Confidence (Limited)",
       "tier": "Medium",
       "target": "~25K",
-      "count": 25134,
+      "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360520,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -241,7 +241,7 @@
       "name": "Medium Confidence (Unlimited)",
       "tier": "Medium",
       "target": "Variable",
-      "count": 25134,
+      "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360522,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -255,7 +255,7 @@
       "name": "Low Confidence",
       "tier": "Low",
       "target": "Variable",
-      "count": 126663,
+      "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1806005,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -269,7 +269,7 @@
       "name": "Research Full",
       "tier": "Research",
       "target": "~300K",
-      "count": 126663,
+      "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1805994,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -283,7 +283,7 @@
       "name": "Permanent Full (Append-Only)",
       "tier": "Archive",
       "target": "Growing",
-      "count": 963126,
+      "count": 963115,
       "size": "13.3 MB",
       "size_bytes": 13965441,
       "last_updated": "2026-03-24 18:57 UTC",
@@ -295,19 +295,19 @@
     }
   },
   "totals": {
-    "total_ips": 628532,
-    "total_domains": 12437850,
+    "total_ips": 628500,
+    "total_domains": 12437810,
     "total_c2_ips": 14224,
     "removed_ips": 1929,
     "whitelisted_cdns": 0,
-    "high_confidence_ips": 11559,
-    "medium_confidence_ips": 50268,
-    "low_confidence_ips": 126663,
+    "high_confidence_ips": 11539,
+    "medium_confidence_ips": 50248,
+    "low_confidence_ips": 126654,
     "total_files": 20,
     "total_size_bytes": 277593964
   },
   "diff": {
-    "timestamp": "2026-03-24T07:58:53.057294Z",
+    "timestamp": "2026-03-24T08:05:10.449682Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -338,12 +338,6 @@
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-03-23T08:05:09.536802Z",
-        "total_ips": 627485,
-        "total_domains": 12434858,
-        "high_confidence_ips": 11559
-      },
       {
         "timestamp": "2026-03-23T08:45:09.466159Z",
         "total_ips": 627646,
