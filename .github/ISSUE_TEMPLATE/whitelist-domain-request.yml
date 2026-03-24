@@ -1,5 +1,5 @@
 name: "Whitelist Request: Domain"
-description: Request a domain to be added to the community whitelist
+description: Request one or more domains to be added to the community whitelist
 title: "[Domain Whitelist] "
 labels: ["whitelist-request", "domain-whitelist"]
 body:
@@ -7,18 +7,22 @@ body:
     attributes:
       value: |
         ## Domain Whitelist Request
-        Use this form to request adding a domain to the community whitelist.
+        Use this form to request adding one or more domains/subdomains to the community whitelist.
         All requests are reviewed by a maintainer before being applied.
 
         **Accepted:** `example.com`, `cdn.example.com`, `api.service.io`
         **Not accepted:** wildcards (`*.example.com`), bare TLDs (`.com`), shared hosting platforms (`github.io`, `herokuapp.com`)
+        **Format:** one domain/subdomain per line (no protocols, paths, or commas)
 
-  - type: input
-    id: domain
+  - type: textarea
+    id: domains
     attributes:
-      label: Domain
-      description: "Enter a specific domain or subdomain (e.g., example.com or api.example.com). No wildcards, bare TLDs, or protocols."
-      placeholder: "example.com"
+      label: Domain(s)
+      description: "Enter one domain/subdomain per line (e.g., example.com or api.example.com). No wildcards, bare TLDs, protocols, or paths."
+      placeholder: |
+        example.com
+        cdn.example.com
+        api.service.io
     validations:
       required: true
 
@@ -26,7 +30,7 @@ body:
     id: reason
     attributes:
       label: Reason for Whitelisting
-      description: Why should this domain be whitelisted?
+      description: Why should these domain(s) be whitelisted?
       options:
         - False Positive (legitimate site incorrectly blocked)
         - Legitimate Service / SaaS Provider
@@ -40,8 +44,8 @@ body:
     id: justification
     attributes:
       label: Justification
-      description: Provide details on why this domain is a false positive or should be whitelisted
-      placeholder: "This domain is the official website of a legitimate SaaS company and is incorrectly classified as malicious..."
+      description: Provide details on why these domain(s) are false positives or should be whitelisted
+      placeholder: "These domains belong to a legitimate SaaS provider and are incorrectly classified as malicious..."
     validations:
       required: true
 
@@ -60,6 +64,8 @@ body:
       label: Confirmation
       options:
         - label: I have verified this domain is not associated with malicious activity
+          required: true
+        - label: I understand each submitted domain/subdomain will be reviewed individually
           required: true
         - label: I understand this request will be reviewed before approval
           required: true
