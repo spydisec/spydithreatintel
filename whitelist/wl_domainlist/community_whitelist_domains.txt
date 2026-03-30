@@ -6,3 +6,4 @@
 # To submit a whitelist request, open an Issue:
 # https://github.com/spydisec/spydithreatintel/issues/new/choose
 t.castle.io # Issue #11: Legitimate Service / SaaS Provider (by @citactadmin)
+wcpstatic.microsoft.com # Issue #12: Legitimate Service / SaaS Provider (by @citactadmin)
