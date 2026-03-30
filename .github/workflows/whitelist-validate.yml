@@ -48,19 +48,25 @@ jobs:
             }
 
             let entry = '';
+            let entries = [];
             let errors = [];
             let warnings = [];
 
             // Parse the entry from the issue form body
             if (isIP) {
-              const match = body.match(/### IP Address\s*\n\s*\n\s*(.+)/);
+              const match = body.match(/###\s*IP Address\s*\n+([\s\S]*?)(?=\n###\s|$)/i);
               entry = match ? match[1].trim() : '';
             } else if (isDomain) {
-              const match = body.match(/### Domain\s*\n\s*\n\s*(.+)/);
-              entry = match ? match[1].trim() : '';
+              const match = body.match(/###\s*Domain(?:\(s\))?\s*\n+([\s\S]*?)(?=\n###\s|$)/i);
+              const rawDomains = match ? match[1].trim() : '';
+              entries = rawDomains
+                .split(/\r?\n/)
+                .map(d => d.trim())
+                .filter(Boolean);
+              entry = entries.join(', ');
             }
 
-            if (!entry) {
+            if ((isIP && !entry) || (isDomain && entries.length === 0)) {
               errors.push('Could not parse the entry from the issue body. Please ensure the form was filled out correctly.');
             }
 
@@ -121,66 +127,75 @@ jobs:
             }
 
             // ── DOMAIN VALIDATION ──
-            if (entry && isDomain) {
-              // Strip protocol, www, port, path
-              let cleaned = entry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/:[0-9]+$/, '').replace(/\/.*$/, '').toLowerCase().trim();
+            if (entries.length > 0 && isDomain) {
+              const cleanedEntries = [];
 
-              // Reject wildcard patterns
-              if (cleaned.includes('*')) {
-                errors.push(`Wildcard domains are not accepted: \`${entry}\`. Submit a specific domain like \`example.com\` instead of \`*.example.com\`.`);
-              }
+              // Reject public suffixes / shared hosting platforms
+              const publicSuffixes = [
+                'github.io', 'githubusercontent.com', 'github.com',
+                'herokuapp.com', 'herokussl.com',
+                'workers.dev', 'pages.dev',
+                'netlify.app', 'netlify.com',
+                'vercel.app',
+                'azurewebsites.net', 'cloudapp.net', 'azure-api.net',
+                'firebaseapp.com', 'web.app',
+                'appspot.com',
+                'blogspot.com', 'blogspot.co.uk',
+                's3.amazonaws.com', 'cloudfront.net', 'elasticbeanstalk.com',
+                'execute-api.amazonaws.com', 'amplifyapp.com',
+                'pythonanywhere.com',
+                'repl.co', 'replit.dev',
+                'glitch.me',
+                'ngrok.io', 'ngrok-free.app',
+                'trycloudflare.com',
+                'duckdns.org', 'no-ip.com', 'ddns.net', 'dynu.com',
+                'co.uk', 'com.au', 'co.jp', 'co.in', 'com.br',
+                'co.za', 'co.kr', 'co.nz', 'com.mx', 'com.ar'
+              ];
 
-              // Reject bare TLDs
-              else if (!cleaned.includes('.') || cleaned.startsWith('.')) {
-                errors.push(`Bare TLDs are not accepted: \`${entry}\`. Submit a full domain like \`example.com\`, not \`.com\`.`);
-              }
+              for (const rawEntry of entries) {
+                // Strip protocol, www, port, path
+                const cleaned = rawEntry.replace(/^(https?:\/\/)?(www\.)?/, '').replace(/:[0-9]+$/, '').replace(/\/.*$/, '').toLowerCase().trim();
 
-              else {
+                // Reject wildcard patterns
+                if (cleaned.includes('*')) {
+                  errors.push(`Wildcard domains are not accepted: \`${rawEntry}\`. Submit a specific domain like \`example.com\` instead of \`*.example.com\`.`);
+                  continue;
+                }
+
+                // Reject bare TLDs
+                if (!cleaned.includes('.') || cleaned.startsWith('.')) {
+                  errors.push(`Bare TLDs are not accepted: \`${rawEntry}\`. Submit a full domain like \`example.com\`, not \`.com\`.`);
+                  continue;
+                }
+
                 // Basic format validation
                 const domainRegex = /^([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}$/;
                 if (!domainRegex.test(cleaned)) {
-                  errors.push(`Invalid domain format: \`${entry}\`. Expected a plain domain like \`example.com\` (no protocol, path, or special characters).`);
+                  errors.push(`Invalid domain format: \`${rawEntry}\`. Expected a plain domain like \`example.com\` (no protocol, path, or special characters).`);
+                  continue;
                 }
-
-                // Reject public suffixes / shared hosting platforms
-                const publicSuffixes = [
-                  'github.io', 'githubusercontent.com', 'github.com',
-                  'herokuapp.com', 'herokussl.com',
-                  'workers.dev', 'pages.dev',
-                  'netlify.app', 'netlify.com',
-                  'vercel.app',
-                  'azurewebsites.net', 'cloudapp.net', 'azure-api.net',
-                  'firebaseapp.com', 'web.app',
-                  'appspot.com',
-                  'blogspot.com', 'blogspot.co.uk',
-                  's3.amazonaws.com', 'cloudfront.net', 'elasticbeanstalk.com',
-                  'execute-api.amazonaws.com', 'amplifyapp.com',
-                  'pythonanywhere.com',
-                  'repl.co', 'replit.dev',
-                  'glitch.me',
-                  'ngrok.io', 'ngrok-free.app',
-                  'trycloudflare.com',
-                  'duckdns.org', 'no-ip.com', 'ddns.net', 'dynu.com',
-                  'co.uk', 'com.au', 'co.jp', 'co.in', 'com.br',
-                  'co.za', 'co.kr', 'co.nz', 'com.mx', 'com.ar'
-                ];
 
                 if (publicSuffixes.some(ps => cleaned === ps || cleaned.endsWith('.' + ps))) {
                   // Check if the entry IS the public suffix itself (reject outright)
                   if (publicSuffixes.includes(cleaned)) {
                     errors.push(`Shared hosting / public suffix domain rejected: \`${cleaned}\`. Whitelisting this would cover all sites hosted on the platform, including attacker infrastructure. Submit the specific subdomain instead (e.g., \`mysite.github.io\` not \`github.io\`).`);
-                  } else {
-                    // It's a specific subdomain on a shared platform — warn but allow
-                    warnings.push(`\`${cleaned}\` is hosted on a shared platform. The maintainer will verify this specific subdomain is not used for malicious purposes.`);
+                    continue;
                   }
+
+                  // It's a specific subdomain on a shared platform — warn but allow
+                  warnings.push(`\`${cleaned}\` is hosted on a shared platform. The maintainer will verify this specific subdomain is not used for malicious purposes.`);
                 }
+
+                cleanedEntries.push(cleaned);
               }
 
-              entry = cleaned || entry;
+              entries = [...new Set(cleanedEntries)];
+              entry = entries.join(', ');
             }
 
             // ── DUPLICATE CHECK ──
-            if (entry && errors.length === 0) {
+            if (((isIP && entry) || (isDomain && entries.length > 0)) && errors.length === 0) {
               const fs = require('fs');
               const path = require('path');
 
@@ -197,13 +212,17 @@ jobs:
                     'whitelist/wl_domainlist/publicwhitelisted.txt'
                   ];
 
+              const itemsToCheck = isIP ? [entry] : entries;
+
               for (const file of checkFiles) {
                 const fullPath = path.join(process.env.GITHUB_WORKSPACE, file);
                 if (fs.existsSync(fullPath)) {
                   const content = fs.readFileSync(fullPath, 'utf-8');
                   const lines = content.split('\n').map(l => l.split('#')[0].trim().toLowerCase());
-                  if (lines.includes(entry.toLowerCase())) {
-                    warnings.push(`Entry \`${entry}\` already exists in \`${file}\`.`);
+                  for (const item of itemsToCheck) {
+                    if (lines.includes(item.toLowerCase())) {
+                      warnings.push(`Entry \`${item}\` already exists in \`${file}\`.`);
+                    }
                   }
                 }
               }
