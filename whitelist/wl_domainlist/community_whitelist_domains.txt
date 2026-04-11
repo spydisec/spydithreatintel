@@ -7,3 +7,5 @@
 # https://github.com/spydisec/spydithreatintel/issues/new/choose
 t.castle.io # Issue #11: Legitimate Service / SaaS Provider (by @citactadmin)
 wcpstatic.microsoft.com # Issue #12: Legitimate Service / SaaS Provider (by @citactadmin)
+js.skyscnr.com # Issue #13: False Positive (legitimate site incorrectly blocked) (by @citactadmin)
+content.skyscnr.com # Issue #13: False Positive (legitimate site incorrectly blocked) (by @citactadmin)
