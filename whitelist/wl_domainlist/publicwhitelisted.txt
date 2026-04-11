@@ -1,0 +1,7 @@
+# Public Domain Whitelist - Domains
+#
+# Maintainer-managed list for public infrastructure domains where
+# whitelisting the bare/apex domain is considered safe.
+#
+# Add entries via pull request only.
+# Format: one domain per line, lowercase, no protocol/path.

@@ -38,6 +38,7 @@
 !whitelist/wl_domainlist/osintwhitelisteddomains.txt
 !whitelist/wl_domainlist/mypiholewhitelisteddomains.txt
 !whitelist/wl_domainlist/community_whitelist_domains.txt
+!whitelist/wl_domainlist/publicwhitelisted.txt
 
 # Allow GitHub Actions and Issue templates
 !/.github/
