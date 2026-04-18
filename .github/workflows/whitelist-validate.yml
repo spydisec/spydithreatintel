@@ -51,6 +51,9 @@ jobs:
             let entries = [];
             let errors = [];
             let warnings = [];
+            let dnsEvidence = [];
+            let sharedPlatformDetected = false;
+            let cnameProviderDetected = false;
 
             // Parse the entry from the issue form body
             if (isIP) {
@@ -128,10 +131,11 @@ jobs:
 
             // ── DOMAIN VALIDATION ──
             if (entries.length > 0 && isDomain) {
+              const dns = require('dns').promises;
               const cleanedEntries = [];
 
-              // Reject public suffixes / shared hosting platforms
-              const publicSuffixes = [
+              // Reject exact platform suffixes; warn on specific subdomains hosted there.
+              const sharedPlatformSuffixes = [
                 'github.io', 'githubusercontent.com', 'github.com',
                 'herokuapp.com', 'herokussl.com',
                 'workers.dev', 'pages.dev',
@@ -148,10 +152,57 @@ jobs:
                 'glitch.me',
                 'ngrok.io', 'ngrok-free.app',
                 'trycloudflare.com',
-                'duckdns.org', 'no-ip.com', 'ddns.net', 'dynu.com',
-                'co.uk', 'com.au', 'co.jp', 'co.in', 'com.br',
-                'co.za', 'co.kr', 'co.nz', 'com.mx', 'com.ar'
+                'duckdns.org', 'no-ip.com', 'ddns.net', 'dynu.com'
               ];
+
+              const providerFingerprints = [
+                { suffix: 'sendgrid.net', provider: 'SendGrid' },
+                { suffix: 'mailgun.org', provider: 'Mailgun' },
+                { suffix: 'amazonses.com', provider: 'Amazon SES' },
+                { suffix: 'sparkpostmail.com', provider: 'SparkPost' },
+                { suffix: 'mandrillapp.com', provider: 'Mandrill' },
+                { suffix: 'googlehosted.com', provider: 'Google Hosted Services' },
+                { suffix: 'zendesk.com', provider: 'Zendesk' }
+              ];
+
+              const inferProvider = (hostname) => {
+                if (!hostname) return null;
+                const normalized = hostname.toLowerCase();
+                const hit = providerFingerprints.find(p => normalized === p.suffix || normalized.endsWith('.' + p.suffix));
+                return hit ? hit.provider : null;
+              };
+
+              const resolveCnameChain = async (domain, maxDepth = 6) => {
+                const chain = [];
+                const visited = new Set();
+                let current = domain;
+
+                for (let depth = 0; depth < maxDepth; depth++) {
+                  if (visited.has(current)) {
+                    break;
+                  }
+                  visited.add(current);
+
+                  try {
+                    const records = await dns.resolveCname(current);
+                    if (!records || records.length === 0) {
+                      break;
+                    }
+
+                    const next = String(records[0]).toLowerCase().replace(/\.$/, '');
+                    chain.push({ from: current, to: next });
+                    current = next;
+                  } catch (err) {
+                    // No CNAME or lookup failure; keep validation non-blocking.
+                    break;
+                  }
+                }
+
+                return {
+                  chain,
+                  finalTarget: chain.length > 0 ? chain[chain.length - 1].to : null
+                };
+              };
 
               for (const rawEntry of entries) {
                 // Strip protocol, www, port, path
@@ -176,15 +227,16 @@ jobs:
                   continue;
                 }
 
-                if (publicSuffixes.some(ps => cleaned === ps || cleaned.endsWith('.' + ps))) {
+                if (sharedPlatformSuffixes.some(ps => cleaned === ps || cleaned.endsWith('.' + ps))) {
                   // Check if the entry IS the public suffix itself (reject outright)
-                  if (publicSuffixes.includes(cleaned)) {
+                  if (sharedPlatformSuffixes.includes(cleaned)) {
                     errors.push(`Shared hosting / public suffix domain rejected: \`${cleaned}\`. Whitelisting this would cover all sites hosted on the platform, including attacker infrastructure. Submit the specific subdomain instead (e.g., \`mysite.github.io\` not \`github.io\`).`);
                     continue;
                   }
 
                   // It's a specific subdomain on a shared platform — warn but allow
                   warnings.push(`\`${cleaned}\` is hosted on a shared platform. The maintainer will verify this specific subdomain is not used for malicious purposes.`);
+                  sharedPlatformDetected = true;
                 }
 
                 cleanedEntries.push(cleaned);
@@ -192,6 +244,27 @@ jobs:
 
               entries = [...new Set(cleanedEntries)];
               entry = entries.join(', ');
+
+              // DNS evidence collection (non-blocking): CNAME chain + provider hints.
+              if (entries.length > 0 && errors.length === 0) {
+                for (const domain of entries) {
+                  const cnameInfo = await resolveCnameChain(domain);
+                  const chainTargets = cnameInfo.chain.map(c => c.to);
+                  const provider = inferProvider(cnameInfo.finalTarget) || chainTargets.map(inferProvider).find(Boolean) || null;
+
+                  if (cnameInfo.chain.length > 0) {
+                    const chainText = cnameInfo.chain.map(c => `${c.from} -> ${c.to}`).join(' -> ');
+                    dnsEvidence.push(`\`${domain}\`: CNAME chain detected (${chainText})`);
+
+                    if (provider) {
+                      warnings.push(`\`${domain}\` resolves via CNAME to provider infrastructure (\`${provider}\`). Verify this tenant-specific hostname is legitimate before approval.`);
+                      cnameProviderDetected = true;
+                    }
+                  } else {
+                    dnsEvidence.push(`\`${domain}\`: no CNAME chain detected`);
+                  }
+                }
+              }
             }
 
             // ── DUPLICATE CHECK ──
@@ -248,14 +321,26 @@ jobs:
                 body += `\n\n### :warning: Warnings\n${warnings.map(w => `- ${w}`).join('\n')}`;
               }
 
+              if (isDomain && dnsEvidence.length > 0) {
+                body += `\n\n### :satellite: DNS Evidence\n${dnsEvidence.map(d => `- ${d}`).join('\n')}`;
+              }
+
               body += `\n\n---\n*A maintainer will review this request. Once approved, the \`approved\` label will be added and the entry will be automatically processed.*`;
               commentBody = body;
+
+              const labelsToAdd = ['validated'];
+              if (isDomain && sharedPlatformDetected) {
+                labelsToAdd.push('shared-platform-warning');
+              }
+              if (isDomain && cnameProviderDetected) {
+                labelsToAdd.push('cname-provider-detected');
+              }
 
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                labels: ['validated']
+                labels: labelsToAdd
               });
 
               try {
