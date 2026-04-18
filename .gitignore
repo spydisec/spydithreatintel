@@ -40,6 +40,10 @@
 !whitelist/wl_domainlist/community_whitelist_domains.txt
 !whitelist/wl_domainlist/publicwhitelisted.txt
 
+# Private/local whitelist configuration and generated external whitelist cache
+config.private.yaml
+whitelist/wl_domainlist/externalwhitelisted_cache.txt
+
 # Allow GitHub Actions and Issue templates
 !/.github/
 !/.github/ISSUE_TEMPLATE/
