@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T11:14:47.001723Z",
+  "generated_at": "2026-04-18T11:45:07.247536Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -293,7 +293,7 @@
     "total_size_bytes": 299184803
   },
   "diff": {
-    "timestamp": "2026-04-18T11:14:50.633572Z",
+    "timestamp": "2026-04-18T11:45:10.664145Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -450,6 +450,12 @@
         "timestamp": "2026-04-18T10:14:40.326306Z",
         "total_ips": 627327,
         "total_domains": 13569167,
+        "high_confidence_ips": 11539
+      },
+      {
+        "timestamp": "2026-04-18T11:14:47.001723Z",
+        "total_ips": 627408,
+        "total_domains": 13476387,
         "high_confidence_ips": 11539
       }
     ]
