@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T23:05:06.813431Z",
+  "generated_at": "2026-06-12T23:45:06.592680Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -19,10 +19,10 @@
     "filtered_malicious": {
       "name": "Filtered Malicious IPs",
       "category": "Production",
-      "count": 380151,
+      "count": 380331,
       "size": "5.2 MB",
-      "size_bytes": 5408434,
-      "last_updated": "2026-06-13 08:16 UTC",
+      "size_bytes": 5410991,
+      "last_updated": "2026-06-13 09:19 UTC",
       "file_path": "filtered_malicious_iplist.txt",
       "download_url": "https://spydisec.com/filtered_malicious_iplist.txt",
       "format": "text/plain",
@@ -35,7 +35,7 @@
       "count": 203,
       "size": "3.1 KB",
       "size_bytes": 3179,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "file_path": "master_malicious_iplist.txt",
       "download_url": "https://spydisec.com/master_malicious_iplist.txt",
       "format": "text/plain",
@@ -112,10 +112,10 @@
     "malicious": {
       "name": "Malicious Domains",
       "category": "Security",
-      "count": 4273561,
+      "count": 4273230,
       "size": "79.1 MB",
-      "size_bytes": 82923115,
-      "last_updated": "2026-06-13 08:13 UTC",
+      "size_bytes": 82914760,
+      "last_updated": "2026-06-13 09:16 UTC",
       "download_url": "https://spydisec.com/maliciousblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -126,10 +126,10 @@
     "spam": {
       "name": "Spam/Scam Domains",
       "category": "Communication",
-      "count": 1725631,
+      "count": 1725632,
       "size": "33.9 MB",
-      "size_bytes": 35571722,
-      "last_updated": "2026-06-13 08:13 UTC",
+      "size_bytes": 35571697,
+      "last_updated": "2026-06-13 09:16 UTC",
       "download_url": "https://spydisec.com/spamblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -140,10 +140,10 @@
     "ads": {
       "name": "Ads & Tracking",
       "category": "Privacy",
-      "count": 428974,
+      "count": 429675,
       "size": "9.2 MB",
-      "size_bytes": 9617304,
-      "last_updated": "2026-06-13 08:13 UTC",
+      "size_bytes": 9630860,
+      "last_updated": "2026-06-13 09:16 UTC",
       "download_url": "https://spydisec.com/adsblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -154,10 +154,10 @@
     "permanent": {
       "name": "Permanent Domains (Append-Only)",
       "category": "Archive",
-      "count": 7572979,
+      "count": 7573112,
       "size": "147.2 MB",
-      "size_bytes": 154330649,
-      "last_updated": "2026-06-13 08:13 UTC",
+      "size_bytes": 154333384,
+      "last_updated": "2026-06-13 09:16 UTC",
       "download_url": "https://spydisec.com/permanentMaliciousDomainList.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -188,7 +188,7 @@
       "count": 1934,
       "size": "27.5 KB",
       "size_bytes": 28194,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/high_confidence_limited.txt",
       "format": "text/plain",
       "confidence_score": "High",
@@ -202,7 +202,7 @@
       "count": 9605,
       "size": "134.5 KB",
       "size_bytes": 137722,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/high_confidence_unlimited.txt",
       "format": "text/plain",
       "confidence_score": "High",
@@ -216,7 +216,7 @@
       "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360520,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/medium_confidence_limited.txt",
       "format": "text/plain",
       "confidence_score": "Medium",
@@ -230,7 +230,7 @@
       "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360522,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/medium_confidence_unlimited.txt",
       "format": "text/plain",
       "confidence_score": "Medium",
@@ -244,7 +244,7 @@
       "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1806005,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/low_confidence.txt",
       "format": "text/plain",
       "confidence_score": "Low",
@@ -258,7 +258,7 @@
       "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1805994,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:19 UTC",
       "download_url": "https://spydisec.com/fullIPblocklist.txt",
       "format": "text/plain",
       "confidence_score": "Research",
@@ -272,7 +272,7 @@
       "count": 963115,
       "size": "13.3 MB",
       "size_bytes": 13965441,
-      "last_updated": "2026-06-13 08:17 UTC",
+      "last_updated": "2026-06-13 09:20 UTC",
       "download_url": "https://spydisec.com/permanentfullIPblocklist.txt",
       "format": "text/plain",
       "confidence_score": "Archive",
@@ -281,8 +281,8 @@
     }
   },
   "totals": {
-    "total_ips": 734088,
-    "total_domains": 14854033,
+    "total_ips": 734268,
+    "total_domains": 14854537,
     "total_c2_ips": 19359,
     "removed_ips": 3235,
     "whitelisted_cdns": 0,
@@ -290,10 +290,10 @@
     "medium_confidence_ips": 50248,
     "low_confidence_ips": 126654,
     "total_files": 19,
-    "total_size_bytes": 327885149
+    "total_size_bytes": 327895617
   },
   "diff": {
-    "timestamp": "2026-06-12T23:05:12.906512Z",
+    "timestamp": "2026-06-12T23:45:12.794339Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -304,28 +304,22 @@
     },
     "domains": {
       "malicious": {
-        "added": 32,
-        "removed": 0
+        "added": 140,
+        "removed": 471
       },
       "spam": {
-        "added": 0,
-        "removed": 0
+        "added": 19,
+        "removed": 18
       },
       "ads": {
-        "added": 0,
-        "removed": 0
+        "added": 724,
+        "removed": 23
       }
     }
   },
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-06-11T23:24:47.371638Z",
-        "total_ips": 735487,
-        "total_domains": 14832959,
-        "high_confidence_ips": 11539
-      },
       {
         "timestamp": "2026-06-12T00:20:02.738541Z",
         "total_ips": 735427,
@@ -462,6 +456,12 @@
         "timestamp": "2026-06-12T22:17:53.366386Z",
         "total_ips": 734088,
         "total_domains": 14854033,
+        "high_confidence_ips": 11539
+      },
+      {
+        "timestamp": "2026-06-12T23:20:28.547528Z",
+        "total_ips": 734268,
+        "total_domains": 14854537,
         "high_confidence_ips": 11539
       }
     ]
