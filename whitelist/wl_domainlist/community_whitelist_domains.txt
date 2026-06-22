@@ -19,3 +19,4 @@ nibdev-prod.tf.ff.avast.com # Issue #16: Legitimate Service / SaaS Provider (by 
 netrep.svc.avast.com # Issue #16: Legitimate Service / SaaS Provider (by @citactadmin)
 deviceid.ff.avast.com # Issue #16: Legitimate Service / SaaS Provider (by @citactadmin)
 crm.zoho.com # Issue #17: False Positive (legitimate site incorrectly blocked) (by @citactadmin)
+id.milestonelogin.com # Issue #18: False Positive (legitimate site incorrectly blocked) (by @citactadmin)
