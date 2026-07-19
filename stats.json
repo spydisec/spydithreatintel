@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T05:05:05.761154Z",
+  "generated_at": "2026-07-19T05:45:06.020476Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -19,10 +19,10 @@
     "filtered_malicious": {
       "name": "Filtered Malicious IPs",
       "category": "Production",
-      "count": 360244,
+      "count": 361230,
       "size": "4.9 MB",
-      "size_bytes": 5122958,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "size_bytes": 5137138,
+      "last_updated": "2026-07-19 15:15 UTC",
       "file_path": "filtered_malicious_iplist.txt",
       "download_url": "https://spydisec.com/filtered_malicious_iplist.txt",
       "format": "text/plain",
@@ -35,7 +35,7 @@
       "count": 203,
       "size": "3.1 KB",
       "size_bytes": 3179,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "file_path": "master_malicious_iplist.txt",
       "download_url": "https://spydisec.com/master_malicious_iplist.txt",
       "format": "text/plain",
@@ -112,10 +112,10 @@
     "malicious": {
       "name": "Malicious Domains",
       "category": "Security",
-      "count": 5534265,
+      "count": 5534267,
       "size": "102.3 MB",
-      "size_bytes": 107267834,
-      "last_updated": "2026-07-19 14:12 UTC",
+      "size_bytes": 107267887,
+      "last_updated": "2026-07-19 15:13 UTC",
       "download_url": "https://spydisec.com/maliciousblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -129,7 +129,7 @@
       "count": 1796872,
       "size": "35.4 MB",
       "size_bytes": 37077080,
-      "last_updated": "2026-07-19 14:12 UTC",
+      "last_updated": "2026-07-19 15:13 UTC",
       "download_url": "https://spydisec.com/spamblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -143,7 +143,7 @@
       "count": 481117,
       "size": "10.1 MB",
       "size_bytes": 10613134,
-      "last_updated": "2026-07-19 14:12 UTC",
+      "last_updated": "2026-07-19 15:13 UTC",
       "download_url": "https://spydisec.com/adsblocklist.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -154,10 +154,10 @@
     "permanent": {
       "name": "Permanent Domains (Append-Only)",
       "category": "Archive",
-      "count": 8876786,
+      "count": 8876788,
       "size": "170.3 MB",
-      "size_bytes": 178616174,
-      "last_updated": "2026-07-19 14:13 UTC",
+      "size_bytes": 178616227,
+      "last_updated": "2026-07-19 15:13 UTC",
       "download_url": "https://spydisec.com/permanentMaliciousDomainList.txt",
       "format": "text/plain",
       "line_format": "one_domain_per_line",
@@ -188,7 +188,7 @@
       "count": 1934,
       "size": "27.5 KB",
       "size_bytes": 28194,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/high_confidence_limited.txt",
       "format": "text/plain",
       "confidence_score": "High",
@@ -202,7 +202,7 @@
       "count": 9605,
       "size": "134.5 KB",
       "size_bytes": 137722,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/high_confidence_unlimited.txt",
       "format": "text/plain",
       "confidence_score": "High",
@@ -216,7 +216,7 @@
       "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360520,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/medium_confidence_limited.txt",
       "format": "text/plain",
       "confidence_score": "Medium",
@@ -230,7 +230,7 @@
       "count": 25124,
       "size": "352.1 KB",
       "size_bytes": 360522,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/medium_confidence_unlimited.txt",
       "format": "text/plain",
       "confidence_score": "Medium",
@@ -244,7 +244,7 @@
       "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1806005,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/low_confidence.txt",
       "format": "text/plain",
       "confidence_score": "Low",
@@ -258,7 +258,7 @@
       "count": 126654,
       "size": "1.7 MB",
       "size_bytes": 1805994,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/fullIPblocklist.txt",
       "format": "text/plain",
       "confidence_score": "Research",
@@ -272,7 +272,7 @@
       "count": 963115,
       "size": "13.3 MB",
       "size_bytes": 13965441,
-      "last_updated": "2026-07-19 14:15 UTC",
+      "last_updated": "2026-07-19 15:15 UTC",
       "download_url": "https://spydisec.com/permanentfullIPblocklist.txt",
       "format": "text/plain",
       "confidence_score": "Archive",
@@ -281,8 +281,8 @@
     }
   },
   "totals": {
-    "total_ips": 708200,
-    "total_domains": 17584415,
+    "total_ips": 709186,
+    "total_domains": 17584419,
     "total_c2_ips": 20347,
     "removed_ips": 3439,
     "whitelisted_cdns": 0,
@@ -290,10 +290,10 @@
     "medium_confidence_ips": 50248,
     "low_confidence_ips": 126654,
     "total_files": 19,
-    "total_size_bytes": 379440591
+    "total_size_bytes": 379454877
   },
   "diff": {
-    "timestamp": "2026-07-19T05:05:10.336833Z",
+    "timestamp": "2026-07-19T05:45:10.586887Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -304,8 +304,8 @@
     },
     "domains": {
       "malicious": {
-        "added": 2762,
-        "removed": 8454
+        "added": 2,
+        "removed": 0
       },
       "spam": {
         "added": 0,
@@ -313,19 +313,13 @@
       },
       "ads": {
         "added": 0,
-        "removed": 3
+        "removed": 0
       }
     }
   },
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-07-18T05:15:47.833714Z",
-        "total_ips": 710265,
-        "total_domains": 17548677,
-        "high_confidence_ips": 11539
-      },
       {
         "timestamp": "2026-07-18T06:15:44.469868Z",
         "total_ips": 710542,
@@ -462,6 +456,12 @@
         "timestamp": "2026-07-19T04:15:38.884546Z",
         "total_ips": 708354,
         "total_domains": 17584415,
+        "high_confidence_ips": 11539
+      },
+      {
+        "timestamp": "2026-07-19T05:15:53.873876Z",
+        "total_ips": 709186,
+        "total_domains": 17584419,
         "high_confidence_ips": 11539
       }
     ]
