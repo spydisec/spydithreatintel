@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T04:05:06.378372Z",
+  "generated_at": "2026-08-30T04:45:05.748509Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -58,10 +58,10 @@
     "threatfox_all": {
       "name": "ThreatFox All",
       "category": "External",
-      "count": 19893,
-      "size": "276.8 KB",
-      "size_bytes": 283484,
-      "last_updated": "2026-08-30 10:40 UTC",
+      "count": 19875,
+      "size": "276.6 KB",
+      "size_bytes": 283222,
+      "last_updated": "2026-08-30 14:40 UTC",
       "file_path": "threatfoxallips.txt",
       "download_url": "https://spydisec.com/threatfoxallips.txt",
       "format": "text/plain",
@@ -71,10 +71,10 @@
     "threatfox_high": {
       "name": "ThreatFox High Confidence",
       "category": "External",
-      "count": 9591,
-      "size": "134.0 KB",
-      "size_bytes": 137237,
-      "last_updated": "2026-08-30 10:40 UTC",
+      "count": 9570,
+      "size": "133.7 KB",
+      "size_bytes": 136932,
+      "last_updated": "2026-08-30 14:40 UTC",
       "file_path": "threatfoxhighconfidenceips.txt",
       "download_url": "https://spydisec.com/threatfoxhighconfidenceips.txt",
       "format": "text/plain",
@@ -281,7 +281,7 @@
     }
   },
   "totals": {
-    "total_ips": 720992,
+    "total_ips": 720953,
     "total_domains": 17552473,
     "total_c2_ips": 21576,
     "removed_ips": 3913,
@@ -290,10 +290,10 @@
     "medium_confidence_ips": 50248,
     "low_confidence_ips": 126654,
     "total_files": 19,
-    "total_size_bytes": 379108468
+    "total_size_bytes": 379107901
   },
   "diff": {
-    "timestamp": "2026-08-30T04:05:10.763754Z",
+    "timestamp": "2026-08-30T04:45:10.903453Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -320,12 +320,6 @@
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-08-29T04:15:35.644254Z",
-        "total_ips": 720368,
-        "total_domains": 17547707,
-        "high_confidence_ips": 11539
-      },
       {
         "timestamp": "2026-08-29T05:15:34.758054Z",
         "total_ips": 720708,
