@@ -4,13 +4,39 @@
   ![Daily IP List Update](https://healthchecks.io/b/2/b76af744-7b3f-4de6-b0cb-227a88bbc5aa.svg) ![Daily C2 Feed Update](https://healthchecks.io/b/2/ad6b7683-29fc-49f4-95d1-70c169e3d8e4.svg)
 </div>
 
-> 📢 **Update**: Blocklists are now served from **Cloudflare R2** for faster global delivery and reduced latency. Use the download links below instead of raw GitHub URLs. Website & API coming soon!
+> [!IMPORTANT]
+> **This repository is being retired.** Over the next few months the public feeds here will be wound down and moved to a private feed for personal IOC subscribers only.
+>
+> **Move to [ThreatCull](https://github.com/spydisec/threatcull).** It is the self-hosted successor to this project: the same multi-source scoring and confidence tiers, run on your own hardware, with your own sources and allowlists. See [Migrating to ThreatCull](#-migrating-to-threatcull).
+
+> 📢 **Update**: Blocklists are now served from **Cloudflare R2** for faster global delivery and reduced latency. Use the download links below instead of raw GitHub URLs.
+
+## 🧭 Migrating to ThreatCull
+
+[ThreatCull](https://github.com/spydisec/threatcull) is a self-hosted threat-feed compiler built from the pipeline behind this repo. It downloads public blocklists, drops duplicates, private ranges and your own infrastructure, scores each indicator by how many independent sources list it, and serves the result to your firewalls, DNS servers and SIEM.
+
+| This repo | ThreatCull |
+|-----------|------------|
+| Fixed source list chosen for you | Source catalog with licence details, plus your own URLs or local files |
+| CDN whitelist only | Built-in CDN allowlists, your own entries and allowlist URLs, alerts when a source lists your network |
+| Plain text lists | Plain, hosts, AdGuard, RPZ, CSV or JSON, each at its own tokenised URL |
+| Updates on this repo's schedule | Built-in scheduler, web UI, dashboard, lookup and run history |
+
+**Quick start** (Docker Compose, amd64 and arm64):
+
+```bash
+curl -fsSLO https://raw.githubusercontent.com/spydisec/threatcull/main/docker-compose.yaml
+# set THREATCULL_ADMIN_PASSWORD (12+ characters) in docker-compose.yaml
+docker compose up -d
+```
+
+Open `http://<server-ip>:6969`, enable sources, rotate a Feed Token on **Outputs**, then point your firewall or DNS server at the feed URL instead of the `spydisec.com` lists below. Full docs: [ThreatCull README](https://github.com/spydisec/threatcull#readme).
 
 ## 🚀 About
 
 Comprehensive threat intelligence blocklists aggregated from multiple OSINT sources, honeypot networks, and C2 trackers. Multi-source validation, confidence-based tiers, and CDN-aware whitelisting.
 
-**📑 Quick Links:** [IP Blocklists](#-ip-blocklists) • [Domain Blocklists](#-domain-blocklists) • [Sources](#%EF%B8%8F-tracked-threats--source-list) • [Credits](#-acknowledgements)
+**📑 Quick Links:** [ThreatCull](#-migrating-to-threatcull) • [IP Blocklists](#-ip-blocklists) • [Domain Blocklists](#-domain-blocklists) • [Sources](#%EF%B8%8F-tracked-threats--source-list) • [Credits](#-acknowledgements)
 
 > ⚠️ **License Notice**: Each OSINT feed is governed by its own terms. Users must review original source documentation for specific licensing details.
 
