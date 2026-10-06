@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T20:45:06.454728Z",
+  "generated_at": "2026-10-06T21:05:05.687135Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -293,7 +293,7 @@
     "total_size_bytes": 361182642
   },
   "diff": {
-    "timestamp": "2026-10-06T20:45:11.479958Z",
+    "timestamp": "2026-10-06T21:05:11.082685Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -320,12 +320,6 @@
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-10-05T20:55:38.226638Z",
-        "total_ips": 700722,
-        "total_domains": 11415970,
-        "high_confidence_ips": 11539
-      },
       {
         "timestamp": "2026-10-05T21:39:28.171523Z",
         "total_ips": 700853,
