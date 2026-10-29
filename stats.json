@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-29T23:05:07.424383Z",
+  "generated_at": "2026-10-29T23:45:06.519922Z",
   "version": "2.0",
   "api_version": "v1",
   "system": {
@@ -45,10 +45,10 @@
     "c2_tracker": {
       "name": "C2 Infrastructure",
       "category": "Specialized",
-      "count": 24158,
+      "count": 24159,
       "size": "337.5 KB",
-      "size_bytes": 345635,
-      "last_updated": "2026-10-30 07:27 UTC",
+      "size_bytes": 345649,
+      "last_updated": "2026-10-30 10:27 UTC",
       "file_path": "master_c2_iplist.txt",
       "download_url": "https://spydisec.com/master_c2_iplist.txt",
       "format": "text/plain",
@@ -87,7 +87,7 @@
       "count": 131149,
       "size": "1.8 MB",
       "size_bytes": 1879440,
-      "last_updated": "2026-10-30 07:25 UTC",
+      "last_updated": "2026-10-30 10:25 UTC",
       "file_path": "osinthoneypotfeed.txt",
       "download_url": "https://spydisec.com/osinthoneypotfeed.txt",
       "format": "text/plain",
@@ -281,19 +281,19 @@
     }
   },
   "totals": {
-    "total_ips": 709443,
+    "total_ips": 709444,
     "total_domains": 16785296,
-    "total_c2_ips": 24158,
+    "total_c2_ips": 24159,
     "removed_ips": 4626,
     "whitelisted_cdns": 0,
     "high_confidence_ips": 11539,
     "medium_confidence_ips": 50248,
     "low_confidence_ips": 126654,
     "total_files": 19,
-    "total_size_bytes": 364565729
+    "total_size_bytes": 364565743
   },
   "diff": {
-    "timestamp": "2026-10-29T23:05:16.206261Z",
+    "timestamp": "2026-10-29T23:45:15.179953Z",
     "ip": {
       "added": 0,
       "removed": 0,
@@ -320,12 +320,6 @@
   "history": {
     "note": "Recent data points. Full history available via D1 API or dashboard.",
     "recent_24h": [
-      {
-        "timestamp": "2026-10-28T23:16:10.007460Z",
-        "total_ips": 711053,
-        "total_domains": 16783314,
-        "high_confidence_ips": 11539
-      },
       {
         "timestamp": "2026-10-29T00:16:07.359667Z",
         "total_ips": 705469,
